@@ -4,3 +4,4 @@
 build-tools/
 decompiled_apk/build/
 decompiled_apk/.apktool_cache/
+*.so
