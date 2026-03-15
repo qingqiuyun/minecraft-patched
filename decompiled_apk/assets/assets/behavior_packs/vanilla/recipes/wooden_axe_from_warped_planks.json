@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"wooden_axe","count":1},"key":{"A":{"item":"warped_planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:wooden_axe_from_warped_planks"},"pattern":["AA","AB"," B"],"tags":["crafting_table"]},"format_version":"1.16"}

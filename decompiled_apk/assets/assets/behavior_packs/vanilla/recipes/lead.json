@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:slime_ball"}],"result":{"item":"minecraft:lead","count":2},"key":{"O":{"item":"minecraft:slime_ball"},"~":{"item":"minecraft:string"}},"description":{"identifier":"minecraft:lead"},"pattern":["~~ ","~O ","  ~"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:text="@string/m4399_ope_pay_history_title" style="@style/m4399.Nav.Text.Tool"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

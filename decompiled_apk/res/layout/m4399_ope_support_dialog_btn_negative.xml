@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/m4399_font_16" android:textColor="@color/m4399_ope_color_a3000000" android:gravity="center" android:id="@id/m4399_id_tv_negative" android:background="@drawable/m4399_ope_support_dialog_btn_negative_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

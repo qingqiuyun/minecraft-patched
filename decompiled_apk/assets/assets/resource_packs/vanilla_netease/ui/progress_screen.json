@@ -1,0 +1,191 @@
+{
+  "namespace": "progress",
+  "modal_progress_screen": {
+    "$screen_content": "progress.content",
+    "$needbg": false
+  },
+  "world_loading_progress_screen@progress_screen": {
+    "$screen_content": "progress.content"
+  },
+  "world_saving_progress_screen@progress_screen": {
+    "$screen_content": "progress.content",
+    "variables": []
+  },
+  "content": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "$needbg|default": true,
+    "controls": [
+      {
+        "background@Quasar_Background.background_default": {
+          "ignored": "(not $needbg)",
+          "layer": -2048
+        }
+      },
+      {
+        "main@progress.main": {}
+      },
+      {
+        "bottom_blur": {
+          "type": "panel",
+          "size": [ "100%", "15%" ],
+          "clips_children": true,
+          "ignored": "(not $needbg)",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "layer": 1,
+          "controls": [
+            {
+              "bg_blur@Quasar_Background.background_blur": {
+                "size": [ "100%", "666.6666666666666666%" ],
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "layer": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "bottom_Reimu": {
+          "type": "panel",
+          "size": [ "100%", "15%" ],
+          "clips_children": true,
+          "ignored": "($needbg)",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "layer": 1,
+          "controls": [
+            {
+              "bg_Reimu": {
+                "fill": true,
+                "type": "image",
+                "alpha": 0.4,
+                "texture": "textures/Quasar/background/progress",
+                //"size": [ "100%", "%" ],
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "layer": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "popup_dialog_factory@progress.popup_dialog_factory": {}
+      }
+    ]
+  },
+  "main": {
+    "type": "panel",
+    "layer": 15,
+    "size": [
+      "100%",
+      "15%"
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "stack@progress.stack": {}
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "layer": -50,
+          //"ignored": "(not $needbg)",
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      }
+    ]
+  },
+  "stack": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "image@progress.loading_image_panel": {}
+      },
+      {
+        "Reimu": {
+          "type": "label",
+          "text": "少女祈禱中~ \n      Now loading...",
+          "size": [ "default", "100%" ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [
+            "fill",
+            "100%sm"
+          ],
+          "controls": [
+            {
+              "label@progress.text_stack": {
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "loading_image_panel": {
+    "type": "panel",
+    "size": [
+      "100%y",
+      "100%"
+    ],
+    "$anchor": "top_middle",
+    "anchor_from": "$anchor",
+    "anchor_to": "$anchor",
+    "$folder_path": "textures/Quasar/progress/",
+    "controls": [
+      {
+        "loading_image@Quasar_Dynamic_icon_progress.bind_panel": {}
+      }
+    ]
+  },
+  "text_stack": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "progress_title_text@progress.progress_title_text": {
+          "size": [ "100%", "default" ]
+        }
+      },
+      {
+        "progress_bar_text@progress.progress_bar_text": {
+          "size": [ "100%", "default" ]
+        }
+      }
+    ]
+  },
+  "progress_screen_text": {
+    "type": "label",
+    "color": "$onprimarycontainer",
+    "anchor_to": "center",
+    "font_type": "$global_font_type",
+    "anchor_from": "center",
+    "text_alignment": "right",
+    "layer": 20,
+    "shadow": false
+  }
+}

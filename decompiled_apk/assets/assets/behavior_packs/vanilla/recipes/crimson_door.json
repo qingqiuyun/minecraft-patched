@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:crimson_planks"}],"pattern":["##","##","##"],"result":{"item":"minecraft:crimson_door","count":3},"key":{"#":{"item":"minecraft:crimson_planks"}},"description":{"identifier":"minecraft:crimson_door"},"group":"wooden_door","tags":["crafting_table"]},"format_version":"1.20.10"}

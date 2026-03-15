@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.zombie_villager":{"materials":[{"*":"Material.default"}],"rebuild_animation_matrices":true,"arrays":{"textures":{"Array.skins":["Texture.farmer","Texture.librarian","Texture.priest","Texture.smith","Texture.butcher"]}},"geometry":"Geometry.default","textures":["Array.skins[query.variant]"]}},"format_version":"1.8.0"}

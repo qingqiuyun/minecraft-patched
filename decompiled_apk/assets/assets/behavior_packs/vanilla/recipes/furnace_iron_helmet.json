@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:iron_helmet"}],"input":"minecraft:iron_helmet","description":{"identifier":"minecraft:furnace_iron_helmet"},"output":"minecraft:iron_nugget","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:glowstone_dust","input":"minecraft:potion_type:poison","description":{"identifier":"minecraft:brew_poison_glowstone_dust"},"output":"minecraft:potion_type:strong_poison","tags":["brewing_stand"]},"format_version":"1.20.10"}

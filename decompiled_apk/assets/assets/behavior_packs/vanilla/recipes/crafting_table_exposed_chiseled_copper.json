@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:exposed_cut_copper_slab"}],"result":{"count":1,"item":"minecraft:exposed_chiseled_copper"},"key":{"#":{"item":"minecraft:exposed_cut_copper_slab"}},"description":{"identifier":"minecraft:exposed_chiseled_copper"},"pattern":["#","#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

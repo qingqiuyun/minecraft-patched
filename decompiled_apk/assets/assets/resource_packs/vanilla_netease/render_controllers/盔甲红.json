@@ -1,0 +1,358 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.player.armor.helmet": {
+      "arrays": {
+        "textures": {
+          "array.armor_texture": [
+            "texture.leather_armor",
+            "texture.chain_armor",
+            "texture.iron_armor",
+            "texture.diamond_armor",
+            "texture.gold_armor",
+            "texture.elytra_armor",
+            "texture.turtle_armor",
+            "texture.netherite_armor"
+          ]
+        }
+      },
+      "geometry": "geometry.player_armor_custom_hurt",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.armor_texture[query.armor_texture_slot(0)]"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "head": "query.has_armor_slot(0)"
+        },
+        {
+          "hat": "query.has_armor_slot(0)"
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0.8,
+        "g": 0,
+        "b": 0,
+        "a": 0.625
+      },
+      "on_fire_color": {}
+    },
+    "controller.render.player.armor.chestplate": {
+      "arrays": {
+        "textures": {
+          "array.armor_texture": [
+            "texture.leather_armor",
+            "texture.chain_armor",
+            "texture.iron_armor",
+            "texture.diamond_armor",
+            "texture.gold_armor",
+            "texture.elytra_armor",
+            "texture.turtle_armor",
+            "texture.netherite_armor"
+          ]
+        }
+      },
+      "geometry": "(query.armor_texture_slot(1) == 5) ? geometry.player_elytra_custom_hurt : geometry.player_armor_custom_hurt",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.armor_texture[query.armor_texture_slot(1)]"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "body": "query.has_armor_slot(1)"
+        },
+        {
+          "leftarm_custom": "query.has_armor_slot(1) && (query.armor_texture_slot(1) != 5)"
+        },
+        {
+          "rightarm_custom": "query.has_armor_slot(1) && (query.armor_texture_slot(1) != 5)"
+        },
+        {
+          "left_wing_custom": "query.armor_texture_slot(1) == 5"
+        },
+        {
+          "right_wing_custom": "query.armor_texture_slot(1) == 5"
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0.8,
+        "g": 0,
+        "b": 0,
+        "a": 0.625
+      },
+      "on_fire_color": {}
+    },
+    "controller.render.player.armor.leggings": {
+      "arrays": {
+        "textures": {
+          "array.armor_texture": [
+            "texture.leather_leggings_armor",
+            "texture.chain_leggings_armor",
+            "texture.iron_leggings_armor",
+            "texture.diamond_leggings_armor",
+            "texture.gold_leggings_armor",
+            "texture.elytra_armor",
+            "texture.turtle_armor",
+            "texture.netherite_leggings_armor"
+          ]
+        }
+      },
+      "geometry": "geometry.player_armor_leggings_custom_hurt",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.armor_texture[query.armor_texture_slot(2)]"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "body": "query.has_armor_slot(2)"
+        },
+        {
+          "leftleg": "query.has_armor_slot(2)"
+        },
+        {
+          "rightleg": "query.has_armor_slot(2)"
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0.8,
+        "g": 0,
+        "b": 0,
+        "a": 0.625
+      },
+      "on_fire_color": {}
+    },
+    "controller.render.player.armor.boots": {
+      "arrays": {
+        "textures": {
+          "array.armor_texture": [
+            "texture.leather_armor",
+            "texture.chain_armor",
+            "texture.iron_armor",
+            "texture.diamond_armor",
+            "texture.gold_armor",
+            "texture.elytra_armor",
+            "texture.turtle_armor",
+            "texture.netherite_armor"
+          ]
+        }
+      },
+      "geometry": "geometry.player_armor_custom_hurt",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.armor_texture[query.armor_texture_slot(3)]"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "leftleg": "query.has_armor_slot(3)"
+        },
+        {
+          "rightleg": "query.has_armor_slot(3)"
+        }
+      ],
+      "is_hurt_color": {
+        "r": 0.8,
+        "g": 0,
+        "b": 0,
+        "a": 0.625
+      },
+      "on_fire_color": {}
+    },
+    "controller.render.armor.helmet": {
+      "geometry": "geometry.default_custom",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "head_attachable": true
+        },
+        {
+          "hat_attachable": true
+        }
+      ]
+    },
+    "controller.render.armor.chestplate": {
+      "geometry": "geometry.default_custom",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "body_attachable": true
+        },
+        {
+          "leftarm_custom_attachable": true
+        },
+        {
+          "rightarm_custom_attachable": true
+        }
+      ]
+    },
+    "controller.render.armor.elytra": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "left_wing": true
+        },
+        {
+          "right_wing": true
+        }
+      ]
+    },
+    "controller.render.armor.leggings": {
+      "geometry": "geometry.default_custom",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "body_attachable": true
+        },
+        {
+          "leftleg_attachable": true
+        },
+        {
+          "rightleg_attachable": true
+        }
+      ]
+    },
+    "controller.render.armor.boots": {
+      "geometry": "geometry.default_custom",
+      "materials": [
+        {
+          "*": "variable.is_enchanted ? material.enchanted : material.default"
+        }
+      ],
+      "textures": [
+        "texture.default",
+        "texture.enchanted"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        },
+        {
+          "leftleg_attachable": true
+        },
+        {
+          "rightleg_attachable": true
+        }
+      ]
+    },
+    "controller.render.player.armor.attachable_bones": {
+      "geometry": "geometry.player_armor_custom",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        }
+      ]
+    },
+    "controller.render.player.armor.attachable_bones_elytra": {
+      "geometry": "geometry.player_elytra_custom",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        }
+      ]
+    },
+    "controller.render.player.armor.attachable_bones_leggings": {
+      "geometry": "geometry.player_armor_leggings_custom",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "texture.default"
+      ],
+      "part_visibility": [
+        {
+          "*": false
+        }
+      ]
+    }
+  }
+}

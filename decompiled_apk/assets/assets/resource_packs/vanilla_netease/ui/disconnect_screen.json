@@ -1,0 +1,76 @@
+{
+  "namespace": "disconnect",
+
+	"menu_button_template": {
+	  "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+
+  "disconnect_screen_text": {
+    "type": "label",
+    "color": "$onprimarycontainer",
+    "font_type": "$global_font_type",
+    "size": [ "default", 50 ],
+    "max_size": [ "100% - 20px", 50 ],
+    "anchor_to": "center",
+    "anchor_from": "center",
+    "layer": 2,
+    //"color": "black",
+    "shadow": false
+  },
+  "disconnect_screen@common.base_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.menu_select",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_leave_screen",
+        "mapping_type": "global"
+      }
+    ],
+    "$screen_content": "disconnect.disconnect_screen_content",
+    "$button_layout": "@disconnect.button_panel",
+    "$screen_bg_content": "Quasar_Background.background_default"
+  },
+  "realms_disconnect_screen@disconnect.disconnect_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.menu_select",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_leave_screen",
+        "mapping_type": "global"
+      }
+    ],
+    "$button_layout": "@disconnect.realms_disconnect_button_panel",
+    "$screen_bg_content": "Quasar_Background.background_default"
+  },
+  "realms_warning_screen@disconnect.disconnect_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.menu_select",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_leave_screen",
+        "mapping_type": "global"
+      }
+    ],
+    "$button_layout": "@disconnect.realms_warning_button_panel",
+    "$screen_bg_content": "Quasar_Background.background_default"
+  }
+}

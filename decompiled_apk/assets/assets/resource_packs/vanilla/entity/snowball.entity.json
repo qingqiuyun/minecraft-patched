@@ -1,0 +1,2 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"snowball"},"identifier":"minecraft:snowball","textures":{"default":"textures/items/snowball"},"animations":{"flying":"animation.actor.billboard"},"scripts":{"animate":["flying"]},"render_controllers":["controller.render.item_sprite"],"geometry":{"default":"geometry.item_sprite"}}},"format_version":"1.10.0"}
+//CelsiusRP 11-20

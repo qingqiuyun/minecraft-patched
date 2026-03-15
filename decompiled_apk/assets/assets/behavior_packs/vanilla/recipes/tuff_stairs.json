@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:tuff"}],"priority":1,"result":{"item":"minecraft:tuff_stairs","count":4},"key":{"A":{"item":"minecraft:tuff"}},"description":{"identifier":"minecraft:tuff_stairs"},"pattern":["A","AA","AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="@dimen/m4399_ope_record_dialog_width_big_elevation" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/m4399_record_clip_success_ll" android:background="@drawable/m4399_ope_ripple_r10_white" android:paddingLeft="@dimen/m4399_spacing_12" android:paddingTop="@dimen/m4399_spacing_12" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/m4399_pad_game_box_logo" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/m4399_ope_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_record_suspension_bubble_success_title" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/m4399_ope_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_record_suspension_bubble_success_click" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/m4399_record_sus_edit" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/m4399_ope_color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_record_suspension_bubble_success_refresh" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+{
+  "namespace": "popup_dialog",
+  "popup_dialog_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "popup_dialog_button_with_binding": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "modal_left_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "modal_middle_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "modal_rightcancel_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "form_fit_modal_dialog_popup": {
+    "$modal_background": "common.empty_panel"
+  }
+}

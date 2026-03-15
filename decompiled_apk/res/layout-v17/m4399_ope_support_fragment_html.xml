@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/m4399_webview_stub_outside_nav" android:layout="@layout/m4399_ope_support_webview_nav_outside" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height" />
+        <cn.m4399.operate.support.component.webview.AlWebView android:id="@id/m4399_webview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/m4399_webview_stub_error_view" android:layout="@layout/m4399_ope_support_webview_layout_abnormal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ViewStub android:id="@id/m4399_webview_stub_inside_nav" android:layout="@layout/m4399_ope_support_webview_nav_inside" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/m4399_dialog_spacing_h" />
+</RelativeLayout>

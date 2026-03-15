@@ -1,0 +1,14 @@
+{//适配钓鱼鱼饵特殊动画
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.actor.billboard3" : {
+			"loop" : true,
+      "bones": {
+        "body": {
+          "rotation": [ "query.camera_rotation(0)", "query.camera_rotation(1)", 0.0 ],
+          "scale":[-2.5,2.5,2.5]
+        }
+      }
+		}
+	}
+}

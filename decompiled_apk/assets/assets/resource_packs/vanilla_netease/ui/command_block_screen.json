@@ -1,0 +1,22 @@
+{
+    "left_scroll_panel_content/content_stack_panel/offset2": {
+        "controls": [
+            {//换行描述
+                "multiline_hover_note_text_ali@common.multiline_text_edit_box": {
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "size": [
+                        "100%",
+                        30
+                    ],
+                    "$focus_id": "hover_note_text",
+                    "layer": 5,
+                    "max_length": 980853151,
+                    "$text_box_name": "command_block.hover_note_textbox",
+                    "$text_edit_box_content_binding_name": "#command_hover_note",
+                    "$place_holder_text": "commandBlockScreen.hoverNote"
+                }
+            }
+        ]
+    }
+}

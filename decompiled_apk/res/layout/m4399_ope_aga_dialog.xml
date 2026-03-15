@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.support.component.FiniteLinearLayout android:orientation="vertical" android:id="@id/m4399_ope_id_fll_aga_parent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_thumb" android:scrollbarTrackVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_track" android:scrollbarStyle="outsideInset" android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:fadeScrollbars="false" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/m4399_ope_id_ll_remaining" android:background="@drawable/m4399_ope_shape_r8_gray" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/m4399_ope_color_999999" android:gravity="center" android:id="@id/m4399_ope_id_tv_remaining_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/m4399_ope_color_primary" android:gravity="center" android:id="@id/m4399_ope_id_tv_remaining_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            </LinearLayout>
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_id_ll_detail" android:background="@drawable/m4399_ope_ripple_borderless_grey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/m4399_ope_color_primary" android:id="@id/m4399_ope_id_tv_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/m4399_ope_arrow_right_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+</cn.m4399.operate.support.component.FiniteLinearLayout>

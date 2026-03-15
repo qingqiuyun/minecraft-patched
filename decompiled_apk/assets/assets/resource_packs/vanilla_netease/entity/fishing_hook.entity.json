@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:fishing_hook",
+      "materials": {
+        "default": "fishing_hook"
+      },
+      "textures": {
+        "default": "textures/entity/fishhook"
+      },
+      "geometry": {
+        "default": "geometry.fishing_hook"
+      },
+      "animations": {
+        "face_player": "animation.actor.billboard3"//使用钓鱼竿鱼饵特殊适配动画
+      },
+      "scripts": {
+        "scale": "0.3",
+        "pre_animation": [
+          "variable.u = Math.mod(query.texture_frame_index, 4) * 16.0 / 64.0;",
+          "variable.v = math.round(query.texture_frame_index / 4) * 16.0 / 64.0;"
+        ],
+        "animate": [
+          "face_player"
+        ]
+      },
+      "render_controllers": [ "controller.render.fishing_hook" ]
+    }
+  }
+}

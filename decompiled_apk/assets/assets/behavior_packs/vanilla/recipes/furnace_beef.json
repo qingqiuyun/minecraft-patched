@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:beef"}],"input":"minecraft:beef","description":{"identifier":"minecraft:furnace_beef"},"output":"minecraft:cooked_beef","tags":["furnace","smoker","campfire","soul_campfire"]},"format_version":"1.20.10"}

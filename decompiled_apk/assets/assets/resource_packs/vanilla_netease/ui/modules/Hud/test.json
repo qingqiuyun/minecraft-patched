@@ -1,0 +1,55 @@
+{
+    "namespace": "1",//测试某些元素所用界面（包括但不限于神人控件命，大牛疯狂log以及无敌穷举）
+    "label": {
+        "type": "label",
+        "text": "你所热爱的，就是你的生活",
+        "size": [ "default", "default" ]
+    },
+    "panel": {
+        "type": "panel",
+        //"size": [ "100%c", "100%c" ],
+        //"size": "@1.size_anim",
+        "anims": [
+            "@1.size"
+        ],
+        "animation_reset_name": "screen_animation_reset",
+        "clips_children": true,
+        "controls": [
+            {
+                "@label": {}
+            }
+        ]
+    },
+    "image": {
+        "type": "image",
+        "texture": "$8x",
+        "alpha": 0.3,
+        "size": "@1.size_anim",
+        "animation_reset_name": "screen_animation_reset",
+        "clips_children": true,
+        "controls": [
+            {
+                "@panel": {}
+            }
+        ]
+    },
+    "size": {
+        "anim_type": "size",
+        "duration": 0,
+        "from": [ 0, 0 ],
+        "to": [ 0, 0 ],
+        "next": "@1.wait"
+    },
+    "wait": {
+        "anim_type": "wait",
+        "duration": 1,
+        "next": "@1.size_anim"
+    },
+    "size_anim": {
+        "anim_type": "size",
+        "easing": "out_cubic",
+        "duration": 0.4,
+        "from": [ 0, "100%c" ],
+        "to": [ "100%c", "100%c" ]
+    }
+}

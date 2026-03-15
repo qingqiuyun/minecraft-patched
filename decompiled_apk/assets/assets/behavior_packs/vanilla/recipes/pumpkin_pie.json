@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:pumpkin"},{"item":"minecraft:carved_pumpkin"}],"result":{"item":"minecraft:pumpkin_pie"},"description":{"identifier":"minecraft:pumpkin_pie"},"ingredients":[{"item":"minecraft:pumpkin"},{"item":"minecraft:sugar"},{"item":"minecraft:egg"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

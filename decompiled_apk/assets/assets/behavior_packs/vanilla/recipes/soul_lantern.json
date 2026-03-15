@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:soul_torch"}],"result":{"item":"minecraft:soul_lantern"},"key":{".":{"item":"minecraft:iron_nugget"},"|":{"item":"minecraft:soul_torch"}},"description":{"identifier":"minecraft:soul_lantern"},"pattern":["...",".|.","..."],"tags":["crafting_table"]},"format_version":"1.20.10"}

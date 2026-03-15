@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/m4399_ope_color_page_bg" style="@style/m4399.Pay.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+    <ImageView android:id="@id/m4399_progress_circle" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

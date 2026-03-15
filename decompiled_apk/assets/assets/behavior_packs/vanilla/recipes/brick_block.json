@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:brick"}],"result":{"item":"minecraft:brick_block"},"key":{"#":{"item":"minecraft:brick"}},"description":{"identifier":"minecraft:brick_block"},"pattern":["##","##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:breeze_rod"},{"item":"minecraft:heavy_core"}],"result":{"item":"minecraft:mace","count":1},"key":{"#":{"item":"minecraft:breeze_rod"},"*":{"item":"minecraft:heavy_core"}},"description":{"identifier":"minecraft:mace"},"pattern":["*","#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

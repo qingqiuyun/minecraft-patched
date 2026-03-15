@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.tripod_camera":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","textures":["Texture.default"],"overlay_color":{"a":"variable.isFlashing ? 1.0f : this","r":"variable.isFlashing ? 1.0f : this","g":"variable.isFlashing ? 1.0f : this","b":"variable.isFlashing ? 1.0f : this"}}},"format_version":"1.8.0"}

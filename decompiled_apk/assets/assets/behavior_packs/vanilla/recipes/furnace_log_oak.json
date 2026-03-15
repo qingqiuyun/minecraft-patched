@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"input":"minecraft:log:0","description":{"identifier":"minecraft:furnace_log_oak"},"output":"minecraft:coal:1","tags":["furnace"]},"format_version":"1.12"}

@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.evocation_fang":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","textures":["Texture.default"],"part_visibility":[{"*":"variable.animation_progress != 0.0"}]}},"format_version":"1.10.0"}

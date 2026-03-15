@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m4399_ope_pay_history_refresh_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/m4399_ope_pay_history_refresh_iv" android:visibility="gone" android:src="@drawable/m4399_ope_refresh" style="@style/m4399.Nav.Icon.Tool" />
+    <TextView android:textSize="14.0sp" android:id="@id/m4399_ope_pay_history_refresh_tv" android:drawableLeft="@drawable/m4399_ope_refresh" android:drawablePadding="8.0dip" android:alpha="0.4" android:drawableStart="@drawable/m4399_ope_refresh" style="@style/m4399.Nav.Text.Tool" />
+</FrameLayout>

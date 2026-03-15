@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:spider_eye"}],"result":{"item":"minecraft:fermented_spider_eye"},"description":{"identifier":"minecraft:fermented_spider_eye"},"ingredients":[{"item":"minecraft:spider_eye"},{"item":"minecraft:brown_mushroom"},{"item":"minecraft:sugar"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

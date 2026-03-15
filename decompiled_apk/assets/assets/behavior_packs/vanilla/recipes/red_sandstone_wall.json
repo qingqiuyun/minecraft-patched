@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:red_sandstone","data":0}],"result":{"item":"minecraft:cobblestone_wall","data":12,"count":6},"key":{"#":{"item":"minecraft:red_sandstone","data":0}},"description":{"identifier":"minecraft:red_sandstone_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

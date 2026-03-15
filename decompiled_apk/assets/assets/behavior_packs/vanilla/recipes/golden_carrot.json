@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gold_nugget"}],"result":{"item":"minecraft:golden_carrot"},"key":{"#":{"item":"minecraft:gold_nugget"},"X":{"item":"minecraft:carrot"}},"description":{"identifier":"minecraft:golden_carrot"},"pattern":["###","#X#","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

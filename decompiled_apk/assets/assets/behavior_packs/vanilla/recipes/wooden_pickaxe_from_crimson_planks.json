@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"wooden_pickaxe","count":1},"key":{"A":{"item":"crimson_planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:wooden_pickaxe_from_crimson_planks"},"pattern":["AAA"," B "," B "],"tags":["crafting_table"]},"format_version":"1.16"}

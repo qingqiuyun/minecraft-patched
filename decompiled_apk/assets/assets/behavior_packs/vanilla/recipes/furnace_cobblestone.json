@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:cobblestone"}],"input":"minecraft:cobblestone","description":{"identifier":"minecraft:furnace_cobblestone"},"output":"minecraft:stone","tags":["furnace"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:quartz"}],"result":{"item":"minecraft:observer"},"key":{"Q":{"item":"minecraft:quartz"},"#":{"item":"minecraft:cobblestone"},"R":{"item":"minecraft:redstone"}},"description":{"identifier":"minecraft:observer"},"pattern":["###","RRQ","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

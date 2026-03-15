@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:stained_hardened_clay","data":11}],"input":"minecraft:stained_hardened_clay:11","description":{"identifier":"minecraft:furnace_stained_hardened_clay11"},"output":"minecraft:blue_glazed_terracotta","tags":["furnace"]},"format_version":"1.20.10"}

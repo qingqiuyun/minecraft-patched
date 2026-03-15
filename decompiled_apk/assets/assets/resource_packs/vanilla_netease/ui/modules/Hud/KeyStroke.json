@@ -1,0 +1,217 @@
+{
+  "namespace": "Quasar/Panel/Keystroke",
+  "keystrokes_renderer": {
+    "type": "custom",
+    "renderer": "live_player_renderer",
+    "size": [
+      20,
+      20
+    ],
+    "offset": [
+      -12500,
+      12475
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle"
+  },
+  "keystrokes_text": {
+    "type": "panel",
+    "size": "$text_size",
+    "controls": [
+      {
+        "text": {
+          "type": "label",
+          "size": [
+            "default",
+            "default"
+          ],
+          "shadow": "$keystrokes_label_shadow",
+          "layer": 2,
+          "text": "$text",
+          "color": "$keystrokes_label_color",
+          "font_type": "$keystrokes_label_font",
+          "font_scale_factor": "$font_scale"
+        }
+      }
+    ]
+  },
+  "space_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "§l___",
+    "$text_size": [
+      71.25,
+      -11.25
+    ],
+    "$font_scale": 2.8125
+  },
+  "lmb_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "LMB",
+    "$text_size": [
+      34.6875,
+      21.25
+    ],
+    "$font_scale": 1.4
+  },
+  "rmb_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "RMB",
+    "$text_size": [
+      34.6875,
+      21.25
+    ],
+    "$font_scale": 1.4
+  },
+  "w_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "W",
+    "$text_size": [
+      71.25,
+      22.5
+    ],
+    "$font_scale": 1.4
+  },
+  "a_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "A",
+    "$text_size": [
+      22.5,
+      22.5
+    ],
+    "$font_scale": 1.4
+  },
+  "s_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "S",
+    "$text_size": [
+      22.5,
+      22.5
+    ],
+    "$font_scale": 1.4
+  },
+  "d_label@Quasar/Panel/Keystroke.keystrokes_text": {
+    "$text": "D",
+    "$text_size": [
+      22.5,
+      22.5
+    ],
+    "$font_scale": 1.4
+  },
+  "padding": {
+    "type": "panel",
+    "size": [
+      1.875,
+      1.875
+    ]
+  },
+  "keystrokes_panel": {
+    "type": "panel",
+    "size": [
+      71.25,
+      83.125
+    ],
+    "offset": [
+      7.5,
+      7.5
+    ],
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "controls": [
+      {
+        "keystrokes_renderer@Quasar/Panel/Keystroke.keystrokes_renderer": {}
+      },
+      {
+        "keystrokes_text_setup": {
+          "type": "stack_panel",
+          "size": [
+            71.25,
+            83.125
+          ],
+          "offset": [
+            -11.25,
+            -8.75
+          ],
+          "controls": [
+            {
+              "w_label@Quasar/Panel/Keystroke.w_label": {}
+            },
+            {
+              "padding0@Quasar/Panel/Keystroke.padding": {}
+            },
+            {
+              "asd_part": {
+                "type": "stack_panel",
+                "size": [
+                  71.25,
+                  22.5
+                ],
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "a_label@Quasar/Panel/Keystroke.a_label": {}
+                  },
+                  {
+                    "padding0@Quasar/Panel/Keystroke.padding": {}
+                  },
+                  {
+                    "s_label@Quasar/Panel/Keystroke.s_label": {}
+                  },
+                  {
+                    "padding1@Quasar/Panel/Keystroke.padding": {}
+                  },
+                  {
+                    "d_label@Quasar/Panel/Keystroke.d_label": {}
+                  }
+                ]
+              }
+            },
+            {
+              "padding1@Quasar/Panel/Keystroke.padding": {}
+            },
+            {
+              "lmb_rmb_part": {
+                "type": "stack_panel",
+                "size": [
+                  71.25,
+                  21.25
+                ],
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "lmb_label@Quasar/Panel/Keystroke.lmb_label": {}
+                  },
+                  {
+                    "padding@Quasar/Panel/Keystroke.padding": {}
+                  },
+                  {
+                    "rmb_label@Quasar/Panel/Keystroke.rmb_label": {}
+                  }
+                ]
+              }
+            },
+            {
+              "padding2@Quasar/Panel/Keystroke.padding": {}
+            },
+            {
+              "space_label@Quasar/Panel/Keystroke.space_label": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "keystrokes_content": {
+    "type": "panel",
+    "$keystrokes_label_font": "$global_font_type",
+    "$keystrokes_label_shadow": false,
+    "$keystrokes": true,
+    "$keystrokes_label_color": "$onprimarycontainer",
+    "controls": [
+      {
+        "keystrokes_panel@Quasar/Panel/Keystroke.keystrokes_panel": {}
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "keystroke_panel_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}

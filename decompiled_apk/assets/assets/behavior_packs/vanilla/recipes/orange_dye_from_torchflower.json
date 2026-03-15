@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:torchflower"}],"result":{"item":"minecraft:dye","data":14},"ingredients":[{"item":"minecraft:torchflower"}],"description":{"identifier":"minecraft:orange_dye_from_torchflower"},"group":"orange_dye","tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:potion",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/potion_bottle_absorption",
+        "enchanted": "textures/misc/enchanted_item_glint",
+        
+        "potion0": "textures/items/potion_bottle_absorption",
+        "potion1": "textures/items/potion_bottle_blindness",
+        "potion2": "textures/items/potion_bottle_confusion",
+        "potion3": "textures/items/potion_bottle_damageBoost",
+        "potion4": "textures/items/potion_bottle_digSlowdown",
+        "potion5": "textures/items/potion_bottle_digSpeed",
+        "potion6": "textures/items/potion_bottle_drinkable",
+        "potion7": "textures/items/potion_bottle_fireResistance",
+        "potion8": "textures/items/potion_bottle_harm",
+        "potion9": "textures/items/potion_bottle_heal",
+        "potion10": "textures/items/potion_bottle_healthBoost",
+        "potion11": "textures/items/potion_bottle_hunger",
+        "potion12": "textures/items/potion_bottle_invisibility",
+        "potion13": "textures/items/potion_bottle_jump",
+        "potion14": "textures/items/potion_bottle_moveSlowdown",
+        "potion15": "textures/items/potion_bottle_moveSpeed",
+        "potion16": "textures/items/potion_bottle_nightVision",
+        "potion17": "textures/items/potion_bottle_poison",
+        "potion18": "textures/items/potion_bottle_regeneration",
+        "potion19": "textures/items/potion_bottle_resistance",
+        "potion20": "textures/items/potion_bottle_saturation",
+        "potion21": "textures/items/potion_bottle_slowFall",
+        "potion22": "textures/items/potion_bottle_turtleMaster",
+        "potion23": "textures/items/potion_bottle_waterBreathing",
+        "potion24": "textures/items/potion_bottle_weakness",
+        "potion25": "textures/items/potion_bottle_wither"
+      },
+      "geometry": {
+        "default": "geometry.sword",
+        "sword": "geometry.sword"
+      },
+      "render_controllers": [ "controller.render.player.potion" ]
+    }
+  }
+}

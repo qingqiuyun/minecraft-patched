@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.camel":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","textures":["Texture.default"],"part_visibility":[{"saddle":"query.is_saddled"},{"bridle":"query.is_saddled"},{"reins*":"query.is_saddled && query.has_rider"}]}},"format_version":"1.8.0"}

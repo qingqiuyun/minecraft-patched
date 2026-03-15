@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gold_block"}],"pattern":["#"],"result":{"item":"minecraft:gold_ingot","count":9},"key":{"#":{"item":"minecraft:gold_block"}},"description":{"identifier":"minecraft:gold_ingot_from_block"},"group":"gold_ingot","tags":["crafting_table"]},"format_version":"1.20.10"}

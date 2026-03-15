@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"smoker","count":1},"key":{"A":{"item":"mangrove_log"},"B":{"item":"furnace"}},"description":{"identifier":"minecraft:smoker_from_mangrove_log"},"pattern":[" A ","ABA"," A "],"tags":["crafting_table"]},"format_version":"1.16"}

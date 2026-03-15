@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"iron_ingot"}],"result":{"item":"chain","count":1},"key":{"G":{"item":"iron_ingot"},"N":{"item":"iron_nugget"}},"description":{"identifier":"minecraft:chain"},"pattern":["N","G","N"],"tags":["crafting_table"]},"format_version":"1.20.10"}

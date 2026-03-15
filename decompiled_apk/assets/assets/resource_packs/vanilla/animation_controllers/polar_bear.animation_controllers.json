@@ -1,0 +1,2 @@
+{"animation_controllers":{"controller.animation.polarbear.move":{"initial_state":"default","states":{"default":{"animations":[{"walk":"query.modified_move_speed"},"move","look_at_target"]}}},"controller.animation.polarbear.baby":{"initial_state":"baby","states":{"baby":{"animations":[{"baby_transform":"query.is_baby"}]}}}},"format_version":"1.10.0"}
+//CelsiusRP 11-20

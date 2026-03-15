@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:moss_block"}],"result":{"item":"minecraft:stonebrick","data":1},"description":{"identifier":"minecraft:mossy_stonebrick_from_moss"},"ingredients":[{"item":"minecraft:stonebrick","data":0},{"item":"minecraft:moss_block"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.zb_2": {
+      "arrays": {
+        "textures": {
+          "array.zb_2": [
+            "texture.leather_2",
+            "texture.chainmail_2",
+            "texture.iron_2",
+            "texture.diamond_2",
+            "texture.gold_2",
+            "texture.gold_2",
+            "texture.gold_2",
+            "texture.netherite_2"
+          ]
+        }
+      },
+      "geometry": "Geometry.zb_2",
+      "materials": [
+        {
+          "*": "Material.armor"
+        }
+      ],
+      "textures": [
+        "array.zb_2[query.armor_texture_slot(2)]"
+      ],
+      "color": {
+        "r": "q.armor_color_slot(2, 0)",
+        "g": "q.armor_color_slot(2, 1)",
+        "b": "q.armor_color_slot(2, 2)",
+        "a": "q.armor_color_slot(2, 3)"
+      },
+      "is_hurt_color": {
+        "r": "v.is_enchanted_leggings ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_leggings",
+        "a": "v.is_enchanted_leggings ? 0.3"
+      },
+      "on_fire_color": {
+        "r": "v.is_enchanted_leggings ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_leggings",
+        "a": "v.is_enchanted_leggings ? 0.3"
+      },
+      "overlay_color": {
+        "r": "v.is_enchanted_leggings ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_leggings",
+        "a": "v.is_enchanted_leggings ? 0.3"
+      },
+      "ignore_lighting": true
+    }
+  }
+}

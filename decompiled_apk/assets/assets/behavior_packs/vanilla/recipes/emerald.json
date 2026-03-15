@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:emerald_block"}],"result":{"item":"minecraft:emerald","count":9},"key":{"#":{"item":"minecraft:emerald_block"}},"description":{"identifier":"minecraft:emerald"},"pattern":["#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.zb_3": {
+      "arrays": {
+        "textures": {
+          "array.zb_3": [
+            "texture.leather_3",
+            "texture.chainmail_3",
+            "texture.iron_3",
+            "texture.diamond_3",
+            "texture.gold_3",
+            "texture.gold_3",
+            "texture.gold_3",
+            "texture.netherite_3"
+          ]
+        }
+      },
+      "geometry": "Geometry.zb_3",
+      "materials": [
+        {
+          "*": "Material.armor"
+        }
+      ],
+      "textures": [
+        "array.zb_3[query.armor_texture_slot(3)]"
+      ],
+      "color": {
+        "r": "q.armor_color_slot(3, 0)",
+        "g": "q.armor_color_slot(3, 1)",
+        "b": "q.armor_color_slot(3, 2)",
+        "a": "q.armor_color_slot(3, 3)"
+      },
+      "is_hurt_color": {
+        "r": "v.is_enchanted_boots ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_boots",
+        "a": "v.is_enchanted_boots ? 0.3"
+      },
+      "on_fire_color": {
+        "r": "v.is_enchanted_boots ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_boots",
+        "a": "v.is_enchanted_boots ? 0.3"
+      },
+      "overlay_color": {
+        "r": "v.is_enchanted_boots ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_boots",
+        "a": "v.is_enchanted_boots ? 0.3"
+      },
+      "ignore_lighting": true
+    }
+  }
+}

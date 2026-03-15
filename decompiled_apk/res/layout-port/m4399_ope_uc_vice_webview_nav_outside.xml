@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m4399_navigation_bar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height_uc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/m4399_nav_return" android:src="@drawable/m4399_ope_support_ic_left_arrow" style="@style/m4399.Nav.Icon" />
+        <ImageView android:id="@id/m4399_nav_close" android:background="@drawable/m4399_ope_support_nav_icon_bg" android:visibility="gone" android:src="@drawable/m4399_ope_support_ic_close" android:adjustViewBounds="true" style="@style/m4399.Nav.Icon.Close" />
+        <TextView android:id="@id/m4399_nav_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/m4399.Nav.Title" />
+        <ViewStub android:id="@id/m4399_nav_tools_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" />
+    </LinearLayout>
+    <View android:background="@color/m4399_color_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

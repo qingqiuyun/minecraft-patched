@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:cactus"}],"input":"minecraft:cactus","description":{"identifier":"minecraft:furnace_cactus"},"output":"minecraft:dye:2","tags":["furnace"]},"format_version":"1.20.10"}

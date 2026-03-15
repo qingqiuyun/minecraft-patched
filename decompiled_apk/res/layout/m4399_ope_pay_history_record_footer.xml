@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#66000000" android:gravity="center" android:layout_gravity="center" android:background="@color/m4399_ope_color_page_bg" android:paddingTop="12.0dip" android:paddingBottom="@dimen/m4399_ope_pay_container_py" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/m4399_ope_pay_history_hint_order_time" android:includeFontPadding="false" />
+</FrameLayout>

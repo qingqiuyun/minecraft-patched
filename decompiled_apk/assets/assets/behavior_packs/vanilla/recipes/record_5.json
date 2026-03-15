@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:disc_fragment_5"}],"priority":1,"result":{"item":"minecraft:record_5","count":1},"key":{"A":{"item":"minecraft:disc_fragment_5"}},"description":{"identifier":"minecraft:record_5"},"pattern":["AAA","AAA","AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

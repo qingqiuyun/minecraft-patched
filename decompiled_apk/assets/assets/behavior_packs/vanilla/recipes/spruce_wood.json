@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:spruce_log"}],"pattern":["##","##"],"result":{"item":"minecraft:spruce_wood","count":3},"key":{"#":{"item":"minecraft:spruce_log"}},"description":{"identifier":"minecraft:spruce_wood"},"group":"wood","tags":["crafting_table"]},"format_version":"1.20.10"}

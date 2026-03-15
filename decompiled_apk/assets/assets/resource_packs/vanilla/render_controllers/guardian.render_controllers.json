@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.guardian":{"materials":[{"*":"query.is_ghost ? Material.ghost : Material.default"}],"geometry":"Geometry.default","textures":["query.is_elder ? Texture.elder : Texture.default"]}},"format_version":"1.10.0"}

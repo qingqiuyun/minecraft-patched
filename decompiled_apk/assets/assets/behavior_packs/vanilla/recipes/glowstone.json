@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:glowstone_dust"}],"result":{"item":"minecraft:glowstone"},"key":{"#":{"item":"minecraft:glowstone_dust"}},"description":{"identifier":"minecraft:glowstone"},"pattern":["##","##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

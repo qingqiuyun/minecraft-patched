@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"result":{"item":"minecraft:fire_charge","count":3},"description":{"identifier":"minecraft:FireCharge_blaze_powder_coal_sulphur_recipeId"},"ingredients":[{"item":"minecraft:blaze_powder"},{"item":"minecraft:charcoal"},{"item":"minecraft:gunpowder"}],"tags":["crafting_table"]},"format_version":"1.12"}

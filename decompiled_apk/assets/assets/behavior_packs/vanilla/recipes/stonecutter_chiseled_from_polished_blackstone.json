@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:polished_blackstone"}],"priority":2,"result":{"item":"minecraft:chiseled_polished_blackstone","count":1},"description":{"identifier":"minecraft:stonecutter_chiseled_from_polished_blackstone"},"ingredients":[{"item":"minecraft:polished_blackstone"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

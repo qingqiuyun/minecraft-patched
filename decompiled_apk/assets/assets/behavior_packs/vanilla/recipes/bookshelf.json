@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:book"}],"priority":-1,"result":{"item":"bookshelf","count":1},"key":{"A":{"tag":"minecraft:planks"},"B":{"item":"book"}},"description":{"identifier":"minecraft:Bookshelf_woodplanks_recipeId"},"pattern":["AAA","BBB","AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

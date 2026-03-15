@@ -1,0 +1,347 @@
+{
+  "namespace": "potion_splash",
+  "display_splash_slots_recipe_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "controls": [
+      {
+        "0_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 0,
+          "$name": "potion_bottle_splash_heal",
+          "$placeholder": "potion.heal",
+          "$tag": "Instant Health instant health Potion Of Healing potion of healing Kesehatan Instan kesehatan instan Ramuan Penyembuhan ramuan penyembuhan Salud Instantánea salud instantánea Poción De Curación poción de curación"
+        }
+      },
+      {
+        "0_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_heal",
+          "$normal_potion_name_text": "potion.heal.name",
+          "$name": "potion_bottle_splash_heal",
+          "$potion_name": "potion.heal.splash.name",
+          "$exclude_extend": true,
+          "$tag": "Instant Health instant health Potion Of Healing potion of healing Kesehatan Instan kesehatan instan Ramuan Penyembuhan ramuan penyembuhan Salud Instantánea salud instantánea Poción De Curación poción de curación"
+        }
+      },
+      {
+        "1_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 1,
+          "$name": "potion_bottle_splash_fireResistance",
+          "$placeholder": "potion.fireResistance",
+          "$tag": "Potion Of Fire Resistance potion of fire Resistance Ramuan Ketahanan Api ramuan ketahanan api Poción Ignífuga poción ignífuga Resistente Al Fuego resistente al fuego"
+        }
+      },
+      {
+        "1_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_fireResistance",
+          "$normal_potion_name_text": "potion.fireResistance.name",
+          "$name": "potion_bottle_splash_fireResistance",
+          "$potion_name": "potion.fireResistance.splash.name",
+          "$tag": "Potion Of Fire Resistance potion of fire Resistance Ramuan Ketahanan Api ramuan ketahanan api Poción Ignífuga poción ignífuga Resistente Al Fuego resistente al fuego",
+          "$exclude_level2": true
+        }
+      },
+      {
+        "2_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 2,
+          "$name": "potion_bottle_splash_regeneration",
+          "$placeholder": "potion.regeneration",
+          "$tag": "Potion Of Regeneration potion of regeneration Ramuan Regenerasi ramuan regenerasi Poción De Regeneración poción de regeneración"
+        }
+      },
+      {
+        "2_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_regeneration",
+          "$normal_potion_name_text": "potion.regeneration.name",
+          "$name": "potion_bottle_splash_regeneration",
+          "$potion_name": "potion.regeneration.splash.name",
+          "$tag": "Potion Of Regeneration potion of regeneration Ramuan Regenerasi ramuan regenerasi Poción De Regeneración poción de regeneración"
+        }
+      },
+      {
+        "3_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 3,
+          "$name": "potion_bottle_splash_nightVision",
+          "$placeholder": "potion.nightVision",
+          "$tag": "Potion Of Night Vision potion of night vision Ramuan Penglihatan Malam ramuan penglihatan malam Poción De Visión Nocturna poción de visión nocturna"
+        }
+      },
+      {
+        "3_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_nightVision",
+          "$normal_potion_name_text": "potion.nightVision.name",
+          "$name": "potion_bottle_splash_nightVision",
+          "$potion_name": "potion.nightVision.splash.name",
+          "$tag": "Potion Of Night Vision potion of night vision Ramuan Penglihatan Malam ramuan penglihatan malam Poción De Visión Nocturna poción de visión nocturna",
+          "$exclude_level2": true
+        }
+      },
+      {
+        "4_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 4,
+          "$name": "potion_bottle_splash_invisibility",
+          "$placeholder": "potion.invisibility",
+          "$tag": "Potion Of Invisibility potion of invisibility Ramuan Menghilang ramuan menghilang Kemampuan kemampuan Poción De Invisibilidad poción de invisibilidad"
+        }
+      },
+      {
+        "4_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_invisibility",
+          "$normal_potion_name_text": "potion.invisibility.name",
+          "$name": "potion_bottle_splash_invisibility",
+          "$potion_name": "potion.invisibility.splash.name",
+          "$tag": "Potion Of Invisibility potion of invisibility Ramuan Menghilang ramuan menghilang Kemampuan kemampuan Poción De Invisibilidad poción de invisibilidad",
+          "$exclude_level2": true
+        }
+      },
+      {
+        "5_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 5,
+          "$name": "potion_bottle_splash_jump",
+          "$placeholder": "potion.jump",
+          "$tag": "Jump Boost jump boost Potion Of Leaping potion of leaping Ramuan Lompatan ramuan lompatan Meningkatkan meningkatkan impulso en salto Impulso En Salto Poción De Salto poción de salto"
+        }
+      },
+      {
+        "5_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_jump",
+          "$normal_potion_name_text": "potion.jump.name",
+          "$name": "potion_bottle_splash_jump",
+          "$potion_name": "potion.jump.splash.name",
+          "$tag": "Jump Boost jump boost Potion Of Leaping potion of leaping Ramuan Lompatan ramuan lompatan Meningkatkan meningkatkan impulso en salto Impulso En Salto Poción De Salto poción de salto"
+        }
+      },
+      {
+        "6_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 6,
+          "$name": "potion_bottle_splash_moveSpeed",
+          "$placeholder": "potion.moveSpeed",
+          "$tag": "Speed speed Potion Of Swiftness potion of swiftness Ramuan Kecepatan ramuan kecepatan Velocidad velocidad Poción De Rapidez poción de rapidez"
+        }
+      },
+      {
+        "6_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_moveSpeed",
+          "$normal_potion_name_text": "potion.moveSpeed.name",
+          "$name": "potion_bottle_splash_moveSpeed",
+          "$potion_name": "potion.moveSpeed.splash.name",
+          "$tag": "Speed speed Potion Of Swiftness potion of swiftness Ramuan Kecepatan ramuan kecepatan Velocidad velocidad Poción De Rapidez poción de rapidez"
+        }
+      },
+      {
+        "7_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 7,
+          "$name": "potion_bottle_splash_moveSlowdown",
+          "$placeholder": "potion.moveSlowdown",
+          "$tag": "Potion Of Slowness potion of slowness Ramuan Kelambatan ramuan kelambatan Poción De Lentitud poción de lentitud"
+        }
+      },
+      {
+        "7_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_moveSlowdown",
+          "$normal_potion_name_text": "potion.moveSlowdown.name",
+          "$name": "potion_bottle_splash_moveSlowdown",
+          "$potion_name": "potion.moveSlowdown.splash.name",
+          "$tag": "Potion Of Slowness potion of slowness Ramuan Kelambatan ramuan kelambatan Poción De Lentitud poción de lentitud"
+        }
+      },
+      {
+        "8_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 8,
+          "$name": "potion_bottle_splash_waterBreathing",
+          "$placeholder": "potion.waterBreathing",
+          "$tag": "Potion Of Water Breathing potion of water breathing Ramuan Pernapasan Air ramuan pernapasan air Poción De Respiración Acuática poción de respiración acuática"
+        }
+      },
+      {
+        "8_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_waterBreathing",
+          "$normal_potion_name_text": "potion.waterBreathing.name",
+          "$name": "potion_bottle_splash_waterBreathing",
+          "$potion_name": "potion.waterBreathing.splash.name",
+          "$tag": "Potion Of Water Breathing potion of water breathing Ramuan Pernapasan Air ramuan pernapasan air Poción De Respiración Acuática poción de respiración acuática",
+          "$exclude_level2": true
+        }
+      },
+      {
+        "9_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 9,
+          "$name": "potion_bottle_splash_poison",
+          "$placeholder": "potion.poison",
+          "$tag": "Potion Of Poison potion of poison Ramuan Racun ramuan racun Poción De Veneno poción de veneno"
+        }
+      },
+      {
+        "9_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_poison",
+          "$normal_potion_name_text": "potion.poison.name",
+          "$name": "potion_bottle_splash_poison",
+          "$potion_name": "potion.poison.splash.name",
+          "$tag": "Potion Of Poison potion of poison Ramuan Racun ramuan racun Poción De Veneno poción de veneno"
+        }
+      },
+      {
+        "10_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 10,
+          "$name": "potion_bottle_splash_harm",
+          "$placeholder": "potion.harm",
+          "$tag": "Instant Damage instant damage Potion Of Harming potion of harming Kerusakan Instan kerusakan instan Ramuan Celaka ramuan celaka Daño Instantáneo daño instantáneo Poción De Daño poción de daño"
+        }
+      },
+      {
+        "10_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_harm",
+          "$normal_potion_name_text": "potion.harm.name",
+          "$name": "potion_bottle_splash_harm",
+          "$potion_name": "potion.harm.splash.name",
+          "$tag": "Instant Damage instant damage Potion Of Harming potion of harming Kerusakan Instan kerusakan instan Ramuan Celaka ramuan celaka Daño Instantáneo daño instantáneo Poción De Daño poción de daño",
+          "$exclude_extend": true
+        }
+      },
+      {
+        "11_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 11,
+          "$name": "potion_bottle_splash_damageBoost",
+          "$placeholder": "potion.damageBoost",
+          "$tag": "Potion Of Strength potion of strength Tenaga tenaga Ramuan Kekuatan ramuan kekuatan Poción De Fuerza poción de fuerza"
+        }
+      },
+      {
+        "11_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_damageBoost",
+          "$normal_potion_name_text": "potion.damageBoost.name",
+          "$name": "potion_bottle_splash_damageBoost",
+          "$potion_name": "potion.damageBoost.splash.name",
+          "$tag": "Potion Of Strength potion of strength Tenaga tenaga Ramuan Kekuatan ramuan kekuatan Poción De Fuerza poción de fuerza"
+        }
+      },
+      {
+        "12_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 12,
+          "$name": "potion_bottle_splash_weakness",
+          "$placeholder": "potion.weakness",
+          "$tag": "Potion Of Weakness potion of weakness Ramuan Kelemahan ramuan kelemahan Poción De Debilidad poción de debilidad"
+        }
+      },
+      {
+        "12_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_weakness",
+          "$normal_potion_name_text": "potion.weakness.name",
+          "$name": "potion_bottle_splash_weakness",
+          "$potion_name": "potion.weakness.splash.name",
+          "$tag": "Potion Of Weakness potion of weakness Ramuan Kelemahan ramuan kelemahan Poción De Debilidad poción de debilidad"
+        }
+      },
+      {
+        "13_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 13,
+          "$name": "potion_bottle_splash_turtleMaster",
+          "$placeholder": "potion.turtleMaster2",
+          "$tag": "Slowness slowness Resistance resistance Potion Of The Turtle Master potion of the turtle master Kelambatan kelambatan Ketahanan ketahanan Ramuan Master Kura-Kura ramuan master kura-kura Lentitud lentitud Resistencia resistencia Poción De La Tortuga Maestra poción de la tortuga maestra"
+        }
+      },
+      {
+        "13_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_turtleMaster",
+          "$normal_potion_name_text": "potion.turtleMaster.name",
+          "$name": "potion_bottle_splash_turtleMaster",
+          "$potion_name": "potion.turtleMaster.splash.name",
+          "$tag": "Slowness slowness Resistance resistance Potion Of The Turtle Master potion of the turtle master Kelambatan kelambatan Ketahanan ketahanan Ramuan Master Kura-Kura ramuan master kura-kura Lentitud lentitud Resistencia resistencia Poción De La Tortuga Maestra poción de la tortuga maestra"
+        }
+      },
+      {
+        "14_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 14,
+          "$name": "potion_bottle_splash_slowFall",
+          "$placeholder": "potion.slowFalling",
+          "$tag": "Potion Of Slow Falling potion of slow falling Ramuan Jatuh Perlahan ramuan jatuh perlahan Poción De Caída Lenta poción de caída lenta"
+        }
+      },
+      {
+        "14_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_slowFall",
+          "$normal_potion_name_text": "potion.slowFalling.name",
+          "$name": "potion_bottle_splash_slowFall",
+          "$potion_name": "potion.slowFalling.splash.name",
+          "$tag": "Potion Of Slow Falling potion of slow falling Ramuan Jatuh Perlahan ramuan jatuh perlahan Poción De Caída Lenta poción de caída lenta",
+          "$exclude_level2": true
+        }
+      },
+      {
+        "15_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 15,
+          "$name": "potion_bottle_splash_windCharged",
+          "$placeholder": "potion.windCharged",
+          "$tag": "Wind Charged wind charged Potion Of Wind Charging potion of wind charging Bertenaga Angin bertenaga angin Ramuan Pengisian Tenaga ramuan pengisian tenaga Poción De Carga De Viento poción de carga de viento"
+        }
+      },
+      {
+        "15_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_windCharged",
+          "$normal_potion_name_text": "potion.windCharged.name",
+          "$name": "potion_bottle_splash_windCharged",
+          "$potion_name": "potion.windCharged.splash.name",
+          "$tag": "Wind Charged wind charged Potion Of Wind Charging potion of wind charging Bertenaga Angin bertenaga angin Ramuan Pengisian Tenaga ramuan pengisian tenaga Poción De Carga De Viento poción de carga de viento",
+          "$exclude_level2": true,
+          "$exclude_extend": true
+        }
+      },
+      {
+        "16_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 16,
+          "$name": "potion_bottle_splash_weaving",
+          "$placeholder": "potion.weaving",
+          "$tag": "Potion Of Weaving potion of weaving Menenun menenun Ramuan Tenun ramuan tenun Tejer tejer Poción De Tejido poción de tejido"
+        }
+      },
+      {
+        "16_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_weaving",
+          "$normal_potion_name_text": "potion.weaving.name",
+          "$name": "potion_bottle_splash_weaving",
+          "$potion_name": "potion.weaving.splash.name",
+          "$tag": "Potion Of Weaving potion of weaving Menenun menenun Ramuan Tenun ramuan tenun Tejer tejer Poción De Tejido poción de tejido",
+          "$exclude_level2": true,
+          "$exclude_extend": true
+        }
+      },
+      {
+        "17_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 17,
+          "$name": "potion_bottle_splash_oozing",
+          "$placeholder": "potion.oozing",
+          "$tag": "Potion Of Oozing potion of oozing Ramuan Mengalir ramuan mengalir Poción De Supuración poción de supuración"
+        }
+      },
+      {
+        "17_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_oozing",
+          "$normal_potion_name_text": "potion.oozing.name",
+          "$name": "potion_bottle_splash_oozing",
+          "$potion_name": "potion.oozing.splash.name",
+          "$tag": "Potion Of Oozing potion of oozing Ramuan Mengalir ramuan mengalir Poción De Supuración poción de supuración",
+          "$exclude_level2": true,
+          "$exclude_extend": true
+        }
+      },
+      {
+        "18_0@bt_brewing_guide.potion_toggle_splash": {
+          "$toggle_group_forced_index": 18,
+          "$name": "potion_bottle_splash_infested",
+          "$placeholder": "potion.infested",
+          "$tag": "Potion Of Infestation potion of Infestation Ramuan Serangan Invasi ramuan serangan invasi Poción De Infestación poción de infestación Berisi berisi Infested infested Infestado infestado"
+        }
+      },
+      {
+        "18_1@bt_brewing_guide.potion_info_splash": {
+          "$normal_potion_name": "potion_bottle_infested",
+          "$normal_potion_name_text": "potion.infested.name",
+          "$name": "potion_bottle_splash_infested",
+          "$potion_name": "potion.infested.splash.name",
+          "$tag": "Potion Of Infestation potion of Infestation Ramuan Serangan Invasi ramuan serangan invasi Poción De Infestación poción de infestación Berisi berisi Infested infested Infestado infestado",
+          "$exclude_level2": true,
+          "$exclude_extend": true
+        }
+      }
+    ]
+  }
+}

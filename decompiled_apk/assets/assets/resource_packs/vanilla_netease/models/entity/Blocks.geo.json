@@ -1,0 +1,436 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.blocks",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 0, 0],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_up",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "up",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 16, 0],
+							"size": [16, 0, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_down",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "down",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 0, 0],
+							"size": [16, 0, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_north",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "north",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 0, 0],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_south",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "south",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 0, 16],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_west",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "west",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [0, 0, 0],
+							"size": [0, 16, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_east",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "east",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 0, 0],
+							"size": [0, 16, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_shulker_box",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "base",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-16, 0, 0], "size": [16, 8, 16], "uv": [0, 28]}
+					]
+				},
+				{
+					"name": "lid",
+					"parent": "base",
+					"pivot": [-10, 0, 9],
+					"cubes": [
+						{"origin": [-16, 4, 0], "size": [16, 12, 16], "uv": [0, 0]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.blocks_chest",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "base",
+					"parent": "rightitem",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-14, 0, 0], "size": [14, 10, 14], "uv": [0, 19]},
+						{"origin": [-8, 8, -1], "size": [2, 4, 1], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "lid",
+					"parent": "base",
+					"pivot": [-10, 1, 9],
+					"cubes": [
+						{"origin": [-14, 10, 0], "size": [14, 5, 14], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

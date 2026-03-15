@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"name":"minecraft:trident","type":"item","weight":5}],"rolls":1},{"entries":[{"name":"minecraft:nautilus_shell","type":"item","weight":5}],"conditions":[{"chance":0.08,"condition":"random_chance"}],"rolls":1}]}

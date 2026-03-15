@@ -1,0 +1,253 @@
+{
+  "namespace": "Quasar_button",
+  "image_content": {
+    "type": "image",
+    "texture": "$button_bg_texture",
+    "alpha": "$button_bg_alpha",
+    "color": "$button_bg_color",
+    "size": "$button_bg_size",
+    "controls": [
+      {
+        "icon": {
+          "type": "image",
+          "texture": "$button_icon_texture",
+          "color": "$button_icon_color"
+        }
+      }
+    ]
+  },
+  "text_content": {
+    "type": "image",
+    "texture": "$button_bg_texture",
+    "alpha": "$button_bg_alpha",
+    "color": "$button_bg_color",
+    "size": "$button_bg_size",
+    "controls": [
+      {
+        "text": {
+          "type": "label",
+          "text": "$button_text",
+          "color": "$button_text_color",
+          "font_type": "$global_font_type",
+          "font_scale_factor": "$font_size",
+          "text_alignment": "$text_alignment"
+        }
+      }
+    ]
+  },
+  "custom_content": {
+    "type": "image",
+    "texture": "$button_bg_texture",
+    "alpha": "$button_bg_alpha",
+    "color": "$button_bg_color",
+    "size": "$button_bg_size",
+    "$custom_control_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$custom_control|default": "common.empty_panel",
+    "controls": [
+      {
+        "custom@$custom_control": {
+          "size": "$custom_control_size"
+        }
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "ignored": "(not $requires_shadow)",
+          "texture": "$bloom",
+          // "alpha": "$global_bloom_alpha",
+          "alpha": 0.16,
+          "color": "$shadow",
+          "layer": -1024,
+          "size": [
+            "100%+10px",
+            "100%+10px"
+          ]
+        }
+      }
+    ]
+  },
+  "base_button@common.button": {
+    "$button_content|default": "Quasar_button.custom_content",
+    "size": "$button_size",
+    "$button_size|default": [
+      20,
+      20
+    ],
+    "$default_bg_texture|default": "$fk",
+    "$hover_bg_texture|default": "$fk",
+    "$pressed_bg_texture|default": "$fk",
+    "$locked_bg_texture|default": "$fk",
+    "$default_bg_color|default": "$primary",
+    "$hover_bg_color|default": "$onsecondary",
+    "$pressed_bg_color|default": "$onsecondary",
+    "$locked_bg_color|default": "$outline",
+    "$default_bg_alpha|default": 1,
+    "$hover_bg_alpha|default": 1,
+    "$pressed_bg_alpha|default": 1,
+    "$locked_bg_alpha|default": 1,
+    "$requires_shadow|default": false,
+    "$default_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$hover_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$pressed_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$locked_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$default_state|default": false,
+    "$hover_state|default": false,
+    "$pressed_state|default": false,
+    "$locked_state|default": false,
+    "default_control": "default",
+    "hover_control": "hover",
+    "pressed_control": "pressed",
+    "locked_control": "locked",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "focused"
+      }
+    ],
+    "controls": [
+      {
+        "default@$button_content": {
+          "$button_bg_texture": "$default_bg_texture",
+          "$button_bg_color": "$default_bg_color",
+          "$button_bg_alpha": "$default_bg_alpha",
+          "$button_bg_size": "$default_bg_size",
+          "$default_state": true
+        }
+      },
+      {
+        "hover@$button_content": {
+          "$button_bg_texture": "$hover_bg_texture",
+          "$button_bg_color": "$hover_bg_color",
+          "$button_bg_alpha": "$hover_bg_alpha",
+          "$button_bg_size": "$hover_bg_size",
+          "$hover_state": true
+        }
+      },
+      {
+        "pressed@$button_content": {
+          "$button_bg_texture": "$pressed_bg_texture",
+          "$button_bg_color": "$pressed_bg_color",
+          "$button_bg_alpha": "$pressed_bg_alpha",
+          "$button_bg_size": "$pressed_bg_size",
+          "$pressed_state": true
+        }
+      },
+      {
+        "locked@$button_content": {
+          "$button_bg_texture": "$locked_bg_texture",
+          "$button_bg_color": "$locked_bg_color",
+          "$button_bg_alpha": "$locked_bg_alpha",
+          "$button_bg_size": "$locked_bg_size",
+          "$locked_state": true
+        }
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "ignored": "(not $requires_shadow)",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "layer": -400,
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      }
+    ]
+  },
+  "exit_button_content": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "offset": [ 0, 1 ],
+    "controls": [
+      {
+        "padding": {
+          "type": "panel",
+          "size": [ 2, 0 ]
+        }
+      },
+      {
+        "icon": {
+          "type": "image",
+          "texture": "textures/Quasar/cross",
+          "color": "$primary",
+          "size": [
+            "100%y",
+            14
+          ]
+        }
+      },
+      {
+        "label_panel": {
+          "type": "panel",
+          "size": [
+            "fill",
+            16
+          ],
+          "controls": [
+            {
+              "label": {
+                "type": "label",
+                "text": "Exit",
+                "color": "$onprimarycontainer",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "font_scale_factor": 1.4,
+                "font_type": "$global_font_type",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "exit_button@Quasar_button.base_button": {
+    "$pressed_button_name": "button.menu_exit",
+    "$custom_control": "Quasar_button.exit_button_content",
+    "$default_bg_texture": "$16x",
+    "$hover_bg_texture": "$16x",
+    "$pressed_bg_texture": "$16x",
+    "$locked_bg_texture": "$16x",
+    "$default_bg_color": "$background",
+    "$hover_bg_color": "$background",
+    "$pressed_bg_color": "$background",
+    "$locked_bg_color": "$outline",
+    "$default_bg_alpha": 0.4,
+    "$hover_bg_alpha": 0.8,
+    "$pressed_bg_alpha": 0.8,
+    "$locked_bg_alpha": 0.6,
+    "$requires_shadow": true,
+    "size": [ 40, 16 ]
+  }
+}

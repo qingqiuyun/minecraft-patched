@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.fox":{"materials":[{"*":"Material.default"}],"arrays":{"textures":{"Array.skins":["Texture.red","Texture.arctic"]}},"part_visibility":[{"leg*":"!query.is_sleeping"},{"head":"!query.is_sleeping"},{"head_sleeping":"query.is_sleeping"}],"geometry":"Geometry.default","textures":["Array.skins[query.variant]"]}},"format_version":"1.8.0"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"daylight_detector","count":1},"key":{"A":{"item":"glass"},"C":{"item":"warped_slab"},"B":{"item":"quartz"}},"description":{"identifier":"minecraft:daylight_detector_from_warped_slab"},"pattern":["AAA","BBB","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

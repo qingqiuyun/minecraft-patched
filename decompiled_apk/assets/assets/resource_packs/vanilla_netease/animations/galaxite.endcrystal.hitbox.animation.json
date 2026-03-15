@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.galaxite.endcrystal.hitbox": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"range": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.0": [0, 360, 0]
+					},
+					"scale": [2.3, 1, 2.3]
+				}
+			}
+		}
+	}
+}

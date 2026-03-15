@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ender_crystal.move": {
+			"loop": true,
+			"blend_weight": "0.5",
+			"bones": {
+				"bone2": {
+					"rotation": ["math.sin(query.anim_time * 10) * 360", "math.sin(query.anim_time * 10) * 360", 0]
+				},
+				"bone3": {
+					"rotation": ["math.cos(query.anim_time * 10) * 360", "math.cos(query.anim_time * 10) * 360", 0]
+				},
+				"bone4": {
+					"rotation": ["math.cos(query.anim_time * 5) * 360", "math.cos(query.anim_time * 5) * 360", 0]
+				}
+			}
+		}
+	}
+}

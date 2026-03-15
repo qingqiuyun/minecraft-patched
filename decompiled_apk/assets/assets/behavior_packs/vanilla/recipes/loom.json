@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:string"}],"priority":-1,"result":{"item":"loom"},"key":{"A":{"item":"minecraft:string"},"B":{"tag":"minecraft:planks"}},"description":{"identifier":"minecraft:loom"},"pattern":["AA","BB"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m4399_item_view_container" android:background="@drawable/m4399_ope_support_item_bg" android:paddingLeft="@dimen/m4399_ope_pay_container_py" android:paddingRight="@dimen/m4399_ope_pay_container_py" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <cn.m4399.operate.support.network.NetworkImageView android:id="@id/m4399_ope_pay_channel_ico" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#de000000" android:id="@id/m4399_ope_pay_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:includeFontPadding="false" />
+        <FrameLayout android:id="@id/m4399_ope_pay_channel_label_container" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="1.0" android:layout_marginEnd="6.0dip" />
+        <ImageView android:id="@id/m4399_ope_pay_channel_radio" android:duplicateParentState="true" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/m4399_ope_pay_channel_radio" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </LinearLayout>
+</FrameLayout>

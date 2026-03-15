@@ -1,0 +1,801 @@
+{
+  "namespace": "Quasar_toggle",
+  "base_toggle@common.toggle": {
+    "size": [
+      20,
+      20
+    ],
+    "propagate_alpha": true,
+    "alpha": "@Quasar_toggle.hover_bg_alpha_anim",
+    "$icon_texture|default": "textures/Quasar/icon",
+    "$unchecked_toggle_icon_color|default": "white",
+    "$unchecked_hover_toggle_icon_color|default": "white",
+    "$checked_toggle_icon_color|default": "white",
+    "$checked_hover_toggle_icon_color|default": "white",
+    "$unchecked_toggle_icon_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$unchecked_hover_toggle_icon_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$checked_toggle_icon_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$checked_hover_toggle_icon_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$unchecked_toggle_bg_texture|default": "$16x",
+    "$checked_toggle_bg_texture|default": "$16x",
+    "$unchecked_hover_toggle_bg_texture|default": "$16x",
+    "$checked_hover_toggle_bg_texture|default": "$16x",
+    "$unchecked_toggle_bg_alpha|default": 0,
+    "$checked_toggle_bg_alpha|default": 1,
+    "$unchecked_hover_toggle_bg_alpha|default": 0,
+    "$checked_hover_toggle_bg_alpha|default": 1,
+    "$checked_toggle_bg_color|default": "$secondary",
+    "$unchecked_toggle_bg_color|default": "$tertiary",
+    "$checked_hover_toggle_bg_color|default": "$secondary",
+    "$unchecked_hover_toggle_bg_color|default": "$secondary",
+    "$unchecked_toggle_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$checked_toggle_bg_size|default": "@Quasar_toggle.default_bg_size_anim",
+    "$checked_hover_toggle_bg_size|default": "@Quasar_toggle.default_bg_size_anim",
+    "$unchecked_hover_toggle_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$is_checked_state|default": false,
+    "$is_hover_state|default": false,
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.menu_select",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "button.menu_ok",
+        "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.controller_back",
+        "mapping_type": "focused",
+        "ignored": "(not $allow_controller_back_button_mapping)"
+      },
+      {
+        "ignored": "(not $enable_directional_toggling)",
+        "from_button_id": "button.menu_left",
+        "to_button_id": "$toggle_off_button",
+        "mapping_type": "pressed",
+        "input_mode_condition": "gamepad_and_not_gaze"
+      },
+      {
+        "ignored": "(not $enable_directional_toggling)",
+        "from_button_id": "button.menu_right",
+        "to_button_id": "$toggle_on_button",
+        "mapping_type": "pressed",
+        "input_mode_condition": "gamepad_and_not_gaze"
+      }
+    ],
+    "controls": [
+      {
+        "unchecked@toggle_image": {
+          "$toggle_bg_texture": "$unchecked_toggle_bg_texture",
+          "$toggle_bg_alpha": "$unchecked_toggle_bg_alpha",
+          "$toggle_bg_color": "$unchecked_toggle_bg_color",
+          "$toggle_bg_size": "$unchecked_toggle_bg_size",
+          "$toggle_icon_size": "$unchecked_toggle_icon_size",
+          "$toggle_icon_color": "$unchecked_toggle_icon_color",
+          "$toggle_icon_texture": "$icon_texture"
+        }
+      },
+      {
+        "checked@toggle_image": {
+          "$is_checked_state": true,
+          "$toggle_bg_texture": "$checked_toggle_bg_texture",
+          "$toggle_bg_alpha": "$checked_toggle_bg_alpha",
+          "$toggle_bg_color": "$checked_toggle_bg_color",
+          "$toggle_bg_size": "$checked_toggle_bg_size",
+          "$toggle_icon_size": "$checked_toggle_icon_size",
+          "$toggle_icon_color": "$checked_toggle_icon_color",
+          "$toggle_icon_texture": "$icon_texture"
+        }
+      },
+      {
+        "unchecked_hover@toggle_image": {
+          "$is_hover_state": true,
+          "$toggle_bg_texture": "$unchecked_hover_toggle_bg_texture",
+          "$toggle_bg_alpha": "$unchecked_hover_toggle_bg_alpha",
+          "$toggle_bg_color": "$unchecked_hover_toggle_bg_color",
+          "$toggle_bg_size": "$unchecked_hover_toggle_bg_size",
+          "$toggle_icon_size": "$unchecked_toggle_icon_size",
+          "$toggle_icon_color": "$unchecked_hover_toggle_icon_color",
+          "$toggle_icon_texture": "$icon_texture"
+        }
+      },
+      {
+        "checked_hover@toggle_image": {
+          "$is_checked_state": true,
+          "$is_hover_state": true,
+          "animation_reset_name": "button.menu_select",
+          "$toggle_bg_texture": "$checked_hover_toggle_bg_texture",
+          "$toggle_bg_alpha": "$checked_hover_toggle_bg_alpha",
+          "$toggle_bg_color": "$checked_hover_toggle_bg_color",
+          "$toggle_bg_size": "$checked_hover_toggle_bg_size",
+          "$toggle_icon_size": "$checked_hover_toggle_icon_size",
+          "$toggle_icon_color": "$checked_hover_toggle_icon_color",
+          "$toggle_icon_texture": "$icon_texture"
+        }
+      }
+    ]
+  },
+  "toggle_image": {
+    "type": "image",
+    "texture": "$toggle_bg_texture",
+    "alpha": "$toggle_bg_alpha",
+    "color": "$toggle_bg_color",
+    "size": "$toggle_bg_size",
+    "controls": [
+      {
+        "icon@Quasar_toggle.toggle_icon": {}
+      }
+    ]
+  },
+  "toggle_icon": {
+    "type": "image",
+    "$toggle_icon_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$toggle_icon_color|default": "$primary",
+    "$toggle_icon_texture|default": "textures/Quasar/empty",
+    "size": "$toggle_icon_size",
+    "color": "$toggle_icon_color",
+    "texture": "$toggle_icon_texture"
+  },
+  "default_bg_size_anim": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      16,
+      16
+    ],
+    "to": [
+      "100%",
+      "100%"
+    ]
+  },
+  "hover_bg_alpha_anim": {
+    "anim_type": "alpha",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": 0,
+    "to": 0.6,
+    "reset_event": "button.menu_ok"
+  },
+  "toggle": {
+    "type": "input_panel",
+    "prevent_touch_input": true,
+    "size": [
+      32,
+      16
+    ],
+    /*"offset": [
+      30,
+      0
+    ],*/
+    "$unchecked_controls": "Quasar_toggle.switch_uncheck",
+    "$checked_controls": "Quasar_toggle.switch_check",
+    "$toggle_name": "toggle",
+    "$toggle_state_binding_name|default": "#toggle_state",
+    "controls": [
+      {
+        "toggle@common_toggles.light_ui_toggle": {
+          "size": [
+            "100%",
+            "100%"
+          ],
+          "$unchecked_control": "common.empty_panel",
+          "$checked_control": "common.empty_panel",
+          "$unchecked_hover_control": "common.empty_panel",
+          "$checked_hover_control": "common.empty_panel",
+          "$unchecked_locked_control": "common.empty_panel",
+          "$unchecked_locked_hover_control": "common.empty_panel",
+          "$checked_locked_control": "common.empty_panel",
+          "$checked_locked_hover_control": "common.empty_panel",
+          "controls": [
+            {
+              "$toggle_view_binding_name@$template_toggle": {}
+            },
+            {
+              "toggle_check": {
+                "type": "collection_panel",
+                "factory": {
+                  "name": "toggle_check",
+                  "control_name": "$checked_controls",
+                  "max_children_size": 1
+                },
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "$toggle_view_binding_name",
+                    "source_property_name": "#toggle_state",
+                    "target_property_name": "#length"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(1 * #length)",
+                    "target_property_name": "#collection_length"
+                  }
+                ]
+              }
+            },
+            {
+              "toggle_uncheck": {
+                "type": "collection_panel",
+                "factory": {
+                  "name": "toggle_uncheck",
+                  "control_name": "$unchecked_controls",
+                  "max_children_size": 1
+                },
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "$toggle_view_binding_name",
+                    "source_property_name": "#toggle_state",
+                    "target_property_name": "#length"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(1 * (not #length))",
+                    "target_property_name": "#collection_length"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "toggle_type@common_toggles.light_ui_toggle": {
+    "size": [
+      32,
+      16
+    ],
+    "$toggle_state_binding_name|default": "#toggle_state",
+    "$unchecked_controls": "Quasar_toggle.switch_uncheck",
+    "$checked_controls": "Quasar_toggle.switch_check",
+    "$unchecked_control": "common.empty_panel",
+    "$checked_control": "common.empty_panel",
+    "$unchecked_hover_control": "common.empty_panel",
+    "$checked_hover_control": "common.empty_panel",
+    "$unchecked_locked_control": "common.empty_panel",
+    "$unchecked_locked_hover_control": "common.empty_panel",
+    "$checked_locked_control": "common.empty_panel",
+    "$checked_locked_hover_control": "common.empty_panel",
+    "controls": [
+      {
+        "$toggle_view_binding_name@$template_toggle": {}
+      },
+      {
+        "toggle_check": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "toggle_check",
+            "control_name": "$checked_controls",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$toggle_view_binding_name",
+              "source_property_name": "$toggle_state_binding_name",
+              "resolve_sibling_scope": true,
+              "target_property_name": "#length"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * #length)",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      },
+      {
+        "toggle_uncheck": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "toggle_uncheck",
+            "control_name": "$unchecked_controls",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$toggle_view_binding_name",
+              "source_property_name": "$toggle_state_binding_name",
+              "resolve_sibling_scope": true,
+              "target_property_name": "#length"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * (not #length))",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "switch_check": {
+    "type": "image",
+    "texture": "$16x",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "layer": 10,
+    "alpha": 1,
+    "anims": [
+      "@Quasar_toggle.check_anim"
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$toggle_view_binding_name",
+        "source_property_name": "$toggle_state_binding_name",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "circular": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "size": [
+            "100%y",
+            "80%"
+          ],
+          "anims": [
+            "@Quasar_toggle.circular_check_anim",
+            "@Quasar_toggle.circular_color_check_anim"
+          ],
+          "layer": 15,
+          "alpha": 1
+        }
+      },
+      {
+        "Decoration": {
+          "type": "image",
+          "texture": "$border",
+          "anims": [
+            "@Quasar_toggle.deco_check",
+            "@Quasar_toggle.deco_color_check"
+          ],
+          "size": [
+            "100%+1px",
+            "100%+1px"
+          ],
+          "layer": 255
+        }
+      }
+    ]
+  },
+  "switch_uncheck": {
+    "type": "image",
+    "texture": "$16x",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "layer": 10,
+    "alpha": 1,
+    "anims": [
+      "@Quasar_toggle.uncheck_anim"
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$toggle_view_binding_name",
+        "source_property_name": "(not $toggle_state_binding_name)",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "circular": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "size": [
+            "100%y",
+            "60%"
+          ],
+          "anims": [
+            "@Quasar_toggle.circular_uncheck_anim",
+            "@Quasar_toggle.circular_color_uncheck_anim"
+          ],
+          "layer": 15,
+          "alpha": 1
+        }
+      },
+      {
+        "Decoration": {
+          "type": "image",
+          "texture": "$border",
+          "anims": [
+            "@Quasar_toggle.deco_uncheck",
+            "@Quasar_toggle.deco_color_uncheck"
+          ],
+          "size": [
+            "100%+1px",
+            "100%+1px"
+          ],
+          "layer": 255
+        }
+      }
+    ]
+  },
+  "check_anim": {
+    "anim_type": "color",
+    "easing": "out_cubic",
+    "duration": 0.6,
+    "from": "$outline",
+    "to": "$primary"
+  },
+  "circular_check_anim": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 0.6,
+    "from": [
+      "-25%",
+      0
+    ],
+    "to": [
+      "25%",
+      0
+    ]
+  },
+  "uncheck_anim": {
+    "anim_type": "color",
+    "easing": "out_cubic",
+    "duration": 0.6,
+    "to": "$outline",
+    "from": "$primary"
+  },
+  "circular_uncheck_anim": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 0.6,
+    "to": [
+      "-25%",
+      0
+    ],
+    "from": [
+      "25%",
+      0
+    ]
+  },
+  "circular_color_check_anim": {
+    "anim_type": "color",
+    "duration": 0.6,
+    "easing": "out_cubic",
+    "from": "$surfacecontainerhighest",
+    "to": "$onprimary"
+  },
+  "circular_color_uncheck_anim": {
+    "anim_type": "color",
+    "duration": 0.6,
+    "easing": "out_cubic",
+    "to": "$surfacecontainerhighest",
+    "from": "$onprimary"
+  },
+  "deco_uncheck": {
+    "anim_type": "alpha",
+    "duration": 0.6,
+    "easing": "out_cubic",
+    "from": 0,
+    "to": 1
+  },
+  "deco_color_uncheck": {
+    "anim_type": "color",
+    "duration": 0.6,
+    "easing": "out_cubic",
+    "to": "$surfacecontainerhighest",
+    "from": "$primary"
+  },
+  "deco_color_check": {
+    "anim_type": "color",
+    "duration": 0.6,
+    "easing": "out_cubic",
+    "from": "$surfacecontainerhighest",
+    "to": "$primary"
+  },
+  "deco_check": {
+    "anim_type": "alpha",
+    "duration": 0.6,
+    "easing": "out_cubic",
+    "to": 0,
+    "from": 1
+  },
+  "navigation_drawer_check": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    /*"bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$toggle_view_binding_name",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],*/
+    "$bg_color|default": "$primary",
+    "$bg_check_anim|default": "@Quasar_toggle.adaptive_check_anim",
+    "controls": [
+      {
+        "bg_check": {
+          "type": "image",
+          "texture": "$16x",
+          "size": "$bg_check_anim",
+          "color": "$bg_color",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "content@$button_content": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      }
+    ]
+  },
+  "navigation_drawer_uncheck": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "$bg_color|default": "$primary",
+    "$bg_uncheck_anim|default": "@Quasar_toggle.adaptive_uncheck_anim",
+    /*"bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$toggle_view_binding_name",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+      }
+    ],*/
+    "controls": [
+      {
+        "bg_check": {
+          "type": "image",
+          "texture": "$16x",
+          "size": "$bg_uncheck_anim",
+          "color": "$bg_color",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "content@$button_content": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      }
+    ]
+  },
+  
+  "adaptive_check_anim": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [ 16, "100%" ],
+    "to": [ "100%", "100%" ]
+  },
+  "adaptive_uncheck_anim": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [ 16, "100%" ],
+    "from": [ "100%", "100%" ]
+  },
+  
+  "normal_toggle_uncheck": {
+    "type": "image",
+    "texture": "$toggle_texture",
+    "$toggle_texture": "$16x",
+    "color": "$toggle_uncheck_anim",
+    "size": [ "100%", "100%" ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$toggle_view_binding_name",
+        "source_property_name": "(not $toggle_state_binding_name)",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "custom@$custom_controls": {}
+      }
+    ]
+  },
+  "normal_toggle_check": {
+    "type": "image",
+    "texture": "$toggle_texture",
+    "$toggle_texture": "$16x",
+    "color": "$toggle_check_anim",
+    "size": [ "100%", "100%" ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$toggle_view_binding_name",
+        "source_property_name": "$toggle_state_binding_name",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "custom@$custom_controls": {}
+      }
+    ]
+  },
+
+
+
+
+
+  "animated_toggle_new": {
+    "type": "panel",
+    "size": [ 30, 30 ],
+
+    "$unchecked_control": "common.empty_panel",
+    "$checked_control": "common.empty_panel",
+    "$unchecked_hover_control": "common.empty_panel",
+    "$checked_hover_control": "common.empty_panel",
+    "$unchecked_locked_control": "common.empty_panel",
+    "$unchecked_locked_hover_control": "common.empty_panel",
+    "$checked_locked_control": "common.empty_panel",
+    "$checked_locked_hover_control": "common.empty_panel",
+
+
+    "$toggle_state_binding_name": "#toggle_state",
+    "$toggle_texture": "textures/Quasar/circle",
+    "$template_toggle": "common_toggles.light_template_toggle",
+    "$toggle_default_state|default": false,
+    
+    
+    "controls": [
+      {
+        "$toggle_view_binding_name@$template_toggle": {
+          "toggle_default_state": "$toggle_default_state",
+          "controls": [
+            {
+              "toggle_check": {
+                "type": "collection_panel",
+                "factory": {
+                  "name": "toggle_check",
+                  "control_name": "$checked_controls",
+                  "max_children_size": 1
+                },
+                "size": "$check_size",
+                "$check_size|default": [ "100%", "100%" ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "$toggle_view_binding_name",
+                    "source_property_name": "$toggle_state_binding_name",
+                    "resolve_sibling_scope": true,
+                    "target_property_name": "#length"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(1 * #length)",
+                    "target_property_name": "#collection_length"
+                  }
+                ]
+              }
+            },
+            {
+              "toggle_uncheck": {
+                "type": "collection_panel",
+                "factory": {
+                  "name": "toggle_uncheck",
+                  "control_name": "$unchecked_controls",
+                  "max_children_size": 1
+                },
+                "size": "$uncheck_size",
+                "$uncheck_size|default": [ "100%", "100%" ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "$toggle_view_binding_name",
+                    "source_property_name": "$toggle_state_binding_name",
+                    "resolve_sibling_scope": true,
+                    "target_property_name": "#length"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(1 * (not #length))",
+                    "target_property_name": "#collection_length"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "check": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "check",
+            "control_name": "$target_controls_check",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$toggle_name",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#length"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * #length)",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      },
+      {
+        "uncheck": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "uncheck",
+            "control_name": "$target_controls_uncheck",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "$toggle_name",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#length"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * (not #length))",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

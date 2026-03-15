@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:deepslate_bricks","data":0}],"priority":0,"tags":["stonecutter"],"description":{"identifier":"minecraft:deepslate_tile_wall_from_deepslate_bricks_stonecutting"},"result":{"item":"minecraft:deepslate_tile_wall","data":0,"count":1},"ingredients":[{"item":"minecraft:deepslate_bricks","data":0}]},"format_version":"1.20.10"}

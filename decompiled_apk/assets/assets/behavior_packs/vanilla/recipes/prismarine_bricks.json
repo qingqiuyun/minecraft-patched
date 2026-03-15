@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:prismarine_shard"}],"result":{"item":"minecraft:prismarine","data":2},"key":{"S":{"item":"minecraft:prismarine_shard"}},"description":{"identifier":"minecraft:prismarine_bricks"},"pattern":["SSS","SSS","SSS"],"tags":["crafting_table"]},"format_version":"1.20.10"}

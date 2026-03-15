@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:brick"}],"result":{"item":"minecraft:flower_pot"},"key":{"#":{"item":"minecraft:brick"}},"description":{"identifier":"minecraft:flower_pot"},"pattern":["# #"," # "],"tags":["crafting_table"]},"format_version":"1.20.10"}

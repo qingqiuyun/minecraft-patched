@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:copper_block"}],"priority":0,"result":{"item":"minecraft:chiseled_copper","count":4},"description":{"identifier":"minecraft:stonecutter_copper_block_to_chiseled_copper"},"ingredients":[{"item":"minecraft:copper_block"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

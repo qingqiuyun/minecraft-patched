@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:reeds"}],"result":{"item":"minecraft:paper","count":3},"key":{"#":{"item":"minecraft:reeds"}},"description":{"identifier":"minecraft:paper"},"pattern":["###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

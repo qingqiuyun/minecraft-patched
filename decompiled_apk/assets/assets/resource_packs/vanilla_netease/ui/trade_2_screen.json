@@ -1,0 +1,173 @@
+{
+    "namespace": "trade2",
+    "trade_button@common_buttons.light_text_button": {
+        "size": [
+            48,
+            18
+        ],
+        "$button_text": "一键交易",
+        "property_bag": {
+            "#collection_name": "trade2_result_item"
+        },
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_select",
+                "to_button_id": "button.container_auto_place",
+                "mapping_type": "pressed"
+            }
+        ]
+    },
+    "hover_button": {
+        "type": "button",
+        "layer": 1,
+        "default_focus_precedence": 1,
+        "hover_control": "hover_text",
+        "consume_event": false,
+        "button_mappings": [
+            {
+                "to_button_id": "button.container_slot_hovered",
+                "mapping_type": "pressed",
+                "consume_event": false
+            }
+        ],
+        "controls": [
+            {
+                "hover_text@common.hover_text": {
+                    "bindings": [
+                        {
+                            "binding_type": "collection_details"
+                        },
+                        {
+                            "binding_name": "#hover_text",
+                            "binding_condition": "visible"
+                        }
+                    ]
+                }
+            }
+        ],
+        "bindings": [
+            {
+                "binding_type": "collection_details"
+            }
+        ]
+    },
+    "trade_toggle2@common_toggles.light_image_toggle_collection": {
+        "layer": 2,
+        "size": "$toggle_size",
+        "$toggle_size|default": [
+            "100%",
+            24
+        ],
+        "$toggle_name": "trade_toggle",
+        "$template_toggle": "trade2.toggle_content",
+        "$toggle_binding_type": "global",
+        "$toggle_state_binding_name": "#trade_toggle_state",
+        "$toggle_enabled_binding_type": "global",
+        "$toggle_enabled_binding_name": "#trade_toggle_enabled",
+        "$toggle_enabled_binding_condition": "always_when_visible",
+        "$button_content": "trade2.toggle_content_holder",
+        "$unchecked_control": "trade2.trade_toggle_unchecked",
+        "$checked_control": "trade2.trade_toggle_checked",
+        "$unchecked_locked_control": "trade2.trade_toggle_locked",
+        "$unchecked_locked_hover_control": "trade2.trade_toggle_locked",
+        "$checked_locked_control": "trade2.trade_toggle_locked",
+        "$checked_locked_hover_control": "trade2.trade_toggle_locked"
+    },
+    "trade_toggle_holder": {
+        "type": "panel",
+        "size": [
+            "100%",
+            "50%c - 1px"
+        ],
+        "controls": [
+            {
+                "trade_toggle@trade2.trade_toggle": {
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle"
+                }
+            },
+            {
+                "trade_toggle2@trade2.trade_toggle2": {
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle"
+                }
+            }
+        ]
+    },
+    "tier_stack_panel": {
+        "type": "stack_panel",
+        "size": [
+            "100%",
+            "100%c + 1px"
+        ],
+        "orientation": "vertical",
+        "controls": [
+            {
+                "padding": {
+                    "type": "panel",
+                    "size": [
+                        0,
+                        2
+                    ]
+                }
+            },
+            {
+                "tier_label_holder": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        "100%cm"
+                    ],
+                    "controls": [
+                        {
+                            "tier_label@trade2.tier_label": {
+                                "size": [
+                                    "100%",
+                                    "default"
+                                ],
+                                "offset": [
+                                    2,
+                                    0
+                                ],
+                                "layer": 2
+                            }
+                        },
+                        {
+                            "tier_label_locked@trade2.tier_label_locked": {
+                                "size": [
+                                    "100%",
+                                    "default"
+                                ],
+                                "offset": [
+                                    2,
+                                    0
+                                ],
+                                "layer": 2
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#show_level",
+                            "binding_name_override": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "trade_toggle_stack_panel@trade2.trade_toggle_stack_panel": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name_override": "#visible",
+                "binding_type": "collection",
+                "binding_collection_name": "$collection_name",
+                "binding_condition": "always"
+            }
+        ]
+    },
+    "trade_toggle": {
+        "$toggle_enabled_binding_name": "vorized"
+    }
+}

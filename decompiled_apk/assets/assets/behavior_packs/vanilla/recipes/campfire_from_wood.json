@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"minecraft:campfire"},"key":{"|":{"item":"minecraft:stick"},"#":{"item":"minecraft:wood"},"C":{"item":"minecraft:coal"}},"description":{"identifier":"minecraft:campfire_from_wood"},"pattern":[" | ","|C|","###"],"tags":["crafting_table"]},"format_version":"1.12"}

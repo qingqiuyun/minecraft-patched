@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/m4399_ope_video_edit_bg" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/m4399_navigation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height">
+        <ImageButton android:id="@id/m4399_ope_id_ibtn_back" android:background="@drawable/m4399_ope_ripple_video_edit_btn_bg" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/m4399_spacing_12" android:layout_marginTop="@dimen/m4399_spacing_12" android:src="@drawable/m4399_ope_support_ic_left_arrow" android:tint="@color/m4399_ope_color_ffffff" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/m4399_spacing_12" android:layout_alignParentStart="true" />
+        <Button android:textSize="@dimen/m4399_font_16" android:textColor="@color/m4399_ope_color_primary" android:id="@id/m4399_ope_id_btn_publish" android:background="@drawable/m4399_ope_ripple_video_edit_btn_bg" android:layout_width="40.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/m4399_spacing_12" android:layout_marginRight="@dimen/m4399_spacing_12" android:text="@string/m4399_ope_video_edit_publish" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/m4399_spacing_12" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/m4399_ope_id_fl_tips" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_id_ll_tips" android:background="@drawable/m4399_ope_shape_r4_video_edit_tips_bg" android:padding="@dimen/m4399_spacing_8" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/m4399_spacing_12" android:layout_marginTop="@dimen/m4399_spacing_8" android:layout_marginRight="@dimen/m4399_spacing_12" android:layout_marginStart="@dimen/m4399_spacing_12" android:layout_marginEnd="@dimen/m4399_spacing_12">
+                <TextView android:textSize="@dimen/m4399_font_14" android:textColor="@color/m4399_ope_color_ffffff" android:id="@id/m4399_ope_id_tv_tips_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/m4399_ope_video_edit_tips_msg" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/m4399_font_14" android:textColor="@color/m4399_color_primary" android:id="@id/m4399_ope_id_btn_tips_ok" android:background="@drawable/m4399_ope_ripple_video_edit_btn_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/m4399_ope_video_edit_tips_ok" android:layout_weight="0.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/m4399_ope_id_fl_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/m4399_spacing_16" android:layout_above="@id/m4399_ope_id_sb_seek_bar" android:layout_below="@id/m4399_ope_id_fl_tips">
+            <SurfaceView android:layout_gravity="center" android:id="@id/m4399_ope_id_sv_video" android:background="@color/m4399_ope_video_edit_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageButton android:layout_gravity="center" android:id="@id/m4399_ope_id_ibtn_play" android:background="@android:color/transparent" android:clickable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/m4399_ope_ic_play_nomal" android:scaleType="centerInside" />
+        </FrameLayout>
+        <cn.m4399.operate.video.edit.ui.VideoEditSeekBarView android:id="@id/m4399_ope_id_sb_seek_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

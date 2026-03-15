@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"result":{"item":"minecraft:campfire"},"key":{"|":{"item":"minecraft:stick"},"#":{"item":"minecraft:stripped_mangrove_log"},"C":{"item":"minecraft:coal"}},"description":{"identifier":"minecraft:campfire_from_stripped_mangrove_log"},"pattern":[" | ","|C|","###"],"tags":["crafting_table"]},"format_version":"1.12"}

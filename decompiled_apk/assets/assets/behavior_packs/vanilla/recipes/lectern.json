@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:book"}],"priority":-1,"result":{"item":"minecraft:lectern"},"key":{"#":{"tag":"minecraft:wooden_slabs"},"B":{"item":"minecraft:bookshelf"}},"description":{"identifier":"minecraft:lectern"},"pattern":["###"," B "," # "],"tags":["crafting_table"]},"format_version":"1.20.10"}

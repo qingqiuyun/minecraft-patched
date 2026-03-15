@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:polished_blackstone_bricks"}],"priority":2,"result":{"item":"minecraft:polished_blackstone_brick_slab","count":2},"description":{"identifier":"minecraft:stonecutter_slab_from_polished_blackstone_bricks"},"ingredients":[{"item":"minecraft:polished_blackstone_bricks"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

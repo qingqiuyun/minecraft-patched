@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:string"}],"result":{"item":"minecraft:bow"},"key":{"#":{"item":"minecraft:stick"},"X":{"item":"minecraft:string"}},"description":{"identifier":"minecraft:bow"},"pattern":[" #X","# X"," #X"],"tags":["crafting_table"]},"format_version":"1.20.10"}

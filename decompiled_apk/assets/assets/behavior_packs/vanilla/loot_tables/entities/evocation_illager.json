@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"set_count","count":{"max":1,"min":0}},{"function":"looting_enchant","count":{"max":1,"min":0}}],"name":"minecraft:emerald","type":"item","weight":1}],"rolls":1},{"entries":[{"functions":[{"function":"set_count","count":{"max":1,"min":1}}],"name":"minecraft:totem","type":"item","weight":1}],"rolls":1}]}

@@ -1,0 +1,1 @@
+{"piece_name":"efe_skin","piece_type":"persona_skin","piece_id":"829e70a1-05ea-140e-c42e-3ef9d5894ffe","texture_sources":[{"texture":"efe_skin_head.png","use_face_uv":true,"tint_map":"efe_skin_head_tintmap.tga"},{"tint_map":"efe_skin_body_tintmap.tga","texture":"efe_skin_body.png"}],"tint_base_color":{"r_color":"#ff7f4a"}}

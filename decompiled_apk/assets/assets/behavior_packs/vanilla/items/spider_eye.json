@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"nutrition":2,"saturation_modifier":"good","effects":[{"amplifier":0,"name":"poison","chance":1.0,"duration":5}]},"minecraft:use_duration":32},"description":{"identifier":"minecraft:spider_eye"}},"format_version":"1.10"}

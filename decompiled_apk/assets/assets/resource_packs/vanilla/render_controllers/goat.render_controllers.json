@@ -1,0 +1,2 @@
+{"render_controllers":{"controller.render.goat":{"part_visibility":[{"right_horn":"variable.goat_has_right_horn"},{"left_horn":"variable.goat_has_left_horn"}],"geometry":"Geometry.default","textures":["Texture.default"],"materials":[{"*":"Material.default"}]}},"format_version":"1.8.0"}
+//CelsiusRP 11-20

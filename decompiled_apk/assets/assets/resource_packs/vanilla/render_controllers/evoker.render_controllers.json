@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.evoker":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","textures":["Texture.default"],"part_visibility":[{"*":true},{"arms":"!(query.is_casting || query.is_celebrating)"},{"leftarm":"query.is_casting || query.is_celebrating"},{"rightarm":"query.is_casting || query.is_celebrating"}]}},"format_version":"1.8.0"}

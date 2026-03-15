@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.bee":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","arrays":{"textures":{"array.skins":["texture.default","texture.nectar","texture.angry","texture.angry_nectar"]}},"textures":["array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2]"]}},"format_version":"1.8.0"}

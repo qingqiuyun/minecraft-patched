@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m4399_navigation_bar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/m4399_nav_return" android:src="@drawable/m4399_ope_support_ic_left_arrow" style="@style/m4399.Nav.Icon" />
+    <TextView android:id="@id/m4399_nav_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/m4399_action_return" android:layout_weight="1.0" style="@style/m4399.Nav.Title" />
+    <ViewStub android:id="@id/m4399_nav_tools_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" />
+</LinearLayout>

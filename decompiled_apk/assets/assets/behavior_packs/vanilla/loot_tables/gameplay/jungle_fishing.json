@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"quality":-2,"name":"loot_tables/gameplay/fishing/jungle_junk.json","type":"loot_table","weight":10},{"quality":2,"name":"loot_tables/gameplay/fishing/treasure.json","type":"loot_table","weight":5},{"quality":-1,"name":"loot_tables/gameplay/fishing/jungle_fish.json","type":"loot_table","weight":85}],"rolls":1}]}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:breeze_rod","input":"minecraft:potion_type:awkward","description":{"identifier":"minecraft:brew_awkward_breeze_rod"},"output":"minecraft:potion_type:wind_charged","tags":["brewing_stand"]},"format_version":"1.12"}

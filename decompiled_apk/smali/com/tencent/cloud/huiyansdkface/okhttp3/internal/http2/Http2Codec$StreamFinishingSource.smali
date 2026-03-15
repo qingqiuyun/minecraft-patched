@@ -1,0 +1,131 @@
+.class Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;
+.super Lcom/tencent/cloud/huiyansdkface/okio/ForwardingSource;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "StreamFinishingSource"
+.end annotation
+
+
+# instance fields
+.field private a:Z
+
+.field private b:J
+
+.field private synthetic c:Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec;
+
+
+# direct methods
+.method constructor <init>(Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec;Lcom/tencent/cloud/huiyansdkface/okio/Source;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->c:Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec;
+
+    invoke-direct {p0, p2}, Lcom/tencent/cloud/huiyansdkface/okio/ForwardingSource;-><init>(Lcom/tencent/cloud/huiyansdkface/okio/Source;)V
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->a:Z
+
+    const-wide/16 p1, 0x0
+
+    iput-wide p1, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->b:J
+
+    return-void
+.end method
+
+.method private a(Ljava/io/IOException;)V
+    .locals 7
+
+    iget-boolean v0, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->a:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->a:Z
+
+    iget-object v3, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->c:Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec;
+
+    iget-object v1, v3, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec;->a:Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/connection/StreamAllocation;
+
+    iget-wide v4, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->b:J
+
+    const/4 v2, 0x0
+
+    move-object v6, p1
+
+    invoke-virtual/range {v1 .. v6}, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/connection/StreamAllocation;->streamFinished(ZLcom/tencent/cloud/huiyansdkface/okhttp3/internal/http/HttpCodec;JLjava/io/IOException;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-super {p0}, Lcom/tencent/cloud/huiyansdkface/okio/ForwardingSource;->close()V
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->a(Ljava/io/IOException;)V
+
+    return-void
+.end method
+
+.method public read(Lcom/tencent/cloud/huiyansdkface/okio/Buffer;J)J
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/tencent/cloud/huiyansdkface/okio/ForwardingSource;->delegate()Lcom/tencent/cloud/huiyansdkface/okio/Source;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2, p3}, Lcom/tencent/cloud/huiyansdkface/okio/Source;->read(Lcom/tencent/cloud/huiyansdkface/okio/Buffer;J)J
+
+    move-result-wide p1
+
+    const-wide/16 v0, 0x0
+
+    cmp-long p3, p1, v0
+
+    if-lez p3, :cond_0
+
+    iget-wide v0, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->b:J
+
+    add-long/2addr v0, p1
+
+    iput-wide v0, p0, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->b:J
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_0
+    return-wide p1
+
+    :catch_0
+    move-exception p1
+
+    invoke-direct {p0, p1}, Lcom/tencent/cloud/huiyansdkface/okhttp3/internal/http2/Http2Codec$StreamFinishingSource;->a(Ljava/io/IOException;)V
+
+    throw p1
+.end method

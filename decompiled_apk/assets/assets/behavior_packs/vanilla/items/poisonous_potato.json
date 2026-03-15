@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"nutrition":2,"saturation_modifier":"low","effects":[{"amplifier":0,"name":"poison","chance":0.6,"duration":5}]},"minecraft:use_duration":32},"description":{"identifier":"minecraft:poisonous_potato"}},"format_version":"1.10"}

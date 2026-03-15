@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_ope_id_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_id_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/m4399_ope_id_iv_close" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/m4399_ope_uc_ic_close_port" android:alpha="0.0" />
+        <cn.m4399.operate.extension.index.CornerLinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/m4399_webview_stub_outside_nav" android:layout="@layout/m4399_ope_uc_vice_webview_nav_outside" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height_uc" />
+            <cn.m4399.operate.support.component.webview.AlWebView android:id="@id/m4399_webview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/m4399_webview_stub_error_view" android:layout="@layout/m4399_ope_support_webview_layout_abnormal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </cn.m4399.operate.extension.index.CornerLinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_id_placeholder_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/m4399_ope_id_iv_placeholder_close" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/m4399_ope_uc_ic_close_port" android:alpha="0.0" />
+        <cn.m4399.operate.extension.index.CornerLinearLayout android:gravity="center" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/m4399_ope_id_iv_cpb" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </cn.m4399.operate.extension.index.CornerLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

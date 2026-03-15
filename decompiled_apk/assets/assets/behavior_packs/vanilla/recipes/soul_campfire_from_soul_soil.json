@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":1,"result":{"item":"soul_campfire","count":1},"key":{"A":{"item":"stick"},"C":{"item":"log"},"B":{"item":"soul_soil"}},"description":{"identifier":"minecraft:soul_campfire_from_soul_soil"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"minecraft:stone_axe"},"key":{"#":{"item":"minecraft:stick"},"X":{"item":"minecraft:cobbled_deepslate"}},"description":{"identifier":"minecraft:stone_axe_from_cobbled_deepslate"},"pattern":["XX","X#"," #"],"tags":["crafting_table"]},"format_version":"1.12"}

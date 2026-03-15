@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_pad_verify_layout" android:background="@drawable/m4399_pad_layer_shadow_bg" android:layout_width="@dimen/m4399_ope_dialog_width_big" android:layout_height="wrap_content" android:minHeight="74.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/m4399_pad_verify_container" android:paddingLeft="25.0dip" android:paddingTop="41.0dip" android:paddingBottom="43.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="25.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/m4399_pad_game_box_log" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/m4399_pad_game_box_logo" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/m4399_pad_color_black_000000" android:id="@id/m4399_pad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="27.0dip" android:text="@string/m4399_pad_title" android:layout_toRightOf="@id/m4399_pad_game_box_log" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/m4399_pad_game_box_log" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/m4399_pad_id_ll_item" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/m4399_pad_success" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/m4399_pad_success" android:layout_toLeftOf="@id/m4399_pad_tv_verify_pass_tip" android:layout_centerInParent="true" android:layout_marginEnd="6.0dip" android:layout_toStartOf="@id/m4399_pad_tv_verify_pass_tip" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/m4399_pad_color_black_000000" android:gravity="center" android:id="@id/m4399_pad_tv_verify_pass_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_pad_ok_thanks_support" android:layout_centerInParent="true" />
+</RelativeLayout>

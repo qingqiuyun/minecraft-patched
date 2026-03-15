@@ -1,0 +1,59 @@
+{
+  "namespace": "Quasar_Background",
+  "background_default": {
+    "type": "image",
+    "fill": true,
+    "texture": "textures/Quasar/background/default"
+  },
+  "background_blur@background_default": {
+    "texture": "textures/Quasar/background/blur"
+  },
+  "16x_primary_03": {
+    "type": "image",
+    "texture": "$16x",
+    "alpha": 0.12,
+    "color": "$primary"
+  },
+  "8x_primary_03@16x_primary_03": {
+    "texture": "$8x"
+  },
+  "4x_primary_03@16x_primary_03": {
+    "texture": "$4x"
+  },
+  "fk_primary_03@16x_primary_03": {
+    "texture": "$fk"
+  },
+  "16x_background_03@16x_primary_03": {
+    "color": "$background"
+  },
+  "16x_primary_03_bloom": {
+    "type": "image",
+    "texture": "$16x",
+    "alpha": 0.12,
+    "color": "$primary",
+    "controls": [
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "layer": -1024,
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      }
+    ]
+  },
+  "8x_primary_03_bloom@16x_primary_03_bloom": {
+    "texture": "$8x"
+  },
+  "4x_primary_03_bloom@16x_primary_03_bloom": {
+    "texture": "$4x"
+  },
+  "fk_primary_03_bloom@16x_primary_03_bloom": {
+    "texture": "$fk"
+  }
+}

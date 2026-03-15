@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.slime_armor":{"materials":[{"*":"Material.outer"}],"geometry":"Geometry.armor","textures":["Texture.default"]}},"format_version":"1.8.0"}

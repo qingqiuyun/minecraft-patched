@@ -1,0 +1,1 @@
+{"format_version":"1.16.0","minecraft:geometry":[{"bones":[{"binding":"q.item_slot_to_bone_name(c.item_slot)","name":"shield","pivot":[1.0,15.5,3.0],"cubes":[{"size":[2.0,6.0,6.0],"origin":[0.0,25.0,0.0],"uv":[26,0]},{"size":[12.0,22.0,1.0],"origin":[-5.0,17.0,-1.0],"uv":[0,0]}]}],"description":{"texture_width":64,"identifier":"geometry.shield","texture_height":64}}]}

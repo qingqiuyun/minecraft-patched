@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:icon":"honey_bottle","minecraft:use_animation":"drink","minecraft:render_offsets":"bottles"},"description":{"category":"Items","identifier":"minecraft:honey_bottle"}},"format_version":"1.14"}

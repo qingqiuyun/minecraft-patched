@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.armor_stand":{"materials":[{"*":"Material.default"}],"part_visibility":[{"baseplate":"!query.is_in_ui"}],"geometry":"geometry.default","textures":["texture.default"],"overlay_color":{"a":"0.0","r":"this","g":"this","b":"this"}}},"format_version":"1.8.0"}

@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.bogged":{"materials":[{"*":"Material.default"}],"rebuild_animation_matrices":true,"part_visibility":[{"mushrooms":"!query.is_sheared"}],"geometry":"Geometry.default","textures":["Texture.default"]}},"format_version":"1.8.0"}

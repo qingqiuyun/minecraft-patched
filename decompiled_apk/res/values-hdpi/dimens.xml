@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wbcf_protocol_bottom_text_margin">50.0dip</dimen>
+    <dimen name="wbcf_protocol_title_size">18.0sp</dimen>
+    <dimen name="wbcf_protocol_txt_size">10.0sp</dimen>
+</resources>

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:birch_log"}],"pattern":["##","##"],"result":{"item":"minecraft:birch_wood","count":3},"key":{"#":{"item":"minecraft:birch_log"}},"description":{"identifier":"minecraft:birch_wood"},"group":"wood","tags":["crafting_table"]},"format_version":"1.20.10"}

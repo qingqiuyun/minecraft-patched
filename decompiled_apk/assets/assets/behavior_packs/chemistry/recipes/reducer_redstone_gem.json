@@ -1,0 +1,1 @@
+{"minecraft:recipe_material_reduction":{"tags":"material_reducer","description":{"identifier":"minecraft:redstone"},"output":[{"count":31,"item":"minecraft:element_6"},{"count":31,"item":"minecraft:element_92"},{"count":38,"item":"minecraft:element_0"}],"input":"minecraft:redstone"},"format_version":"1.14"}

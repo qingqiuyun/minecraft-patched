@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":-1,"result":{"item":"minecraft:barrel"},"key":{"#":{"item":"minecraft:stick"},"-":{"tag":"minecraft:wooden_slabs"}},"description":{"identifier":"minecraft:barrel_with_tag"},"pattern":["#-#","# #","#-#"],"tags":["deprecated"]},"format_version":"1.12"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:kelp"}],"input":"minecraft:kelp","description":{"identifier":"minecraft:furnace_kelp"},"output":"minecraft:dried_kelp","tags":["furnace","smoker","campfire","soul_campfire"]},"format_version":"1.20.10"}

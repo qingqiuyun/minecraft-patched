@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"soul_campfire","count":1},"key":{"A":{"item":"stick"},"C":{"item":"stripped_birch_log"},"B":{"item":"soul_sand"}},"description":{"identifier":"minecraft:soul_campfire_from_soul_sand_and_stripped_birch_log"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

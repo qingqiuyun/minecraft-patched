@@ -1,0 +1,1221 @@
+{
+   "Hp" : {
+      "$clip_direction" : "left",
+      "$clip_ratio" : 0.0,
+      "$is_new_nine_slice" : true,
+      "$nine_slice_buttom" : 5,
+      "$nine_slice_left" : 5,
+      "$nine_slice_right" : 5,
+      "$nine_slice_top" : 5,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$progress_bar_empty_texture" : "textures/netease/common/button/choose",
+      "$progress_bar_filled_texture" : "textures/blocks/concrete_red",
+      "alpha" : 0.8999999761581421,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "empty_progress_bar@MCP.empty_progress_bar" : {}
+         },
+         {
+            "filled_progress_bar@MCP.filled_progress_bar" : {}
+         }
+      ],
+      "enabled" : true,
+      "layer" : 20,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0.0, 16.0 ],
+      "priority" : 0,
+      "propagate_alpha" : true,
+      "size" : [ 100, 10 ],
+      "type" : "panel",
+      "visible" : true
+   },
+   "bg" : {
+      "alpha" : 0.6000000238418579,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_direction" : "left",
+      "clip_offset" : [ 0, 0 ],
+      "clip_ratio" : 0.0,
+      "clips_children" : false,
+      "controls" : [
+         {
+            "id@MCP.id" : {}
+         },
+         {
+            "item0@MCP.item0" : {}
+         },
+         {
+            "Hp@MCP.Hp" : {}
+         },
+         {
+            "hp@MCP.hp" : {}
+         }
+      ],
+      "enabled" : true,
+      "fill" : false,
+      "grayscale" : false,
+      "is_new_nine_slice" : false,
+      "keep_ratio" : true,
+      "layer" : 17,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "nine_slice_buttom" : 0,
+      "nine_slice_left" : 0,
+      "nine_slice_right" : 0,
+      "nine_slice_top" : 0,
+      "nineslice_size" : [ 0, 0, 0, 0 ],
+      "offset" : [ 119.0, 57.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 112, 52 ],
+      "texture" : "textures/ui/beacon_button_locked",
+      "type" : "image",
+      "uv" : [ 0, 0 ],
+      "uv_size" : [ 0, 0 ],
+      "visible" : true
+   },
+   "bg2" : {
+      "alpha" : 0.3899999856948853,
+      "anchor_from" : "top_middle",
+      "anchor_to" : "bottom_middle",
+      "clip_direction" : "left",
+      "clip_offset" : [ 0, 0 ],
+      "clip_ratio" : 0.0,
+      "clips_children" : false,
+      "controls" : [
+         {
+            "text@MCP.text" : {}
+         }
+      ],
+      "enabled" : true,
+      "fill" : true,
+      "grayscale" : false,
+      "is_new_nine_slice" : false,
+      "keep_ratio" : false,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "nine_slice_buttom" : 0,
+      "nine_slice_left" : 0,
+      "nine_slice_right" : 0,
+      "nine_slice_top" : 0,
+      "nineslice_size" : [ 0, 0, 0, 0 ],
+      "offset" : [ 0.0, 73.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ "100.0%c+40.0px", "100.0%cm+10.0px" ],
+      "texture" : "textures/blocks/concrete_black",
+      "type" : "image",
+      "uv" : [ 0, 0 ],
+      "uv_size" : [ 0, 0 ],
+      "visible" : true
+   },
+   "button@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "杀",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 86.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button1@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "拉回",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 118.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button2@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "冲",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 150.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button3@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "标记",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 182.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button4@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "锁背",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 214.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button5@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "脱离",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 246.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+      "button6@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "跳",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 278.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+      "button7@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "瞄",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 310.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+      "button8@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "骑",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 342.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+      "button9@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "绕",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 374.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+
+      "button12@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "ECmode",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "模式",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 118.0, 85.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+
+      "button11@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "换",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 404.0, 53.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button10@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : true,
+      "$label_color" : [ 1.0, 0.0, 0.01568627450980392 ],
+      "$label_font_scale_factor" : 0.9399999976158142,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "菜单",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%MCP.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@MCP.default" : {}
+         },
+         {
+            "hover@MCP.hover" : {}
+         },
+         {
+            "pressed@MCP.pressed" : {}
+         },
+         {
+            "button_label@MCP.button_label" : {}
+         }
+      ],
+      "draggable" : "both",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 99,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 86.0, 85.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 20, 21 ],
+      "visible" : true
+   },
+   "button_label" : {
+      "alpha" : "$control_alpha",
+      "color" : "$label_color",
+      "font_scale_factor" : "$label_font_scale_factor",
+      "font_size" : "$label_font_size",
+      "font_type" : "smooth",
+      "layer" : "$label_layer",
+      "max_size" : [ "100%", "100%" ],
+      "offset" : "$label_offset",
+      "shadow" : false,
+      "text" : "$label_text",
+      "text_alignment" : "center",
+      "type" : "label"
+   },
+   "default" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$default_texture",
+      "type" : "image"
+   },
+   "empty_progress_bar" : {
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : 1,
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$progress_bar_empty_texture",
+      "type" : "image"
+   },
+   "filled_progress_bar" : {
+      "clip_direction" : "$clip_direction",
+      "clip_pixelperfect" : false,
+      "clip_ratio" : "$clip_ratio",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : 2,
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$progress_bar_filled_texture",
+      "type" : "image"
+   },
+   "hover" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$hover_texture",
+      "type" : "image"
+   },
+   "hp" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 0.0, 0.6666666666666666, 1.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 23,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0.0, 8.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 100, 12 ],
+      "text" : "20 HP",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "id" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 1.0,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 18,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 12.50, -6.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 81, 17 ],
+      "text" : "script Loading",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "item0" : {
+      "alpha" : 0.8999999761581421,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "enabled" : true,
+      "layer" : 19,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ -39.50, -8.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "property_bag" : {
+         "#item_id_aux" : 33947651
+      },
+      "renderer" : "inventory_item_renderer",
+      "size" : [ 29, 28 ],
+      "type" : "custom",
+      "visible" : true
+   },
+   "item1" : {
+      "alpha" : 1.0,
+      "anchor_from" : "bottom_left",
+      "anchor_to" : "top_right",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "enabled" : true,
+      "layer" : 28,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 345.0, -334.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "property_bag" : {
+         "#item_id_aux" : 25690112
+      },
+      "renderer" : "inventory_item_renderer",
+      "size" : [ 20, 18 ],
+      "type" : "custom",
+      "visible" : true
+   },
+   "label0" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_right",
+      "anchor_to" : "bottom_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 1.0,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 999,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ -124.0, 27.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 119, 15 ],
+      "text" : "/AMCPK X/",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "label3" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 0.0, 0.6666666666666666, 1.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 1.0,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 27,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 251.0, 33.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 100, 19 ],
+      "text" : "满血啦 ",
+      "text_alignment" : "left",
+      "type" : "label",
+      "visible" : true
+   },
+   "main" : {
+      "absorbs_input" : true,
+      "always_accepts_input" : false,
+      "controls" : [
+         {
+            "button@MCP.button" : {}
+         },
+         {
+            "button1@MCP.button1" : {}
+         },
+         {
+            "button2@MCP.button2" : {}
+         },
+         {
+            "button3@MCP.button3" : {}
+         },
+         {
+            "button4@MCP.button4" : {}
+         },
+        {
+            "button5@MCP.button5" : {}
+         },
+        {
+            "button6@MCP.button6" : {}
+         },
+        {
+            "button7@MCP.button7" : {}
+         },
+        {
+            "button8@MCP.button8" : {}
+         },
+        {
+            "button9@MCP.button9" : {}
+         },
+        {
+            "button10@MCP.button10" : {}
+         },
+        {
+            "button11@MCP.button11" : {}
+         },
+        {
+            "button12@MCP.button12" : {}
+         },
+          {
+            "label0@MCP.label0" : {}
+         },
+         {
+            "bg@MCP.bg" : {}
+         },
+         {
+            "selfHp@MCP.selfHp" : {}
+         },
+         {
+            "label3@MCP.label3" : {}
+         },
+         {
+            "item1@MCP.item1" : {}
+         },
+         {
+            "bg2@MCP.bg2" : {}
+         }
+      ],
+      "force_render_below" : false,
+      "is_showing_menu" : true,
+      "render_game_behind" : true,
+      "render_only_when_topmost" : true,
+      "should_steal_mouse" : false,
+      "type" : "screen"
+   },
+   "namespace" : "MCP",
+   "pressed" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$pressed_texture",
+      "type" : "image"
+   },
+   "selfHp" : {
+      "$clip_direction" : "left",
+      "$clip_ratio" : 0.0,
+      "$is_new_nine_slice" : true,
+      "$nine_slice_buttom" : 5,
+      "$nine_slice_left" : 10,
+      "$nine_slice_right" : 10,
+      "$nine_slice_top" : 5,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$progress_bar_empty_texture" : "textures/netease/common/button/choose",
+      "$progress_bar_filled_texture" : "textures/blocks/concrete_red",
+      "alpha" : 0.8999999761581421,
+      "anchor_from" : "top_left",
+      "anchor_to" : "bottom_right",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "empty_progress_bar@MCP.empty_progress_bar" : {}
+         },
+         {
+            "filled_progress_bar@MCP.filled_progress_bar" : {}
+         }
+      ],
+      "enabled" : true,
+      "layer" : 24,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 145.50, 25.50 ],
+      "priority" : 0,
+      "propagate_alpha" : true,
+      "size" : [ 137, 12 ],
+      "type" : "panel",
+      "visible" : true
+   },
+   "text" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.9399999976158142,
+      "font_size" : "large",
+      "font_type" : "smooth",
+      "layer" : 100,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0.0, 1.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ "default", "default" ],
+      "text" : "MCP Loding",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   }
+}

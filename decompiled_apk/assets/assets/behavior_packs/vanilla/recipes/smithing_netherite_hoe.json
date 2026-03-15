@@ -1,0 +1,1 @@
+{"minecraft:recipe_smithing_transform":{"template":"minecraft:netherite_upgrade_smithing_template","base":"minecraft:diamond_hoe","result":"minecraft:netherite_hoe","description":{"identifier":"minecraft:smithing_netherite_hoe"},"addition":"minecraft:netherite_ingot","tags":["smithing_table"]},"format_version":"1.20.10"}

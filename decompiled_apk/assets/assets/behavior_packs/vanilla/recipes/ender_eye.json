@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:blaze_powder"}],"result":{"item":"minecraft:ender_eye"},"description":{"identifier":"minecraft:ender_eye"},"ingredients":[{"item":"minecraft:ender_pearl"},{"item":"minecraft:blaze_powder"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

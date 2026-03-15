@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"minecraft:stone_pickaxe"},"key":{"#":{"item":"minecraft:stick"},"X":{"item":"minecraft:blackstone"}},"description":{"identifier":"minecraft:stone_pickaxe_from_blackstone"},"pattern":["XXX"," # "," # "],"tags":["crafting_table"]},"format_version":"1.12"}

@@ -1,0 +1,2 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"xp_bottle"},"identifier":"minecraft:xp_bottle","textures":{"enchanted":"textures/misc/enchanted_item_glint","default":"textures/items/experience_bottle"},"animations":{"flying":"animation.actor.billboard"},"scripts":{"animate":["flying"]},"render_controllers":["controller.render.experience_bottle"],"geometry":{"default":"geometry.item_sprite"}}},"format_version":"1.10.0"}
+//CelsiusRP 11-20

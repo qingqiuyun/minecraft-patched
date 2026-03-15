@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_ope_id_parent" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/m4399_ope_id_notch" android:background="@android:color/black" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    <cn.m4399.operate.extension.index.UCWebView android:id="@id/m4399_webview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/m4399_ope_id_notch" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_id_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/m4399_ope_id_notch">
+        <cn.m4399.operate.extension.index.CornerLinearLayout android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ViewStub android:id="@id/m4399_webview_stub_error_view" android:layout="@layout/m4399_ope_support_webview_layout_abnormal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </cn.m4399.operate.extension.index.CornerLinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/m4399_ope_id_iv_close" android:layout_width="16.0dip" android:layout_height="wrap_content" android:src="@drawable/m4399_ope_uc_ic_close_landscape" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/m4399_ope_id_placeholder_parent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/m4399_ope_id_notch">
+        <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_id_placeholder_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/m4399_ope_uc_dialog_placeholder_land" />
+            <ImageView android:layout_gravity="center" android:id="@id/m4399_ope_id_iv_placeholder_close" android:layout_width="16.0dip" android:layout_height="wrap_content" android:src="@drawable/m4399_ope_uc_ic_close_landscape" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

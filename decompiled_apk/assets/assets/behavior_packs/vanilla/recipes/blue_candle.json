@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:candle"},{"item":"minecraft:dye","data":18}],"result":{"item":"minecraft:blue_candle"},"ingredients":[{"item":"minecraft:candle"},{"item":"minecraft:dye","data":18}],"description":{"identifier":"minecraft:blue_candle"},"group":"candle","tags":["crafting_table"]},"format_version":"1.20.10"}

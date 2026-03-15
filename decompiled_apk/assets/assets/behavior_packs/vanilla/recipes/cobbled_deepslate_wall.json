@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:cobbled_deepslate"}],"result":{"count":6,"item":"minecraft:cobbled_deepslate_wall"},"priority":1,"key":{"#":{"item":"minecraft:cobbled_deepslate"}},"description":{"identifier":"minecraft:cobbled_deepslate_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

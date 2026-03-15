@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:planks","data":5}],"pattern":["##","##","##"],"result":{"item":"minecraft:dark_oak_door","count":3},"key":{"#":{"item":"minecraft:planks","data":5}},"description":{"identifier":"minecraft:dark_oak_door"},"group":"wooden_door","tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:raw_gold"}],"input":"minecraft:raw_gold","description":{"identifier":"minecraft:furnace_gold"},"output":"minecraft:gold_ingot","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

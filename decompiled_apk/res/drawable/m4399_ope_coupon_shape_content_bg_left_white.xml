@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:topLeftRadius="5.0dip" android:bottomLeftRadius="5.0dip" />
+            <size android:height="65.0dip" android:width="79.0dip" />
+        </shape>
+    </item>
+    <item android:left="74.0dip" android:bottom="60.0dip">
+        <shape>
+            <size android:height="4.5dip" android:width="4.5dip" />
+            <solid android:color="@color/m4399_ope_coupon_dialog_bg_end" />
+            <corners android:bottomLeftRadius="60.0dip" />
+        </shape>
+    </item>
+    <item android:left="60.0dip" android:right="-18.0dip">
+        <rotate android:fromDegrees="90.0">
+            <shape android:shape="line">
+                <stroke android:width="1.0dip" android:color="@color/m4399_ope_color_e5e5e5" android:dashWidth="2.0dip" android:dashGap="2.0dip" />
+            </shape>
+        </rotate>
+    </item>
+    <item android:left="74.0dip" android:top="60.0dip">
+        <shape>
+            <size android:height="4.5dip" android:width="4.5dip" />
+            <solid android:color="@color/m4399_ope_coupon_dialog_bg_end" />
+            <corners android:topLeftRadius="60.0dip" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="netease_permissionkit_sdk__permission_btn_01_normal">Nacho/neko.png</item>
+    <item type="drawable" name="netease_permissionkit_sdk__permission_btn_01_pressed">Nacho/neko.png</item>
+    <item type="drawable" name="netease_permissionkit_sdk__permission_btn_02_normal">Nacho/neko.png</item>
+    <item type="drawable" name="netease_permissionkit_sdk__permission_btn_02_pressed">Nacho/neko.png</item>
+    <item type="drawable" name="netease_permissionkit_sdk__permission_line">Nacho/neko.png</item>
+</resources>

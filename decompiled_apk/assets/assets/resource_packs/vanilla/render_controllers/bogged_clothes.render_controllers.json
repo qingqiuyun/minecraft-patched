@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.bogged_clothes":{"materials":[{"*":"Material.overlay"}],"rebuild_animation_matrices":true,"textures":["Texture.overlay"],"geometry":"Geometry.overlay"}},"format_version":"1.8.0"}

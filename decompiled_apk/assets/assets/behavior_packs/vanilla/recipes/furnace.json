@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"tag":"minecraft:stone_crafting_materials"}],"priority":-1,"result":{"item":"minecraft:furnace"},"key":{"#":{"tag":"minecraft:stone_crafting_materials"}},"description":{"identifier":"minecraft:furnace"},"pattern":["###","# #","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

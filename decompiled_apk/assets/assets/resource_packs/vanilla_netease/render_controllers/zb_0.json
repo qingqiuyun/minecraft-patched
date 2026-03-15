@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.zb_0": {
+      "arrays": {
+        "textures": {
+          "array.zb_0": [
+            "texture.leather_0",
+            "texture.chainmail_0",
+            "texture.iron_0",
+            "texture.diamond_0",
+            "texture.gold_0",
+            "texture.gold_0",
+            "texture.turtle_0",
+            "texture.netherite_0"
+          ]
+        }
+      },
+      "geometry": "Geometry.zb_0",
+      "materials": [
+        {
+          "*": "Material.armor"
+        }
+      ],
+      "textures": [
+        "array.zb_0[query.armor_texture_slot(0)]"
+      ],
+      "color": {
+        "r": "q.armor_color_slot(0, 0)",
+        "g": "q.armor_color_slot(0, 1)",
+        "b": "q.armor_color_slot(0, 2)",
+        "a": "q.armor_color_slot(0, 3)"
+      },
+      "is_hurt_color": {
+        "r": "v.is_enchanted_helmet ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_helmet",
+        "a": "v.is_enchanted_helmet ? 0.3"
+      },
+      "on_fire_color": {
+        "r": "v.is_enchanted_helmet ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_helmet",
+        "a": "v.is_enchanted_helmet ? 0.3"
+      },
+      "overlay_color": {
+        "r": "v.is_enchanted_helmet ? 0.4",
+        "g": 0,
+        "b": "v.is_enchanted_helmet",
+        "a": "v.is_enchanted_helmet ? 0.3"
+      },
+      "ignore_lighting": true
+    }
+  }
+}

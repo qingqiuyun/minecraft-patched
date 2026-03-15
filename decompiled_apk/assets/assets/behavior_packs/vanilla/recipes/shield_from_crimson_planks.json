@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"shield","count":1},"key":{"A":{"item":"crimson_planks"},"B":{"item":"iron_ingot"}},"description":{"identifier":"minecraft:shield_from_crimson_planks"},"pattern":["ABA","AAA"," A "],"tags":["crafting_table"]},"format_version":"1.16"}

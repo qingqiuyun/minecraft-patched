@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"set_count","count":{"max":3,"min":1}},{"function":"set_data","data":0},{"function":"looting_enchant","count":{"max":1,"min":0}}],"name":"minecraft:glow_ink_sac","type":"item","weight":1}],"rolls":1}]}

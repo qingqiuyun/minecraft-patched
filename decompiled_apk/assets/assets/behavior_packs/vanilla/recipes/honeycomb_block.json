@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:honeycomb"}],"result":[{"item":"minecraft:honeycomb_block"}],"key":{"X":{"item":"minecraft:honeycomb"}},"description":{"identifier":"minecraft:honeycomb_block"},"pattern":["XX","XX"],"tags":["crafting_table"]},"format_version":"1.20.10"}

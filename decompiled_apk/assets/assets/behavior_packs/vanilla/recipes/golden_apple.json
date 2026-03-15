@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gold_ingot"}],"result":{"item":"minecraft:golden_apple","data":0},"key":{"#":{"item":"minecraft:gold_ingot"},"X":{"item":"minecraft:apple"}},"description":{"identifier":"minecraft:golden_apple"},"pattern":["###","#X#","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

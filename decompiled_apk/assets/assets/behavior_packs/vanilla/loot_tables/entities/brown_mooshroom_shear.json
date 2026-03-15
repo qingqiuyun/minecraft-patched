@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"minecraft:set_data_from_color_index"},{"function":"set_count","count":{"max":1,"min":1}}],"name":"minecraft:brown_mushroom","type":"item","weight":1}],"rolls":5}]}

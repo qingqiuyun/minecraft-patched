@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:nether_wart","input":"minecraft:potion_type:water","description":{"identifier":"minecraft:brew_water_nether_wart"},"output":"minecraft:potion_type:Awkward","tags":["brewing_stand"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:entity":{"components":{"minecraft:conditional_bandwidth_optimization":{},"minecraft:physics":{"has_collision":false}},"description":{"is_summonable":false,"identifier":"minecraft:area_effect_cloud","is_experimental":false,"is_spawnable":false}},"format_version":"1.8.0"}

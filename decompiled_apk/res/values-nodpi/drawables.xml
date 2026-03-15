@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="netease_permissionkit_sdk__toast_background">Nacho/neko.png</item>
+    <item type="drawable" name="netease_mpay_ps_codescanner__img_bg_02">Nacho/neko.png</item>
+</resources>

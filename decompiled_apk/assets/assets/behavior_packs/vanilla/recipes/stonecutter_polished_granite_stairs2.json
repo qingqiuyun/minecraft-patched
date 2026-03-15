@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:stone","data":2}],"priority":1,"result":{"item":"minecraft:polished_granite_stairs","data":0,"count":1},"description":{"identifier":"minecraft:stonecutter_polished_granite_stairs2"},"ingredients":[{"item":"minecraft:stone","data":2}],"tags":["stonecutter"]},"format_version":"1.20.10"}

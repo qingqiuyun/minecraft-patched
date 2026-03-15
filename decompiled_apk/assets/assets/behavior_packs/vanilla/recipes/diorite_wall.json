@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:stone","data":3}],"result":{"item":"minecraft:cobblestone_wall","data":3,"count":6},"key":{"#":{"item":"minecraft:stone","data":3}},"description":{"identifier":"minecraft:diorite_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

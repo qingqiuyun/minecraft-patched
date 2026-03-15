@@ -1,0 +1,1 @@
+{"piece_name":"makena_skin","piece_type":"persona_skin","piece_id":"37788a67-0abb-fec7-4d9b-5dfdbf25e58c","texture_sources":[{"texture":"makena_skin_head.png","use_face_uv":true,"tint_map":"makena_skin_head_tintmap.tga"},{"tint_map":"makena_skin_body_tintmap.tga","texture":"makena_skin_body.png"}],"tint_base_color":{"r_color":"#ff7f4a"}}

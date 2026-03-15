@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:melon"}],"result":{"item":"minecraft:melon_block"},"key":{"M":{"item":"minecraft:melon"}},"description":{"identifier":"minecraft:melon_block"},"pattern":["MMM","MMM","MMM"],"tags":["crafting_table"]},"format_version":"1.20.10"}

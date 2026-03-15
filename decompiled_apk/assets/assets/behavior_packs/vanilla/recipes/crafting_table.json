@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":{"context":"AlwaysUnlocked"},"result":{"item":"crafting_table"},"key":{"A":{"tag":"minecraft:planks"}},"description":{"identifier":"minecraft:WorkBench_recipeId"},"pattern":["AA","AA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

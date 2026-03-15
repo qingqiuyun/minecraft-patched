@@ -1,0 +1,1 @@
+{"minecraft:biome":{"components":{"minecraft:the_end_surface":{},"minecraft:tags":{"tags":["the_end"]},"minecraft:climate":{"downfall":0.5,"temperature":0.5,"snow_accumulation":[0.0,0.125]}},"description":{"identifier":"the_end"}},"format_version":"1.20.60"}

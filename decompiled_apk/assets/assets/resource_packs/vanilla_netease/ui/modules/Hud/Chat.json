@@ -1,0 +1,170 @@
+{
+  "namespace": "Quasar/Chat",
+  "chat_grid_item": {
+    "type": "panel",
+    "layer": 1,
+    "size": [
+      "90%-2px",
+      "100%c+1px"
+    ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "controls": [
+      {
+        "chat_text@chat_label": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "font_type": "$global_font_type",
+          "color": "$onprimarycontainer",
+          "anims": [
+            "@Quasar/Chat.anim_chat_bg_offset_in"
+          ],
+          "size": [
+            "default",
+            "default"
+          ],
+          "max_size": [
+            "100%",
+            "default"
+          ],
+          "controls": [
+            {
+              "chat_background": {
+                "type": "image",
+                "texture": "$8x",
+                "alpha": "@Quasar/Chat.anim_chat_bg_alpha_in",
+                "layer": -2,
+                "color": "$background",
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "bloom": {
+                      "type": "image",
+                      "texture": "$bloom",
+                      "color": "$shadow",
+                      "alpha": "$global_bloom_alpha",
+                      "size": [
+                        "100%+20px",
+                        "100%+20px"
+                      ],
+                      "layer": -50
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "chat_panel": {
+    "type": "panel",
+    "clips_children": true,
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": [
+      "40%",
+      "50%"
+    ],
+    "offset": [
+      0,
+      -20
+    ],
+    "controls": [
+      {
+        "stack_panel": {
+          "type": "stack_panel",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "factory": {
+            "name": "chat_item_factory",
+            "max_children_size": 50,
+            "control_ids": {
+              "chat_item": "chat_item@Quasar/Chat.chat_grid_item"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "chat_label": {
+    "type": "label",
+    "layer": 31,
+    "text": "#text",
+    "size": [
+      "default",
+      "default"
+    ],
+    "shadow": false,
+    "localize": false,
+    "color": "$chat_text_color",
+    "font_type": "$chat_font_type",
+    "font_scale_factor": "$chat_font_scale_factor",
+    "line_padding": "$chat_line_spacing",
+    "anims": [],
+    "bindings": [
+      {
+        "binding_name": "#chat_text",
+        "binding_name_override": "#text",
+        "binding_type": "collection",
+        "binding_collection_name": "chat_text_grid",
+        "binding_condition": "once"
+      }
+    ]
+  },
+  "anim_chat_bg_offset_in": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 1,
+    "to": [
+      10,
+      0
+    ],
+    "from": [
+      -500,
+      0
+    ],
+    "next": "@Quasar/Chat.anim_chat_bg_wait"
+  },
+  "anim_chat_bg_alpha_in": {
+    "anim_type": "alpha",
+    "duration": 1,
+    "from": 0,
+    "to": 0.3,
+    "next": "@Quasar/Chat.anim_chat_bg_alpha_wait"
+  },
+  "anim_chat_bg_alpha_wait": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@Quasar/Chat.anim_chat_bg_alpha_out"
+  },
+  "anim_chat_bg_alpha_out": {
+    "anim_type": "alpha",
+    "duration": 0.1,
+    "to": 0,
+    "from": 0.3
+  },
+  "anim_chat_bg_offset_out": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "destroy_at_end": "chat_grid_item",
+    "duration": 1,
+    "from": [
+      10,
+      0
+    ],
+    "to": [
+      -500,
+      0
+    ]
+  },
+  "anim_chat_bg_wait": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@Quasar/Chat.anim_chat_bg_offset_out"
+  }
+}

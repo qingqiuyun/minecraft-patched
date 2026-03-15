@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:compass"}],"result":{"item":"minecraft:emptymap","data":2},"description":{"identifier":"minecraft:basic_map_to_enhanced"},"ingredients":[{"item":"minecraft:emptymap","data":1},{"item":"minecraft:compass"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

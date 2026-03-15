@@ -1,0 +1,107 @@
+.class public Lcom/tencent/cloud/huiyansdkface/facelight/net/GetCdnGradeInfo$specialSet;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tencent/cloud/huiyansdkface/facelight/net/GetCdnGradeInfo;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "specialSet"
+.end annotation
+
+
+# instance fields
+.field public actCheckNextTime:Ljava/lang/String;
+
+.field public androidFaceAreaMax:Ljava/lang/String;
+
+.field public androidFaceAreaMin:Ljava/lang/String;
+
+.field public androidFacePitchMax:Ljava/lang/String;
+
+.field public androidFacePitchMin:Ljava/lang/String;
+
+.field public androidFacePointsPercent:Ljava/lang/String;
+
+.field public androidFacePointsVis:Ljava/lang/String;
+
+.field public androidFaceRollMax:Ljava/lang/String;
+
+.field public androidFaceRollMin:Ljava/lang/String;
+
+.field public androidFaceYawMax:Ljava/lang/String;
+
+.field public androidFaceYawMin:Ljava/lang/String;
+
+.field public androidHighPixelThreshold:I
+
+.field public appIdSet:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public authBackVisibleTime:Ljava/lang/String;
+
+.field public dialogType:Ljava/lang/String;
+
+.field public enterDetectWaitTime:Ljava/lang/String;
+
+.field public isCamCanRetry:Ljava/lang/String;
+
+.field public isDetectCloseEye:Ljava/lang/String;
+
+.field public isGm:Ljava/lang/String;
+
+.field public kyc_auth_tip_know_and_agree:Ljava/lang/String;
+
+.field public kyc_auth_tip_line1:Ljava/lang/String;
+
+.field public kyc_auth_tip_line2:Ljava/lang/String;
+
+.field public kyc_auth_tip_line3:Ljava/lang/String;
+
+.field public kyc_auth_tip_read_and_agree:Ljava/lang/String;
+
+.field public kyc_auth_tip_refuse_no_use:Ljava/lang/String;
+
+.field public kyc_auth_tip_use_cam_reason:Ljava/lang/String;
+
+.field public kyc_auth_tip_user_auth:Ljava/lang/String;
+
+.field public outOfTime:Ljava/lang/String;
+
+.field public recordTime:Ljava/lang/String;
+
+.field public recordYTVideo:Ljava/lang/String;
+
+.field public returnUserImage:Ljava/lang/String;
+
+.field public skipGuideTipVoice:Ljava/lang/String;
+
+.field public turingTime:Ljava/lang/String;
+
+.field public uploadYTVideo:Ljava/lang/String;
+
+.field public useTuringSDK_and:Ljava/lang/String;
+
+.field public verifyBackVisibleTime:Ljava/lang/String;
+
+.field public ytVideoValidFrames:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:clay_ball"}],"input":"minecraft:clay_ball","description":{"identifier":"minecraft:furnace_clay_ball"},"output":"minecraft:brick","tags":["furnace"]},"format_version":"1.20.10"}

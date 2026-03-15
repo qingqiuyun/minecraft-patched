@@ -1,0 +1,1 @@
+{"materials":{"health_bar:debug":{"blendDst":"OneMinusSrcAlpha","+states":["Blending"],"blendSrc":"SourceAlpha"},"version":"1.0.0","billboard_text_depth_tested:sign_text":{"fragmentShader":"shaders/billboard_text.fragment"}}}

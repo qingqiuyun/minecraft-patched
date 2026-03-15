@@ -1,0 +1,1 @@
+{"piece_name":"steve_skin","piece_type":"persona_skin","piece_id":"f1e4c577-19ba-4d77-9222-47f145857f78","texture_sources":[{"texture":"steve_skin_head.png","use_face_uv":true,"tint_map":"steve_skin_head_tintmap.tga"},{"tint_map":"steve_skin_body_tintmap.tga","texture":"steve_skin_body.png"}],"tint_base_color":{"r_color":"#ff7f4a"}}

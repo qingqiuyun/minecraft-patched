@@ -1,0 +1,146 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.player.xz_cape": {
+            "arrays": {
+                "textures": {
+                    "array.cape": [
+                        "texture.cape",
+                        "texture.xz_cape01",
+                        "texture.xz_cape02",
+                        "texture.xz_cape03",
+                        "texture.xz_cape04",
+                        "texture.xz_cape05",
+                        "texture.xz_cape06",
+                        "texture.xz_cape07",
+                        "texture.xz_cape08",
+                        "texture.xz_cape09",
+                        "texture.xz_cape10",
+                        "texture.xz_cape11",
+                        "texture.xz_cape12",
+                        "texture.xz_cape13",
+                        "texture.xz_cape14",
+                        "texture.xz_cape15",
+                        "texture.xz_cape16",
+                        "texture.xz_cape17",
+                        "texture.xz_cape18",
+                        "texture.xz_cape19",
+                        "texture.xz_cape20",
+                        "texture.xz_cape21",
+                        "texture.xz_cape22",
+                        "texture.xz_cape23",
+                        "texture.xz_cape24",
+                        "texture.xz_cape25",
+                        "texture.xz_cape26",
+                        "texture.xz_cape27",
+                        "texture.xz_cape28",
+                        "texture.xz_cape29",
+                        "texture.xz_cape30",
+                        "texture.xz_cape31",
+                        "texture.xz_cape32",
+                        "texture.xz_cape33",
+                        "texture.xz_cape34",
+                        "texture.xz_cape35",
+                        "texture.xz_cape36",
+                        "texture.xz_cape37",
+                        "texture.xz_cape38",
+                        "texture.xz_cape39",
+                        "texture.xz_cape40",
+                        "texture.xz_cape41",
+                        "texture.xz_cape42",
+                        "texture.xz_cape43",
+                        "texture.xz_cape44",
+                        "texture.xz_cape45",
+                        "texture.xz_cape46",
+                        "texture.xz_cape47",
+                        "texture.xz_cape48",
+                        "texture.xz_cape49",
+                        "texture.xz_cape50",
+                        "texture.xz_cape51",
+                        "texture.xz_cape52",
+                        "texture.xz_cape53",
+                        "texture.xz_cape54",
+                        "texture.xz_cape55",
+                        "texture.xz_cape56",
+                        "texture.xz_cape57",
+                        "texture.xz_cape58",
+                        "texture.xz_cape59",
+                        "texture.xz_cape60",
+                        "texture.xz_cape61",
+                        "texture.xz_cape62",
+                        "texture.xz_cape63"
+                    ]
+                },
+                "geometries": {
+                    "array.cape_model": [
+                        "geometry.xz_cape_vanilla",
+                        "geometry.xz_cape_paper"
+                    ]
+                }
+            },
+            "geometry": "array.cape_model[(v.cape_is_paper?1)]",
+            "materials": [
+                {
+                    "*": "material.experience_orb"
+                }
+            ],
+            "textures": [
+                "array.cape[((!v.is_paperdoll)?(query.is_local_player ? v.cape_variant : 0))]"
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "part_visibility": [
+                {
+                    "cape": "(query.armor_texture_slot(1) != 5) && (!variable.is_first_person || variable.is_paperdoll) && (!variable.map_face_icon)"
+                }
+            ]
+        },
+        "controller.render.player.hurted_sensor": {
+            "geometry": "Geometry.cape",
+            "textures": [
+                "Texture.cape"
+            ],
+            "materials": [
+                {
+                    "*": "Material.cape"
+                }
+            ],
+            "is_hurt_color": {
+                "a": "v.hurt_time = 1; v.hurt_ever_time = q.life_time; return 0.0;"
+            }
+        },
+        "controller.render.player.xzhud": {
+            "geometry": "Geometry.xzhud",
+            "arrays": {
+                "textures": {
+                    "array.hud": [
+                        "texture.ifnoblock",//0
+                        "texture.ifattack",//1
+                        "texture.ifhurted",//2
+                        "texture.iflowhp",//3
+                        "texture.ifmove",//4
+                        "texture.ifsneak",//5
+                        "texture.ifsprint",//6
+                        "texture.ifwalk"//7
+                    ]
+                }
+            },
+            "textures": [
+                "array.hud[((!v.is_paperdoll)?(query.is_local_player ? v.xzhud_changed : 0))]"
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "part_visibility": [
+                {
+                    "*": "v.hud_display && v.is_first_person"
+                }
+            ],
+            "is_hurt_color": {
+                "a": "0"
+            }
+        }
+    }
+}

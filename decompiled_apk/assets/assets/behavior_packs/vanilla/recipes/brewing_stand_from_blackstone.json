@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"minecraft:brewing_stand"},"key":{"#":{"item":"minecraft:blackstone"},"B":{"item":"minecraft:blaze_rod"}},"description":{"identifier":"minecraft:brewing_stand_from_blackstone"},"pattern":[" B ","###"],"tags":["crafting_table"]},"format_version":"1.12"}

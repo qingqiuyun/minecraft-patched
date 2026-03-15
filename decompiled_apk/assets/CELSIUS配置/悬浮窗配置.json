@@ -1,0 +1,19 @@
+{
+  "总悬浮窗开关": true,
+  "种子查询悬浮窗开关": true,
+  "命令助手开关": true,
+  "二分坐标悬浮窗开关": true,
+  "功能列表开关": true,
+  "水印开关": true,
+  "注入器开关": false,
+  "杀en开关": true,
+  "动态模糊注入开关": true,
+    "主文本": "种子查询",
+    "水印文本": "Stellaris X CELSIUS",
+    "链接": "https://www.chunkbase.com/apps/seed-map#seed=-4505787223716522758&platform=bedrock_1_21&dimension=overworld&x=0&z=0&zoom=0.5",
+      "自定义功能列表": [
+    "Lucida Client",
+    "1061666830",
+    "nya~"
+  ]
+}

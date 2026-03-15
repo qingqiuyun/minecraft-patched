@@ -1,0 +1,2 @@
+{"render_controllers":{"controller.render.axolotl":{"materials":[{"*":"Material.default"},{"*arm":"Material.limbs"},{"*leg":"Material.limbs"}],"geometry":"Geometry.default","arrays":{"textures":{"Array.skins":["Texture.lucy","Texture.cyan","Texture.gold","Texture.wild","Texture.blue"]}},"textures":["Array.skins[query.variant]"]}},"format_version":"1.8.0"}
+//CelsiusRP 11-20

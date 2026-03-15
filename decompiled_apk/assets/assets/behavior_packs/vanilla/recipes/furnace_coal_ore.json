@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:coal_ore"}],"input":"minecraft:coal_ore","description":{"identifier":"minecraft:furnace_coal_ore"},"output":"minecraft:coal","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

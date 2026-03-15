@@ -1,0 +1,24 @@
+{
+  "motion_blur": {
+    "vertexShader": "shaders/uv_fullscreen.vertex",
+    "fragmentShader": "shaders/motion_blur.fragment",
+
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV0" }
+    ],
+
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureWrap": "Clamp",
+        "textureFilter": "Bilinear"
+      }
+    ],
+    "states": [
+        "DisableDepthTest"
+    ],
+
+    "msaaSupport": "Both"
+  }
+}

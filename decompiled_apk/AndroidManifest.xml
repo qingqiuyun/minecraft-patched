@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:installLocation="auto" package="com.netease.mc.m439b" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.netease.mc.m439b_com.qti.permission.PROFILER"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application android:allowBackup="false" android:appCategory="game" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.mojang.minecraftpe.AppContext" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:usesCleartextTraffic="true">
+        <provider android:authorities="com.netease.mc.m439b.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="false" android:label="@string/app_name_short" android:launchMode="singleTask" android:name="com.mojang.minecraftpe.MainActivity" android:resizeableActivity="true" android:screenOrientation="landscape" android:theme="@style/LegacySplashScreen" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.lib_name" android:value="minecraftpe"/>
+            <intent-filter>
+                <action android:name="xbox_live_game_invite"/>
+                <action android:name="xbox_live_achievement_unlock"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:pathPattern=".*\\.mcworld"/>
+                <data android:pathPattern=".*\\..*\\.mcworld"/>
+                <data android:pathPattern=".*\\..*\\..*\\.mcworld"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mcworld"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mcworld"/>
+                <data android:pathPattern=".*\\.mcpack"/>
+                <data android:pathPattern=".*\\..*\\.mcpack"/>
+                <data android:pathPattern=".*\\..*\\..*\\.mcpack"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mcpack"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mcpack"/>
+                <data android:pathPattern=".*\\.mcaddon"/>
+                <data android:pathPattern=".*\\..*\\.mcaddon"/>
+                <data android:pathPattern=".*\\..*\\..*\\.mcaddon"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mcaddon"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mcaddon"/>
+                <data android:pathPattern=".*\\.mctemplate"/>
+                <data android:pathPattern=".*\\..*\\.mctemplate"/>
+                <data android:pathPattern=".*\\..*\\..*\\.mctemplate"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.mctemplate"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.mctemplate"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.netease.ntunisdk.CommonSdkProxyActivity" android:theme="@style/UniCommTransparent"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <meta-data android:name="xperiaplayoptimized_content" android:resource="@string/xperiaplayoptimized_content"/>
+        <meta-data android:name="game_display_name" android:resource="@string/app_name"/>
+        <meta-data android:name="game_icon" android:resource="@drawable/iconx"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="android.max_aspect" android:value="3.0"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="690ffe0d90"/>
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="Production"/>
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START"/>
+        <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2"/>
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false"/>
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="false"/>
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="APPLICATION_CLASS_NAME" android:value="com.netease.ntunisdk.application.NtSdkApplication"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="game.mobile" android:pathPrefix="/mc" android:scheme="ntes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="game.mobile" android:pathPrefix="/x19" android:scheme="ntes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="game.mobile" android:pathPrefix="/x19." android:scheme="ntes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="game.mobile" android:scheme="ntesx19"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.netease.mc.m4399" android:scheme="ntesx19"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.mxxy.Template.FloatServiceView"/>
+        <provider android:authorities="com.netease.mc.m439b.operate.FileProvider" android:exported="false" android:grantUriPermissions="true" android:name="cn.m4399.operate.OpeFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/m4399_ope_file_paths"/>
+        </provider>
+        <service android:foregroundServiceType="mediaProjection" android:name="cn.m4399.operate.video.record.container.RecordService"/>
+        <activity android:configChanges="fontScale|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="cn.m4399.operate.component.OperateActivity" android:screenOrientation="behind" android:theme="@style/m4399.Operate.Theme.Activity.Translucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="cn.m4399.operate.recharge.RechargeActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:hardwareAccelerated="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="cn.com.chinatelecom.account.sdk.ui.AuthActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="cn.com.chinatelecom.account.sdk.ui.PrivacyWebviewActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="cn.m4399.operate.account.onekey.wo.WoLoginActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.cmic.gen.sdk.view.GenLoginAuthActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="wb_version_WbCloudNormal" android:value="v5.1.5-5dfadab"/>
+        <meta-data android:name="wb_version_WbCloudFaceSdk" android:value="v4.5.6.2.1-92b2fb0b"/>
+        <meta-data android:name="wb_version_WbCloudFaceLiveSdk" android:value="v4.5.6.2.1-92b2fb0b"/>
+        <meta-data android:name="kycgm_version" android:value="1.0.0"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceVerifyActivity" android:theme="@style/wbcfFaceThemeBlack"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceGuideActivity" android:screenOrientation="portrait" android:theme="@style/wbcfFaceProtocolThemeBlack"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.tencent.cloud.huiyansdkface.facelight.ui.FaceProtocalActivity" android:screenOrientation="portrait" android:theme="@style/wbcfFaceThemeBlack"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.netease.ntunisdk.modules.ngwebviewgeneral.ui.NgWebviewActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.netease.ntunisdk.modules.ngwebviewgeneral.ui.NgWebviewActivityEx" android:process=":ngwebview" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:launchMode="singleInstance" android:name="com.netease.ntunisdk.modules.ngwebviewgeneral.ui.NgWebviewActivityEx2" android:taskAffinity=".ngwebviewTask" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <provider android:authorities="com.netease.mc.m439b.ngwebview.fileprovider" android:enabled="true" android:exported="false" android:grantUriPermissions="true" android:name="com.netease.ntunisdk.modules.ngwebviewgeneral.NgWebviewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ngwebview_file_paths"/>
+        </provider>
+        <service android:name="com.netease.ntunisdk.modules.ngwebviewgeneral.aidl.NGRemoteService" android:process=":ngwebview"/>
+        <meta-data android:name="uni_module_deviceInfo" android:value="deviceInfo"/>
+        <meta-data android:name="product_id" android:value="g79_3"/>
+        <meta-data android:name="client_key" android:value="bt9MJODMQ8e81wt/YQt8mw=="/>
+        <receiver android:exported="false" android:name="com.mojang.minecraftpe.mcPushClientReceiver" android:permission="com.netease.mc.m4399.permission.ngpush">
+            <intent-filter>
+                <action android:name="com.netease.push.action.client.MESSAGE"/>
+                <action android:name="com.netease.push.action.client.NEWID"/>
+                <action android:name="com.netease.push.action.client.METHOD"/>
+                <action android:name="com.netease.push.action.client.CHANNLE_NOTI_CLICK"/>
+                <action android:name="com.netease.push.action.client.SAVE_TOKEN"/>
+                <action android:name="com.netease.push.action.client.CALLBACK_TOKEN"/>
+                <action android:name="com.netease.push.action.client.LOGIN_CALLBACK"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:label="PushService" android:name="com.netease.pushservice.PushService" android:process=":PushService" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="com.netease.push.action.service.PUSHSERVICE3"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="NotifyActivityName" android:value="com.mojang.minecraftpe.MainActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.netease.ntsharesdk.platform.WXEntry" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.netease.mc.m439b.uningshare.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.netease.ntsharesdk.UniNgshareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ngshare_file_provider_paths"/>
+        </provider>
+        <activity-alias android:exported="true" android:launchMode="singleTask" android:name="com.netease.mc.m4399.wxapi.WXEntryActivity" android:targetActivity="com.netease.ntsharesdk.platform.WXEntry" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1106608478"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.sina.weibo.sdk.web.WebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.ShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.netease.mc.m439b.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sina.weibo.sdk.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.netease.ntunisdk.shortcuts.ShortcutRouteActivity" android:screenOrientation="sensorLandscape" android:taskAffinity="com.netease.quickqr" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.netease.ntunisdk.shortcuts.ShortcutMainActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|locale|screenSize" android:name="com.netease.ntunisdk.zxing.client.android.CaptureActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.netease.mc.m439b.extend.InstallApkProvider" android:enabled="true" android:exported="false" android:grantUriPermissions="true" android:name="com.netease.ntunisdk.extend.InstallApk$InstallApkProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/extend_install_apk_file_paths"/>
+        </provider>
+        <meta-data android:name="com.android.app.gamemode.performance.enabled" android:value="true"/>
+        <meta-data android:name="com.android.app.gamemode.battery.enabled" android:value="true"/>
+        <meta-data android:name="android.game_mode_config" android:resource="@xml/game_mode_config"/>
+        <activity android:exported="true" android:name="com.netease.mpay.auth.AuthActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="route" android:pathPrefix="/x19/" android:scheme="neteasempay"/>
+                <data android:host="com.netease.mc.m4399" android:path="/author_to_dy" android:scheme="dygame"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="uni_module_personalinfolist" android:value="personalInfoList"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.netease.unisdk.biometric.AuthActivity" android:screenOrientation="sensor" android:theme="@style/UniSDK_Biometric.Transparent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.netease.ntunisdk.external.protocol.ProtocolLauncher" android:screenOrientation="sensorLandscape" android:theme="@style/LegacySplashScreen">
+            <meta-data android:name="protocolVersion" android:value="490"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="minecraft"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="duowan"/>
+            </intent-filter>
+            <meta-data android:name="gameLauncherActivity" android:value="com.mojang.minecraftpe.MainActivity"/>
+            <meta-data android:name="protocolPublishArea" android:value="0"/>
+            <meta-data android:name="protocolAppChannel" android:value="4399com"/>
+            <meta-data android:name="protocolJFGameId" android:value="x19"/>
+        </activity>
+    </application>
+    <queries>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.m4399.gamecenter"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.eg.android.AlipayGphone"/>
+        <package android:name="com.eg.android.AlipayGphoneRC"/>
+        <package android:name="hk.alipay.wallet"/>
+        <package android:name="com.xmcy.hykb"/>
+        <package android:name="com.netease.x19"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/details" android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/details" android:scheme="vivomarket"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/details" android:scheme="appmarket"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/openTopic" android:scheme="hykb"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/game_center/detail" android:scheme="bilibili"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/ptn/appinfo.do" android:scheme="leapp"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/taptap.cn/app" android:scheme="taptap"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/taptap.tw/app" android:scheme="tapglobal"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:pathPrefix="/details" android:scheme="honormarket"/>
+        </intent>
+        <package android:name="com.xiaomi.market"/>
+        <package android:name="com.oppo.market"/>
+        <package android:name="com.heytap.market"/>
+        <package android:name="com.baidu.appsearch"/>
+        <package android:name="cn.ninegame.gamemanager"/>
+        <package android:name="com.qihoo.appstore"/>
+        <package android:name="com.hihonor.appmarket"/>
+        <package android:name="com.tencent.android.qqdownloader"/>
+        <package android:name="com.taptap"/>
+    </queries>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.netease.mc.m439b.permission.ngpush"/>
+    <permission android:name="com.netease.mc.m439b.permission.ngpush" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.netease.mc.m439b.permission.ngpush"/>
+    <permission android:name="com.netease.mc.m439b.permission.ngpush" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.netease.mc.m439b_com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="com.netease.mc.m439b_freemme.permission.msa"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_RECORDING"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+</manifest>

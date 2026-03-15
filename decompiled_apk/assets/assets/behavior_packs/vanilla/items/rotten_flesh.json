@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"nutrition":4,"saturation_modifier":"poor","effects":[{"amplifier":0,"name":"hunger","chance":0.8,"duration":30}]},"minecraft:use_duration":32},"description":{"identifier":"minecraft:rotten_flesh"}},"format_version":"1.10"}

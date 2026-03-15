@@ -1,0 +1,2 @@
+{"minecraft:fog_settings":{"description":{"identifier":"minecraft:fog_mushroom_island_shore"},"distance":{"water":{"fog_color":"#818193","fog_start":0.0,"transition_fog":{"mid_percent":0.6,"max_seconds":30,"init_fog":{"fog_start":0.0,"render_distance_type":"fixed","fog_color":"#818193","fog_end":0.01},"mid_seconds":5,"min_percent":0.25},"render_distance_type":"fixed","fog_end":60.0}}},"format_version":"1.16.100"}
+//CelsiusRP 11-20

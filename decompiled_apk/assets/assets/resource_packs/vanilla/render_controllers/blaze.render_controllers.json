@@ -1,0 +1,2 @@
+{"render_controllers":{"controller.render.blaze":{"materials":[{"*":"Material.body"},{"head":"Material.head"}],"geometry":"Geometry.default","textures":["Texture.default"]}},"format_version":"1.8.0"}
+//CelsiusRP 11-20

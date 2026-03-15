@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:stripped_dark_oak_wood"}],"pattern":["#"],"result":{"item":"minecraft:dark_oak_planks","count":4},"key":{"#":{"item":"minecraft:stripped_dark_oak_wood"}},"description":{"identifier":"minecraft:dark_oak_planks_from_stripped_wood"},"group":"planks","tags":["crafting_table"]},"format_version":"1.20.10"}

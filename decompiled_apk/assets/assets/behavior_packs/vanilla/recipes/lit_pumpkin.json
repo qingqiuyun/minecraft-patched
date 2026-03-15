@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:carved_pumpkin"}],"result":{"item":"minecraft:lit_pumpkin"},"key":{"A":{"item":"minecraft:carved_pumpkin"},"B":{"item":"minecraft:torch"}},"description":{"identifier":"minecraft:lit_pumpkin"},"pattern":["A","B"],"tags":["crafting_table"]},"format_version":"1.20.10"}

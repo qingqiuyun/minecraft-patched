@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"wooden_shovel","count":1},"key":{"A":{"item":"crimson_planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:wooden_shovel_from_crimson_planks"},"pattern":["A","B","B"],"tags":["crafting_table"]},"format_version":"1.16"}

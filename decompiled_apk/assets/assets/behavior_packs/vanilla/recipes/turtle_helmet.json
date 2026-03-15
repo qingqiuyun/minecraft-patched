@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:turtle_shell_piece"}],"result":{"item":"minecraft:turtle_helmet"},"key":{"X":{"item":"minecraft:turtle_shell_piece"}},"description":{"identifier":"minecraft:turtle_helmet"},"pattern":["XXX","X X"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:copper_block"}],"priority":2,"result":{"item":"minecraft:cut_copper_stairs","count":4},"description":{"identifier":"minecraft:stonecutter_copper_block_to_cut_copper_stairs"},"ingredients":[{"item":"minecraft:copper_block"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

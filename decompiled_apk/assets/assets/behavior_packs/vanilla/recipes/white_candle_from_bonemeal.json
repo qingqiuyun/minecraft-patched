@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:candle"},{"item":"minecraft:dye","data":15}],"result":{"item":"minecraft:white_candle"},"ingredients":[{"item":"minecraft:candle"},{"item":"minecraft:dye","data":15}],"description":{"identifier":"minecraft:white_candle_from_bonemeal"},"group":"candle","tags":["crafting_table"]},"format_version":"1.20.10"}

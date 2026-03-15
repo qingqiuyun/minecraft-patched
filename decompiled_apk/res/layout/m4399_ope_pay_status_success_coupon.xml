@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_pay_success_coupon_ll_parent" android:background="@drawable/m4399_ope_pay_shape_panel" android:paddingLeft="@dimen/m4399_ope_pay_complex_coupon_padding" android:paddingTop="@dimen/m4399_ope_pay_complex_coupon_padding_top" android:paddingRight="@dimen/m4399_ope_pay_complex_coupon_padding" android:paddingBottom="@dimen/m4399_ope_pay_complex_coupon_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m4399_ope_pay_vip_card_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_pay_success_coupon_ll_progress" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip">
+            <View android:layout_gravity="center_vertical" android:background="@drawable/m4399_ope_pay_status_success_coupon_completed_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" />
+            <View android:layout_gravity="center" android:background="#ffe5e5e5" android:layout_width="2.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@drawable/m4399_ope_pay_status_success_coupon_incomplete_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_pay_success_coupon_ll_obtained_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/m4399_ope_pay_recommend_activities_icon" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/m4399_ope_color_de000000" android:id="@id/m4399_ope_pay_success_coupon_tv_title_obtained" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+            </LinearLayout>
+            <cn.m4399.operate.support.component.ExpandedGridView android:id="@id/m4399_ope_pay_success_coupon_gv_obtained" android:paddingTop="12.0dip" android:paddingBottom="16.0dip" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="8.0dip" android:verticalSpacing="12.0dip" android:numColumns="@integer/m4399_ope_pay_success_coupon_columns" android:divider="@android:color/white" android:isScrollContainer="false" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_pay_success_coupon_ll_continue_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/m4399_ope_pay_recommend_activities_icon" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/m4399_ope_color_de000000" android:id="@id/m4399_ope_pay_success_coupon_tv_title_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <cn.m4399.operate.support.component.ExpandedGridView android:id="@id/m4399_ope_pay_success_coupon_gv_continue" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="8.0dip" android:verticalSpacing="12.0dip" android:numColumns="@integer/m4399_ope_pay_success_coupon_columns" android:divider="@android:color/white" android:isScrollContainer="false" />
+    <include layout="@layout/m4399_ope_pay_status_success_coupon_go_box" />
+</LinearLayout>

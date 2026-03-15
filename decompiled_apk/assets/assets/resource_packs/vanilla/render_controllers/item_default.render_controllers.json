@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.item_default":{"materials":[{"*":"variable.is_enchanted ? material.enchanted : material.default"}],"geometry":"geometry.default","textures":["texture.default","texture.enchanted"]}},"format_version":"1.10"}

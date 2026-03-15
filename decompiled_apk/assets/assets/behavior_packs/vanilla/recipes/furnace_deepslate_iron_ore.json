@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:deepslate_iron_ore"}],"input":"minecraft:deepslate_iron_ore","description":{"identifier":"minecraft:furnace_deepslate_iron_ore"},"output":"minecraft:iron_ingot","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

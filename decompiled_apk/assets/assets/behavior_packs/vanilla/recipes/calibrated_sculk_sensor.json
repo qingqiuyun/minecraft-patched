@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:amethyst_shard"}],"result":{"item":"minecraft:calibrated_sculk_sensor","count":1},"key":{"#":{"item":"minecraft:sculk_sensor"},"X":{"item":"minecraft:amethyst_shard"}},"description":{"identifier":"minecraft:calibrated_sculk_sensor"},"pattern":[" X ","X#X"],"tags":["crafting_table"]},"format_version":"1.20.10"}

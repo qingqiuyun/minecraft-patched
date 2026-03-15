@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"wooden_sword","count":1},"key":{"A":{"item":"warped_planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:wooden_sword_from_warped_planks"},"pattern":["A","A","B"],"tags":["crafting_table"]},"format_version":"1.16"}

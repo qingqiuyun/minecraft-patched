@@ -1,0 +1,826 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.keystroke_all",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wasd_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ]
+        },
+        {
+          "name": "w_model",
+          "parent": "wasd_model",
+          "pivot": [
+            9991,
+            10009,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9982,
+                10000,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "a_model",
+          "parent": "wasd_model",
+          "pivot": [
+            9971.5,
+            9989.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9962.5,
+                9980.5,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "s_model",
+          "parent": "wasd_model",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9982,
+                9980.5,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "d_model",
+          "parent": "wasd_model",
+          "pivot": [
+            10010.5,
+            9989.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                10001.5,
+                9980.5,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "lmb_model",
+          "parent": "keystroke",
+          "pivot": [
+            9976.375,
+            9970.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9962.5,
+                9962,
+                0
+              ],
+              "size": [
+                27.75,
+                17,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "rmb_model",
+          "parent": "keystroke",
+          "pivot": [
+            10005.625,
+            9970.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9991.75,
+                9962,
+                0
+              ],
+              "size": [
+                27.75,
+                17,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "space_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9956.25,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9962.5,
+                9951.75,
+                0
+              ],
+              "size": [
+                57,
+                9,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "progress_bar",
+          "parent": "keystroke",
+          "pivot": [
+            9992.25,
+            9962.5,
+            -1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9992.25,
+                9962.5,
+                -1
+              ],
+              "size": [
+                26.75,
+                3,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_w",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wasd_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ]
+        },
+        {
+          "name": "w_model",
+          "parent": "wasd_model",
+          "pivot": [
+            9991,
+            10009,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9982,
+                10000,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_a",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wasd_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ]
+        },
+        {
+          "name": "a_model",
+          "parent": "wasd_model",
+          "pivot": [
+            9971.5,
+            9989.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9962.5,
+                9980.5,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_s",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wasd_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ]
+        },
+        {
+          "name": "s_model",
+          "parent": "wasd_model",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9982,
+                9980.5,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_d",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "wasd_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9989.5,
+            0
+          ]
+        },
+        {
+          "name": "d_model",
+          "parent": "wasd_model",
+          "pivot": [
+            10010.5,
+            9989.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                10001.5,
+                9980.5,
+                0
+              ],
+              "size": [
+                18,
+                18,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_lmb",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "lmb_model",
+          "parent": "keystroke",
+          "pivot": [
+            9976.375,
+            9970.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9962.5,
+                9962,
+                0
+              ],
+              "size": [
+                27.75,
+                17,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_rmb",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rmb_model",
+          "parent": "keystroke",
+          "pivot": [
+            10005.625,
+            9970.5,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9991.75,
+                9962,
+                0
+              ],
+              "size": [
+                27.75,
+                17,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_space",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1,
+        "visible_bounds_height": 1,
+        "visible_bounds_offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "space_model",
+          "parent": "keystroke",
+          "pivot": [
+            9991,
+            9956.25,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9962.5,
+                9951.75,
+                0
+              ],
+              "size": [
+                57,
+                9,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.keystroke_p",
+        "texture_width": 1,
+        "texture_height": 1,
+        "visible_bounds_width": 1252,
+        "visible_bounds_height": 624.5,
+        "visible_bounds_offset": [
+          0,
+          311.75,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "keystroke",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "progress_bar",
+          "parent": "keystroke",
+          "pivot": [
+            10005.625,
+            9963,
+            -1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9992.25,
+                9962.5,
+                -1
+              ],
+              "size": [
+                26.75,
+                1.5,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

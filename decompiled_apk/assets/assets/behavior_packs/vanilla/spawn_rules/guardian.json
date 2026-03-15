@@ -1,0 +1,1 @@
+{"minecraft:spawn_rules":{"conditions":[{"minecraft:spawns_underwater":{}}],"description":{"population_control":"monster","identifier":"minecraft:guardian"}},"format_version":"1.8.0"}

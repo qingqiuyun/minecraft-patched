@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.phantom":{"materials":[{"*":"Array.materials[query.is_invisible]"}],"geometry":"Geometry.default","arrays":{"materials":{"Array.materials":["Material.default","Material.invisible"]}},"textures":["Texture.default"]}},"format_version":"1.8.0"}

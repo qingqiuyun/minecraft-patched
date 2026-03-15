@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:mossy_cobblestone"}],"result":{"item":"minecraft:cobblestone_wall","data":1,"count":6},"key":{"#":{"item":"minecraft:mossy_cobblestone"}},"description":{"identifier":"minecraft:mossy_cobblestone_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

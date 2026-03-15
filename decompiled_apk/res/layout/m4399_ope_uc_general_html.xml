@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_ope_id_rl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/m4399_ope_id_notch" android:background="@android:color/black" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    <cn.m4399.operate.extension.index.CornerLinearLayout android:orientation="vertical" android:id="@id/m4399_ope_id_ll_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/m4399_ope_id_notch">
+        <ViewStub android:id="@id/m4399_webview_stub_outside_nav" android:layout="@layout/m4399_ope_uc_vice_webview_nav_outside" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height_uc" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <cn.m4399.operate.support.component.webview.AlWebView android:id="@id/m4399_webview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/m4399_webview_stub_error_view" android:background="@color/m4399_ope_color_eeeeee" android:layout="@layout/m4399_ope_support_webview_layout_abnormal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:layout_gravity="bottom" android:id="@id/m4399_webview_stub_inside_nav" android:layout="@layout/m4399_ope_support_webview_nav_inside" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_nav_height_uc" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" />
+        </FrameLayout>
+    </cn.m4399.operate.extension.index.CornerLinearLayout>
+</RelativeLayout>

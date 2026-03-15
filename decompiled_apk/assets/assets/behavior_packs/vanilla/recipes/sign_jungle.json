@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:planks","data":3}],"pattern":["###","###"," | "],"result":{"item":"minecraft:jungle_sign","count":3},"key":{"#":{"item":"minecraft:planks","data":3},"|":{"item":"minecraft:stick"}},"description":{"identifier":"minecraft:sign_jungle"},"group":"sign","tags":["crafting_table"]},"format_version":"1.20.10"}

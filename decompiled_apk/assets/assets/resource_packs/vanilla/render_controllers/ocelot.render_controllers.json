@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.ocelot":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","arrays":{"textures":{"Array.skins":["Texture.wild","Texture.black","Texture.red","Texture.siamese"]}},"textures":["Array.skins[query.variant]"]}},"format_version":"1.8.0"}

@@ -1,0 +1,20 @@
+{
+  "namespace": "matreduce",
+
+  "material_reducer@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": false,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "$screen_bg_content": "common.screen_background",
+    "$screen_background_alpha": 0,
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "matreduce.content"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "matreduce_pocket.content"
+      }
+    ]
+  }
+}

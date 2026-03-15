@@ -1,0 +1,49 @@
+name: Build APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'decompiled_apk/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Download apktool
+      run: |
+        wget https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -O apktool.jar
+        chmod +x apktool.jar
+
+    - name: Build APK
+      run: |
+        java -jar apktool.jar b decompiled_apk -o patched.apk
+
+    - name: Zipalign APK
+      run: |
+        wget https://dl.google.com/android/repository/build-tools_r34.0.0-linux.zip
+        unzip -q build-tools_r34.0.0-linux.zip
+        build-tools/34.0.0/zipalign -f -v 4 patched.apk patched-aligned.apk
+
+    - name: Sign APK (debug keystore)
+      run: |
+        keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+        jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore -storepass android -keypass android patched-aligned.apk androiddebugkey
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: patched-apk
+        path: patched-aligned.apk
+        retention-days: 30

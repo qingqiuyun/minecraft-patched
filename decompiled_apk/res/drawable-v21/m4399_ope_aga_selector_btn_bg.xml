@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#ffe5e5e5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/m4399_ope_shape_r4_green_dark" />
+            <item android:state_enabled="true" android:drawable="@drawable/m4399_ope_shape_r4_green" />
+            <item android:state_enabled="false" android:drawable="@drawable/m4399_ope_shape_r4_gray" />
+        </selector>
+    </item>
+</ripple>

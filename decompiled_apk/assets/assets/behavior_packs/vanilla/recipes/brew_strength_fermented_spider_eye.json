@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:fermented_spider_eye","input":"minecraft:potion_type:strength","description":{"identifier":"minecraft:brew_strength_fermented_spider_eye"},"output":"minecraft:potion_type:weakness","tags":["brewing_stand"]},"format_version":"1.20.10"}

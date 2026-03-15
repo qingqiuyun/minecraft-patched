@@ -1,0 +1,1 @@
+{"minecraft:single_block_feature":{"places_block":{"states":{"upper_block_bit":false},"name":"minecraft:tall_grass"},"enforce_survivability_rules":false,"description":{"identifier":"minecraft:grass_double_plant_lower_feature"},"may_replace":["minecraft:air"],"enforce_placement_rules":true},"format_version":"1.14.0"}

@@ -1,0 +1,1 @@
+{"piece_name":"ari_hair","piece_type":"persona_hair","piece_id":"16a40e66-7d58-b56d-9a4e-e5766ceff6a0","texture_sources":[{"texture":"ari_hair_head.png","use_face_uv":true,"tint_map":"ari_hair_head_tintmap.tga"},{"tint_map":"ari_hair_body_tintmap.tga","texture":"ari_hair_body.png"}],"tint_base_color":{"r_color":"#862f0b"}}

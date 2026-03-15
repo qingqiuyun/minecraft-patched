@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:stick"}],"priority":-1,"result":{"item":"minecraft:campfire"},"key":{"|":{"item":"minecraft:stick"},"#":{"tag":"minecraft:logs"},"C":{"tag":"minecraft:coals"}},"description":{"identifier":"minecraft:campfire"},"pattern":[" | ","|C|","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

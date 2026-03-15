@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:honey_bottle"}],"result":[{"item":"minecraft:honey_block"},{"item":"minecraft:glass_bottle","data":0,"count":4}],"key":{"X":{"item":"minecraft:honey_bottle"}},"description":{"identifier":"minecraft:honey_block"},"pattern":["XX","XX"],"tags":["crafting_table"]},"format_version":"1.20.10"}

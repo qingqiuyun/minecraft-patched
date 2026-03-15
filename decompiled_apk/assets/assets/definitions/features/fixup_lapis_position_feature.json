@@ -1,0 +1,1 @@
+{"minecraft:scatter_feature":{"y":{"extent":[0,16],"distribution":"uniform"},"x":{"extent":[0,16],"distribution":"uniform"},"coordinate_eval_order":"zyx","z":0,"project_input_to_floor":false,"description":{"identifier":"minecraft:fixup_lapis_position_feature"},"iterations":1,"places_feature":"minecraft:lapis_ore_feature"},"format_version":"1.14.0"}

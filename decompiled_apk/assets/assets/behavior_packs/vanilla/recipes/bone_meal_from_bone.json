@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:bone"}],"result":{"item":"minecraft:dye","data":15,"count":3},"ingredients":[{"item":"minecraft:bone"}],"description":{"identifier":"minecraft:bone_meal_from_bone"},"group":"bonemeal","tags":["crafting_table"]},"format_version":"1.20.10"}

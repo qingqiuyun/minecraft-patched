@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:nether_wart"}],"result":{"item":"minecraft:nether_wart_block"},"key":{"#":{"item":"minecraft:nether_wart"}},"description":{"identifier":"minecraft:nether_wart_block"},"pattern":["###","###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

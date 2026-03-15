@@ -1,0 +1,774 @@
+{
+  "namespace": "Quasar_Dynamic_icon_progress",
+  "image_base": {
+    "type": "image",
+    "$folder_path|default": "textures/Quasar/dynamic_icon/",
+    "texture": "($folder_path + $texture_count)"
+  },
+  "anim_base": {
+    "anim_type": "offset",
+    "duration": 0.02,
+    "from": "$texture_offset",
+    "to": "$texture_offset"
+  },
+  "anim_0@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      0
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_1"
+  },
+  "anim_1@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-100%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_2"
+  },
+  "anim_2@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-200%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_3"
+  },
+  "anim_3@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-300%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_4"
+  },
+  "anim_4@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-400%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_5"
+  },
+  "anim_5@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-500%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_6"
+  },
+  "anim_6@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-600%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_7"
+  },
+  "anim_7@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-700%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_8"
+  },
+  "anim_8@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-800%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_9"
+  },
+  "anim_9@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-900%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_10"
+  },
+  "anim_10@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1000%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_11"
+  },
+  "anim_11@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1100%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_12"
+  },
+  "anim_12@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1200%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_13"
+  },
+  "anim_13@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1300%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_14"
+  },
+  "anim_14@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1400%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_15"
+  },
+  "anim_15@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1500%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_16"
+  },
+  "anim_16@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1600%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_17"
+  },
+  "anim_17@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1700%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_18"
+  },
+  "anim_18@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1800%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_19"
+  },
+  "anim_19@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-1900%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_20"
+  },
+  "anim_20@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2000%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_21"
+  },
+  "anim_21@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2100%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_22"
+  },
+  "anim_22@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2200%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_23"
+  },
+  "anim_23@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2300%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_24"
+  },
+  "anim_24@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2400%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_25"
+  },
+  "anim_25@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2500%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_26"
+  },
+  "anim_26@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2600%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_27"
+  },
+  "anim_27@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2700%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_28"
+  },
+  "anim_28@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2800%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_29"
+  },
+  "anim_29@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-2900%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_30"
+  },
+  "anim_30@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3000%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_31"
+  },
+  "anim_31@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3100%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_32"
+  },
+  "anim_32@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3200%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_33"
+  },
+  "anim_33@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3300%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_34"
+  },
+  "anim_34@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3400%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_35"
+  },
+  "anim_35@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3500%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_36"
+  },
+  "anim_36@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3600%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_37"
+  },
+  "anim_37@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3700%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_38"
+  },
+  "anim_38@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3800%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_39"
+  },
+  "anim_39@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-3900%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_40"
+  },
+  "anim_40@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4000%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_41"
+  },
+  "anim_41@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4100%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_42"
+  },
+  "anim_42@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4200%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_43"
+  },
+  "anim_43@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4300%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_44"
+  },
+  "anim_44@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4400%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_45"
+  },
+  "anim_45@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4500%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_46"
+  },
+  "anim_46@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4600%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_47"
+  },
+  "anim_47@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4700%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_48"
+  },
+  "anim_48@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4800%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_49"
+  },
+  "anim_49@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-4900%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_50"
+  },
+  "anim_50@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5000%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_51"
+  },
+  "anim_51@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5100%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_52"
+  },
+  "anim_52@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5200%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_53"
+  },
+  "anim_53@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5300%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_54"
+  },
+  "anim_54@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5400%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_55"
+  },
+  "anim_55@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5500%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_56"
+  },
+  "anim_56@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5600%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_57"
+  },
+  "anim_57@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5700%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_58"
+  },
+  "anim_58@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5800%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_59"
+  },
+  "anim_59@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-5900%"
+    ],
+    "next": "@Quasar_Dynamic_icon_progress.anim_60"
+  },
+  "anim_60@Quasar_Dynamic_icon_progress.anim_base": {
+    "$texture_offset": [
+      0,
+      "-6000%"
+    ]
+  },
+  "image_stack": {
+    "type": "stack_panel",
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@Quasar_Dynamic_icon_progress.anim_0"
+    ],
+    "orientation": "vertical",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 0
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 1
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 2
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 3
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 4
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 5
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 6
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 7
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 8
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 9
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 10
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 11
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 12
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 13
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 14
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 15
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 16
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 17
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 18
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 19
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 20
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 21
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 22
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 23
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 24
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 25
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 26
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 27
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 28
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 29
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 30
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 31
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 32
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 33
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 34
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 35
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 36
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 37
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 38
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 39
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 40
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 41
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 42
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 43
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 44
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 45
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 46
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 47
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 48
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 49
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 50
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 51
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 52
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 53
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 54
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 55
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 56
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 57
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 58
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 59
+        }
+      },
+      {
+        "$texture_count@Quasar_Dynamic_icon_progress.image_base": {
+          "$texture_count": 60
+        }
+      }
+    ]
+  },
+  "bind_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "clips_children": true,
+    "controls": [
+      {
+        "image_stack@Quasar_Dynamic_icon_progress.image_stack": {}
+      }
+    ]
+  }
+}

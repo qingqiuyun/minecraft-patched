@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:polished_tuff"}],"priority":1,"result":{"item":"minecraft:polished_tuff_stairs","count":4},"key":{"A":{"item":"minecraft:polished_tuff"}},"description":{"identifier":"minecraft:polished_tuff_stairs"},"pattern":["A","AA","AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

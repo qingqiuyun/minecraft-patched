@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.m4399.operate.support.network.NetworkImageView android:id="@id/m4399_ope_vip_upgrade_item_thumbnail" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/m4399_ope_color_ffffff" android:id="@id/m4399_ope_vip_upgrade_item_tv_corner" android:background="@drawable/m4399_ope_vip_upgrade_item_corner_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="24.0dip" android:layout_alignLeft="@id/m4399_ope_vip_upgrade_item_thumbnail" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff8f4118" android:gravity="center|top" android:id="@id/m4399_ope_vip_upgrade_item_tv_desc" android:layout_width="56.0dip" android:layout_height="38.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/m4399_ope_vip_upgrade_item_thumbnail" android:layout_centerHorizontal="true" android:lineSpacingExtra="0.0dip" />
+</RelativeLayout>

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:golden_axe"}],"input":"minecraft:golden_axe","description":{"identifier":"minecraft:furnace_golden_axe"},"output":"minecraft:gold_nugget","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

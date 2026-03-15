@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.snowgolem":{"materials":[{"*":"Material.default"},{"head*":"Material.head"}],"geometry":"Geometry.default","arrays":{"textures":{"Array.skins":["Texture.default"]}},"textures":["Array.skins[0]"]}},"format_version":"1.8.0"}

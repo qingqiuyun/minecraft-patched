@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="m4399_ope_pay_handy_money_table_col">3</integer>
+    <integer name="m4399_ope_pay_success_coupon_columns">1</integer>
+    <integer name="m4399_record_setting_duration_count">2</integer>
+</resources>

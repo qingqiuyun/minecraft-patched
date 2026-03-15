@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:basalt"}],"priority":2,"result":{"item":"minecraft:polished_basalt","count":1},"description":{"identifier":"minecraft:stonecutter_polished_basalt_from_basalt"},"ingredients":[{"item":"minecraft:basalt"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

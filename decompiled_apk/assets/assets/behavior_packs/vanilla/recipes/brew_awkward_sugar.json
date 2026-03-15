@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:sugar","input":"minecraft:potion_type:awkward","description":{"identifier":"minecraft:brew_awkward_sugar"},"output":"minecraft:potion_type:swiftness","tags":["brewing_stand"]},"format_version":"1.20.10"}

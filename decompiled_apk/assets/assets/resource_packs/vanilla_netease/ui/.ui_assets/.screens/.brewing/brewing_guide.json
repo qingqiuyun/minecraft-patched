@@ -1,0 +1,2171 @@
+{
+  "namespace": "bt_brewing_guide",
+  "brewing_recipe_panel": {
+    "type": "panel",
+    "size": [
+      148,
+      166
+    ],
+    "layer": 4,
+    "controls": [
+      {
+        "bg0": {
+          "type": "image",
+          "texture": "textures/ui/White",
+          "size": [
+            "100%-16px",
+            "100%-31px"
+          ],
+          "color": [
+            0.55,
+            0.55,
+            0.55
+          ],
+          "offset": [
+            0,
+            7.5
+          ]
+        }
+      },
+      {
+        "bg": {
+          "type": "image",
+          "texture": "textures/ui/dialog_background_hollow_3"
+        }
+      },
+      {
+        "content": {
+          "type": "panel",
+          "size": [
+            "100%-16px",
+            "100%-31px"
+          ],
+          "offset": [
+            0,
+            7.5
+          ],
+          "controls": [
+            {
+              "search@text_edit.box": {
+                "$place_holder_text": "brewing.search_potion",
+                "size": [
+                  "100%",
+                  17
+                ],
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "$magnifying_glass_enabled": true,
+                "max_length": 1000,
+                "$text_edit_box_label_offset": [
+                  10,
+                  0
+                ],
+                "$text_clear_button_enabled": true,
+                "$magnifying_glass_offset": [
+                  0,
+                  -0.5
+                ],
+                "$magnifying_glass_size": [
+                  8,
+                  8
+                ],
+                "$text_edit_text_control": "search_potion",
+                "offset": [
+                  0,
+                  -19
+                ]
+              }
+            },
+            {
+              "normal_content_panel@common.not_touch_scrolling_panel": {
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "$show_background": false,
+                "$scrolling_content": "potion_normal.display_normal_slots_recipe_panel",
+                "$scroll_bar_right_padding_size": [
+                  0,
+                  0
+                ],
+                "$scroll_bar_left_padding_size": [
+                  0,
+                  0
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "normal_type",
+                    "source_property_name": "#toggle_state",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "splash_content_panel@common.not_touch_scrolling_panel": {
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "$show_background": false,
+                "$scrolling_content": "potion_splash.display_splash_slots_recipe_panel",
+                "$scroll_bar_right_padding_size": [
+                  0,
+                  0
+                ],
+                "$scroll_bar_left_padding_size": [
+                  0,
+                  0
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "splash_type",
+                    "source_property_name": "#toggle_state",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "lingering_content_panel@common.not_touch_scrolling_panel": {
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "$show_background": false,
+                "$scrolling_content": "potion_lingering.display_lingering_slots_recipe_panel",
+                "$scroll_bar_right_padding_size": [
+                  0,
+                  0
+                ],
+                "$scroll_bar_left_padding_size": [
+                  0,
+                  0
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "lingering_type",
+                    "source_property_name": "#toggle_state",
+                    "target_property_name": "#visible"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "toggles": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [
+            "100%c",
+            "100%c"
+          ],
+          "controls": [
+            {
+              "normal@bt_brewing_guide.normal": {}
+            },
+            {
+              "ksk": {
+                "size": [
+                  4,
+                  4
+                ],
+                "type": "panel"
+              }
+            },
+            {
+              "splash@bt_brewing_guide.splash": {}
+            },
+            {
+              "kskgeg": {
+                "size": [
+                  4,
+                  4
+                ],
+                "type": "panel"
+              }
+            },
+            {
+              "lingering@bt_brewing_guide.lingering": {}
+            }
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            -24,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  "potion_radio_toggle@common_toggles.light_content_toggle": {
+    "$radio_toggle_group": true,
+    "$toggle_name": "potion_toggles",
+    "$toggle_group_default_selected": 0
+  },
+  "potion_radio_toggle_splash@common_toggles.light_content_toggle": {
+    "$radio_toggle_group": true,
+    "$toggle_name": "potion_toggles_splash",
+    "$toggle_group_default_selected": 0
+  },
+  "potion_radio_toggle_lingering@common_toggles.light_content_toggle": {
+    "$radio_toggle_group": true,
+    "$toggle_name": "potion_toggles_lingering",
+    "$toggle_group_default_selected": 0
+  },
+  "potion_toggle@bt_brewing_guide.potion_radio_toggle": {
+    "$button_content": "bt_brewing_guide.potion_name",
+    "size": [
+      "100%",
+      20
+    ],
+    "$toggle_view_binding_name": "$name",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(($tag-#search)=$tag))",
+        "target_property_name": "#a",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#a or (#search=''))",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "potion_toggle_splash@bt_brewing_guide.potion_radio_toggle_splash": {
+    "$button_content": "bt_brewing_guide.potion_name",
+    "size": [
+      "100%",
+      20
+    ],
+    "$toggle_view_binding_name": "$name",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(($tag-#search)=$tag))",
+        "target_property_name": "#a",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#a or (#search=''))",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "potion_bottle_lingering@bt_brewing_guide.potion_radio_toggle_lingering": {
+    "$button_content": "bt_brewing_guide.potion_name",
+    "size": [
+      "100%",
+      20
+    ],
+    "$toggle_view_binding_name": "$name",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(($tag-#search)=$tag))",
+        "target_property_name": "#a",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#a or (#search=''))",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "potion_name": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "pot_icon": {
+          "type": "image",
+          "texture": "('textures/items/'+$name)",
+          "size": [
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "jsjs@t.p": {
+          "size": [
+            4,
+            4
+          ]
+        }
+      },
+      {
+        "pot_name": {
+          "type": "panel",
+          "controls": [
+            {
+              "txt": {
+                "type": "label",
+                "text": "$placeholder",
+                "color": "$light_toggle_default_text_color",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "txt2": {
+                "type": "label",
+                "text": "$placeholder",
+                "visible": "($hover_state or $pressed_state)",
+                "color": "$light_toggle_hover_text_color"
+              }
+            }
+          ],
+          "size": [
+            "100%c",
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ]
+        }
+      }
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [
+      0,
+      -1
+    ]
+  },
+  "potion_level2_content": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "expand": {
+          "type": "panel",
+          "controls": [
+            {
+              "default": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "hover": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/expand_hover",
+                "visible": "($hover_state or $pressed_state)"
+              }
+            }
+          ],
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_level2_toggle')",
+              "source_property_name": "(not #toggle_state)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "collapse": {
+          "type": "panel",
+          "controls": [
+            {
+              "default": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/collapse",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "hover": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/collapse_hover",
+                "visible": "($hover_state or $pressed_state)"
+              }
+            }
+          ],
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_level2_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "ii": {
+          "type": "image",
+          "texture": "textures/ui/.texture_assets/.brewing_guide/ii",
+          "size": [
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "lv2_text": {
+          "type": "panel",
+          "controls": [
+            {
+              "txt": {
+                "type": "label",
+                "text": "等级 2",
+                "color": "$light_toggle_default_text_color",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "txt2": {
+                "type": "label",
+                "text": "等级 2",
+                "visible": "($hover_state or $pressed_state)",
+                "color": "$light_toggle_hover_text_color"
+              }
+            }
+          ],
+          "size": [
+            "100%c",
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ]
+        }
+      }
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [
+      0,
+      -1
+    ]
+  },
+  "potion_extend_content": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "expand": {
+          "type": "panel",
+          "controls": [
+            {
+              "default": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "hover": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/expand_hover",
+                "visible": "($hover_state or $pressed_state)"
+              }
+            }
+          ],
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_extend_toggle')",
+              "source_property_name": "(not #toggle_state)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "collapse": {
+          "type": "panel",
+          "controls": [
+            {
+              "default": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/collapse",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "hover": {
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/collapse_hover",
+                "visible": "($hover_state or $pressed_state)"
+              }
+            }
+          ],
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_extend_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "clock": {
+          "type": "image",
+          "texture": "textures/ui/.texture_assets/.brewing_guide/ext_clock",
+          "size": [
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "ext_text": {
+          "type": "panel",
+          "controls": [
+            {
+              "txt": {
+                "type": "label",
+                "text": "brewing.extend",
+                "color": "$light_toggle_default_text_color",
+                "visible": "($default_state)"
+              }
+            },
+            {
+              "txt2": {
+                "type": "label",
+                "text": "brewing.extend",
+                "visible": "($hover_state or $pressed_state)",
+                "color": "$light_toggle_hover_text_color"
+              }
+            }
+          ],
+          "size": [
+            "100%c",
+            16
+          ],
+          "offset": [
+            0,
+            -1
+          ]
+        }
+      }
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [
+      0,
+      -1
+    ]
+  },
+  "potion_info": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "info": {
+          "type": "image",
+          "texture": "textures/ui/background_with_border",
+          "size": [
+            "100%",
+            "100%c+6px"
+          ],
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "potion_bottle_drinkable",
+                      "$cthvtxt": "potion.awkward.name",
+                      "ignored": "$curse"
+                    }
+                  },
+                  {
+                    "potion_icon_curse@icon_bt": {
+                      "$icon": "$curse_potion_name",
+                      "$cthvtxt": "$potion_ingredient_name",
+                      "ignored": "(not $curse)"
+                    }
+                  },
+                  {
+                    "pdk": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "plus": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdka": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_ingredient@icon_bt": {
+                      "$icon": "$ingredient",
+                      "$cthvtxt": "$ingredient_name"
+                    }
+                  },
+                  {
+                    "pdkas": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "eq": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/equal",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdkasl": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "$name",
+                      "$cthvtxt": "$potion_name"
+                    }
+                  }
+                ],
+                "size": [
+                  "100%c",
+                  16
+                ],
+                "$curse|default": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "level2_tog": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttr": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right",
+                "visible": "$exclude_extend"
+              }
+            },
+            {
+              "ttrab": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right_and_bottom",
+                "visible": "(not $exclude_extend)"
+              }
+            },
+            {
+              "level2@common_toggles.light_content_toggle": {
+                "$toggle_view_binding_name": "($name+'_level2_toggle')",
+                "size": [
+                  "fill",
+                  20
+                ],
+                "$button_content": "bt_brewing_guide.potion_level2_content"
+              }
+            }
+          ],
+          "visible": "(not $exclude_level2)",
+          "$exclude_level2|default": false,
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "level2_info": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttb": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_bottom",
+                "visible": "(not $exclude_extend)"
+              }
+            },
+            {
+              "pndnns": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "panel",
+                "visible": "$exclude_extend"
+              }
+            },
+            {
+              "level2_info": {
+                "type": "image",
+                "texture": "textures/ui/background_with_border",
+                "size": [
+                  "fill",
+                  "100%c+6px"
+                ],
+                "controls": [
+                  {
+                    "stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "potion_icon@icon_bt": {
+                            "$icon": "$name",
+                            "$cthvtxt": "$potion_name"
+                          }
+                        },
+                        {
+                          "pdk": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "plus": {
+                            "type": "image",
+                            "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                            "size": [
+                              16,
+                              16
+                            ],
+                            "color": [
+                              2.5,
+                              2.5,
+                              2.5
+                            ]
+                          }
+                        },
+                        {
+                          "pdka": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "potion_ingredient@icon_bt": {
+                            "$icon": "glowstone_dust",
+                            "$cthvtxt": "item.glowstone_dust.name"
+                          }
+                        }
+                      ],
+                      "size": [
+                        "100%c",
+                        16
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_level2_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "ignored": "$exclude_level2",
+          "$exclude_level2|default": false,
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "extend_tog": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttr": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right"
+              }
+            },
+            {
+              "extend@common_toggles.light_content_toggle": {
+                "$toggle_view_binding_name": "($name+'_extend_toggle')",
+                "size": [
+                  "fill",
+                  20
+                ],
+                "$button_content": "bt_brewing_guide.potion_extend_content"
+              }
+            }
+          ],
+          "visible": "(not $exclude_extend)",
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "extend_info": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttb": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "panel"
+              }
+            },
+            {
+              "extend_info": {
+                "type": "image",
+                "texture": "textures/ui/background_with_border",
+                "size": [
+                  "fill",
+                  "100%c+6px"
+                ],
+                "controls": [
+                  {
+                    "stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "potion_icon@icon_bt": {
+                            "$icon": "$name",
+                            "$cthvtxt": "$potion_name"
+                          }
+                        },
+                        {
+                          "pdk": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "plus": {
+                            "type": "image",
+                            "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                            "size": [
+                              16,
+                              16
+                            ],
+                            "color": [
+                              2.5,
+                              2.5,
+                              2.5
+                            ]
+                          }
+                        },
+                        {
+                          "pdka": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "potion_ingredient@icon_bt": {
+                            "$icon": "redstone_dust",
+                            "$cthvtxt": "tile.redstone_wire.name"
+                          }
+                        }
+                      ],
+                      "size": [
+                        "100%c",
+                        16
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_extend_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "ignored": "$exclude_extend",
+          "$exclude_extend|default": false
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_control_name": "$name",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#tog"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(($tag-#search)=$tag))",
+        "target_property_name": "#a",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#a or (#search='')) and #tog)",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "potion_info_splash": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "info": {
+          "type": "image",
+          "texture": "textures/ui/background_with_border",
+          "size": [
+            "100%",
+            "100%c+6px"
+          ],
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "$normal_potion_name",
+                      "$cthvtxt": "$normal_potion_name_text"
+                    }
+                  },
+                  {
+                    "pdk": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "plus": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdka": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_ingredient@icon_bt": {
+                      "$icon": "gunpowder",
+                      "$cthvtxt": "item.gunpowder.name"
+                    }
+                  },
+                  {
+                    "pdkas": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "eq": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/equal",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdkasl": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "$name",
+                      "$cthvtxt": "$potion_name"
+                    }
+                  }
+                ],
+                "size": [
+                  "100%c",
+                  16
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "level2_tog": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttr": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right",
+                "visible": "$exclude_extend"
+              }
+            },
+            {
+              "ttrab": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right_and_bottom",
+                "visible": "(not $exclude_extend)"
+              }
+            },
+            {
+              "level2@common_toggles.light_content_toggle": {
+                "$toggle_view_binding_name": "($name+'_level2_toggle')",
+                "size": [
+                  "fill",
+                  20
+                ],
+                "$button_content": "bt_brewing_guide.potion_level2_content"
+              }
+            }
+          ],
+          "visible": "(not $exclude_level2)",
+          "$exclude_level2|default": false,
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "level2_info": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttb": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_bottom",
+                "visible": "(not $exclude_extend)"
+              }
+            },
+            {
+              "pndnns": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "panel",
+                "visible": "$exclude_extend"
+              }
+            },
+            {
+              "level2_info": {
+                "type": "image",
+                "texture": "textures/ui/background_with_border",
+                "size": [
+                  "fill",
+                  "100%c+6px"
+                ],
+                "controls": [
+                  {
+                    "stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "potion_icon@icon_bt": {
+                            "$icon": "$name",
+                            "$cthvtxt": "$potion_name"
+                          }
+                        },
+                        {
+                          "pdk": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "plus": {
+                            "type": "image",
+                            "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                            "size": [
+                              16,
+                              16
+                            ],
+                            "color": [
+                              2.5,
+                              2.5,
+                              2.5
+                            ]
+                          }
+                        },
+                        {
+                          "pdka": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "potion_ingredient@icon_bt": {
+                            "$icon": "glowstone_dust",
+                            "$cthvtxt": "item.glowstone_dust.name"
+                          }
+                        }
+                      ],
+                      "size": [
+                        "100%c",
+                        16
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_level2_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "ignored": "$exclude_level2",
+          "$exclude_level2|default": false,
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "extend_tog": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttr": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right"
+              }
+            },
+            {
+              "extend@common_toggles.light_content_toggle": {
+                "$toggle_view_binding_name": "($name+'_extend_toggle')",
+                "size": [
+                  "fill",
+                  20
+                ],
+                "$button_content": "bt_brewing_guide.potion_extend_content"
+              }
+            }
+          ],
+          "visible": "(not $exclude_extend)",
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "extend_info": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttb": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "panel"
+              }
+            },
+            {
+              "extend_info": {
+                "type": "image",
+                "texture": "textures/ui/background_with_border",
+                "size": [
+                  "fill",
+                  "100%c+6px"
+                ],
+                "controls": [
+                  {
+                    "stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "potion_icon@icon_bt": {
+                            "$icon": "$name",
+                            "$cthvtxt": "$potion_name"
+                          }
+                        },
+                        {
+                          "pdk": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "plus": {
+                            "type": "image",
+                            "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                            "size": [
+                              16,
+                              16
+                            ],
+                            "color": [
+                              2.5,
+                              2.5,
+                              2.5
+                            ]
+                          }
+                        },
+                        {
+                          "pdka": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "potion_ingredient@icon_bt": {
+                            "$icon": "redstone_dust",
+                            "$cthvtxt": "tile.redstone_wire.name"
+                          }
+                        }
+                      ],
+                      "size": [
+                        "100%c",
+                        16
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_extend_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "ignored": "$exclude_extend",
+          "$exclude_extend|default": false
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_control_name": "$name",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#tog"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(($tag-#search)=$tag))",
+        "target_property_name": "#a",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#a or (#search='')) and #tog)",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "potion_info_lingering": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "info": {
+          "type": "image",
+          "texture": "textures/ui/background_with_border",
+          "size": [
+            "100%",
+            "100%c+6px"
+          ],
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "$splash_potion_name",
+                      "$cthvtxt": "$splash_potion_name_text"
+                    }
+                  },
+                  {
+                    "pdk": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "plus": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdka": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_ingredient@icon_bt": {
+                      "$icon": "dragons_breath",
+                      "$cthvtxt": "item.dragon_breath.name"
+                    }
+                  },
+                  {
+                    "pdkas": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "eq": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/equal",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdkasl": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "$name",
+                      "$cthvtxt": "$potion_name"
+                    }
+                  }
+                ],
+                "size": [
+                  "100%c",
+                  16
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "level2_tog": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttr": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right",
+                "visible": "$exclude_extend"
+              }
+            },
+            {
+              "ttrab": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right_and_bottom",
+                "visible": "(not $exclude_extend)"
+              }
+            },
+            {
+              "level2@common_toggles.light_content_toggle": {
+                "$toggle_view_binding_name": "($name+'_level2_toggle')",
+                "size": [
+                  "fill",
+                  20
+                ],
+                "$button_content": "bt_brewing_guide.potion_level2_content"
+              }
+            }
+          ],
+          "visible": "(not $exclude_level2)",
+          "$exclude_level2|default": false,
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "level2_info": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttb": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_bottom",
+                "visible": "(not $exclude_extend)"
+              }
+            },
+            {
+              "pndnns": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "panel",
+                "visible": "$exclude_extend"
+              }
+            },
+            {
+              "level2_info": {
+                "type": "image",
+                "texture": "textures/ui/background_with_border",
+                "size": [
+                  "fill",
+                  "100%c+6px"
+                ],
+                "controls": [
+                  {
+                    "stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "potion_icon@icon_bt": {
+                            "$icon": "$name",
+                            "$cthvtxt": "$potion_name"
+                          }
+                        },
+                        {
+                          "pdk": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "plus": {
+                            "type": "image",
+                            "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                            "size": [
+                              16,
+                              16
+                            ],
+                            "color": [
+                              2.5,
+                              2.5,
+                              2.5
+                            ]
+                          }
+                        },
+                        {
+                          "pdka": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "potion_ingredient@icon_bt": {
+                            "$icon": "glowstone_dust",
+                            "$cthvtxt": "item.glowstone_dust.name"
+                          }
+                        }
+                      ],
+                      "size": [
+                        "100%c",
+                        16
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_level2_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "ignored": "$exclude_level2",
+          "$exclude_level2|default": false,
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "extend_tog": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttr": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "image",
+                "texture": "textures/ui/.texture_assets/.brewing_guide/top_to_right"
+              }
+            },
+            {
+              "extend@common_toggles.light_content_toggle": {
+                "$toggle_view_binding_name": "($name+'_extend_toggle')",
+                "size": [
+                  "fill",
+                  20
+                ],
+                "$button_content": "bt_brewing_guide.potion_extend_content"
+              }
+            }
+          ],
+          "visible": "(not $exclude_extend)",
+          "$exclude_extend|default": false
+        }
+      },
+      {
+        "extend_info": {
+          "size": [
+            "100%",
+            20
+          ],
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "ttb": {
+                "size": [
+                  20,
+                  20
+                ],
+                "type": "panel"
+              }
+            },
+            {
+              "extend_info": {
+                "type": "image",
+                "texture": "textures/ui/background_with_border",
+                "size": [
+                  "fill",
+                  "100%c+6px"
+                ],
+                "controls": [
+                  {
+                    "stack": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "potion_icon@icon_bt": {
+                            "$icon": "$name",
+                            "$cthvtxt": "$potion_name"
+                          }
+                        },
+                        {
+                          "pdk": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "plus": {
+                            "type": "image",
+                            "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                            "size": [
+                              16,
+                              16
+                            ],
+                            "color": [
+                              2.5,
+                              2.5,
+                              2.5
+                            ]
+                          }
+                        },
+                        {
+                          "pdka": {
+                            "type": "panel",
+                            "size": [
+                              16,
+                              16
+                            ]
+                          }
+                        },
+                        {
+                          "potion_ingredient@icon_bt": {
+                            "$icon": "redstone_dust",
+                            "$cthvtxt": "tile.redstone_wire.name"
+                          }
+                        }
+                      ],
+                      "size": [
+                        "100%c",
+                        16
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "($name+'_extend_toggle')",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "ignored": "$exclude_extend",
+          "$exclude_extend|default": false
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_control_name": "$name",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#tog"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(($tag-#search)=$tag))",
+        "target_property_name": "#a",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#a or (#search='')) and #tog)",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "setup_info": {
+    "type": "stack_panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "orientation": "vertical",
+    "controls": [
+      {
+        "info": {
+          "type": "image",
+          "texture": "textures/ui/background_with_border",
+          "size": [
+            "100%",
+            "100%c+6px"
+          ],
+          "controls": [
+            {
+              "stack": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "controls": [
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "$name",
+                      "$cthvtxt": "$potion_name"
+                    }
+                  },
+                  {
+                    "pdk": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "plus": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/expand",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdka": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_ingredient@icon_bt": {
+                      "$icon": "$ingredient",
+                      "$cthvtxt": "$ingredient_name"
+                    }
+                  },
+                  {
+                    "pdkas": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "eq": {
+                      "type": "image",
+                      "texture": "textures/ui/.texture_assets/.brewing_guide/equal",
+                      "size": [
+                        16,
+                        16
+                      ],
+                      "color": [
+                        2.5,
+                        2.5,
+                        2.5
+                      ]
+                    }
+                  },
+                  {
+                    "pdkasl": {
+                      "type": "panel",
+                      "size": [
+                        4,
+                        16
+                      ]
+                    }
+                  },
+                  {
+                    "potion_icon@icon_bt": {
+                      "$icon": "potion_bottle_drinkable",
+                      "$cthvtxt": "potion.awkward.name"
+                    }
+                  }
+                ],
+                "size": [
+                  "100%c",
+                  16
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "search_potion",
+        "source_property_name": "#item_name",
+        "target_property_name": "#search",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_control_name": "$name",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#tog"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((#search='') and #tog)",
+        "target_property_name": "#visible",
+        "binding_condition": "always"
+      }
+    ]
+  },
+  "iconn": {
+    "type": "image",
+    "texture": "('textures/items/'+$icon)",
+    "size": [
+      16,
+      16
+    ],
+    "controls": [
+      {
+        "hover@common.ct_hover": {
+          "$hvofs": [
+            9,
+            9
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      }
+    ]
+  },
+  "icon_bt@common_buttons.light_content_button": {
+    "size": [
+      16,
+      16
+    ],
+    "$button_pressed_offset": [
+      0,
+      0
+    ],
+    "$button_content": "bt_brewing_guide.iconn",
+    "$border_visible": false,
+    "$default_state_border_visible": false,
+    "$hover_state_border_visible": false,
+    "$pressed_state_border_visible": false,
+    "$locked_state_border_visible": false,
+    "sound_volume": 0.0,
+    "$default_button_texture": "textures/ui/null",
+    "$hover_button_texture": "textures/ui/null",
+    "$pressed_button_texture": "textures/ui/null",
+    "$pressed_button_name": "($name+'_button_hover')"
+  },
+  "potion_type_toggle_base@common_tabs.tab_left": {
+    "$radio_toggle_group": true,
+    "$toggle_name": "inventory_modes",
+    "$toggle_group_default_selected": 0,
+    "size": [
+      28,
+      22
+    ]
+  },
+  "normal@bt_brewing_guide.potion_type_toggle_base": {
+    "$tab_view_binding_name": "normal_type",
+    "$toggle_group_forced_index": 0,
+    "$toggle_default_state": true,
+    "$tab_content": "bt_brewing_guide.normalic",
+    "$is_top_most_tab": true
+  },
+  "splash@bt_brewing_guide.potion_type_toggle_base": {
+    "$tab_view_binding_name": "splash_type",
+    "$toggle_group_forced_index": 1,
+    "$tab_content": "bt_brewing_guide.splashic"
+  },
+  "lingering@bt_brewing_guide.potion_type_toggle_base": {
+    "$tab_view_binding_name": "lingering_type",
+    "$toggle_group_forced_index": 2,
+    "$tab_content": "bt_brewing_guide.lingeringic"
+  },
+  "normalic@t.i": {
+    "texture": "textures/items/potion_bottle_drinkable",
+    "size": [
+      "100%-2px",
+      "100%-2px"
+    ]
+  },
+  "splashic@t.i": {
+    "texture": "textures/items/potion_bottle_splash",
+    "size": [
+      "100%-2px",
+      "100%-2px"
+    ]
+  },
+  "lingeringic@t.i": {
+    "texture": "textures/items/potion_bottle_lingering",
+    "size": [
+      "100%-2px",
+      "100%-2px"
+    ]
+  }
+}

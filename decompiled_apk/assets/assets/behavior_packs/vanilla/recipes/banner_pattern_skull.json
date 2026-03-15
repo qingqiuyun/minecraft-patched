@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:skull","data":1}],"result":{"item":"minecraft:banner_pattern","data":1},"ingredients":[{"item":"minecraft:paper"},{"item":"minecraft:skull","data":1}],"description":{"identifier":"minecraft:banner_pattern_skull"},"group":"banner_pattern","tags":["crafting_table"]},"format_version":"1.20.10"}

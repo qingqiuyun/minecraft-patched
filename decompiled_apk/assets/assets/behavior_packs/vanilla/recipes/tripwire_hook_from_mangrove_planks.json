@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"tripwire_hook","count":1},"key":{"A":{"item":"iron_ingot"},"C":{"item":"mangrove_planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:tripwire_hook_from_mangrove_planks"},"pattern":["A","B","C"],"tags":["crafting_table"]},"format_version":"1.16"}

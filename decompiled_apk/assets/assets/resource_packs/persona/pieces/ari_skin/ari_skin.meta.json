@@ -1,0 +1,1 @@
+{"piece_name":"ari_skin","piece_type":"persona_skin","piece_id":"29ad05be-b99b-3a20-abd9-771fdd53eb0a","texture_sources":[{"texture":"ari_skin_head.png","use_face_uv":true,"tint_map":"ari_skin_head_tintmap.tga"},{"tint_map":"ari_skin_body_tintmap.tga","texture":"ari_skin_body.png"}],"tint_base_color":{"r_color":"#ff7f4a"}}

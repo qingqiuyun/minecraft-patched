@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/m4399_ope_banner_bg" android:paddingLeft="18.0dip" android:paddingTop="10.0dip" android:paddingRight="18.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_fab_delay_coupon_receive" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/m4399_ope_color_ffa92d" android:gravity="center_vertical" android:id="@id/m4399_ope_id_banner_action_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_coupon_receive" android:lineSpacingExtra="2.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/m4399_ope_id_banner_action_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/m4399_ope_close" />
+</LinearLayout>

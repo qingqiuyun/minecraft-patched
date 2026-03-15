@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:use_duration":32,"minecraft:seed":{"crop_result":"potatoes"},"minecraft:food":{"saturation_modifier":"low","nutrition":1}},"description":{"identifier":"minecraft:potato"}},"format_version":"1.10"}

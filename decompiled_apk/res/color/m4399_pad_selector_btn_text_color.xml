@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/m4399_ope_color_ffffff" />
+    <item android:color="@color/m4399_ope_color_ffffff" android:state_hovered="true" />
+    <item android:color="@color/m4399_pad_color_red_ff5746" />
+</selector>

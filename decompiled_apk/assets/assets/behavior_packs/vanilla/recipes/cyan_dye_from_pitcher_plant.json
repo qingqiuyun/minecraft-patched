@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:pitcher_plant"}],"result":{"item":"minecraft:cyan_dye"},"ingredients":[{"item":"minecraft:pitcher_plant"}],"description":{"identifier":"minecraft:cyan_dye_from_pitcher_plant"},"group":"cyan_dye","tags":["crafting_table"]},"format_version":"1.20.10"}

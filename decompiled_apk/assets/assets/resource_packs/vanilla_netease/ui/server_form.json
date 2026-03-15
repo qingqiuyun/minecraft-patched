@@ -1,0 +1,23 @@
+{
+  "namespace": "server_form",
+  "dynamic_button/form_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "custom_form_scrolling_content/submit_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  }
+}

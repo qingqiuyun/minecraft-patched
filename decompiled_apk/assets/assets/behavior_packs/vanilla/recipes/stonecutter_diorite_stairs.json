@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:stone","data":3}],"priority":1,"result":{"item":"minecraft:diorite_stairs","data":0,"count":1},"description":{"identifier":"minecraft:stonecutter_diorite_stairs"},"ingredients":[{"item":"minecraft:stone","data":3}],"tags":["stonecutter"]},"format_version":"1.20.10"}

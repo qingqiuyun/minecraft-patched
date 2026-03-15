@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView style="@style/m4399.Dialog.Title" />
+    <ViewStub android:id="@id/m4399_component_stub_msg_view" android:layout="@layout/m4399_ope_support_dialog_confirm_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" android:layout_marginTop="@dimen/m4399_spacing_18" android:layout_marginRight="@dimen/m4399_dialog_spacing_h" />
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+</LinearLayout>

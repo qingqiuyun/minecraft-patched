@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":50,"result":{"item":"soul_campfire","count":1},"key":{"A":{"item":"stick"},"C":{"item":"mangrove_wood"},"B":{"item":"soul_sand"}},"description":{"identifier":"minecraft:soul_campfire_from_mangrove_wood2"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

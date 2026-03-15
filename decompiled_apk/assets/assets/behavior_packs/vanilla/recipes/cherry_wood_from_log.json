@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:cherry_log"}],"pattern":["##","##"],"result":{"item":"minecraft:cherry_wood","count":3},"key":{"#":{"item":"minecraft:cherry_log"}},"description":{"identifier":"minecraft:cherry_wood_from_log"},"group":"wood","tags":["crafting_table"]},"format_version":"1.20.10"}

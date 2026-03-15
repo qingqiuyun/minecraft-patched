@@ -1,0 +1,54 @@
+{
+    "namespace": "Quasar/Anti_pocket",
+    "barrier_background": {
+        "type": "image",
+        "texture": "textures/blocks/barrier",
+        "layer": 1,
+        "tiled": true,
+        "fill": true
+    },
+    "Anti_pocket": {
+        "type": "panel",
+        "layer": 32767,
+        "bindings": [
+            {//感谢曲奇提供的检测思路
+                "binding_name": "#hotbar_visible_not_centered",
+                "binding_name_override": "#visible",
+                "binding_type": "global"
+            }
+        ],
+        "size": [ "100%", "100%" ],
+        "controls": [
+            {
+                "barrier_background@Quasar/Anti_pocket.barrier_background": {
+                    "layer": 1
+                }
+            },
+            {
+                "white_bg": {
+                    "type": "image",
+                    "texture": "$fk",
+                    "size": [
+                        "100%",
+                        "40%"
+                    ],
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "layer": 327677,
+                    "controls": [
+                        {
+                            "text": {
+                                "type": "label",
+                                "text": "检测到正在使用PocketUI，请前往设置切换为经典UI",
+                                "font_scale_factor": 2.5,
+                                "layer": 3276777,
+                                "color": "red",
+                                "text_alignment": "center"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+{"minecraft:aggregate_feature":{"description":{"identifier":"minecraft:taiga_tall_grass_feature"},"features":["minecraft:optional_tall_grass_feature","minecraft:scatter_fern_feature"],"early_out":"first_success"},"format_version":"1.14.0"}

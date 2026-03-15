@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:tuff_brick_slab"}],"result":{"item":"minecraft:chiseled_tuff_bricks"},"priority":1,"key":{"#":{"item":"minecraft:tuff_brick_slab"}},"description":{"identifier":"minecraft:chiseled_tuff_bricks"},"pattern":["#","#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

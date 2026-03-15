@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.support.component.FiniteLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/m4399_spacing_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView style="@style/m4399.Dialog.Title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_box_download_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" android:layout_marginTop="@dimen/m4399_spacing_16" android:layout_marginRight="@dimen/m4399_spacing_12" />
+            <LinearLayout android:id="@id/m4399_ope_box_download_dialog_card_ll" android:background="@drawable/m4399_ope_shape_r4_gray" android:padding="@dimen/m4399_spacing_12" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" android:layout_marginTop="@dimen/m4399_spacing_12" android:layout_marginRight="@dimen/m4399_spacing_12">
+                <cn.m4399.operate.support.network.NetworkImageView android:id="@id/m4399_ope_box_download_dialog_NetIv" android:paddingRight="10.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/m4399_ope_avatar_default" />
+                <cn.m4399.operate.component.AlignTextView android:textColor="@color/m4399_ope_color_fab_gc_black" android:id="@id/m4399_ope_box_download_dialog_card_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+</cn.m4399.operate.support.component.FiniteLinearLayout>

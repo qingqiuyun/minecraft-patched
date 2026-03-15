@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gold_nugget"}],"pattern":["###","###","###"],"result":{"item":"minecraft:gold_ingot"},"key":{"#":{"item":"minecraft:gold_nugget"}},"description":{"identifier":"minecraft:gold_ingot_from_nuggets"},"group":"gold_ingot","tags":["crafting_table"]},"format_version":"1.20.10"}

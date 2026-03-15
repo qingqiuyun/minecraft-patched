@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:tripwire_hook"}],"result":{"item":"minecraft:trapped_chest"},"description":{"identifier":"minecraft:trapped_chest"},"ingredients":[{"item":"minecraft:chest"},{"item":"minecraft:tripwire_hook"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

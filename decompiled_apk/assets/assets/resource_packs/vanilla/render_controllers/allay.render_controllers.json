@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.allay":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","textures":["Texture.default"],"ignore_lighting":true}},"format_version":"1.8.0"}

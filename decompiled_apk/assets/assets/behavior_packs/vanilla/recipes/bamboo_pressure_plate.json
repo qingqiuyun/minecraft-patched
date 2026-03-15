@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:bamboo_planks"}],"result":{"item":"minecraft:bamboo_pressure_plate"},"key":{"#":{"item":"minecraft:bamboo_planks"}},"description":{"identifier":"minecraft:bamboo_pressure_plate"},"pattern":["##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

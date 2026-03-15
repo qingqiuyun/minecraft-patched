@@ -1,0 +1,1 @@
+{"minecraft:multiface_feature":{"search_range":20,"can_place_on":["minecraft:stone","minecraft:dripstone_block","minecraft:deepslate"],"places_block":"minecraft:glow_lichen","chance_of_spreading":0.5,"can_place_on_wall":true,"can_place_on_floor":false,"description":{"identifier":"minecraft:glow_lichen_feature"},"can_place_on_ceiling":true},"format_version":"1.16.0"}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+    <View android:background="@color/m4399_color_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/m4399_navigation_bar" />
+    <GridView android:orientation="vertical" android:id="@id/m4399_record_video_grid_videos" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_spacing_12" android:verticalSpacing="10.0dip" android:choiceMode="singleChoice" android:layout_below="@id/m4399_navigation_bar" android:layout_marginStart="@dimen/m4399_spacing_12" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/m4399_ope_color_999999" android:gravity="center_horizontal" android:id="@id/m4399_record_video_empty_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_record_video_empty_desc" android:drawableTop="@drawable/m4399_ope_pay_history_empty_ic" android:drawablePadding="12.0dip" android:layout_centerInParent="true" />
+    <include layout="@layout/m4399_record_list_video_bottom" />
+</RelativeLayout>

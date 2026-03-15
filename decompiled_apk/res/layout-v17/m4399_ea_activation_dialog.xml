@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="27.0dip" android:paddingTop="28.0dip" android:paddingRight="27.0dip" android:paddingBottom="28.0dip" android:layout_width="@dimen/m4399_ope_dialog_width_304" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/m4399_ope_color_333333" android:id="@id/m4399_ea_activation_id_tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ea_activation_msg_instructions" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="15.0dip">
+        <cn.m4399.operate.component.InputCdkView android:textSize="14.0sp" android:textColor="@color/m4399_ope_color_666666" android:textColorHint="@color/m4399_ope_color_bbbbbb" android:ellipsize="end" android:id="@id/m4399_ea_activation_id_cdk_edt_dialog_input" android:background="@drawable/m4399_ea_activation_shape_input_bg" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/m4399_ea_activation_cdk_edt_hint" android:cursorVisible="true" android:maxLines="1" android:layout_weight="0.6" android:inputType="text" android:textCursorDrawable="@null" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/m4399_ea_activation_id_btn_dialog_confirm" android:background="@drawable/m4399_ea_activation_dialog_confirm_bg" android:layout_width="100.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/m4399_ope_color_ffffff" android:id="@id/m4399_ea_activation_id_tv_dialog_confirm_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ea_activation_confirm" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/m4399_ea_activation_id_btn_dialog_get_cdk" android:background="@drawable/m4399_ea_activation_dialog_get_cdk_bg" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/m4399_ope_color_ffa92d" android:id="@id/m4399_ea_activation_id_tv_dialog_get_cdk_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ea_activation_get_cdk" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/m4399_ea_ic_activation_more" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

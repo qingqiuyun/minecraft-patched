@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"campfire","count":1},"key":{"A":{"item":"stick"},"C":{"item":"crimson_stem"},"B":{"item":"coal"}},"description":{"identifier":"minecraft:campfire_from_crimson_stem"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

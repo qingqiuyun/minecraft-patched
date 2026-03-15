@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.frog":{"materials":[{"*":"Material.default"}],"arrays":{"textures":{"Array.skins":["Texture.temperate","Texture.cold","Texture.warm"]}},"part_visibility":[{"croaking_body":"!query.is_eating_mob"}],"geometry":"Geometry.default","textures":["Array.skins[query.variant]"]}},"format_version":"1.8.0"}

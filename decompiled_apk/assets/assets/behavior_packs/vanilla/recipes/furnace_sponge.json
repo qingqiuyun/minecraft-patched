@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:sponge"}],"input":"minecraft:sponge:1","description":{"identifier":"minecraft:furnace_sponge"},"output":"minecraft:sponge:0","tags":["furnace"]},"format_version":"1.20.10"}

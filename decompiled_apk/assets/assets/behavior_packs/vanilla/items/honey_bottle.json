@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:use_duration":40,"minecraft:food":{"nutrition":6,"saturation_modifier":"poor","can_always_eat":true,"remove_effects":["poison"],"using_converts_to":"glass_bottle"},"minecraft:max_stack_size":16},"description":{"identifier":"minecraft:honey_bottle"}},"format_version":"1.14"}

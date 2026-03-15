@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:diamond"}],"result":{"item":"minecraft:diamond_sword"},"key":{"#":{"item":"minecraft:stick"},"X":{"item":"minecraft:diamond"}},"description":{"identifier":"minecraft:diamond_sword"},"pattern":["X","X","#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

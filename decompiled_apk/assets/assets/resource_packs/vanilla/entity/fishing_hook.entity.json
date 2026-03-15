@@ -1,0 +1,2 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"fishing_hook"},"identifier":"minecraft:fishing_hook","geometry":{"default":"geometry.fishing_hook"},"textures":{"default":"textures/entity/fishhook"},"render_controllers":["controller.render.fishing_hook"]}},"format_version":"1.10.0"}
+//CelsiusRP 11-20

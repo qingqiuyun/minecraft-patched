@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:iron_ingot"}],"result":{"item":"minecraft:iron_trapdoor"},"key":{"#":{"item":"minecraft:iron_ingot"}},"description":{"identifier":"minecraft:iron_trapdoor"},"pattern":["##","##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

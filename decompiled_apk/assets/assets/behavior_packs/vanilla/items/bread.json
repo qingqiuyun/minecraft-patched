@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"saturation_modifier":"normal","nutrition":5},"minecraft:use_duration":32},"description":{"identifier":"minecraft:bread"}},"format_version":"1.10"}

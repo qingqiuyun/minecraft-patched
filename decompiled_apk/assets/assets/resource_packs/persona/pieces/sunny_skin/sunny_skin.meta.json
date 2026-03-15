@@ -1,0 +1,1 @@
+{"piece_name":"sunny_skin","piece_type":"persona_skin","piece_id":"33c7a041-46be-73ad-55aa-7e1b18563364","texture_sources":[{"texture":"sunny_skin_head.png","use_face_uv":true,"tint_map":"sunny_skin_head_tintmap.tga"},{"tint_map":"sunny_skin_body_tintmap.tga","texture":"sunny_skin_body.png"}],"tint_base_color":{"r_color":"#ff7f4a"}}

@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.skeleton_horse.v1.and.v2":{"part_visibility":[{"*saddle*":false},{"SaddleMouthLine":false},{"SaddleMouthLineR":false},{"Bag*":false},{"MuleEar*":false}],"geometry":"Geometry.default","textures":["Texture.skeleton","Texture.markings_none","Texture.armor_none"],"materials":[{"*":"Material.default"}]}},"format_version":"1.8.0"}

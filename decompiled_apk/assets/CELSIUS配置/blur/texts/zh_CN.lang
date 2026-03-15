@@ -1,0 +1,6 @@
+options.motion_blur=动态模糊	#
+options.motion_blur_intensity=动态模糊强度	#
+options.move_blur=移动模糊	#
+
+motion_blur.intensity.vertical.label=纵向动态模糊
+motion_blur.intensity.horizontal.label=横向动态模糊

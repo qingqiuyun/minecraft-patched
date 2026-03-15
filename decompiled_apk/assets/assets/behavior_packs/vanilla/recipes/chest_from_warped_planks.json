@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"chest","count":1},"key":{"A":{"item":"warped_planks"}},"description":{"identifier":"minecraft:chest_from_warped_planks"},"pattern":["AAA","A A","AAA"],"tags":["crafting_table"]},"format_version":"1.16"}

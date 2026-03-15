@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:glass"}],"pattern":["###","#X#","###"],"result":{"item":"minecraft:blue_stained_glass","count":8},"key":{"#":{"item":"minecraft:glass"},"X":{"item":"minecraft:dye","data":18}},"description":{"identifier":"minecraft:blue_stained_glass"},"group":"stained_glass","tags":["crafting_table"]},"format_version":"1.20.10"}

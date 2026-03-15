@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.ghast":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","arrays":{"textures":{"Array.skins":["Texture.default","Texture.shooting"]}},"textures":["Array.skins[variable.ischarging]"]}},"format_version":"1.8.0"}

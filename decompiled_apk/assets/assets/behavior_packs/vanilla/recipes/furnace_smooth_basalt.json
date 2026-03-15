@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:basalt"}],"input":"minecraft:basalt","description":{"identifier":"minecraft:furnace_smooth_basalt"},"output":"minecraft:smooth_basalt","tags":["furnace"]},"format_version":"1.20.10"}

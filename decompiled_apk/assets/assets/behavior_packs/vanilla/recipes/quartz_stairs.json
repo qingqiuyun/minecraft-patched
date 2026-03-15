@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:quartz_block","data":0}],"result":{"item":"minecraft:quartz_stairs","count":4},"key":{"#":{"item":"minecraft:quartz_block","data":0}},"description":{"identifier":"minecraft:quartz_stairs"},"pattern":["#  ","## ","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

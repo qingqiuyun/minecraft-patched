@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"tag":"minecraft:planks"}],"priority":-1,"result":{"item":"stick","count":4},"key":{"A":{"tag":"minecraft:planks"}},"description":{"identifier":"minecraft:stick"},"pattern":["A","A"],"tags":["crafting_table"]},"format_version":"1.20.10"}

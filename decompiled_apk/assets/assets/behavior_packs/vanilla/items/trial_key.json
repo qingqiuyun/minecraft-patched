@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:display_name":{"value":"item.trial_key.name"},"minecraft:icon":{"texture":"trial_key"}},"description":{"category":"Items","identifier":"minecraft:trial_key"}},"format_version":"1.20.50"}

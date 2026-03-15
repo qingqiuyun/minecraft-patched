@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:cherry_planks"}],"result":{"item":"minecraft:cherry_button"},"key":{"#":{"item":"minecraft:cherry_planks"}},"description":{"identifier":"minecraft:cherry_button"},"pattern":["#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

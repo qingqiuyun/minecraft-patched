@@ -1,0 +1,1 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"llama_spit"},"identifier":"minecraft:llama_spit","textures":{"default":"textures/entity/llama/spit"},"animations":{"setup":"animation.llama_spit.setup"},"scripts":{"animate":["setup"]},"render_controllers":["controller.render.llama_spit"],"geometry":{"default":"geometry.llamaspit"}}},"format_version":"1.10.0"}

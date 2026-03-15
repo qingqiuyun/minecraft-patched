@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"name":"minecraft:pufferfish","type":"item","weight":1}],"rolls":1},{"entries":[{"functions":[{"function":"looting_enchant","count":{"max":2,"min":1}}],"name":"minecraft:bone","type":"item","weight":1}],"conditions":[{"looting_multiplier":0.01,"chance":0.25,"condition":"random_chance_with_looting"}],"rolls":1}]}

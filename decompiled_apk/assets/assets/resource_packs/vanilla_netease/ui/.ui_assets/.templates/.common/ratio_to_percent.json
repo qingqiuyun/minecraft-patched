@@ -1,0 +1,728 @@
+{
+  "namespace": "ratio_to_percent",
+  "main": {
+    "type": "panel",
+    "size": [
+      "100%cm",
+      "100%cm"
+    ],
+    "controls": [
+      {
+        "100@$template": {
+          "text": "99%",
+          "$min_ratio": 0,
+          "$max_ratio": 0.01
+        }
+      },
+      {
+        "99@$template": {
+          "text": "98%",
+          "$min_ratio": 0.01,
+          "$max_ratio": 0.02
+        }
+      },
+      {
+        "98@$template": {
+          "text": "97%",
+          "$min_ratio": 0.02,
+          "$max_ratio": 0.03
+        }
+      },
+      {
+        "97@$template": {
+          "text": "96%",
+          "$min_ratio": 0.03,
+          "$max_ratio": 0.04
+        }
+      },
+      {
+        "96@$template": {
+          "text": "95%",
+          "$min_ratio": 0.04,
+          "$max_ratio": 0.05
+        }
+      },
+      {
+        "95@$template": {
+          "text": "94%",
+          "$min_ratio": 0.05,
+          "$max_ratio": 0.06
+        }
+      },
+      {
+        "94@$template": {
+          "text": "93%",
+          "$min_ratio": 0.06,
+          "$max_ratio": 0.07
+        }
+      },
+      {
+        "93@$template": {
+          "text": "92%",
+          "$min_ratio": 0.07,
+          "$max_ratio": 0.08
+        }
+      },
+      {
+        "92@$template": {
+          "text": "91%",
+          "$min_ratio": 0.08,
+          "$max_ratio": 0.09
+        }
+      },
+      {
+        "91@$template": {
+          "text": "90%",
+          "$min_ratio": 0.09,
+          "$max_ratio": 0.10
+        }
+      },
+      {
+        "90@$template": {
+          "text": "89%",
+          "$min_ratio": 0.10,
+          "$max_ratio": 0.11
+        }
+      },
+      {
+        "89@$template": {
+          "text": "88%",
+          "$min_ratio": 0.11,
+          "$max_ratio": 0.12
+        }
+      },
+      {
+        "88@$template": {
+          "text": "87%",
+          "$min_ratio": 0.12,
+          "$max_ratio": 0.13
+        }
+      },
+      {
+        "87@$template": {
+          "text": "86%",
+          "$min_ratio": 0.13,
+          "$max_ratio": 0.14
+        }
+      },
+      {
+        "86@$template": {
+          "text": "85%",
+          "$min_ratio": 0.14,
+          "$max_ratio": 0.15
+        }
+      },
+      {
+        "85@$template": {
+          "text": "84%",
+          "$min_ratio": 0.15,
+          "$max_ratio": 0.16
+        }
+      },
+      {
+        "84@$template": {
+          "text": "83%",
+          "$min_ratio": 0.16,
+          "$max_ratio": 0.17
+        }
+      },
+      {
+        "83@$template": {
+          "text": "82%",
+          "$min_ratio": 0.17,
+          "$max_ratio": 0.18
+        }
+      },
+      {
+        "82@$template": {
+          "text": "81%",
+          "$min_ratio": 0.18,
+          "$max_ratio": 0.19
+        }
+      },
+      {
+        "81@$template": {
+          "text": "80%",
+          "$min_ratio": 0.19,
+          "$max_ratio": 0.20
+        }
+      },
+      {
+        "80_0@$template": {
+          "text": "79%",
+          "$min_ratio": 0.20,
+          "$max_ratio": 0.21
+        }
+      },
+      {
+        "79@$template": {
+          "text": "78%",
+          "$min_ratio": 0.21,
+          "$max_ratio": 0.22
+        }
+      },
+      {
+        "78@$template": {
+          "text": "77%",
+          "$min_ratio": 0.22,
+          "$max_ratio": 0.23
+        }
+      },
+      {
+        "77@$template": {
+          "text": "76%",
+          "$min_ratio": 0.23,
+          "$max_ratio": 0.24
+        }
+      },
+      {
+        "76@$template": {
+          "text": "75%",
+          "$min_ratio": 0.24,
+          "$max_ratio": 0.25
+        }
+      },
+      {
+        "75@$template": {
+          "text": "74%",
+          "$min_ratio": 0.25,
+          "$max_ratio": 0.26
+        }
+      },
+      {
+        "74@$template": {
+          "text": "73%",
+          "$min_ratio": 0.26,
+          "$max_ratio": 0.27
+        }
+      },
+      {
+        "73@$template": {
+          "text": "72%",
+          "$min_ratio": 0.27,
+          "$max_ratio": 0.28
+        }
+      },
+      {
+        "72@$template": {
+          "text": "71%",
+          "$min_ratio": 0.28,
+          "$max_ratio": 0.29
+        }
+      },
+      {
+        "71@$template": {
+          "text": "70%",
+          "$min_ratio": 0.29,
+          "$max_ratio": 0.30
+        }
+      },
+      {
+        "70@$template": {
+          "text": "69%",
+          "$min_ratio": 0.30,
+          "$max_ratio": 0.31
+        }
+      },
+      {
+        "69@$template": {
+          "text": "68%",
+          "$min_ratio": 0.31,
+          "$max_ratio": 0.32
+        }
+      },
+      {
+        "68@$template": {
+          "text": "67%",
+          "$min_ratio": 0.32,
+          "$max_ratio": 0.33
+        }
+      },
+      {
+        "67@$template": {
+          "text": "66%",
+          "$min_ratio": 0.33,
+          "$max_ratio": 0.34
+        }
+      },
+      {
+        "66@$template": {
+          "text": "65%",
+          "$min_ratio": 0.34,
+          "$max_ratio": 0.35
+        }
+      },
+      {
+        "65@$template": {
+          "text": "64%",
+          "$min_ratio": 0.35,
+          "$max_ratio": 0.36
+        }
+      },
+      {
+        "64@$template": {
+          "text": "63%",
+          "$min_ratio": 0.36,
+          "$max_ratio": 0.37
+        }
+      },
+      {
+        "63@$template": {
+          "text": "62%",
+          "$min_ratio": 0.37,
+          "$max_ratio": 0.38
+        }
+      },
+      {
+        "62@$template": {
+          "text": "61%",
+          "$min_ratio": 0.38,
+          "$max_ratio": 0.39
+        }
+      },
+      {
+        "61@$template": {
+          "text": "60%",
+          "$min_ratio": 0.39,
+          "$max_ratio": 0.40
+        }
+      },
+      {
+        "60@$template": {
+          "text": "59%",
+          "$min_ratio": 0.40,
+          "$max_ratio": 0.41
+        }
+      },
+      {
+        "59@$template": {
+          "text": "58%",
+          "$min_ratio": 0.41,
+          "$max_ratio": 0.42
+        }
+      },
+      {
+        "58@$template": {
+          "text": "57%",
+          "$min_ratio": 0.42,
+          "$max_ratio": 0.43
+        }
+      },
+      {
+        "57@$template": {
+          "text": "56%",
+          "$min_ratio": 0.43,
+          "$max_ratio": 0.44
+        }
+      },
+      {
+        "56@$template": {
+          "text": "55%",
+          "$min_ratio": 0.44,
+          "$max_ratio": 0.45
+        }
+      },
+      {
+        "55@$template": {
+          "text": "54%",
+          "$min_ratio": 0.45,
+          "$max_ratio": 0.46
+        }
+      },
+      {
+        "54@$template": {
+          "text": "53%",
+          "$min_ratio": 0.46,
+          "$max_ratio": 0.47
+        }
+      },
+      {
+        "53@$template": {
+          "text": "52%",
+          "$min_ratio": 0.47,
+          "$max_ratio": 0.48
+        }
+      },
+      {
+        "52@$template": {
+          "text": "51%",
+          "$min_ratio": 0.48,
+          "$max_ratio": 0.49
+        }
+      },
+      {
+        "51@$template": {
+          "text": "50%",
+          "$min_ratio": 0.49,
+          "$max_ratio": 0.50
+        }
+      },
+      {
+        "50@$template": {
+          "text": "49%",
+          "$min_ratio": 0.50,
+          "$max_ratio": 0.51
+        }
+      },
+      {
+        "49@$template": {
+          "text": "48%",
+          "$min_ratio": 0.51,
+          "$max_ratio": 0.52
+        }
+      },
+      {
+        "48@$template": {
+          "text": "47%",
+          "$min_ratio": 0.52,
+          "$max_ratio": 0.53
+        }
+      },
+      {
+        "47@$template": {
+          "text": "46%",
+          "$min_ratio": 0.53,
+          "$max_ratio": 0.54
+        }
+      },
+      {
+        "46@$template": {
+          "text": "45%",
+          "$min_ratio": 0.54,
+          "$max_ratio": 0.55
+        }
+      },
+      {
+        "45@$template": {
+          "text": "44%",
+          "$min_ratio": 0.55,
+          "$max_ratio": 0.56
+        }
+      },
+      {
+        "44@$template": {
+          "text": "43%",
+          "$min_ratio": 0.56,
+          "$max_ratio": 0.57
+        }
+      },
+      {
+        "43@$template": {
+          "text": "42%",
+          "$min_ratio": 0.57,
+          "$max_ratio": 0.58
+        }
+      },
+      {
+        "42@$template": {
+          "text": "41%",
+          "$min_ratio": 0.58,
+          "$max_ratio": 0.59
+        }
+      },
+      {
+        "41@$template": {
+          "text": "40%",
+          "$min_ratio": 0.59,
+          "$max_ratio": 0.60
+        }
+      },
+      {
+        "40@$template": {
+          "text": "39%",
+          "$min_ratio": 0.60,
+          "$max_ratio": 0.61
+        }
+      },
+      {
+        "39@$template": {
+          "text": "38%",
+          "$min_ratio": 0.61,
+          "$max_ratio": 0.62
+        }
+      },
+      {
+        "38@$template": {
+          "text": "37%",
+          "$min_ratio": 0.62,
+          "$max_ratio": 0.63
+        }
+      },
+      {
+        "37@$template": {
+          "text": "36%",
+          "$min_ratio": 0.63,
+          "$max_ratio": 0.64
+        }
+      },
+      {
+        "36@$template": {
+          "text": "35%",
+          "$min_ratio": 0.64,
+          "$max_ratio": 0.65
+        }
+      },
+      {
+        "35@$template": {
+          "text": "34%",
+          "$min_ratio": 0.65,
+          "$max_ratio": 0.66
+        }
+      },
+      {
+        "34@$template": {
+          "text": "33%",
+          "$min_ratio": 0.66,
+          "$max_ratio": 0.67
+        }
+      },
+      {
+        "33@$template": {
+          "text": "32%",
+          "$min_ratio": 0.67,
+          "$max_ratio": 0.68
+        }
+      },
+      {
+        "32@$template": {
+          "text": "31%",
+          "$min_ratio": 0.68,
+          "$max_ratio": 0.69
+        }
+      },
+      {
+        "31@$template": {
+          "text": "30%",
+          "$min_ratio": 0.69,
+          "$max_ratio": 0.70
+        }
+      },
+      {
+        "30@$template": {
+          "text": "29%",
+          "$min_ratio": 0.70,
+          "$max_ratio": 0.71
+        }
+      },
+      {
+        "29@$template": {
+          "text": "28%",
+          "$min_ratio": 0.71,
+          "$max_ratio": 0.72
+        }
+      },
+      {
+        "28@$template": {
+          "text": "27%",
+          "$min_ratio": 0.72,
+          "$max_ratio": 0.73
+        }
+      },
+      {
+        "27@$template": {
+          "text": "26%",
+          "$min_ratio": 0.73,
+          "$max_ratio": 0.74
+        }
+      },
+      {
+        "26@$template": {
+          "text": "25%",
+          "$min_ratio": 0.74,
+          "$max_ratio": 0.75
+        }
+      },
+      {
+        "25@$template": {
+          "text": "24%",
+          "$min_ratio": 0.75,
+          "$max_ratio": 0.76
+        }
+      },
+      {
+        "24@$template": {
+          "text": "23%",
+          "$min_ratio": 0.76,
+          "$max_ratio": 0.77
+        }
+      },
+      {
+        "23@$template": {
+          "text": "22%",
+          "$min_ratio": 0.77,
+          "$max_ratio": 0.78
+        }
+      },
+      {
+        "22@$template": {
+          "text": "21%",
+          "$min_ratio": 0.78,
+          "$max_ratio": 0.79
+        }
+      },
+      {
+        "21@$template": {
+          "text": "20%",
+          "$min_ratio": 0.79,
+          "$max_ratio": 0.80
+        }
+      },
+      {
+        "20@$template": {
+          "text": "19%",
+          "$min_ratio": 0.80,
+          "$max_ratio": 0.81
+        }
+      },
+      {
+        "19@$template": {
+          "text": "18%",
+          "$min_ratio": 0.81,
+          "$max_ratio": 0.82
+        }
+      },
+      {
+        "18@$template": {
+          "text": "17%",
+          "$min_ratio": 0.82,
+          "$max_ratio": 0.83
+        }
+      },
+      {
+        "17@$template": {
+          "text": "16%",
+          "$min_ratio": 0.83,
+          "$max_ratio": 0.84
+        }
+      },
+      {
+        "16@$template": {
+          "text": "15%",
+          "$min_ratio": 0.84,
+          "$max_ratio": 0.85
+        }
+      },
+      {
+        "15@$template": {
+          "text": "14%",
+          "$min_ratio": 0.85,
+          "$max_ratio": 0.86
+        }
+      },
+      {
+        "14@$template": {
+          "text": "13%",
+          "$min_ratio": 0.86,
+          "$max_ratio": 0.87
+        }
+      },
+      {
+        "13@$template": {
+          "text": "12%",
+          "$min_ratio": 0.87,
+          "$max_ratio": 0.88
+        }
+      },
+      {
+        "12@$template": {
+          "text": "11%",
+          "$min_ratio": 0.88,
+          "$max_ratio": 0.89
+        }
+      },
+      {
+        "11@$template": {
+          "text": "10%",
+          "$min_ratio": 0.89,
+          "$max_ratio": 0.90
+        }
+      },
+      {
+        "80@$template": {
+          "text": "9%",
+          "$min_ratio": 0.90,
+          "$max_ratio": 0.91
+        }
+      },
+      {
+        "9@$template": {
+          "text": "8%",
+          "$min_ratio": 0.91,
+          "$max_ratio": 0.92
+        }
+      },
+      {
+        "8@$template": {
+          "text": "7%",
+          "$min_ratio": 0.92,
+          "$max_ratio": 0.93
+        }
+      },
+      {
+        "7@$template": {
+          "text": "6%",
+          "$min_ratio": 0.93,
+          "$max_ratio": 0.94
+        }
+      },
+      {
+        "6@$template": {
+          "text": "5%",
+          "$min_ratio": 0.94,
+          "$max_ratio": 0.95
+        }
+      },
+      {
+        "5@$template": {
+          "text": "4%",
+          "$min_ratio": 0.95,
+          "$max_ratio": 0.96
+        }
+      },
+      {
+        "4@$template": {
+          "text": "3%",
+          "$min_ratio": 0.96,
+          "$max_ratio": 0.97
+        }
+      },
+      {
+        "3@$template": {
+          "text": "2%",
+          "$min_ratio": 0.97,
+          "$max_ratio": 0.98
+        }
+      },
+      {
+        "2@$template": {
+          "text": "1%",
+          "$min_ratio": 0.98,
+          "$max_ratio": 0.99
+        }
+      },
+      {
+        "1@$template": {
+          "text": "0%",
+          "$min_ratio": 0.99,
+          "$max_ratio": 1.00
+        }
+      }
+    ]
+  },
+  "template": {
+    "type": "label",
+    "bindings": [
+      {
+        "binding_name": "$ratio_binding_name",
+        "binding_type": "global",
+        "binding_condition": "always"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "((($ratio_binding_name > $min_ratio) and ($ratio_binding_name < $max_ratio)) or ($ratio_binding_name = $max_ratio))",
+        "target_property_name": "#visible"
+      }
+    ],
+    "localize": false
+  }
+}

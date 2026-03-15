@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:string"}],"priority":-1,"result":{"item":"tripwire_hook","count":2},"key":{"A":{"item":"iron_ingot"},"C":{"tag":"minecraft:planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:tripwire_hook"},"pattern":["A","B","C"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:flint"},{"item":"minecraft:feather"}],"result":{"item":"minecraft:arrow","count":4},"key":{"Y":{"item":"minecraft:feather"},"X":{"item":"minecraft:flint"},"#":{"item":"minecraft:stick"}},"description":{"identifier":"minecraft:arrow"},"pattern":["X","#","Y"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,2 @@
+{"render_controllers":{"controller.render.experience_orb":{"materials":[{"*":"Material.default"}],"ignore_lighting":true,"uv_anim":{"scale":[1.0,1.0],"offset":["variable.u","variable.v"]},"overlay_color":{"a":"0.5","r":"(Math.sin(query.life_time * 500.0) + 1.0) * 0.5","g":"1.0","b":"(Math.sin(query.life_time * 500.0 + 240.0) + 1.0) * 0.1"},"geometry":"Geometry.default","textures":["Texture.default"]}},"format_version":"1.8.0"}
+//CelsiusRP 11-20

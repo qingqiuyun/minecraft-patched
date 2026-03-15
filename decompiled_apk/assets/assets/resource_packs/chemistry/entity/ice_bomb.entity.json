@@ -1,0 +1,1 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"ice_bomb"},"identifier":"minecraft:ice_bomb","textures":{"default":"textures/items/ice_bomb"},"animations":{"flying":"animation.actor.billboard"},"scripts":{"animate":["flying"]},"render_controllers":["controller.render.item_sprite"],"geometry":{"default":"geometry.item_sprite"}}},"format_version":"1.10.0"}

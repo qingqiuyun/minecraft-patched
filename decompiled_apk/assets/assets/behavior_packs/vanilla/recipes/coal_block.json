@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:coal","data":0}],"result":{"item":"minecraft:coal_block"},"key":{"#":{"item":"minecraft:coal","data":0}},"description":{"identifier":"minecraft:coal_block"},"pattern":["###","###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

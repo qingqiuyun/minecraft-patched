@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10",
+	"render_controllers": {
+		"controller.render.blocks_up": {
+		  "geometry": "geometry.up",
+		  "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+		  "textures": [ "texture.up", "texture.enchanted" ]
+		},
+		"controller.render.blocks_down": {
+		  "geometry": "geometry.down",
+		  "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+		  "textures": [ "texture.down", "texture.enchanted" ]
+		},
+		"controller.render.blocks_north": {
+		  "geometry": "geometry.north",
+		  "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+		  "textures": [ "texture.north", "texture.enchanted" ]
+		},
+		"controller.render.blocks_south": {
+		  "geometry": "geometry.south",
+		  "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+		  "textures": [ "texture.south", "texture.enchanted" ]
+		},
+		"controller.render.blocks_west": {
+		  "geometry": "geometry.west",
+		  "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+		  "textures": [ "texture.west", "texture.enchanted" ]
+		},
+		"controller.render.blocks_east": {
+		  "geometry": "geometry.east",
+		  "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+		  "textures": [ "texture.east", "texture.enchanted" ]
+		}
+	}
+}

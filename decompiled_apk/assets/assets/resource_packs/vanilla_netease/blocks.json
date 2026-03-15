@@ -1,0 +1,77 @@
+{//可开关完美矿透-ALI980-边框销售版
+    "diamond_ore": {
+        "blockshape": "structure_void"
+    },
+    "iron_ore": {
+        "blockshape": "structure_void"
+    },
+    "coal_ore": {
+        "blockshape": "structure_void"
+    },
+    "gold_ore": {
+        "blockshape": "structure_void"
+    },
+    "redstone_ore": {
+        "blockshape": "structure_void"
+    },
+    "lit_redstone_ore": {
+        "blockshape": "structure_void"
+    },
+    "lapis_ore": {
+        "blockshape": "structure_void"
+    },
+    "emerald_ore": {
+        "blockshape": "structure_void"
+    },
+    "copper_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_lapis_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_iron_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_gold_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_redstone_ore": {
+        "blockshape": "structure_void"
+    },
+    "lit_deepslate_redstone_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_diamond_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_coal_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_emerald_ore": {
+        "blockshape": "structure_void"
+    },
+    "deepslate_copper_ore": {
+        "blockshape": "structure_void"
+    },
+    "nether_gold_ore": {
+        "blockshape": "structure_void"
+    },
+    "quartz_ore": {
+        "blockshape": "structure_void"
+    },
+    "ancient_debris": {
+        "blockshape": "structure_void"
+    },
+    "raw_copper_block": {
+        "blockshape": "structure_void"
+    },
+    "raw_gold_block": {
+        "blockshape": "structure_void"
+    },
+    "raw_iron_block": {
+        "blockshape": "structure_void"
+    },
+    "gilded_blackstone": {
+        "blockshape": "structure_void"
+    }
+}

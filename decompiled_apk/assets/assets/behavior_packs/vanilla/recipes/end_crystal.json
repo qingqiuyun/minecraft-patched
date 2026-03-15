@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:ender_eye"}],"result":{"item":"minecraft:end_crystal"},"key":{"E":{"item":"minecraft:ender_eye"},"T":{"item":"minecraft:ghast_tear"},"G":{"item":"minecraft:glass"}},"description":{"identifier":"minecraft:end_crystal"},"pattern":["GGG","GEG","GTG"],"tags":["crafting_table"]},"format_version":"1.20.10"}

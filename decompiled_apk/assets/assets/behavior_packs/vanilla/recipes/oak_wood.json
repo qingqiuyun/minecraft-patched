@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:oak_log"}],"pattern":["##","##"],"result":{"item":"minecraft:oak_wood","count":3},"key":{"#":{"item":"minecraft:oak_log"}},"description":{"identifier":"minecraft:oak_wood"},"group":"wood","tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gold_ingot"}],"result":{"item":"minecraft:golden_axe"},"key":{"#":{"item":"minecraft:stick"},"X":{"item":"minecraft:gold_ingot"}},"description":{"identifier":"minecraft:golden_axe"},"pattern":["XX","X#"," #"],"tags":["crafting_table"]},"format_version":"1.20.10"}

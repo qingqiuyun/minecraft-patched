@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"tag":"minecraft:planks"},{"tag":"minecraft:wooden_slabs"}],"priority":-1,"result":{"item":"minecraft:barrel"},"key":{"#":{"tag":"minecraft:planks"},"-":{"tag":"minecraft:wooden_slabs"}},"description":{"identifier":"minecraft:barrel_with_planks"},"pattern":["#-#","# #","#-#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

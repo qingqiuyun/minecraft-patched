@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"input":"minecraft:mangrove_log","description":{"identifier":"minecraft:furnace_log_mangrove"},"output":"minecraft:coal:1","tags":["furnace"]},"format_version":"1.12"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:chicken"}],"input":"minecraft:chicken","description":{"identifier":"minecraft:furnace_chicken"},"output":"minecraft:cooked_chicken","tags":["furnace","smoker","campfire","soul_campfire"]},"format_version":"1.20.10"}

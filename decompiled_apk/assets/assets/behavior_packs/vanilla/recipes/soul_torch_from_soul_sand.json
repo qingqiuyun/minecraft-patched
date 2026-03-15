@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"result":{"item":"minecraft:soul_torch","count":4},"key":{"|":{"item":"minecraft:stick"},"#":{"item":"minecraft:soul_sand"},".":{"item":"minecraft:coal"}},"description":{"identifier":"minecraft:soul_torch_from_soul_sand"},"pattern":[".","|","#"],"tags":["crafting_table"]},"format_version":"1.16"}

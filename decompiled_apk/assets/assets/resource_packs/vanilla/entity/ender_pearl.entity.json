@@ -1,0 +1,2 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"ender_pearl"},"identifier":"minecraft:ender_pearl","textures":{"default":"textures/items/ender_pearl"},"animations":{"flying":"animation.actor.billboard"},"scripts":{"animate":["flying"]},"render_controllers":["controller.render.item_sprite"],"geometry":{"default":"geometry.item_sprite"}}},"format_version":"1.10.0"}
+//CelsiusRP 11-20

@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:glowstone_dust","input":"minecraft:potion_type:water","description":{"identifier":"minecraft:brew_water_glow_stone"},"output":"minecraft:potion_type:Thick","tags":["brewing_stand"]},"format_version":"1.20.10"}

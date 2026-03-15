@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"tag":"minecraft:soul_fire_base_blocks"}],"priority":-1,"result":{"item":"soul_campfire","count":1},"key":{"A":{"item":"stick"},"C":{"tag":"minecraft:logs"},"B":{"tag":"minecraft:soul_fire_base_blocks"}},"description":{"identifier":"minecraft:soul_campfire"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.20.10"}

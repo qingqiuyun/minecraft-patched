@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:stone","data":0}],"input":"minecraft:stone:0","description":{"identifier":"minecraft:furnace_stone"},"output":"minecraft:smooth_stone","tags":["furnace"]},"format_version":"1.20.10"}

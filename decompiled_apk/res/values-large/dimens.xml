@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">55.000008%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="crop__bar_height">56.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__alert_dialog_button_height">51.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__btn_height">42.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__btn_width">138.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__dialog_max_text_height">204.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__dialog_min_text_height">84.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__dialog_width">336.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_button_margin_top">12.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_corner">6.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_message_margin_top">12.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_message_text">19.199982dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_paddding_left">18.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_paddding_top">12.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_title_text">21.599976dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_alert_dialog_width">324.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_panel_padding_horizontal">21.599976sp</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_panel_padding_vertical">21.599976sp</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_scancode_err_dialog_width">384.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__login_text_normal">19.5sp</dimen>
+    <dimen name="netease_mpay_ps_codescanner__space_10">12.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__space_15">18.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__space_2">2.399994dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__space_20">24.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__space_5">6.0dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__text_size_13">15.599976dip</dimen>
+    <dimen name="netease_mpay_ps_codescanner__text_size_15">18.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__height_15">18.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__height_35">42.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__margin_15">18.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__margin_20">24.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__margin_minus_2">-2.399994dip</dimen>
+    <dimen name="netease_permissionkit_sdk__margin_minus_7">-8.399994dip</dimen>
+    <dimen name="netease_permissionkit_sdk__padding_5">6.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__text_12">14.399994dip</dimen>
+    <dimen name="netease_permissionkit_sdk__text_15">18.0dip</dimen>
+    <dimen name="netease_permissionkit_sdk__width_1">1.1999817dip</dimen>
+    <dimen name="netease_permissionkit_sdk__width_280">336.0dip</dimen>
+</resources>

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:tuff_bricks"}],"priority":0,"result":{"item":"minecraft:tuff_brick_wall","count":1},"description":{"identifier":"minecraft:stonecutter_tuff_bricks_to_tuff_brick_wall"},"ingredients":[{"item":"minecraft:tuff_bricks"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

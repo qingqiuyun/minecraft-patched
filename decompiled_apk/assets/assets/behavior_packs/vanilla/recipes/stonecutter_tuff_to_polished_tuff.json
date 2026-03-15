@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:tuff"}],"priority":0,"result":{"item":"minecraft:polished_tuff","count":1},"description":{"identifier":"minecraft:stonecutter_tuff_to_polished_tuff"},"ingredients":[{"item":"minecraft:tuff"}],"tags":["stonecutter"]},"format_version":"1.20.10"}

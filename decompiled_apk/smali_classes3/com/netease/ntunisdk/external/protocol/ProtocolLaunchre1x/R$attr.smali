@@ -1,0 +1,88 @@
+.class public final Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/R$attr;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "attr"
+.end annotation
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 6
+
+    const/4 v5, 0x0
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const v0, 0x152eb
+
+    new-array v1, v4, [Ljava/lang/Object;
+
+    invoke-static {v0, v5, v1}, Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/Caxhe/ۥۢۥۣ;->n(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    if-ltz v0, :cond_0
+
+    const v1, 0xd197
+
+    new-array v2, v3, [Ljava/lang/Object;
+
+    const v0, 0x14981
+
+    invoke-static {v0}, Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/Caxhe/۟۟ۥۤ۟;->n(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    aput-object v0, v2, v4
+
+    invoke-static {v1, v5, v2}, Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/Caxhe/ۤۢ;->n(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    const v2, 0x16d59
+
+    const v1, 0xd37b
+
+    invoke-static {v1}, Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/Caxhe/ۤۢ;->n(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/io/PrintStream;
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    aput-object v0, v3, v4
+
+    invoke-static {v2, v1, v3}, Lcom/netease/ntunisdk/external/protocol/ProtocolLaunchre1x/Caxhe/ۢۧۡۨ;->n(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_0
+    return-void
+.end method

@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:icon":"glow_berries","minecraft:use_animation":"eat","minecraft:render_offsets":"miscellaneous"},"description":{"category":"Nature","identifier":"minecraft:glow_berries"}},"format_version":"1.16.0"}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="mipmap" name="wbcf_back">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_change_camera_facing">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_custom_result_fail_icon">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_custom_result_success_icon">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_permission_cam">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_protocal_b">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_protocol_checked_b">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_protocol_uncheck_b">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_verify_fail">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_verify_fail_white">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_verify_success">Nacho/neko.png</item>
+    <item type="mipmap" name="wbcf_verify_success_white">Nacho/neko.png</item>
+</resources>

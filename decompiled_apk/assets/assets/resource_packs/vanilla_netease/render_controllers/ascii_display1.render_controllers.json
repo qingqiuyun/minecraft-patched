@@ -1,0 +1,4885 @@
+{
+	"format_version": "1.10",
+	"render_controllers": {
+		"controller.render.display1_0": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_0",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_0 == 32"
+				},
+				{
+					"index_33": "v.display1_0 == 33"
+				},
+				{
+					"index_34": "v.display1_0 == 34"
+				},
+				{
+					"index_35": "v.display1_0 == 35"
+				},
+				{
+					"index_36": "v.display1_0 == 36"
+				},
+				{
+					"index_37": "v.display1_0 == 37"
+				},
+				{
+					"index_38": "v.display1_0 == 38"
+				},
+				{
+					"index_39": "v.display1_0 == 39"
+				},
+				{
+					"index_40": "v.display1_0 == 40"
+				},
+				{
+					"index_41": "v.display1_0 == 41"
+				},
+				{
+					"index_42": "v.display1_0 == 42"
+				},
+				{
+					"index_43": "v.display1_0 == 43"
+				},
+				{
+					"index_44": "v.display1_0 == 44"
+				},
+				{
+					"index_45": "v.display1_0 == 45"
+				},
+				{
+					"index_46": "v.display1_0 == 46"
+				},
+				{
+					"index_47": "v.display1_0 == 47"
+				},
+				{
+					"index_48": "v.display1_0 == 48"
+				},
+				{
+					"index_49": "v.display1_0 == 49"
+				},
+				{
+					"index_50": "v.display1_0 == 50"
+				},
+				{
+					"index_51": "v.display1_0 == 51"
+				},
+				{
+					"index_52": "v.display1_0 == 52"
+				},
+				{
+					"index_53": "v.display1_0 == 53"
+				},
+				{
+					"index_54": "v.display1_0 == 54"
+				},
+				{
+					"index_55": "v.display1_0 == 55"
+				},
+				{
+					"index_56": "v.display1_0 == 56"
+				},
+				{
+					"index_57": "v.display1_0 == 57"
+				},
+				{
+					"index_58": "v.display1_0 == 58"
+				},
+				{
+					"index_59": "v.display1_0 == 59"
+				},
+				{
+					"index_60": "v.display1_0 == 60"
+				},
+				{
+					"index_61": "v.display1_0 == 61"
+				},
+				{
+					"index_62": "v.display1_0 == 62"
+				},
+				{
+					"index_63": "v.display1_0 == 63"
+				},
+				{
+					"index_64": "v.display1_0 == 64"
+				},
+				{
+					"index_65": "v.display1_0 == 65"
+				},
+				{
+					"index_66": "v.display1_0 == 66"
+				},
+				{
+					"index_67": "v.display1_0 == 67"
+				},
+				{
+					"index_68": "v.display1_0 == 68"
+				},
+				{
+					"index_69": "v.display1_0 == 69"
+				},
+				{
+					"index_70": "v.display1_0 == 70"
+				},
+				{
+					"index_71": "v.display1_0 == 71"
+				},
+				{
+					"index_72": "v.display1_0 == 72"
+				},
+				{
+					"index_73": "v.display1_0 == 73"
+				},
+				{
+					"index_74": "v.display1_0 == 74"
+				},
+				{
+					"index_75": "v.display1_0 == 75"
+				},
+				{
+					"index_76": "v.display1_0 == 76"
+				},
+				{
+					"index_77": "v.display1_0 == 77"
+				},
+				{
+					"index_78": "v.display1_0 == 78"
+				},
+				{
+					"index_79": "v.display1_0 == 79"
+				},
+				{
+					"index_80": "v.display1_0 == 80"
+				},
+				{
+					"index_81": "v.display1_0 == 81"
+				},
+				{
+					"index_82": "v.display1_0 == 82"
+				},
+				{
+					"index_83": "v.display1_0 == 83"
+				},
+				{
+					"index_84": "v.display1_0 == 84"
+				},
+				{
+					"index_85": "v.display1_0 == 85"
+				},
+				{
+					"index_86": "v.display1_0 == 86"
+				},
+				{
+					"index_87": "v.display1_0 == 87"
+				},
+				{
+					"index_88": "v.display1_0 == 88"
+				},
+				{
+					"index_89": "v.display1_0 == 89"
+				},
+				{
+					"index_90": "v.display1_0 == 90"
+				},
+				{
+					"index_91": "v.display1_0 == 91"
+				},
+				{
+					"index_92": "v.display1_0 == 92"
+				},
+				{
+					"index_93": "v.display1_0 == 93"
+				},
+				{
+					"index_94": "v.display1_0 == 94"
+				},
+				{
+					"index_95": "v.display1_0 == 95"
+				},
+				{
+					"index_96": "v.display1_0 == 96"
+				},
+				{
+					"index_97": "v.display1_0 == 97"
+				},
+				{
+					"index_98": "v.display1_0 == 98"
+				},
+				{
+					"index_99": "v.display1_0 == 99"
+				},
+				{
+					"index_100": "v.display1_0 == 100"
+				},
+				{
+					"index_101": "v.display1_0 == 101"
+				},
+				{
+					"index_102": "v.display1_0 == 102"
+				},
+				{
+					"index_103": "v.display1_0 == 103"
+				},
+				{
+					"index_104": "v.display1_0 == 104"
+				},
+				{
+					"index_105": "v.display1_0 == 105"
+				},
+				{
+					"index_106": "v.display1_0 == 106"
+				},
+				{
+					"index_107": "v.display1_0 == 107"
+				},
+				{
+					"index_108": "v.display1_0 == 108"
+				},
+				{
+					"index_109": "v.display1_0 == 109"
+				},
+				{
+					"index_110": "v.display1_0 == 110"
+				},
+				{
+					"index_111": "v.display1_0 == 111"
+				},
+				{
+					"index_112": "v.display1_0 == 112"
+				},
+				{
+					"index_113": "v.display1_0 == 113"
+				},
+				{
+					"index_114": "v.display1_0 == 114"
+				},
+				{
+					"index_115": "v.display1_0 == 115"
+				},
+				{
+					"index_116": "v.display1_0 == 116"
+				},
+				{
+					"index_117": "v.display1_0 == 117"
+				},
+				{
+					"index_118": "v.display1_0 == 118"
+				},
+				{
+					"index_119": "v.display1_0 == 119"
+				},
+				{
+					"index_120": "v.display1_0 == 120"
+				},
+				{
+					"index_121": "v.display1_0 == 121"
+				},
+				{
+					"index_122": "v.display1_0 == 122"
+				},
+				{
+					"index_123": "v.display1_0 == 123"
+				},
+				{
+					"index_124": "v.display1_0 == 124"
+				},
+				{
+					"index_125": "v.display1_0 == 125"
+				},
+				{
+					"index_126": "v.display1_0 == 126"
+				},
+				{
+					"index_127": "v.display1_0 == 127"
+				}
+			]
+		},
+		"controller.render.display1_1": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_1",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_1 == 32"
+				},
+				{
+					"index_33": "v.display1_1 == 33"
+				},
+				{
+					"index_34": "v.display1_1 == 34"
+				},
+				{
+					"index_35": "v.display1_1 == 35"
+				},
+				{
+					"index_36": "v.display1_1 == 36"
+				},
+				{
+					"index_37": "v.display1_1 == 37"
+				},
+				{
+					"index_38": "v.display1_1 == 38"
+				},
+				{
+					"index_39": "v.display1_1 == 39"
+				},
+				{
+					"index_40": "v.display1_1 == 40"
+				},
+				{
+					"index_41": "v.display1_1 == 41"
+				},
+				{
+					"index_42": "v.display1_1 == 42"
+				},
+				{
+					"index_43": "v.display1_1 == 43"
+				},
+				{
+					"index_44": "v.display1_1 == 44"
+				},
+				{
+					"index_45": "v.display1_1 == 45"
+				},
+				{
+					"index_46": "v.display1_1 == 46"
+				},
+				{
+					"index_47": "v.display1_1 == 47"
+				},
+				{
+					"index_48": "v.display1_1 == 48"
+				},
+				{
+					"index_49": "v.display1_1 == 49"
+				},
+				{
+					"index_50": "v.display1_1 == 50"
+				},
+				{
+					"index_51": "v.display1_1 == 51"
+				},
+				{
+					"index_52": "v.display1_1 == 52"
+				},
+				{
+					"index_53": "v.display1_1 == 53"
+				},
+				{
+					"index_54": "v.display1_1 == 54"
+				},
+				{
+					"index_55": "v.display1_1 == 55"
+				},
+				{
+					"index_56": "v.display1_1 == 56"
+				},
+				{
+					"index_57": "v.display1_1 == 57"
+				},
+				{
+					"index_58": "v.display1_1 == 58"
+				},
+				{
+					"index_59": "v.display1_1 == 59"
+				},
+				{
+					"index_60": "v.display1_1 == 60"
+				},
+				{
+					"index_61": "v.display1_1 == 61"
+				},
+				{
+					"index_62": "v.display1_1 == 62"
+				},
+				{
+					"index_63": "v.display1_1 == 63"
+				},
+				{
+					"index_64": "v.display1_1 == 64"
+				},
+				{
+					"index_65": "v.display1_1 == 65"
+				},
+				{
+					"index_66": "v.display1_1 == 66"
+				},
+				{
+					"index_67": "v.display1_1 == 67"
+				},
+				{
+					"index_68": "v.display1_1 == 68"
+				},
+				{
+					"index_69": "v.display1_1 == 69"
+				},
+				{
+					"index_70": "v.display1_1 == 70"
+				},
+				{
+					"index_71": "v.display1_1 == 71"
+				},
+				{
+					"index_72": "v.display1_1 == 72"
+				},
+				{
+					"index_73": "v.display1_1 == 73"
+				},
+				{
+					"index_74": "v.display1_1 == 74"
+				},
+				{
+					"index_75": "v.display1_1 == 75"
+				},
+				{
+					"index_76": "v.display1_1 == 76"
+				},
+				{
+					"index_77": "v.display1_1 == 77"
+				},
+				{
+					"index_78": "v.display1_1 == 78"
+				},
+				{
+					"index_79": "v.display1_1 == 79"
+				},
+				{
+					"index_80": "v.display1_1 == 80"
+				},
+				{
+					"index_81": "v.display1_1 == 81"
+				},
+				{
+					"index_82": "v.display1_1 == 82"
+				},
+				{
+					"index_83": "v.display1_1 == 83"
+				},
+				{
+					"index_84": "v.display1_1 == 84"
+				},
+				{
+					"index_85": "v.display1_1 == 85"
+				},
+				{
+					"index_86": "v.display1_1 == 86"
+				},
+				{
+					"index_87": "v.display1_1 == 87"
+				},
+				{
+					"index_88": "v.display1_1 == 88"
+				},
+				{
+					"index_89": "v.display1_1 == 89"
+				},
+				{
+					"index_90": "v.display1_1 == 90"
+				},
+				{
+					"index_91": "v.display1_1 == 91"
+				},
+				{
+					"index_92": "v.display1_1 == 92"
+				},
+				{
+					"index_93": "v.display1_1 == 93"
+				},
+				{
+					"index_94": "v.display1_1 == 94"
+				},
+				{
+					"index_95": "v.display1_1 == 95"
+				},
+				{
+					"index_96": "v.display1_1 == 96"
+				},
+				{
+					"index_97": "v.display1_1 == 97"
+				},
+				{
+					"index_98": "v.display1_1 == 98"
+				},
+				{
+					"index_99": "v.display1_1 == 99"
+				},
+				{
+					"index_100": "v.display1_1 == 100"
+				},
+				{
+					"index_101": "v.display1_1 == 101"
+				},
+				{
+					"index_102": "v.display1_1 == 102"
+				},
+				{
+					"index_103": "v.display1_1 == 103"
+				},
+				{
+					"index_104": "v.display1_1 == 104"
+				},
+				{
+					"index_105": "v.display1_1 == 105"
+				},
+				{
+					"index_106": "v.display1_1 == 106"
+				},
+				{
+					"index_107": "v.display1_1 == 107"
+				},
+				{
+					"index_108": "v.display1_1 == 108"
+				},
+				{
+					"index_109": "v.display1_1 == 109"
+				},
+				{
+					"index_110": "v.display1_1 == 110"
+				},
+				{
+					"index_111": "v.display1_1 == 111"
+				},
+				{
+					"index_112": "v.display1_1 == 112"
+				},
+				{
+					"index_113": "v.display1_1 == 113"
+				},
+				{
+					"index_114": "v.display1_1 == 114"
+				},
+				{
+					"index_115": "v.display1_1 == 115"
+				},
+				{
+					"index_116": "v.display1_1 == 116"
+				},
+				{
+					"index_117": "v.display1_1 == 117"
+				},
+				{
+					"index_118": "v.display1_1 == 118"
+				},
+				{
+					"index_119": "v.display1_1 == 119"
+				},
+				{
+					"index_120": "v.display1_1 == 120"
+				},
+				{
+					"index_121": "v.display1_1 == 121"
+				},
+				{
+					"index_122": "v.display1_1 == 122"
+				},
+				{
+					"index_123": "v.display1_1 == 123"
+				},
+				{
+					"index_124": "v.display1_1 == 124"
+				},
+				{
+					"index_125": "v.display1_1 == 125"
+				},
+				{
+					"index_126": "v.display1_1 == 126"
+				},
+				{
+					"index_127": "v.display1_1 == 127"
+				}
+			]
+		},
+		"controller.render.display1_2": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_2",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_2 == 32"
+				},
+				{
+					"index_33": "v.display1_2 == 33"
+				},
+				{
+					"index_34": "v.display1_2 == 34"
+				},
+				{
+					"index_35": "v.display1_2 == 35"
+				},
+				{
+					"index_36": "v.display1_2 == 36"
+				},
+				{
+					"index_37": "v.display1_2 == 37"
+				},
+				{
+					"index_38": "v.display1_2 == 38"
+				},
+				{
+					"index_39": "v.display1_2 == 39"
+				},
+				{
+					"index_40": "v.display1_2 == 40"
+				},
+				{
+					"index_41": "v.display1_2 == 41"
+				},
+				{
+					"index_42": "v.display1_2 == 42"
+				},
+				{
+					"index_43": "v.display1_2 == 43"
+				},
+				{
+					"index_44": "v.display1_2 == 44"
+				},
+				{
+					"index_45": "v.display1_2 == 45"
+				},
+				{
+					"index_46": "v.display1_2 == 46"
+				},
+				{
+					"index_47": "v.display1_2 == 47"
+				},
+				{
+					"index_48": "v.display1_2 == 48"
+				},
+				{
+					"index_49": "v.display1_2 == 49"
+				},
+				{
+					"index_50": "v.display1_2 == 50"
+				},
+				{
+					"index_51": "v.display1_2 == 51"
+				},
+				{
+					"index_52": "v.display1_2 == 52"
+				},
+				{
+					"index_53": "v.display1_2 == 53"
+				},
+				{
+					"index_54": "v.display1_2 == 54"
+				},
+				{
+					"index_55": "v.display1_2 == 55"
+				},
+				{
+					"index_56": "v.display1_2 == 56"
+				},
+				{
+					"index_57": "v.display1_2 == 57"
+				},
+				{
+					"index_58": "v.display1_2 == 58"
+				},
+				{
+					"index_59": "v.display1_2 == 59"
+				},
+				{
+					"index_60": "v.display1_2 == 60"
+				},
+				{
+					"index_61": "v.display1_2 == 61"
+				},
+				{
+					"index_62": "v.display1_2 == 62"
+				},
+				{
+					"index_63": "v.display1_2 == 63"
+				},
+				{
+					"index_64": "v.display1_2 == 64"
+				},
+				{
+					"index_65": "v.display1_2 == 65"
+				},
+				{
+					"index_66": "v.display1_2 == 66"
+				},
+				{
+					"index_67": "v.display1_2 == 67"
+				},
+				{
+					"index_68": "v.display1_2 == 68"
+				},
+				{
+					"index_69": "v.display1_2 == 69"
+				},
+				{
+					"index_70": "v.display1_2 == 70"
+				},
+				{
+					"index_71": "v.display1_2 == 71"
+				},
+				{
+					"index_72": "v.display1_2 == 72"
+				},
+				{
+					"index_73": "v.display1_2 == 73"
+				},
+				{
+					"index_74": "v.display1_2 == 74"
+				},
+				{
+					"index_75": "v.display1_2 == 75"
+				},
+				{
+					"index_76": "v.display1_2 == 76"
+				},
+				{
+					"index_77": "v.display1_2 == 77"
+				},
+				{
+					"index_78": "v.display1_2 == 78"
+				},
+				{
+					"index_79": "v.display1_2 == 79"
+				},
+				{
+					"index_80": "v.display1_2 == 80"
+				},
+				{
+					"index_81": "v.display1_2 == 81"
+				},
+				{
+					"index_82": "v.display1_2 == 82"
+				},
+				{
+					"index_83": "v.display1_2 == 83"
+				},
+				{
+					"index_84": "v.display1_2 == 84"
+				},
+				{
+					"index_85": "v.display1_2 == 85"
+				},
+				{
+					"index_86": "v.display1_2 == 86"
+				},
+				{
+					"index_87": "v.display1_2 == 87"
+				},
+				{
+					"index_88": "v.display1_2 == 88"
+				},
+				{
+					"index_89": "v.display1_2 == 89"
+				},
+				{
+					"index_90": "v.display1_2 == 90"
+				},
+				{
+					"index_91": "v.display1_2 == 91"
+				},
+				{
+					"index_92": "v.display1_2 == 92"
+				},
+				{
+					"index_93": "v.display1_2 == 93"
+				},
+				{
+					"index_94": "v.display1_2 == 94"
+				},
+				{
+					"index_95": "v.display1_2 == 95"
+				},
+				{
+					"index_96": "v.display1_2 == 96"
+				},
+				{
+					"index_97": "v.display1_2 == 97"
+				},
+				{
+					"index_98": "v.display1_2 == 98"
+				},
+				{
+					"index_99": "v.display1_2 == 99"
+				},
+				{
+					"index_100": "v.display1_2 == 100"
+				},
+				{
+					"index_101": "v.display1_2 == 101"
+				},
+				{
+					"index_102": "v.display1_2 == 102"
+				},
+				{
+					"index_103": "v.display1_2 == 103"
+				},
+				{
+					"index_104": "v.display1_2 == 104"
+				},
+				{
+					"index_105": "v.display1_2 == 105"
+				},
+				{
+					"index_106": "v.display1_2 == 106"
+				},
+				{
+					"index_107": "v.display1_2 == 107"
+				},
+				{
+					"index_108": "v.display1_2 == 108"
+				},
+				{
+					"index_109": "v.display1_2 == 109"
+				},
+				{
+					"index_110": "v.display1_2 == 110"
+				},
+				{
+					"index_111": "v.display1_2 == 111"
+				},
+				{
+					"index_112": "v.display1_2 == 112"
+				},
+				{
+					"index_113": "v.display1_2 == 113"
+				},
+				{
+					"index_114": "v.display1_2 == 114"
+				},
+				{
+					"index_115": "v.display1_2 == 115"
+				},
+				{
+					"index_116": "v.display1_2 == 116"
+				},
+				{
+					"index_117": "v.display1_2 == 117"
+				},
+				{
+					"index_118": "v.display1_2 == 118"
+				},
+				{
+					"index_119": "v.display1_2 == 119"
+				},
+				{
+					"index_120": "v.display1_2 == 120"
+				},
+				{
+					"index_121": "v.display1_2 == 121"
+				},
+				{
+					"index_122": "v.display1_2 == 122"
+				},
+				{
+					"index_123": "v.display1_2 == 123"
+				},
+				{
+					"index_124": "v.display1_2 == 124"
+				},
+				{
+					"index_125": "v.display1_2 == 125"
+				},
+				{
+					"index_126": "v.display1_2 == 126"
+				},
+				{
+					"index_127": "v.display1_2 == 127"
+				}
+			]
+		},
+		"controller.render.display1_3": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_3",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_3 == 32"
+				},
+				{
+					"index_33": "v.display1_3 == 33"
+				},
+				{
+					"index_34": "v.display1_3 == 34"
+				},
+				{
+					"index_35": "v.display1_3 == 35"
+				},
+				{
+					"index_36": "v.display1_3 == 36"
+				},
+				{
+					"index_37": "v.display1_3 == 37"
+				},
+				{
+					"index_38": "v.display1_3 == 38"
+				},
+				{
+					"index_39": "v.display1_3 == 39"
+				},
+				{
+					"index_40": "v.display1_3 == 40"
+				},
+				{
+					"index_41": "v.display1_3 == 41"
+				},
+				{
+					"index_42": "v.display1_3 == 42"
+				},
+				{
+					"index_43": "v.display1_3 == 43"
+				},
+				{
+					"index_44": "v.display1_3 == 44"
+				},
+				{
+					"index_45": "v.display1_3 == 45"
+				},
+				{
+					"index_46": "v.display1_3 == 46"
+				},
+				{
+					"index_47": "v.display1_3 == 47"
+				},
+				{
+					"index_48": "v.display1_3 == 48"
+				},
+				{
+					"index_49": "v.display1_3 == 49"
+				},
+				{
+					"index_50": "v.display1_3 == 50"
+				},
+				{
+					"index_51": "v.display1_3 == 51"
+				},
+				{
+					"index_52": "v.display1_3 == 52"
+				},
+				{
+					"index_53": "v.display1_3 == 53"
+				},
+				{
+					"index_54": "v.display1_3 == 54"
+				},
+				{
+					"index_55": "v.display1_3 == 55"
+				},
+				{
+					"index_56": "v.display1_3 == 56"
+				},
+				{
+					"index_57": "v.display1_3 == 57"
+				},
+				{
+					"index_58": "v.display1_3 == 58"
+				},
+				{
+					"index_59": "v.display1_3 == 59"
+				},
+				{
+					"index_60": "v.display1_3 == 60"
+				},
+				{
+					"index_61": "v.display1_3 == 61"
+				},
+				{
+					"index_62": "v.display1_3 == 62"
+				},
+				{
+					"index_63": "v.display1_3 == 63"
+				},
+				{
+					"index_64": "v.display1_3 == 64"
+				},
+				{
+					"index_65": "v.display1_3 == 65"
+				},
+				{
+					"index_66": "v.display1_3 == 66"
+				},
+				{
+					"index_67": "v.display1_3 == 67"
+				},
+				{
+					"index_68": "v.display1_3 == 68"
+				},
+				{
+					"index_69": "v.display1_3 == 69"
+				},
+				{
+					"index_70": "v.display1_3 == 70"
+				},
+				{
+					"index_71": "v.display1_3 == 71"
+				},
+				{
+					"index_72": "v.display1_3 == 72"
+				},
+				{
+					"index_73": "v.display1_3 == 73"
+				},
+				{
+					"index_74": "v.display1_3 == 74"
+				},
+				{
+					"index_75": "v.display1_3 == 75"
+				},
+				{
+					"index_76": "v.display1_3 == 76"
+				},
+				{
+					"index_77": "v.display1_3 == 77"
+				},
+				{
+					"index_78": "v.display1_3 == 78"
+				},
+				{
+					"index_79": "v.display1_3 == 79"
+				},
+				{
+					"index_80": "v.display1_3 == 80"
+				},
+				{
+					"index_81": "v.display1_3 == 81"
+				},
+				{
+					"index_82": "v.display1_3 == 82"
+				},
+				{
+					"index_83": "v.display1_3 == 83"
+				},
+				{
+					"index_84": "v.display1_3 == 84"
+				},
+				{
+					"index_85": "v.display1_3 == 85"
+				},
+				{
+					"index_86": "v.display1_3 == 86"
+				},
+				{
+					"index_87": "v.display1_3 == 87"
+				},
+				{
+					"index_88": "v.display1_3 == 88"
+				},
+				{
+					"index_89": "v.display1_3 == 89"
+				},
+				{
+					"index_90": "v.display1_3 == 90"
+				},
+				{
+					"index_91": "v.display1_3 == 91"
+				},
+				{
+					"index_92": "v.display1_3 == 92"
+				},
+				{
+					"index_93": "v.display1_3 == 93"
+				},
+				{
+					"index_94": "v.display1_3 == 94"
+				},
+				{
+					"index_95": "v.display1_3 == 95"
+				},
+				{
+					"index_96": "v.display1_3 == 96"
+				},
+				{
+					"index_97": "v.display1_3 == 97"
+				},
+				{
+					"index_98": "v.display1_3 == 98"
+				},
+				{
+					"index_99": "v.display1_3 == 99"
+				},
+				{
+					"index_100": "v.display1_3 == 100"
+				},
+				{
+					"index_101": "v.display1_3 == 101"
+				},
+				{
+					"index_102": "v.display1_3 == 102"
+				},
+				{
+					"index_103": "v.display1_3 == 103"
+				},
+				{
+					"index_104": "v.display1_3 == 104"
+				},
+				{
+					"index_105": "v.display1_3 == 105"
+				},
+				{
+					"index_106": "v.display1_3 == 106"
+				},
+				{
+					"index_107": "v.display1_3 == 107"
+				},
+				{
+					"index_108": "v.display1_3 == 108"
+				},
+				{
+					"index_109": "v.display1_3 == 109"
+				},
+				{
+					"index_110": "v.display1_3 == 110"
+				},
+				{
+					"index_111": "v.display1_3 == 111"
+				},
+				{
+					"index_112": "v.display1_3 == 112"
+				},
+				{
+					"index_113": "v.display1_3 == 113"
+				},
+				{
+					"index_114": "v.display1_3 == 114"
+				},
+				{
+					"index_115": "v.display1_3 == 115"
+				},
+				{
+					"index_116": "v.display1_3 == 116"
+				},
+				{
+					"index_117": "v.display1_3 == 117"
+				},
+				{
+					"index_118": "v.display1_3 == 118"
+				},
+				{
+					"index_119": "v.display1_3 == 119"
+				},
+				{
+					"index_120": "v.display1_3 == 120"
+				},
+				{
+					"index_121": "v.display1_3 == 121"
+				},
+				{
+					"index_122": "v.display1_3 == 122"
+				},
+				{
+					"index_123": "v.display1_3 == 123"
+				},
+				{
+					"index_124": "v.display1_3 == 124"
+				},
+				{
+					"index_125": "v.display1_3 == 125"
+				},
+				{
+					"index_126": "v.display1_3 == 126"
+				},
+				{
+					"index_127": "v.display1_3 == 127"
+				}
+			]
+		},
+		"controller.render.display1_4": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_4",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_4 == 32"
+				},
+				{
+					"index_33": "v.display1_4 == 33"
+				},
+				{
+					"index_34": "v.display1_4 == 34"
+				},
+				{
+					"index_35": "v.display1_4 == 35"
+				},
+				{
+					"index_36": "v.display1_4 == 36"
+				},
+				{
+					"index_37": "v.display1_4 == 37"
+				},
+				{
+					"index_38": "v.display1_4 == 38"
+				},
+				{
+					"index_39": "v.display1_4 == 39"
+				},
+				{
+					"index_40": "v.display1_4 == 40"
+				},
+				{
+					"index_41": "v.display1_4 == 41"
+				},
+				{
+					"index_42": "v.display1_4 == 42"
+				},
+				{
+					"index_43": "v.display1_4 == 43"
+				},
+				{
+					"index_44": "v.display1_4 == 44"
+				},
+				{
+					"index_45": "v.display1_4 == 45"
+				},
+				{
+					"index_46": "v.display1_4 == 46"
+				},
+				{
+					"index_47": "v.display1_4 == 47"
+				},
+				{
+					"index_48": "v.display1_4 == 48"
+				},
+				{
+					"index_49": "v.display1_4 == 49"
+				},
+				{
+					"index_50": "v.display1_4 == 50"
+				},
+				{
+					"index_51": "v.display1_4 == 51"
+				},
+				{
+					"index_52": "v.display1_4 == 52"
+				},
+				{
+					"index_53": "v.display1_4 == 53"
+				},
+				{
+					"index_54": "v.display1_4 == 54"
+				},
+				{
+					"index_55": "v.display1_4 == 55"
+				},
+				{
+					"index_56": "v.display1_4 == 56"
+				},
+				{
+					"index_57": "v.display1_4 == 57"
+				},
+				{
+					"index_58": "v.display1_4 == 58"
+				},
+				{
+					"index_59": "v.display1_4 == 59"
+				},
+				{
+					"index_60": "v.display1_4 == 60"
+				},
+				{
+					"index_61": "v.display1_4 == 61"
+				},
+				{
+					"index_62": "v.display1_4 == 62"
+				},
+				{
+					"index_63": "v.display1_4 == 63"
+				},
+				{
+					"index_64": "v.display1_4 == 64"
+				},
+				{
+					"index_65": "v.display1_4 == 65"
+				},
+				{
+					"index_66": "v.display1_4 == 66"
+				},
+				{
+					"index_67": "v.display1_4 == 67"
+				},
+				{
+					"index_68": "v.display1_4 == 68"
+				},
+				{
+					"index_69": "v.display1_4 == 69"
+				},
+				{
+					"index_70": "v.display1_4 == 70"
+				},
+				{
+					"index_71": "v.display1_4 == 71"
+				},
+				{
+					"index_72": "v.display1_4 == 72"
+				},
+				{
+					"index_73": "v.display1_4 == 73"
+				},
+				{
+					"index_74": "v.display1_4 == 74"
+				},
+				{
+					"index_75": "v.display1_4 == 75"
+				},
+				{
+					"index_76": "v.display1_4 == 76"
+				},
+				{
+					"index_77": "v.display1_4 == 77"
+				},
+				{
+					"index_78": "v.display1_4 == 78"
+				},
+				{
+					"index_79": "v.display1_4 == 79"
+				},
+				{
+					"index_80": "v.display1_4 == 80"
+				},
+				{
+					"index_81": "v.display1_4 == 81"
+				},
+				{
+					"index_82": "v.display1_4 == 82"
+				},
+				{
+					"index_83": "v.display1_4 == 83"
+				},
+				{
+					"index_84": "v.display1_4 == 84"
+				},
+				{
+					"index_85": "v.display1_4 == 85"
+				},
+				{
+					"index_86": "v.display1_4 == 86"
+				},
+				{
+					"index_87": "v.display1_4 == 87"
+				},
+				{
+					"index_88": "v.display1_4 == 88"
+				},
+				{
+					"index_89": "v.display1_4 == 89"
+				},
+				{
+					"index_90": "v.display1_4 == 90"
+				},
+				{
+					"index_91": "v.display1_4 == 91"
+				},
+				{
+					"index_92": "v.display1_4 == 92"
+				},
+				{
+					"index_93": "v.display1_4 == 93"
+				},
+				{
+					"index_94": "v.display1_4 == 94"
+				},
+				{
+					"index_95": "v.display1_4 == 95"
+				},
+				{
+					"index_96": "v.display1_4 == 96"
+				},
+				{
+					"index_97": "v.display1_4 == 97"
+				},
+				{
+					"index_98": "v.display1_4 == 98"
+				},
+				{
+					"index_99": "v.display1_4 == 99"
+				},
+				{
+					"index_100": "v.display1_4 == 100"
+				},
+				{
+					"index_101": "v.display1_4 == 101"
+				},
+				{
+					"index_102": "v.display1_4 == 102"
+				},
+				{
+					"index_103": "v.display1_4 == 103"
+				},
+				{
+					"index_104": "v.display1_4 == 104"
+				},
+				{
+					"index_105": "v.display1_4 == 105"
+				},
+				{
+					"index_106": "v.display1_4 == 106"
+				},
+				{
+					"index_107": "v.display1_4 == 107"
+				},
+				{
+					"index_108": "v.display1_4 == 108"
+				},
+				{
+					"index_109": "v.display1_4 == 109"
+				},
+				{
+					"index_110": "v.display1_4 == 110"
+				},
+				{
+					"index_111": "v.display1_4 == 111"
+				},
+				{
+					"index_112": "v.display1_4 == 112"
+				},
+				{
+					"index_113": "v.display1_4 == 113"
+				},
+				{
+					"index_114": "v.display1_4 == 114"
+				},
+				{
+					"index_115": "v.display1_4 == 115"
+				},
+				{
+					"index_116": "v.display1_4 == 116"
+				},
+				{
+					"index_117": "v.display1_4 == 117"
+				},
+				{
+					"index_118": "v.display1_4 == 118"
+				},
+				{
+					"index_119": "v.display1_4 == 119"
+				},
+				{
+					"index_120": "v.display1_4 == 120"
+				},
+				{
+					"index_121": "v.display1_4 == 121"
+				},
+				{
+					"index_122": "v.display1_4 == 122"
+				},
+				{
+					"index_123": "v.display1_4 == 123"
+				},
+				{
+					"index_124": "v.display1_4 == 124"
+				},
+				{
+					"index_125": "v.display1_4 == 125"
+				},
+				{
+					"index_126": "v.display1_4 == 126"
+				},
+				{
+					"index_127": "v.display1_4 == 127"
+				}
+			]
+		},
+		"controller.render.display1_5": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_5",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_5 == 32"
+				},
+				{
+					"index_33": "v.display1_5 == 33"
+				},
+				{
+					"index_34": "v.display1_5 == 34"
+				},
+				{
+					"index_35": "v.display1_5 == 35"
+				},
+				{
+					"index_36": "v.display1_5 == 36"
+				},
+				{
+					"index_37": "v.display1_5 == 37"
+				},
+				{
+					"index_38": "v.display1_5 == 38"
+				},
+				{
+					"index_39": "v.display1_5 == 39"
+				},
+				{
+					"index_40": "v.display1_5 == 40"
+				},
+				{
+					"index_41": "v.display1_5 == 41"
+				},
+				{
+					"index_42": "v.display1_5 == 42"
+				},
+				{
+					"index_43": "v.display1_5 == 43"
+				},
+				{
+					"index_44": "v.display1_5 == 44"
+				},
+				{
+					"index_45": "v.display1_5 == 45"
+				},
+				{
+					"index_46": "v.display1_5 == 46"
+				},
+				{
+					"index_47": "v.display1_5 == 47"
+				},
+				{
+					"index_48": "v.display1_5 == 48"
+				},
+				{
+					"index_49": "v.display1_5 == 49"
+				},
+				{
+					"index_50": "v.display1_5 == 50"
+				},
+				{
+					"index_51": "v.display1_5 == 51"
+				},
+				{
+					"index_52": "v.display1_5 == 52"
+				},
+				{
+					"index_53": "v.display1_5 == 53"
+				},
+				{
+					"index_54": "v.display1_5 == 54"
+				},
+				{
+					"index_55": "v.display1_5 == 55"
+				},
+				{
+					"index_56": "v.display1_5 == 56"
+				},
+				{
+					"index_57": "v.display1_5 == 57"
+				},
+				{
+					"index_58": "v.display1_5 == 58"
+				},
+				{
+					"index_59": "v.display1_5 == 59"
+				},
+				{
+					"index_60": "v.display1_5 == 60"
+				},
+				{
+					"index_61": "v.display1_5 == 61"
+				},
+				{
+					"index_62": "v.display1_5 == 62"
+				},
+				{
+					"index_63": "v.display1_5 == 63"
+				},
+				{
+					"index_64": "v.display1_5 == 64"
+				},
+				{
+					"index_65": "v.display1_5 == 65"
+				},
+				{
+					"index_66": "v.display1_5 == 66"
+				},
+				{
+					"index_67": "v.display1_5 == 67"
+				},
+				{
+					"index_68": "v.display1_5 == 68"
+				},
+				{
+					"index_69": "v.display1_5 == 69"
+				},
+				{
+					"index_70": "v.display1_5 == 70"
+				},
+				{
+					"index_71": "v.display1_5 == 71"
+				},
+				{
+					"index_72": "v.display1_5 == 72"
+				},
+				{
+					"index_73": "v.display1_5 == 73"
+				},
+				{
+					"index_74": "v.display1_5 == 74"
+				},
+				{
+					"index_75": "v.display1_5 == 75"
+				},
+				{
+					"index_76": "v.display1_5 == 76"
+				},
+				{
+					"index_77": "v.display1_5 == 77"
+				},
+				{
+					"index_78": "v.display1_5 == 78"
+				},
+				{
+					"index_79": "v.display1_5 == 79"
+				},
+				{
+					"index_80": "v.display1_5 == 80"
+				},
+				{
+					"index_81": "v.display1_5 == 81"
+				},
+				{
+					"index_82": "v.display1_5 == 82"
+				},
+				{
+					"index_83": "v.display1_5 == 83"
+				},
+				{
+					"index_84": "v.display1_5 == 84"
+				},
+				{
+					"index_85": "v.display1_5 == 85"
+				},
+				{
+					"index_86": "v.display1_5 == 86"
+				},
+				{
+					"index_87": "v.display1_5 == 87"
+				},
+				{
+					"index_88": "v.display1_5 == 88"
+				},
+				{
+					"index_89": "v.display1_5 == 89"
+				},
+				{
+					"index_90": "v.display1_5 == 90"
+				},
+				{
+					"index_91": "v.display1_5 == 91"
+				},
+				{
+					"index_92": "v.display1_5 == 92"
+				},
+				{
+					"index_93": "v.display1_5 == 93"
+				},
+				{
+					"index_94": "v.display1_5 == 94"
+				},
+				{
+					"index_95": "v.display1_5 == 95"
+				},
+				{
+					"index_96": "v.display1_5 == 96"
+				},
+				{
+					"index_97": "v.display1_5 == 97"
+				},
+				{
+					"index_98": "v.display1_5 == 98"
+				},
+				{
+					"index_99": "v.display1_5 == 99"
+				},
+				{
+					"index_100": "v.display1_5 == 100"
+				},
+				{
+					"index_101": "v.display1_5 == 101"
+				},
+				{
+					"index_102": "v.display1_5 == 102"
+				},
+				{
+					"index_103": "v.display1_5 == 103"
+				},
+				{
+					"index_104": "v.display1_5 == 104"
+				},
+				{
+					"index_105": "v.display1_5 == 105"
+				},
+				{
+					"index_106": "v.display1_5 == 106"
+				},
+				{
+					"index_107": "v.display1_5 == 107"
+				},
+				{
+					"index_108": "v.display1_5 == 108"
+				},
+				{
+					"index_109": "v.display1_5 == 109"
+				},
+				{
+					"index_110": "v.display1_5 == 110"
+				},
+				{
+					"index_111": "v.display1_5 == 111"
+				},
+				{
+					"index_112": "v.display1_5 == 112"
+				},
+				{
+					"index_113": "v.display1_5 == 113"
+				},
+				{
+					"index_114": "v.display1_5 == 114"
+				},
+				{
+					"index_115": "v.display1_5 == 115"
+				},
+				{
+					"index_116": "v.display1_5 == 116"
+				},
+				{
+					"index_117": "v.display1_5 == 117"
+				},
+				{
+					"index_118": "v.display1_5 == 118"
+				},
+				{
+					"index_119": "v.display1_5 == 119"
+				},
+				{
+					"index_120": "v.display1_5 == 120"
+				},
+				{
+					"index_121": "v.display1_5 == 121"
+				},
+				{
+					"index_122": "v.display1_5 == 122"
+				},
+				{
+					"index_123": "v.display1_5 == 123"
+				},
+				{
+					"index_124": "v.display1_5 == 124"
+				},
+				{
+					"index_125": "v.display1_5 == 125"
+				},
+				{
+					"index_126": "v.display1_5 == 126"
+				},
+				{
+					"index_127": "v.display1_5 == 127"
+				}
+			]
+		},
+		"controller.render.display1_6": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_6",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_6 == 32"
+				},
+				{
+					"index_33": "v.display1_6 == 33"
+				},
+				{
+					"index_34": "v.display1_6 == 34"
+				},
+				{
+					"index_35": "v.display1_6 == 35"
+				},
+				{
+					"index_36": "v.display1_6 == 36"
+				},
+				{
+					"index_37": "v.display1_6 == 37"
+				},
+				{
+					"index_38": "v.display1_6 == 38"
+				},
+				{
+					"index_39": "v.display1_6 == 39"
+				},
+				{
+					"index_40": "v.display1_6 == 40"
+				},
+				{
+					"index_41": "v.display1_6 == 41"
+				},
+				{
+					"index_42": "v.display1_6 == 42"
+				},
+				{
+					"index_43": "v.display1_6 == 43"
+				},
+				{
+					"index_44": "v.display1_6 == 44"
+				},
+				{
+					"index_45": "v.display1_6 == 45"
+				},
+				{
+					"index_46": "v.display1_6 == 46"
+				},
+				{
+					"index_47": "v.display1_6 == 47"
+				},
+				{
+					"index_48": "v.display1_6 == 48"
+				},
+				{
+					"index_49": "v.display1_6 == 49"
+				},
+				{
+					"index_50": "v.display1_6 == 50"
+				},
+				{
+					"index_51": "v.display1_6 == 51"
+				},
+				{
+					"index_52": "v.display1_6 == 52"
+				},
+				{
+					"index_53": "v.display1_6 == 53"
+				},
+				{
+					"index_54": "v.display1_6 == 54"
+				},
+				{
+					"index_55": "v.display1_6 == 55"
+				},
+				{
+					"index_56": "v.display1_6 == 56"
+				},
+				{
+					"index_57": "v.display1_6 == 57"
+				},
+				{
+					"index_58": "v.display1_6 == 58"
+				},
+				{
+					"index_59": "v.display1_6 == 59"
+				},
+				{
+					"index_60": "v.display1_6 == 60"
+				},
+				{
+					"index_61": "v.display1_6 == 61"
+				},
+				{
+					"index_62": "v.display1_6 == 62"
+				},
+				{
+					"index_63": "v.display1_6 == 63"
+				},
+				{
+					"index_64": "v.display1_6 == 64"
+				},
+				{
+					"index_65": "v.display1_6 == 65"
+				},
+				{
+					"index_66": "v.display1_6 == 66"
+				},
+				{
+					"index_67": "v.display1_6 == 67"
+				},
+				{
+					"index_68": "v.display1_6 == 68"
+				},
+				{
+					"index_69": "v.display1_6 == 69"
+				},
+				{
+					"index_70": "v.display1_6 == 70"
+				},
+				{
+					"index_71": "v.display1_6 == 71"
+				},
+				{
+					"index_72": "v.display1_6 == 72"
+				},
+				{
+					"index_73": "v.display1_6 == 73"
+				},
+				{
+					"index_74": "v.display1_6 == 74"
+				},
+				{
+					"index_75": "v.display1_6 == 75"
+				},
+				{
+					"index_76": "v.display1_6 == 76"
+				},
+				{
+					"index_77": "v.display1_6 == 77"
+				},
+				{
+					"index_78": "v.display1_6 == 78"
+				},
+				{
+					"index_79": "v.display1_6 == 79"
+				},
+				{
+					"index_80": "v.display1_6 == 80"
+				},
+				{
+					"index_81": "v.display1_6 == 81"
+				},
+				{
+					"index_82": "v.display1_6 == 82"
+				},
+				{
+					"index_83": "v.display1_6 == 83"
+				},
+				{
+					"index_84": "v.display1_6 == 84"
+				},
+				{
+					"index_85": "v.display1_6 == 85"
+				},
+				{
+					"index_86": "v.display1_6 == 86"
+				},
+				{
+					"index_87": "v.display1_6 == 87"
+				},
+				{
+					"index_88": "v.display1_6 == 88"
+				},
+				{
+					"index_89": "v.display1_6 == 89"
+				},
+				{
+					"index_90": "v.display1_6 == 90"
+				},
+				{
+					"index_91": "v.display1_6 == 91"
+				},
+				{
+					"index_92": "v.display1_6 == 92"
+				},
+				{
+					"index_93": "v.display1_6 == 93"
+				},
+				{
+					"index_94": "v.display1_6 == 94"
+				},
+				{
+					"index_95": "v.display1_6 == 95"
+				},
+				{
+					"index_96": "v.display1_6 == 96"
+				},
+				{
+					"index_97": "v.display1_6 == 97"
+				},
+				{
+					"index_98": "v.display1_6 == 98"
+				},
+				{
+					"index_99": "v.display1_6 == 99"
+				},
+				{
+					"index_100": "v.display1_6 == 100"
+				},
+				{
+					"index_101": "v.display1_6 == 101"
+				},
+				{
+					"index_102": "v.display1_6 == 102"
+				},
+				{
+					"index_103": "v.display1_6 == 103"
+				},
+				{
+					"index_104": "v.display1_6 == 104"
+				},
+				{
+					"index_105": "v.display1_6 == 105"
+				},
+				{
+					"index_106": "v.display1_6 == 106"
+				},
+				{
+					"index_107": "v.display1_6 == 107"
+				},
+				{
+					"index_108": "v.display1_6 == 108"
+				},
+				{
+					"index_109": "v.display1_6 == 109"
+				},
+				{
+					"index_110": "v.display1_6 == 110"
+				},
+				{
+					"index_111": "v.display1_6 == 111"
+				},
+				{
+					"index_112": "v.display1_6 == 112"
+				},
+				{
+					"index_113": "v.display1_6 == 113"
+				},
+				{
+					"index_114": "v.display1_6 == 114"
+				},
+				{
+					"index_115": "v.display1_6 == 115"
+				},
+				{
+					"index_116": "v.display1_6 == 116"
+				},
+				{
+					"index_117": "v.display1_6 == 117"
+				},
+				{
+					"index_118": "v.display1_6 == 118"
+				},
+				{
+					"index_119": "v.display1_6 == 119"
+				},
+				{
+					"index_120": "v.display1_6 == 120"
+				},
+				{
+					"index_121": "v.display1_6 == 121"
+				},
+				{
+					"index_122": "v.display1_6 == 122"
+				},
+				{
+					"index_123": "v.display1_6 == 123"
+				},
+				{
+					"index_124": "v.display1_6 == 124"
+				},
+				{
+					"index_125": "v.display1_6 == 125"
+				},
+				{
+					"index_126": "v.display1_6 == 126"
+				},
+				{
+					"index_127": "v.display1_6 == 127"
+				}
+			]
+		},
+		"controller.render.display1_7": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_7",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_7 == 32"
+				},
+				{
+					"index_33": "v.display1_7 == 33"
+				},
+				{
+					"index_34": "v.display1_7 == 34"
+				},
+				{
+					"index_35": "v.display1_7 == 35"
+				},
+				{
+					"index_36": "v.display1_7 == 36"
+				},
+				{
+					"index_37": "v.display1_7 == 37"
+				},
+				{
+					"index_38": "v.display1_7 == 38"
+				},
+				{
+					"index_39": "v.display1_7 == 39"
+				},
+				{
+					"index_40": "v.display1_7 == 40"
+				},
+				{
+					"index_41": "v.display1_7 == 41"
+				},
+				{
+					"index_42": "v.display1_7 == 42"
+				},
+				{
+					"index_43": "v.display1_7 == 43"
+				},
+				{
+					"index_44": "v.display1_7 == 44"
+				},
+				{
+					"index_45": "v.display1_7 == 45"
+				},
+				{
+					"index_46": "v.display1_7 == 46"
+				},
+				{
+					"index_47": "v.display1_7 == 47"
+				},
+				{
+					"index_48": "v.display1_7 == 48"
+				},
+				{
+					"index_49": "v.display1_7 == 49"
+				},
+				{
+					"index_50": "v.display1_7 == 50"
+				},
+				{
+					"index_51": "v.display1_7 == 51"
+				},
+				{
+					"index_52": "v.display1_7 == 52"
+				},
+				{
+					"index_53": "v.display1_7 == 53"
+				},
+				{
+					"index_54": "v.display1_7 == 54"
+				},
+				{
+					"index_55": "v.display1_7 == 55"
+				},
+				{
+					"index_56": "v.display1_7 == 56"
+				},
+				{
+					"index_57": "v.display1_7 == 57"
+				},
+				{
+					"index_58": "v.display1_7 == 58"
+				},
+				{
+					"index_59": "v.display1_7 == 59"
+				},
+				{
+					"index_60": "v.display1_7 == 60"
+				},
+				{
+					"index_61": "v.display1_7 == 61"
+				},
+				{
+					"index_62": "v.display1_7 == 62"
+				},
+				{
+					"index_63": "v.display1_7 == 63"
+				},
+				{
+					"index_64": "v.display1_7 == 64"
+				},
+				{
+					"index_65": "v.display1_7 == 65"
+				},
+				{
+					"index_66": "v.display1_7 == 66"
+				},
+				{
+					"index_67": "v.display1_7 == 67"
+				},
+				{
+					"index_68": "v.display1_7 == 68"
+				},
+				{
+					"index_69": "v.display1_7 == 69"
+				},
+				{
+					"index_70": "v.display1_7 == 70"
+				},
+				{
+					"index_71": "v.display1_7 == 71"
+				},
+				{
+					"index_72": "v.display1_7 == 72"
+				},
+				{
+					"index_73": "v.display1_7 == 73"
+				},
+				{
+					"index_74": "v.display1_7 == 74"
+				},
+				{
+					"index_75": "v.display1_7 == 75"
+				},
+				{
+					"index_76": "v.display1_7 == 76"
+				},
+				{
+					"index_77": "v.display1_7 == 77"
+				},
+				{
+					"index_78": "v.display1_7 == 78"
+				},
+				{
+					"index_79": "v.display1_7 == 79"
+				},
+				{
+					"index_80": "v.display1_7 == 80"
+				},
+				{
+					"index_81": "v.display1_7 == 81"
+				},
+				{
+					"index_82": "v.display1_7 == 82"
+				},
+				{
+					"index_83": "v.display1_7 == 83"
+				},
+				{
+					"index_84": "v.display1_7 == 84"
+				},
+				{
+					"index_85": "v.display1_7 == 85"
+				},
+				{
+					"index_86": "v.display1_7 == 86"
+				},
+				{
+					"index_87": "v.display1_7 == 87"
+				},
+				{
+					"index_88": "v.display1_7 == 88"
+				},
+				{
+					"index_89": "v.display1_7 == 89"
+				},
+				{
+					"index_90": "v.display1_7 == 90"
+				},
+				{
+					"index_91": "v.display1_7 == 91"
+				},
+				{
+					"index_92": "v.display1_7 == 92"
+				},
+				{
+					"index_93": "v.display1_7 == 93"
+				},
+				{
+					"index_94": "v.display1_7 == 94"
+				},
+				{
+					"index_95": "v.display1_7 == 95"
+				},
+				{
+					"index_96": "v.display1_7 == 96"
+				},
+				{
+					"index_97": "v.display1_7 == 97"
+				},
+				{
+					"index_98": "v.display1_7 == 98"
+				},
+				{
+					"index_99": "v.display1_7 == 99"
+				},
+				{
+					"index_100": "v.display1_7 == 100"
+				},
+				{
+					"index_101": "v.display1_7 == 101"
+				},
+				{
+					"index_102": "v.display1_7 == 102"
+				},
+				{
+					"index_103": "v.display1_7 == 103"
+				},
+				{
+					"index_104": "v.display1_7 == 104"
+				},
+				{
+					"index_105": "v.display1_7 == 105"
+				},
+				{
+					"index_106": "v.display1_7 == 106"
+				},
+				{
+					"index_107": "v.display1_7 == 107"
+				},
+				{
+					"index_108": "v.display1_7 == 108"
+				},
+				{
+					"index_109": "v.display1_7 == 109"
+				},
+				{
+					"index_110": "v.display1_7 == 110"
+				},
+				{
+					"index_111": "v.display1_7 == 111"
+				},
+				{
+					"index_112": "v.display1_7 == 112"
+				},
+				{
+					"index_113": "v.display1_7 == 113"
+				},
+				{
+					"index_114": "v.display1_7 == 114"
+				},
+				{
+					"index_115": "v.display1_7 == 115"
+				},
+				{
+					"index_116": "v.display1_7 == 116"
+				},
+				{
+					"index_117": "v.display1_7 == 117"
+				},
+				{
+					"index_118": "v.display1_7 == 118"
+				},
+				{
+					"index_119": "v.display1_7 == 119"
+				},
+				{
+					"index_120": "v.display1_7 == 120"
+				},
+				{
+					"index_121": "v.display1_7 == 121"
+				},
+				{
+					"index_122": "v.display1_7 == 122"
+				},
+				{
+					"index_123": "v.display1_7 == 123"
+				},
+				{
+					"index_124": "v.display1_7 == 124"
+				},
+				{
+					"index_125": "v.display1_7 == 125"
+				},
+				{
+					"index_126": "v.display1_7 == 126"
+				},
+				{
+					"index_127": "v.display1_7 == 127"
+				}
+			]
+		},
+		"controller.render.display1_8": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_8",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_8 == 32"
+				},
+				{
+					"index_33": "v.display1_8 == 33"
+				},
+				{
+					"index_34": "v.display1_8 == 34"
+				},
+				{
+					"index_35": "v.display1_8 == 35"
+				},
+				{
+					"index_36": "v.display1_8 == 36"
+				},
+				{
+					"index_37": "v.display1_8 == 37"
+				},
+				{
+					"index_38": "v.display1_8 == 38"
+				},
+				{
+					"index_39": "v.display1_8 == 39"
+				},
+				{
+					"index_40": "v.display1_8 == 40"
+				},
+				{
+					"index_41": "v.display1_8 == 41"
+				},
+				{
+					"index_42": "v.display1_8 == 42"
+				},
+				{
+					"index_43": "v.display1_8 == 43"
+				},
+				{
+					"index_44": "v.display1_8 == 44"
+				},
+				{
+					"index_45": "v.display1_8 == 45"
+				},
+				{
+					"index_46": "v.display1_8 == 46"
+				},
+				{
+					"index_47": "v.display1_8 == 47"
+				},
+				{
+					"index_48": "v.display1_8 == 48"
+				},
+				{
+					"index_49": "v.display1_8 == 49"
+				},
+				{
+					"index_50": "v.display1_8 == 50"
+				},
+				{
+					"index_51": "v.display1_8 == 51"
+				},
+				{
+					"index_52": "v.display1_8 == 52"
+				},
+				{
+					"index_53": "v.display1_8 == 53"
+				},
+				{
+					"index_54": "v.display1_8 == 54"
+				},
+				{
+					"index_55": "v.display1_8 == 55"
+				},
+				{
+					"index_56": "v.display1_8 == 56"
+				},
+				{
+					"index_57": "v.display1_8 == 57"
+				},
+				{
+					"index_58": "v.display1_8 == 58"
+				},
+				{
+					"index_59": "v.display1_8 == 59"
+				},
+				{
+					"index_60": "v.display1_8 == 60"
+				},
+				{
+					"index_61": "v.display1_8 == 61"
+				},
+				{
+					"index_62": "v.display1_8 == 62"
+				},
+				{
+					"index_63": "v.display1_8 == 63"
+				},
+				{
+					"index_64": "v.display1_8 == 64"
+				},
+				{
+					"index_65": "v.display1_8 == 65"
+				},
+				{
+					"index_66": "v.display1_8 == 66"
+				},
+				{
+					"index_67": "v.display1_8 == 67"
+				},
+				{
+					"index_68": "v.display1_8 == 68"
+				},
+				{
+					"index_69": "v.display1_8 == 69"
+				},
+				{
+					"index_70": "v.display1_8 == 70"
+				},
+				{
+					"index_71": "v.display1_8 == 71"
+				},
+				{
+					"index_72": "v.display1_8 == 72"
+				},
+				{
+					"index_73": "v.display1_8 == 73"
+				},
+				{
+					"index_74": "v.display1_8 == 74"
+				},
+				{
+					"index_75": "v.display1_8 == 75"
+				},
+				{
+					"index_76": "v.display1_8 == 76"
+				},
+				{
+					"index_77": "v.display1_8 == 77"
+				},
+				{
+					"index_78": "v.display1_8 == 78"
+				},
+				{
+					"index_79": "v.display1_8 == 79"
+				},
+				{
+					"index_80": "v.display1_8 == 80"
+				},
+				{
+					"index_81": "v.display1_8 == 81"
+				},
+				{
+					"index_82": "v.display1_8 == 82"
+				},
+				{
+					"index_83": "v.display1_8 == 83"
+				},
+				{
+					"index_84": "v.display1_8 == 84"
+				},
+				{
+					"index_85": "v.display1_8 == 85"
+				},
+				{
+					"index_86": "v.display1_8 == 86"
+				},
+				{
+					"index_87": "v.display1_8 == 87"
+				},
+				{
+					"index_88": "v.display1_8 == 88"
+				},
+				{
+					"index_89": "v.display1_8 == 89"
+				},
+				{
+					"index_90": "v.display1_8 == 90"
+				},
+				{
+					"index_91": "v.display1_8 == 91"
+				},
+				{
+					"index_92": "v.display1_8 == 92"
+				},
+				{
+					"index_93": "v.display1_8 == 93"
+				},
+				{
+					"index_94": "v.display1_8 == 94"
+				},
+				{
+					"index_95": "v.display1_8 == 95"
+				},
+				{
+					"index_96": "v.display1_8 == 96"
+				},
+				{
+					"index_97": "v.display1_8 == 97"
+				},
+				{
+					"index_98": "v.display1_8 == 98"
+				},
+				{
+					"index_99": "v.display1_8 == 99"
+				},
+				{
+					"index_100": "v.display1_8 == 100"
+				},
+				{
+					"index_101": "v.display1_8 == 101"
+				},
+				{
+					"index_102": "v.display1_8 == 102"
+				},
+				{
+					"index_103": "v.display1_8 == 103"
+				},
+				{
+					"index_104": "v.display1_8 == 104"
+				},
+				{
+					"index_105": "v.display1_8 == 105"
+				},
+				{
+					"index_106": "v.display1_8 == 106"
+				},
+				{
+					"index_107": "v.display1_8 == 107"
+				},
+				{
+					"index_108": "v.display1_8 == 108"
+				},
+				{
+					"index_109": "v.display1_8 == 109"
+				},
+				{
+					"index_110": "v.display1_8 == 110"
+				},
+				{
+					"index_111": "v.display1_8 == 111"
+				},
+				{
+					"index_112": "v.display1_8 == 112"
+				},
+				{
+					"index_113": "v.display1_8 == 113"
+				},
+				{
+					"index_114": "v.display1_8 == 114"
+				},
+				{
+					"index_115": "v.display1_8 == 115"
+				},
+				{
+					"index_116": "v.display1_8 == 116"
+				},
+				{
+					"index_117": "v.display1_8 == 117"
+				},
+				{
+					"index_118": "v.display1_8 == 118"
+				},
+				{
+					"index_119": "v.display1_8 == 119"
+				},
+				{
+					"index_120": "v.display1_8 == 120"
+				},
+				{
+					"index_121": "v.display1_8 == 121"
+				},
+				{
+					"index_122": "v.display1_8 == 122"
+				},
+				{
+					"index_123": "v.display1_8 == 123"
+				},
+				{
+					"index_124": "v.display1_8 == 124"
+				},
+				{
+					"index_125": "v.display1_8 == 125"
+				},
+				{
+					"index_126": "v.display1_8 == 126"
+				},
+				{
+					"index_127": "v.display1_8 == 127"
+				}
+			]
+		},
+		"controller.render.display1_9": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_9",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_9 == 32"
+				},
+				{
+					"index_33": "v.display1_9 == 33"
+				},
+				{
+					"index_34": "v.display1_9 == 34"
+				},
+				{
+					"index_35": "v.display1_9 == 35"
+				},
+				{
+					"index_36": "v.display1_9 == 36"
+				},
+				{
+					"index_37": "v.display1_9 == 37"
+				},
+				{
+					"index_38": "v.display1_9 == 38"
+				},
+				{
+					"index_39": "v.display1_9 == 39"
+				},
+				{
+					"index_40": "v.display1_9 == 40"
+				},
+				{
+					"index_41": "v.display1_9 == 41"
+				},
+				{
+					"index_42": "v.display1_9 == 42"
+				},
+				{
+					"index_43": "v.display1_9 == 43"
+				},
+				{
+					"index_44": "v.display1_9 == 44"
+				},
+				{
+					"index_45": "v.display1_9 == 45"
+				},
+				{
+					"index_46": "v.display1_9 == 46"
+				},
+				{
+					"index_47": "v.display1_9 == 47"
+				},
+				{
+					"index_48": "v.display1_9 == 48"
+				},
+				{
+					"index_49": "v.display1_9 == 49"
+				},
+				{
+					"index_50": "v.display1_9 == 50"
+				},
+				{
+					"index_51": "v.display1_9 == 51"
+				},
+				{
+					"index_52": "v.display1_9 == 52"
+				},
+				{
+					"index_53": "v.display1_9 == 53"
+				},
+				{
+					"index_54": "v.display1_9 == 54"
+				},
+				{
+					"index_55": "v.display1_9 == 55"
+				},
+				{
+					"index_56": "v.display1_9 == 56"
+				},
+				{
+					"index_57": "v.display1_9 == 57"
+				},
+				{
+					"index_58": "v.display1_9 == 58"
+				},
+				{
+					"index_59": "v.display1_9 == 59"
+				},
+				{
+					"index_60": "v.display1_9 == 60"
+				},
+				{
+					"index_61": "v.display1_9 == 61"
+				},
+				{
+					"index_62": "v.display1_9 == 62"
+				},
+				{
+					"index_63": "v.display1_9 == 63"
+				},
+				{
+					"index_64": "v.display1_9 == 64"
+				},
+				{
+					"index_65": "v.display1_9 == 65"
+				},
+				{
+					"index_66": "v.display1_9 == 66"
+				},
+				{
+					"index_67": "v.display1_9 == 67"
+				},
+				{
+					"index_68": "v.display1_9 == 68"
+				},
+				{
+					"index_69": "v.display1_9 == 69"
+				},
+				{
+					"index_70": "v.display1_9 == 70"
+				},
+				{
+					"index_71": "v.display1_9 == 71"
+				},
+				{
+					"index_72": "v.display1_9 == 72"
+				},
+				{
+					"index_73": "v.display1_9 == 73"
+				},
+				{
+					"index_74": "v.display1_9 == 74"
+				},
+				{
+					"index_75": "v.display1_9 == 75"
+				},
+				{
+					"index_76": "v.display1_9 == 76"
+				},
+				{
+					"index_77": "v.display1_9 == 77"
+				},
+				{
+					"index_78": "v.display1_9 == 78"
+				},
+				{
+					"index_79": "v.display1_9 == 79"
+				},
+				{
+					"index_80": "v.display1_9 == 80"
+				},
+				{
+					"index_81": "v.display1_9 == 81"
+				},
+				{
+					"index_82": "v.display1_9 == 82"
+				},
+				{
+					"index_83": "v.display1_9 == 83"
+				},
+				{
+					"index_84": "v.display1_9 == 84"
+				},
+				{
+					"index_85": "v.display1_9 == 85"
+				},
+				{
+					"index_86": "v.display1_9 == 86"
+				},
+				{
+					"index_87": "v.display1_9 == 87"
+				},
+				{
+					"index_88": "v.display1_9 == 88"
+				},
+				{
+					"index_89": "v.display1_9 == 89"
+				},
+				{
+					"index_90": "v.display1_9 == 90"
+				},
+				{
+					"index_91": "v.display1_9 == 91"
+				},
+				{
+					"index_92": "v.display1_9 == 92"
+				},
+				{
+					"index_93": "v.display1_9 == 93"
+				},
+				{
+					"index_94": "v.display1_9 == 94"
+				},
+				{
+					"index_95": "v.display1_9 == 95"
+				},
+				{
+					"index_96": "v.display1_9 == 96"
+				},
+				{
+					"index_97": "v.display1_9 == 97"
+				},
+				{
+					"index_98": "v.display1_9 == 98"
+				},
+				{
+					"index_99": "v.display1_9 == 99"
+				},
+				{
+					"index_100": "v.display1_9 == 100"
+				},
+				{
+					"index_101": "v.display1_9 == 101"
+				},
+				{
+					"index_102": "v.display1_9 == 102"
+				},
+				{
+					"index_103": "v.display1_9 == 103"
+				},
+				{
+					"index_104": "v.display1_9 == 104"
+				},
+				{
+					"index_105": "v.display1_9 == 105"
+				},
+				{
+					"index_106": "v.display1_9 == 106"
+				},
+				{
+					"index_107": "v.display1_9 == 107"
+				},
+				{
+					"index_108": "v.display1_9 == 108"
+				},
+				{
+					"index_109": "v.display1_9 == 109"
+				},
+				{
+					"index_110": "v.display1_9 == 110"
+				},
+				{
+					"index_111": "v.display1_9 == 111"
+				},
+				{
+					"index_112": "v.display1_9 == 112"
+				},
+				{
+					"index_113": "v.display1_9 == 113"
+				},
+				{
+					"index_114": "v.display1_9 == 114"
+				},
+				{
+					"index_115": "v.display1_9 == 115"
+				},
+				{
+					"index_116": "v.display1_9 == 116"
+				},
+				{
+					"index_117": "v.display1_9 == 117"
+				},
+				{
+					"index_118": "v.display1_9 == 118"
+				},
+				{
+					"index_119": "v.display1_9 == 119"
+				},
+				{
+					"index_120": "v.display1_9 == 120"
+				},
+				{
+					"index_121": "v.display1_9 == 121"
+				},
+				{
+					"index_122": "v.display1_9 == 122"
+				},
+				{
+					"index_123": "v.display1_9 == 123"
+				},
+				{
+					"index_124": "v.display1_9 == 124"
+				},
+				{
+					"index_125": "v.display1_9 == 125"
+				},
+				{
+					"index_126": "v.display1_9 == 126"
+				},
+				{
+					"index_127": "v.display1_9 == 127"
+				}
+			]
+		},
+		"controller.render.display1_10": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_10",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_10 == 32"
+				},
+				{
+					"index_33": "v.display1_10 == 33"
+				},
+				{
+					"index_34": "v.display1_10 == 34"
+				},
+				{
+					"index_35": "v.display1_10 == 35"
+				},
+				{
+					"index_36": "v.display1_10 == 36"
+				},
+				{
+					"index_37": "v.display1_10 == 37"
+				},
+				{
+					"index_38": "v.display1_10 == 38"
+				},
+				{
+					"index_39": "v.display1_10 == 39"
+				},
+				{
+					"index_40": "v.display1_10 == 40"
+				},
+				{
+					"index_41": "v.display1_10 == 41"
+				},
+				{
+					"index_42": "v.display1_10 == 42"
+				},
+				{
+					"index_43": "v.display1_10 == 43"
+				},
+				{
+					"index_44": "v.display1_10 == 44"
+				},
+				{
+					"index_45": "v.display1_10 == 45"
+				},
+				{
+					"index_46": "v.display1_10 == 46"
+				},
+				{
+					"index_47": "v.display1_10 == 47"
+				},
+				{
+					"index_48": "v.display1_10 == 48"
+				},
+				{
+					"index_49": "v.display1_10 == 49"
+				},
+				{
+					"index_50": "v.display1_10 == 50"
+				},
+				{
+					"index_51": "v.display1_10 == 51"
+				},
+				{
+					"index_52": "v.display1_10 == 52"
+				},
+				{
+					"index_53": "v.display1_10 == 53"
+				},
+				{
+					"index_54": "v.display1_10 == 54"
+				},
+				{
+					"index_55": "v.display1_10 == 55"
+				},
+				{
+					"index_56": "v.display1_10 == 56"
+				},
+				{
+					"index_57": "v.display1_10 == 57"
+				},
+				{
+					"index_58": "v.display1_10 == 58"
+				},
+				{
+					"index_59": "v.display1_10 == 59"
+				},
+				{
+					"index_60": "v.display1_10 == 60"
+				},
+				{
+					"index_61": "v.display1_10 == 61"
+				},
+				{
+					"index_62": "v.display1_10 == 62"
+				},
+				{
+					"index_63": "v.display1_10 == 63"
+				},
+				{
+					"index_64": "v.display1_10 == 64"
+				},
+				{
+					"index_65": "v.display1_10 == 65"
+				},
+				{
+					"index_66": "v.display1_10 == 66"
+				},
+				{
+					"index_67": "v.display1_10 == 67"
+				},
+				{
+					"index_68": "v.display1_10 == 68"
+				},
+				{
+					"index_69": "v.display1_10 == 69"
+				},
+				{
+					"index_70": "v.display1_10 == 70"
+				},
+				{
+					"index_71": "v.display1_10 == 71"
+				},
+				{
+					"index_72": "v.display1_10 == 72"
+				},
+				{
+					"index_73": "v.display1_10 == 73"
+				},
+				{
+					"index_74": "v.display1_10 == 74"
+				},
+				{
+					"index_75": "v.display1_10 == 75"
+				},
+				{
+					"index_76": "v.display1_10 == 76"
+				},
+				{
+					"index_77": "v.display1_10 == 77"
+				},
+				{
+					"index_78": "v.display1_10 == 78"
+				},
+				{
+					"index_79": "v.display1_10 == 79"
+				},
+				{
+					"index_80": "v.display1_10 == 80"
+				},
+				{
+					"index_81": "v.display1_10 == 81"
+				},
+				{
+					"index_82": "v.display1_10 == 82"
+				},
+				{
+					"index_83": "v.display1_10 == 83"
+				},
+				{
+					"index_84": "v.display1_10 == 84"
+				},
+				{
+					"index_85": "v.display1_10 == 85"
+				},
+				{
+					"index_86": "v.display1_10 == 86"
+				},
+				{
+					"index_87": "v.display1_10 == 87"
+				},
+				{
+					"index_88": "v.display1_10 == 88"
+				},
+				{
+					"index_89": "v.display1_10 == 89"
+				},
+				{
+					"index_90": "v.display1_10 == 90"
+				},
+				{
+					"index_91": "v.display1_10 == 91"
+				},
+				{
+					"index_92": "v.display1_10 == 92"
+				},
+				{
+					"index_93": "v.display1_10 == 93"
+				},
+				{
+					"index_94": "v.display1_10 == 94"
+				},
+				{
+					"index_95": "v.display1_10 == 95"
+				},
+				{
+					"index_96": "v.display1_10 == 96"
+				},
+				{
+					"index_97": "v.display1_10 == 97"
+				},
+				{
+					"index_98": "v.display1_10 == 98"
+				},
+				{
+					"index_99": "v.display1_10 == 99"
+				},
+				{
+					"index_100": "v.display1_10 == 100"
+				},
+				{
+					"index_101": "v.display1_10 == 101"
+				},
+				{
+					"index_102": "v.display1_10 == 102"
+				},
+				{
+					"index_103": "v.display1_10 == 103"
+				},
+				{
+					"index_104": "v.display1_10 == 104"
+				},
+				{
+					"index_105": "v.display1_10 == 105"
+				},
+				{
+					"index_106": "v.display1_10 == 106"
+				},
+				{
+					"index_107": "v.display1_10 == 107"
+				},
+				{
+					"index_108": "v.display1_10 == 108"
+				},
+				{
+					"index_109": "v.display1_10 == 109"
+				},
+				{
+					"index_110": "v.display1_10 == 110"
+				},
+				{
+					"index_111": "v.display1_10 == 111"
+				},
+				{
+					"index_112": "v.display1_10 == 112"
+				},
+				{
+					"index_113": "v.display1_10 == 113"
+				},
+				{
+					"index_114": "v.display1_10 == 114"
+				},
+				{
+					"index_115": "v.display1_10 == 115"
+				},
+				{
+					"index_116": "v.display1_10 == 116"
+				},
+				{
+					"index_117": "v.display1_10 == 117"
+				},
+				{
+					"index_118": "v.display1_10 == 118"
+				},
+				{
+					"index_119": "v.display1_10 == 119"
+				},
+				{
+					"index_120": "v.display1_10 == 120"
+				},
+				{
+					"index_121": "v.display1_10 == 121"
+				},
+				{
+					"index_122": "v.display1_10 == 122"
+				},
+				{
+					"index_123": "v.display1_10 == 123"
+				},
+				{
+					"index_124": "v.display1_10 == 124"
+				},
+				{
+					"index_125": "v.display1_10 == 125"
+				},
+				{
+					"index_126": "v.display1_10 == 126"
+				},
+				{
+					"index_127": "v.display1_10 == 127"
+				}
+			]
+		},
+		"controller.render.display1_11": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_11",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_11 == 32"
+				},
+				{
+					"index_33": "v.display1_11 == 33"
+				},
+				{
+					"index_34": "v.display1_11 == 34"
+				},
+				{
+					"index_35": "v.display1_11 == 35"
+				},
+				{
+					"index_36": "v.display1_11 == 36"
+				},
+				{
+					"index_37": "v.display1_11 == 37"
+				},
+				{
+					"index_38": "v.display1_11 == 38"
+				},
+				{
+					"index_39": "v.display1_11 == 39"
+				},
+				{
+					"index_40": "v.display1_11 == 40"
+				},
+				{
+					"index_41": "v.display1_11 == 41"
+				},
+				{
+					"index_42": "v.display1_11 == 42"
+				},
+				{
+					"index_43": "v.display1_11 == 43"
+				},
+				{
+					"index_44": "v.display1_11 == 44"
+				},
+				{
+					"index_45": "v.display1_11 == 45"
+				},
+				{
+					"index_46": "v.display1_11 == 46"
+				},
+				{
+					"index_47": "v.display1_11 == 47"
+				},
+				{
+					"index_48": "v.display1_11 == 48"
+				},
+				{
+					"index_49": "v.display1_11 == 49"
+				},
+				{
+					"index_50": "v.display1_11 == 50"
+				},
+				{
+					"index_51": "v.display1_11 == 51"
+				},
+				{
+					"index_52": "v.display1_11 == 52"
+				},
+				{
+					"index_53": "v.display1_11 == 53"
+				},
+				{
+					"index_54": "v.display1_11 == 54"
+				},
+				{
+					"index_55": "v.display1_11 == 55"
+				},
+				{
+					"index_56": "v.display1_11 == 56"
+				},
+				{
+					"index_57": "v.display1_11 == 57"
+				},
+				{
+					"index_58": "v.display1_11 == 58"
+				},
+				{
+					"index_59": "v.display1_11 == 59"
+				},
+				{
+					"index_60": "v.display1_11 == 60"
+				},
+				{
+					"index_61": "v.display1_11 == 61"
+				},
+				{
+					"index_62": "v.display1_11 == 62"
+				},
+				{
+					"index_63": "v.display1_11 == 63"
+				},
+				{
+					"index_64": "v.display1_11 == 64"
+				},
+				{
+					"index_65": "v.display1_11 == 65"
+				},
+				{
+					"index_66": "v.display1_11 == 66"
+				},
+				{
+					"index_67": "v.display1_11 == 67"
+				},
+				{
+					"index_68": "v.display1_11 == 68"
+				},
+				{
+					"index_69": "v.display1_11 == 69"
+				},
+				{
+					"index_70": "v.display1_11 == 70"
+				},
+				{
+					"index_71": "v.display1_11 == 71"
+				},
+				{
+					"index_72": "v.display1_11 == 72"
+				},
+				{
+					"index_73": "v.display1_11 == 73"
+				},
+				{
+					"index_74": "v.display1_11 == 74"
+				},
+				{
+					"index_75": "v.display1_11 == 75"
+				},
+				{
+					"index_76": "v.display1_11 == 76"
+				},
+				{
+					"index_77": "v.display1_11 == 77"
+				},
+				{
+					"index_78": "v.display1_11 == 78"
+				},
+				{
+					"index_79": "v.display1_11 == 79"
+				},
+				{
+					"index_80": "v.display1_11 == 80"
+				},
+				{
+					"index_81": "v.display1_11 == 81"
+				},
+				{
+					"index_82": "v.display1_11 == 82"
+				},
+				{
+					"index_83": "v.display1_11 == 83"
+				},
+				{
+					"index_84": "v.display1_11 == 84"
+				},
+				{
+					"index_85": "v.display1_11 == 85"
+				},
+				{
+					"index_86": "v.display1_11 == 86"
+				},
+				{
+					"index_87": "v.display1_11 == 87"
+				},
+				{
+					"index_88": "v.display1_11 == 88"
+				},
+				{
+					"index_89": "v.display1_11 == 89"
+				},
+				{
+					"index_90": "v.display1_11 == 90"
+				},
+				{
+					"index_91": "v.display1_11 == 91"
+				},
+				{
+					"index_92": "v.display1_11 == 92"
+				},
+				{
+					"index_93": "v.display1_11 == 93"
+				},
+				{
+					"index_94": "v.display1_11 == 94"
+				},
+				{
+					"index_95": "v.display1_11 == 95"
+				},
+				{
+					"index_96": "v.display1_11 == 96"
+				},
+				{
+					"index_97": "v.display1_11 == 97"
+				},
+				{
+					"index_98": "v.display1_11 == 98"
+				},
+				{
+					"index_99": "v.display1_11 == 99"
+				},
+				{
+					"index_100": "v.display1_11 == 100"
+				},
+				{
+					"index_101": "v.display1_11 == 101"
+				},
+				{
+					"index_102": "v.display1_11 == 102"
+				},
+				{
+					"index_103": "v.display1_11 == 103"
+				},
+				{
+					"index_104": "v.display1_11 == 104"
+				},
+				{
+					"index_105": "v.display1_11 == 105"
+				},
+				{
+					"index_106": "v.display1_11 == 106"
+				},
+				{
+					"index_107": "v.display1_11 == 107"
+				},
+				{
+					"index_108": "v.display1_11 == 108"
+				},
+				{
+					"index_109": "v.display1_11 == 109"
+				},
+				{
+					"index_110": "v.display1_11 == 110"
+				},
+				{
+					"index_111": "v.display1_11 == 111"
+				},
+				{
+					"index_112": "v.display1_11 == 112"
+				},
+				{
+					"index_113": "v.display1_11 == 113"
+				},
+				{
+					"index_114": "v.display1_11 == 114"
+				},
+				{
+					"index_115": "v.display1_11 == 115"
+				},
+				{
+					"index_116": "v.display1_11 == 116"
+				},
+				{
+					"index_117": "v.display1_11 == 117"
+				},
+				{
+					"index_118": "v.display1_11 == 118"
+				},
+				{
+					"index_119": "v.display1_11 == 119"
+				},
+				{
+					"index_120": "v.display1_11 == 120"
+				},
+				{
+					"index_121": "v.display1_11 == 121"
+				},
+				{
+					"index_122": "v.display1_11 == 122"
+				},
+				{
+					"index_123": "v.display1_11 == 123"
+				},
+				{
+					"index_124": "v.display1_11 == 124"
+				},
+				{
+					"index_125": "v.display1_11 == 125"
+				},
+				{
+					"index_126": "v.display1_11 == 126"
+				},
+				{
+					"index_127": "v.display1_11 == 127"
+				}
+			]
+		},
+		"controller.render.display1_12": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_12",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_12 == 32"
+				},
+				{
+					"index_33": "v.display1_12 == 33"
+				},
+				{
+					"index_34": "v.display1_12 == 34"
+				},
+				{
+					"index_35": "v.display1_12 == 35"
+				},
+				{
+					"index_36": "v.display1_12 == 36"
+				},
+				{
+					"index_37": "v.display1_12 == 37"
+				},
+				{
+					"index_38": "v.display1_12 == 38"
+				},
+				{
+					"index_39": "v.display1_12 == 39"
+				},
+				{
+					"index_40": "v.display1_12 == 40"
+				},
+				{
+					"index_41": "v.display1_12 == 41"
+				},
+				{
+					"index_42": "v.display1_12 == 42"
+				},
+				{
+					"index_43": "v.display1_12 == 43"
+				},
+				{
+					"index_44": "v.display1_12 == 44"
+				},
+				{
+					"index_45": "v.display1_12 == 45"
+				},
+				{
+					"index_46": "v.display1_12 == 46"
+				},
+				{
+					"index_47": "v.display1_12 == 47"
+				},
+				{
+					"index_48": "v.display1_12 == 48"
+				},
+				{
+					"index_49": "v.display1_12 == 49"
+				},
+				{
+					"index_50": "v.display1_12 == 50"
+				},
+				{
+					"index_51": "v.display1_12 == 51"
+				},
+				{
+					"index_52": "v.display1_12 == 52"
+				},
+				{
+					"index_53": "v.display1_12 == 53"
+				},
+				{
+					"index_54": "v.display1_12 == 54"
+				},
+				{
+					"index_55": "v.display1_12 == 55"
+				},
+				{
+					"index_56": "v.display1_12 == 56"
+				},
+				{
+					"index_57": "v.display1_12 == 57"
+				},
+				{
+					"index_58": "v.display1_12 == 58"
+				},
+				{
+					"index_59": "v.display1_12 == 59"
+				},
+				{
+					"index_60": "v.display1_12 == 60"
+				},
+				{
+					"index_61": "v.display1_12 == 61"
+				},
+				{
+					"index_62": "v.display1_12 == 62"
+				},
+				{
+					"index_63": "v.display1_12 == 63"
+				},
+				{
+					"index_64": "v.display1_12 == 64"
+				},
+				{
+					"index_65": "v.display1_12 == 65"
+				},
+				{
+					"index_66": "v.display1_12 == 66"
+				},
+				{
+					"index_67": "v.display1_12 == 67"
+				},
+				{
+					"index_68": "v.display1_12 == 68"
+				},
+				{
+					"index_69": "v.display1_12 == 69"
+				},
+				{
+					"index_70": "v.display1_12 == 70"
+				},
+				{
+					"index_71": "v.display1_12 == 71"
+				},
+				{
+					"index_72": "v.display1_12 == 72"
+				},
+				{
+					"index_73": "v.display1_12 == 73"
+				},
+				{
+					"index_74": "v.display1_12 == 74"
+				},
+				{
+					"index_75": "v.display1_12 == 75"
+				},
+				{
+					"index_76": "v.display1_12 == 76"
+				},
+				{
+					"index_77": "v.display1_12 == 77"
+				},
+				{
+					"index_78": "v.display1_12 == 78"
+				},
+				{
+					"index_79": "v.display1_12 == 79"
+				},
+				{
+					"index_80": "v.display1_12 == 80"
+				},
+				{
+					"index_81": "v.display1_12 == 81"
+				},
+				{
+					"index_82": "v.display1_12 == 82"
+				},
+				{
+					"index_83": "v.display1_12 == 83"
+				},
+				{
+					"index_84": "v.display1_12 == 84"
+				},
+				{
+					"index_85": "v.display1_12 == 85"
+				},
+				{
+					"index_86": "v.display1_12 == 86"
+				},
+				{
+					"index_87": "v.display1_12 == 87"
+				},
+				{
+					"index_88": "v.display1_12 == 88"
+				},
+				{
+					"index_89": "v.display1_12 == 89"
+				},
+				{
+					"index_90": "v.display1_12 == 90"
+				},
+				{
+					"index_91": "v.display1_12 == 91"
+				},
+				{
+					"index_92": "v.display1_12 == 92"
+				},
+				{
+					"index_93": "v.display1_12 == 93"
+				},
+				{
+					"index_94": "v.display1_12 == 94"
+				},
+				{
+					"index_95": "v.display1_12 == 95"
+				},
+				{
+					"index_96": "v.display1_12 == 96"
+				},
+				{
+					"index_97": "v.display1_12 == 97"
+				},
+				{
+					"index_98": "v.display1_12 == 98"
+				},
+				{
+					"index_99": "v.display1_12 == 99"
+				},
+				{
+					"index_100": "v.display1_12 == 100"
+				},
+				{
+					"index_101": "v.display1_12 == 101"
+				},
+				{
+					"index_102": "v.display1_12 == 102"
+				},
+				{
+					"index_103": "v.display1_12 == 103"
+				},
+				{
+					"index_104": "v.display1_12 == 104"
+				},
+				{
+					"index_105": "v.display1_12 == 105"
+				},
+				{
+					"index_106": "v.display1_12 == 106"
+				},
+				{
+					"index_107": "v.display1_12 == 107"
+				},
+				{
+					"index_108": "v.display1_12 == 108"
+				},
+				{
+					"index_109": "v.display1_12 == 109"
+				},
+				{
+					"index_110": "v.display1_12 == 110"
+				},
+				{
+					"index_111": "v.display1_12 == 111"
+				},
+				{
+					"index_112": "v.display1_12 == 112"
+				},
+				{
+					"index_113": "v.display1_12 == 113"
+				},
+				{
+					"index_114": "v.display1_12 == 114"
+				},
+				{
+					"index_115": "v.display1_12 == 115"
+				},
+				{
+					"index_116": "v.display1_12 == 116"
+				},
+				{
+					"index_117": "v.display1_12 == 117"
+				},
+				{
+					"index_118": "v.display1_12 == 118"
+				},
+				{
+					"index_119": "v.display1_12 == 119"
+				},
+				{
+					"index_120": "v.display1_12 == 120"
+				},
+				{
+					"index_121": "v.display1_12 == 121"
+				},
+				{
+					"index_122": "v.display1_12 == 122"
+				},
+				{
+					"index_123": "v.display1_12 == 123"
+				},
+				{
+					"index_124": "v.display1_12 == 124"
+				},
+				{
+					"index_125": "v.display1_12 == 125"
+				},
+				{
+					"index_126": "v.display1_12 == 126"
+				},
+				{
+					"index_127": "v.display1_12 == 127"
+				}
+			]
+		},
+		"controller.render.display1_13": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_13",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_13 == 32"
+				},
+				{
+					"index_33": "v.display1_13 == 33"
+				},
+				{
+					"index_34": "v.display1_13 == 34"
+				},
+				{
+					"index_35": "v.display1_13 == 35"
+				},
+				{
+					"index_36": "v.display1_13 == 36"
+				},
+				{
+					"index_37": "v.display1_13 == 37"
+				},
+				{
+					"index_38": "v.display1_13 == 38"
+				},
+				{
+					"index_39": "v.display1_13 == 39"
+				},
+				{
+					"index_40": "v.display1_13 == 40"
+				},
+				{
+					"index_41": "v.display1_13 == 41"
+				},
+				{
+					"index_42": "v.display1_13 == 42"
+				},
+				{
+					"index_43": "v.display1_13 == 43"
+				},
+				{
+					"index_44": "v.display1_13 == 44"
+				},
+				{
+					"index_45": "v.display1_13 == 45"
+				},
+				{
+					"index_46": "v.display1_13 == 46"
+				},
+				{
+					"index_47": "v.display1_13 == 47"
+				},
+				{
+					"index_48": "v.display1_13 == 48"
+				},
+				{
+					"index_49": "v.display1_13 == 49"
+				},
+				{
+					"index_50": "v.display1_13 == 50"
+				},
+				{
+					"index_51": "v.display1_13 == 51"
+				},
+				{
+					"index_52": "v.display1_13 == 52"
+				},
+				{
+					"index_53": "v.display1_13 == 53"
+				},
+				{
+					"index_54": "v.display1_13 == 54"
+				},
+				{
+					"index_55": "v.display1_13 == 55"
+				},
+				{
+					"index_56": "v.display1_13 == 56"
+				},
+				{
+					"index_57": "v.display1_13 == 57"
+				},
+				{
+					"index_58": "v.display1_13 == 58"
+				},
+				{
+					"index_59": "v.display1_13 == 59"
+				},
+				{
+					"index_60": "v.display1_13 == 60"
+				},
+				{
+					"index_61": "v.display1_13 == 61"
+				},
+				{
+					"index_62": "v.display1_13 == 62"
+				},
+				{
+					"index_63": "v.display1_13 == 63"
+				},
+				{
+					"index_64": "v.display1_13 == 64"
+				},
+				{
+					"index_65": "v.display1_13 == 65"
+				},
+				{
+					"index_66": "v.display1_13 == 66"
+				},
+				{
+					"index_67": "v.display1_13 == 67"
+				},
+				{
+					"index_68": "v.display1_13 == 68"
+				},
+				{
+					"index_69": "v.display1_13 == 69"
+				},
+				{
+					"index_70": "v.display1_13 == 70"
+				},
+				{
+					"index_71": "v.display1_13 == 71"
+				},
+				{
+					"index_72": "v.display1_13 == 72"
+				},
+				{
+					"index_73": "v.display1_13 == 73"
+				},
+				{
+					"index_74": "v.display1_13 == 74"
+				},
+				{
+					"index_75": "v.display1_13 == 75"
+				},
+				{
+					"index_76": "v.display1_13 == 76"
+				},
+				{
+					"index_77": "v.display1_13 == 77"
+				},
+				{
+					"index_78": "v.display1_13 == 78"
+				},
+				{
+					"index_79": "v.display1_13 == 79"
+				},
+				{
+					"index_80": "v.display1_13 == 80"
+				},
+				{
+					"index_81": "v.display1_13 == 81"
+				},
+				{
+					"index_82": "v.display1_13 == 82"
+				},
+				{
+					"index_83": "v.display1_13 == 83"
+				},
+				{
+					"index_84": "v.display1_13 == 84"
+				},
+				{
+					"index_85": "v.display1_13 == 85"
+				},
+				{
+					"index_86": "v.display1_13 == 86"
+				},
+				{
+					"index_87": "v.display1_13 == 87"
+				},
+				{
+					"index_88": "v.display1_13 == 88"
+				},
+				{
+					"index_89": "v.display1_13 == 89"
+				},
+				{
+					"index_90": "v.display1_13 == 90"
+				},
+				{
+					"index_91": "v.display1_13 == 91"
+				},
+				{
+					"index_92": "v.display1_13 == 92"
+				},
+				{
+					"index_93": "v.display1_13 == 93"
+				},
+				{
+					"index_94": "v.display1_13 == 94"
+				},
+				{
+					"index_95": "v.display1_13 == 95"
+				},
+				{
+					"index_96": "v.display1_13 == 96"
+				},
+				{
+					"index_97": "v.display1_13 == 97"
+				},
+				{
+					"index_98": "v.display1_13 == 98"
+				},
+				{
+					"index_99": "v.display1_13 == 99"
+				},
+				{
+					"index_100": "v.display1_13 == 100"
+				},
+				{
+					"index_101": "v.display1_13 == 101"
+				},
+				{
+					"index_102": "v.display1_13 == 102"
+				},
+				{
+					"index_103": "v.display1_13 == 103"
+				},
+				{
+					"index_104": "v.display1_13 == 104"
+				},
+				{
+					"index_105": "v.display1_13 == 105"
+				},
+				{
+					"index_106": "v.display1_13 == 106"
+				},
+				{
+					"index_107": "v.display1_13 == 107"
+				},
+				{
+					"index_108": "v.display1_13 == 108"
+				},
+				{
+					"index_109": "v.display1_13 == 109"
+				},
+				{
+					"index_110": "v.display1_13 == 110"
+				},
+				{
+					"index_111": "v.display1_13 == 111"
+				},
+				{
+					"index_112": "v.display1_13 == 112"
+				},
+				{
+					"index_113": "v.display1_13 == 113"
+				},
+				{
+					"index_114": "v.display1_13 == 114"
+				},
+				{
+					"index_115": "v.display1_13 == 115"
+				},
+				{
+					"index_116": "v.display1_13 == 116"
+				},
+				{
+					"index_117": "v.display1_13 == 117"
+				},
+				{
+					"index_118": "v.display1_13 == 118"
+				},
+				{
+					"index_119": "v.display1_13 == 119"
+				},
+				{
+					"index_120": "v.display1_13 == 120"
+				},
+				{
+					"index_121": "v.display1_13 == 121"
+				},
+				{
+					"index_122": "v.display1_13 == 122"
+				},
+				{
+					"index_123": "v.display1_13 == 123"
+				},
+				{
+					"index_124": "v.display1_13 == 124"
+				},
+				{
+					"index_125": "v.display1_13 == 125"
+				},
+				{
+					"index_126": "v.display1_13 == 126"
+				},
+				{
+					"index_127": "v.display1_13 == 127"
+				}
+			]
+		},
+		"controller.render.display1_14": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_14",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_14 == 32"
+				},
+				{
+					"index_33": "v.display1_14 == 33"
+				},
+				{
+					"index_34": "v.display1_14 == 34"
+				},
+				{
+					"index_35": "v.display1_14 == 35"
+				},
+				{
+					"index_36": "v.display1_14 == 36"
+				},
+				{
+					"index_37": "v.display1_14 == 37"
+				},
+				{
+					"index_38": "v.display1_14 == 38"
+				},
+				{
+					"index_39": "v.display1_14 == 39"
+				},
+				{
+					"index_40": "v.display1_14 == 40"
+				},
+				{
+					"index_41": "v.display1_14 == 41"
+				},
+				{
+					"index_42": "v.display1_14 == 42"
+				},
+				{
+					"index_43": "v.display1_14 == 43"
+				},
+				{
+					"index_44": "v.display1_14 == 44"
+				},
+				{
+					"index_45": "v.display1_14 == 45"
+				},
+				{
+					"index_46": "v.display1_14 == 46"
+				},
+				{
+					"index_47": "v.display1_14 == 47"
+				},
+				{
+					"index_48": "v.display1_14 == 48"
+				},
+				{
+					"index_49": "v.display1_14 == 49"
+				},
+				{
+					"index_50": "v.display1_14 == 50"
+				},
+				{
+					"index_51": "v.display1_14 == 51"
+				},
+				{
+					"index_52": "v.display1_14 == 52"
+				},
+				{
+					"index_53": "v.display1_14 == 53"
+				},
+				{
+					"index_54": "v.display1_14 == 54"
+				},
+				{
+					"index_55": "v.display1_14 == 55"
+				},
+				{
+					"index_56": "v.display1_14 == 56"
+				},
+				{
+					"index_57": "v.display1_14 == 57"
+				},
+				{
+					"index_58": "v.display1_14 == 58"
+				},
+				{
+					"index_59": "v.display1_14 == 59"
+				},
+				{
+					"index_60": "v.display1_14 == 60"
+				},
+				{
+					"index_61": "v.display1_14 == 61"
+				},
+				{
+					"index_62": "v.display1_14 == 62"
+				},
+				{
+					"index_63": "v.display1_14 == 63"
+				},
+				{
+					"index_64": "v.display1_14 == 64"
+				},
+				{
+					"index_65": "v.display1_14 == 65"
+				},
+				{
+					"index_66": "v.display1_14 == 66"
+				},
+				{
+					"index_67": "v.display1_14 == 67"
+				},
+				{
+					"index_68": "v.display1_14 == 68"
+				},
+				{
+					"index_69": "v.display1_14 == 69"
+				},
+				{
+					"index_70": "v.display1_14 == 70"
+				},
+				{
+					"index_71": "v.display1_14 == 71"
+				},
+				{
+					"index_72": "v.display1_14 == 72"
+				},
+				{
+					"index_73": "v.display1_14 == 73"
+				},
+				{
+					"index_74": "v.display1_14 == 74"
+				},
+				{
+					"index_75": "v.display1_14 == 75"
+				},
+				{
+					"index_76": "v.display1_14 == 76"
+				},
+				{
+					"index_77": "v.display1_14 == 77"
+				},
+				{
+					"index_78": "v.display1_14 == 78"
+				},
+				{
+					"index_79": "v.display1_14 == 79"
+				},
+				{
+					"index_80": "v.display1_14 == 80"
+				},
+				{
+					"index_81": "v.display1_14 == 81"
+				},
+				{
+					"index_82": "v.display1_14 == 82"
+				},
+				{
+					"index_83": "v.display1_14 == 83"
+				},
+				{
+					"index_84": "v.display1_14 == 84"
+				},
+				{
+					"index_85": "v.display1_14 == 85"
+				},
+				{
+					"index_86": "v.display1_14 == 86"
+				},
+				{
+					"index_87": "v.display1_14 == 87"
+				},
+				{
+					"index_88": "v.display1_14 == 88"
+				},
+				{
+					"index_89": "v.display1_14 == 89"
+				},
+				{
+					"index_90": "v.display1_14 == 90"
+				},
+				{
+					"index_91": "v.display1_14 == 91"
+				},
+				{
+					"index_92": "v.display1_14 == 92"
+				},
+				{
+					"index_93": "v.display1_14 == 93"
+				},
+				{
+					"index_94": "v.display1_14 == 94"
+				},
+				{
+					"index_95": "v.display1_14 == 95"
+				},
+				{
+					"index_96": "v.display1_14 == 96"
+				},
+				{
+					"index_97": "v.display1_14 == 97"
+				},
+				{
+					"index_98": "v.display1_14 == 98"
+				},
+				{
+					"index_99": "v.display1_14 == 99"
+				},
+				{
+					"index_100": "v.display1_14 == 100"
+				},
+				{
+					"index_101": "v.display1_14 == 101"
+				},
+				{
+					"index_102": "v.display1_14 == 102"
+				},
+				{
+					"index_103": "v.display1_14 == 103"
+				},
+				{
+					"index_104": "v.display1_14 == 104"
+				},
+				{
+					"index_105": "v.display1_14 == 105"
+				},
+				{
+					"index_106": "v.display1_14 == 106"
+				},
+				{
+					"index_107": "v.display1_14 == 107"
+				},
+				{
+					"index_108": "v.display1_14 == 108"
+				},
+				{
+					"index_109": "v.display1_14 == 109"
+				},
+				{
+					"index_110": "v.display1_14 == 110"
+				},
+				{
+					"index_111": "v.display1_14 == 111"
+				},
+				{
+					"index_112": "v.display1_14 == 112"
+				},
+				{
+					"index_113": "v.display1_14 == 113"
+				},
+				{
+					"index_114": "v.display1_14 == 114"
+				},
+				{
+					"index_115": "v.display1_14 == 115"
+				},
+				{
+					"index_116": "v.display1_14 == 116"
+				},
+				{
+					"index_117": "v.display1_14 == 117"
+				},
+				{
+					"index_118": "v.display1_14 == 118"
+				},
+				{
+					"index_119": "v.display1_14 == 119"
+				},
+				{
+					"index_120": "v.display1_14 == 120"
+				},
+				{
+					"index_121": "v.display1_14 == 121"
+				},
+				{
+					"index_122": "v.display1_14 == 122"
+				},
+				{
+					"index_123": "v.display1_14 == 123"
+				},
+				{
+					"index_124": "v.display1_14 == 124"
+				},
+				{
+					"index_125": "v.display1_14 == 125"
+				},
+				{
+					"index_126": "v.display1_14 == 126"
+				},
+				{
+					"index_127": "v.display1_14 == 127"
+				}
+			]
+		},
+		"controller.render.display1_15": {
+			"rebuild_animation_matrices": true,
+			"geometry": "Geometry.display1_15",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ascii"
+			],
+			"part_visibility": [
+				{
+					"*": false
+				},
+				{
+					"index_32": "v.display1_15 == 32"
+				},
+				{
+					"index_33": "v.display1_15 == 33"
+				},
+				{
+					"index_34": "v.display1_15 == 34"
+				},
+				{
+					"index_35": "v.display1_15 == 35"
+				},
+				{
+					"index_36": "v.display1_15 == 36"
+				},
+				{
+					"index_37": "v.display1_15 == 37"
+				},
+				{
+					"index_38": "v.display1_15 == 38"
+				},
+				{
+					"index_39": "v.display1_15 == 39"
+				},
+				{
+					"index_40": "v.display1_15 == 40"
+				},
+				{
+					"index_41": "v.display1_15 == 41"
+				},
+				{
+					"index_42": "v.display1_15 == 42"
+				},
+				{
+					"index_43": "v.display1_15 == 43"
+				},
+				{
+					"index_44": "v.display1_15 == 44"
+				},
+				{
+					"index_45": "v.display1_15 == 45"
+				},
+				{
+					"index_46": "v.display1_15 == 46"
+				},
+				{
+					"index_47": "v.display1_15 == 47"
+				},
+				{
+					"index_48": "v.display1_15 == 48"
+				},
+				{
+					"index_49": "v.display1_15 == 49"
+				},
+				{
+					"index_50": "v.display1_15 == 50"
+				},
+				{
+					"index_51": "v.display1_15 == 51"
+				},
+				{
+					"index_52": "v.display1_15 == 52"
+				},
+				{
+					"index_53": "v.display1_15 == 53"
+				},
+				{
+					"index_54": "v.display1_15 == 54"
+				},
+				{
+					"index_55": "v.display1_15 == 55"
+				},
+				{
+					"index_56": "v.display1_15 == 56"
+				},
+				{
+					"index_57": "v.display1_15 == 57"
+				},
+				{
+					"index_58": "v.display1_15 == 58"
+				},
+				{
+					"index_59": "v.display1_15 == 59"
+				},
+				{
+					"index_60": "v.display1_15 == 60"
+				},
+				{
+					"index_61": "v.display1_15 == 61"
+				},
+				{
+					"index_62": "v.display1_15 == 62"
+				},
+				{
+					"index_63": "v.display1_15 == 63"
+				},
+				{
+					"index_64": "v.display1_15 == 64"
+				},
+				{
+					"index_65": "v.display1_15 == 65"
+				},
+				{
+					"index_66": "v.display1_15 == 66"
+				},
+				{
+					"index_67": "v.display1_15 == 67"
+				},
+				{
+					"index_68": "v.display1_15 == 68"
+				},
+				{
+					"index_69": "v.display1_15 == 69"
+				},
+				{
+					"index_70": "v.display1_15 == 70"
+				},
+				{
+					"index_71": "v.display1_15 == 71"
+				},
+				{
+					"index_72": "v.display1_15 == 72"
+				},
+				{
+					"index_73": "v.display1_15 == 73"
+				},
+				{
+					"index_74": "v.display1_15 == 74"
+				},
+				{
+					"index_75": "v.display1_15 == 75"
+				},
+				{
+					"index_76": "v.display1_15 == 76"
+				},
+				{
+					"index_77": "v.display1_15 == 77"
+				},
+				{
+					"index_78": "v.display1_15 == 78"
+				},
+				{
+					"index_79": "v.display1_15 == 79"
+				},
+				{
+					"index_80": "v.display1_15 == 80"
+				},
+				{
+					"index_81": "v.display1_15 == 81"
+				},
+				{
+					"index_82": "v.display1_15 == 82"
+				},
+				{
+					"index_83": "v.display1_15 == 83"
+				},
+				{
+					"index_84": "v.display1_15 == 84"
+				},
+				{
+					"index_85": "v.display1_15 == 85"
+				},
+				{
+					"index_86": "v.display1_15 == 86"
+				},
+				{
+					"index_87": "v.display1_15 == 87"
+				},
+				{
+					"index_88": "v.display1_15 == 88"
+				},
+				{
+					"index_89": "v.display1_15 == 89"
+				},
+				{
+					"index_90": "v.display1_15 == 90"
+				},
+				{
+					"index_91": "v.display1_15 == 91"
+				},
+				{
+					"index_92": "v.display1_15 == 92"
+				},
+				{
+					"index_93": "v.display1_15 == 93"
+				},
+				{
+					"index_94": "v.display1_15 == 94"
+				},
+				{
+					"index_95": "v.display1_15 == 95"
+				},
+				{
+					"index_96": "v.display1_15 == 96"
+				},
+				{
+					"index_97": "v.display1_15 == 97"
+				},
+				{
+					"index_98": "v.display1_15 == 98"
+				},
+				{
+					"index_99": "v.display1_15 == 99"
+				},
+				{
+					"index_100": "v.display1_15 == 100"
+				},
+				{
+					"index_101": "v.display1_15 == 101"
+				},
+				{
+					"index_102": "v.display1_15 == 102"
+				},
+				{
+					"index_103": "v.display1_15 == 103"
+				},
+				{
+					"index_104": "v.display1_15 == 104"
+				},
+				{
+					"index_105": "v.display1_15 == 105"
+				},
+				{
+					"index_106": "v.display1_15 == 106"
+				},
+				{
+					"index_107": "v.display1_15 == 107"
+				},
+				{
+					"index_108": "v.display1_15 == 108"
+				},
+				{
+					"index_109": "v.display1_15 == 109"
+				},
+				{
+					"index_110": "v.display1_15 == 110"
+				},
+				{
+					"index_111": "v.display1_15 == 111"
+				},
+				{
+					"index_112": "v.display1_15 == 112"
+				},
+				{
+					"index_113": "v.display1_15 == 113"
+				},
+				{
+					"index_114": "v.display1_15 == 114"
+				},
+				{
+					"index_115": "v.display1_15 == 115"
+				},
+				{
+					"index_116": "v.display1_15 == 116"
+				},
+				{
+					"index_117": "v.display1_15 == 117"
+				},
+				{
+					"index_118": "v.display1_15 == 118"
+				},
+				{
+					"index_119": "v.display1_15 == 119"
+				},
+				{
+					"index_120": "v.display1_15 == 120"
+				},
+				{
+					"index_121": "v.display1_15 == 121"
+				},
+				{
+					"index_122": "v.display1_15 == 122"
+				},
+				{
+					"index_123": "v.display1_15 == 123"
+				},
+				{
+					"index_124": "v.display1_15 == 124"
+				},
+				{
+					"index_125": "v.display1_15 == 125"
+				},
+				{
+					"index_126": "v.display1_15 == 126"
+				},
+				{
+					"index_127": "v.display1_15 == 127"
+				}
+			]
+		}
+	}
+}

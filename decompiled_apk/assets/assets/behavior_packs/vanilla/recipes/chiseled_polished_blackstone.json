@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:polished_blackstone_slab"}],"result":{"item":"minecraft:chiseled_polished_blackstone"},"key":{"#":{"item":"minecraft:polished_blackstone_slab"}},"description":{"identifier":"minecraft:chiseled_polished_blackstone"},"pattern":["#","#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

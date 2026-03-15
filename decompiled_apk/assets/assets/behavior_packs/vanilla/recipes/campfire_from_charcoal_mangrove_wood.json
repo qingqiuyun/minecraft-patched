@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"minecraft:campfire","count":1},"key":{"A":{"item":"minecraft:stick"},"C":{"item":"minecraft:mangrove_wood"},"B":{"item":"minecraft:charcoal"}},"description":{"identifier":"minecraft:campfire_from_charcoal_mangrove_wood"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

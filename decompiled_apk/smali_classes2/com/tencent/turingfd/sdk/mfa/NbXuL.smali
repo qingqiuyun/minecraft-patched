@@ -1,0 +1,74 @@
+.class public final Lcom/tencent/turingfd/sdk/mfa/NbXuL;
+.super Lcom/tencent/turingfd/sdk/mfa/tfWT8;
+.source "SourceFile"
+
+
+# instance fields
+.field public a:Ljava/lang/String;
+
+.field public b:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/tencent/turingfd/sdk/mfa/tfWT8;-><init>()V
+
+    const-string v0, ""
+
+    .line 2
+    iput-object v0, p0, Lcom/tencent/turingfd/sdk/mfa/NbXuL;->a:Ljava/lang/String;
+
+    .line 4
+    iput-object v0, p0, Lcom/tencent/turingfd/sdk/mfa/NbXuL;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/tencent/turingfd/sdk/mfa/Nb4Ck;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 3
+    invoke-virtual {p1, v1, v0}, Lcom/tencent/turingfd/sdk/mfa/Nb4Ck;->b(IZ)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/tencent/turingfd/sdk/mfa/NbXuL;->a:Ljava/lang/String;
+
+    .line 4
+    invoke-virtual {p1, v0, v0}, Lcom/tencent/turingfd/sdk/mfa/Nb4Ck;->b(IZ)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/tencent/turingfd/sdk/mfa/NbXuL;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public a(Lcom/tencent/turingfd/sdk/mfa/QafBz;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/tencent/turingfd/sdk/mfa/NbXuL;->a:Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Lcom/tencent/turingfd/sdk/mfa/QafBz;->a(Ljava/lang/String;I)V
+
+    .line 2
+    iget-object v0, p0, Lcom/tencent/turingfd/sdk/mfa/NbXuL;->b:Ljava/lang/String;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p1, v0, v1}, Lcom/tencent/turingfd/sdk/mfa/QafBz;->a(Ljava/lang/String;I)V
+
+    return-void
+.end method

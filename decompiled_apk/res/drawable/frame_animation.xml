@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_0" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_1" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_2" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_3" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_4" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_5" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_6" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_7" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_8" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_9" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_10" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_11" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_12" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_13" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_14" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_15" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_16" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_17" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_18" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_19" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_20" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_21" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_22" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_23" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_24" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_25" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_26" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_27" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_28" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_29" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_30" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_31" />
+    <item android:duration="33" android:drawable="@drawable/getprize_animation_half_32" />
+</animation-list>

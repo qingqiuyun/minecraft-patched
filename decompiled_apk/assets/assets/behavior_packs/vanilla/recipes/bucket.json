@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:iron_ingot"}],"result":{"item":"minecraft:bucket"},"key":{"#":{"item":"minecraft:iron_ingot"}},"description":{"identifier":"minecraft:bucket"},"pattern":["# #"," # "],"tags":["crafting_table"]},"format_version":"1.20.10"}

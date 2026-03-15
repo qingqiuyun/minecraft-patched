@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:tuff_bricks"}],"priority":1,"result":{"item":"minecraft:tuff_brick_slab","count":6},"key":{"A":{"item":"minecraft:tuff_bricks"}},"description":{"identifier":"minecraft:tuff_brick_slab"},"pattern":["AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:redstone_torch"}],"result":{"item":"minecraft:repeater"},"key":{"I":{"item":"minecraft:stone","data":0},"X":{"item":"minecraft:redstone"},"#":{"item":"minecraft:redstone_torch"}},"description":{"identifier":"minecraft:repeater"},"pattern":["#X#","III"],"tags":["crafting_table"]},"format_version":"1.20.10"}

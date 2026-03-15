@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:prismarine","data":2}],"priority":0,"result":{"item":"minecraft:double_stone_slab2","data":4,"count":2},"description":{"identifier":"minecraft:stonecutter_prismarine_brick_slab"},"ingredients":[{"item":"minecraft:prismarine","data":2}],"tags":["stonecutter"]},"format_version":"1.20.10"}

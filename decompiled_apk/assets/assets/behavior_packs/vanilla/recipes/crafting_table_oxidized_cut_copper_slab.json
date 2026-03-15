@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:oxidized_cut_copper"}],"priority":1,"result":{"item":"minecraft:oxidized_cut_copper_slab","count":6},"key":{"A":{"item":"minecraft:oxidized_cut_copper"}},"description":{"identifier":"minecraft:crafting_table_oxidized_cut_copper_slab"},"pattern":["AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

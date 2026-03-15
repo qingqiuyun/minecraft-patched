@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:quartz"}],"result":{"item":"minecraft:stone","data":3,"count":2},"key":{"Q":{"item":"minecraft:quartz"},"C":{"item":"minecraft:cobblestone"}},"description":{"identifier":"minecraft:diorite"},"pattern":["CQ","QC"],"tags":["crafting_table"]},"format_version":"1.20.10"}

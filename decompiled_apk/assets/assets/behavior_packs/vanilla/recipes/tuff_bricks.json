@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:polished_tuff"}],"result":{"item":"minecraft:tuff_bricks","count":4},"key":{"#":{"item":"minecraft:polished_tuff"}},"description":{"identifier":"minecraft:tuff_bricks"},"pattern":["##","##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

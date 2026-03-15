@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:nether_gold_ore"}],"input":"minecraft:nether_gold_ore","description":{"identifier":"minecraft:furnace_nether_gold_ore"},"output":"minecraft:gold_ingot","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

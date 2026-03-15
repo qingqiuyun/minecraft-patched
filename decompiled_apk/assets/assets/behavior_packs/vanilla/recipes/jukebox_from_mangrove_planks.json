@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"jukebox","count":1},"key":{"A":{"item":"mangrove_planks"},"B":{"item":"diamond"}},"description":{"identifier":"minecraft:jukebox_from_mangrove_planks"},"pattern":["AAA","ABA","AAA"],"tags":["crafting_table"]},"format_version":"1.16"}

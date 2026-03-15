@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="unisdk_protocol_view_btn_width">150.0dip</dimen>
+    <dimen name="unisdk_protocol_view_top_height">43.19998dip</dimen>
+    <dimen name="unisdk_protocol_agree_tv_text_size">15.599976dip</dimen>
+    <dimen name="unisdk_protocol_alert_content_min_height">90.0dip</dimen>
+    <dimen name="unisdk_protocol_alert_dialog_btn_height">34.799988dip</dimen>
+    <dimen name="unisdk_protocol_alert_dialog_btn_width">132.0dip</dimen>
+    <dimen name="unisdk_protocol_alert_dialog_width">324.0dip</dimen>
+    <dimen name="unisdk_protocol_btn_check_witch">62.399994dip</dimen>
+    <dimen name="unisdk_protocol_content_text_size">15.599976dip</dimen>
+    <dimen name="unisdk_protocol_icon_arrow_size">19.199982dip</dimen>
+    <dimen name="unisdk_protocol_icon_check_size">19.199982dip</dimen>
+    <dimen name="unisdk_protocol_icon_close_size">36.0dip</dimen>
+    <dimen name="unisdk_protocol_item_text_size">15.599976dip</dimen>
+    <dimen name="unisdk_protocol_margin_10">12.0dip</dimen>
+    <dimen name="unisdk_protocol_margin_12">14.399994dip</dimen>
+    <dimen name="unisdk_protocol_margin_13">15.599976dip</dimen>
+    <dimen name="unisdk_protocol_margin_16">19.199982dip</dimen>
+    <dimen name="unisdk_protocol_margin_20">24.0dip</dimen>
+    <dimen name="unisdk_protocol_margin_5">6.0dip</dimen>
+    <dimen name="unisdk_protocol_margin_7">8.399994dip</dimen>
+    <dimen name="unisdk_protocol_spacing_5">6.0dip</dimen>
+    <dimen name="unisdk_protocol_title_size">18.0dip</dimen>
+    <dimen name="unisdk_protocol_toast_text_size">16.799988dip</dimen>
+    <dimen name="unisdk_protocol_view_btn_height">34.799988dip</dimen>
+    <dimen name="unisdk_protocol_view_btn_text">16.799988dip</dimen>
+    <dimen name="unisdk_protocol_view_item_height">48.0dip</dimen>
+    <dimen name="unisdk_protocol_view_logo_height">31.199982dip</dimen>
+    <dimen name="unisdk_protocol_view_logo_width">79.19998dip</dimen>
+</resources>

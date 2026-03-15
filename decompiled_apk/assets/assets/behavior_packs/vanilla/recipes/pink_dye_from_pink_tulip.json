@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:pink_tulip"}],"result":{"item":"minecraft:dye","data":9},"ingredients":[{"item":"minecraft:pink_tulip"}],"description":{"identifier":"minecraft:pink_dye_from_pink_tulip"},"group":"pink_dye","tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:raw_copper"}],"input":"minecraft:raw_copper","description":{"identifier":"minecraft:furnace_copper"},"output":"minecraft:copper_ingot","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

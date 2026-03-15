@@ -1,0 +1,1 @@
+{"minecraft:single_block_feature":{"places_block":{"states":{"upper_block_bit":true},"name":"minecraft:large_fern"},"enforce_survivability_rules":false,"description":{"identifier":"minecraft:fern_double_plant_upper_feature"},"may_replace":["minecraft:air"],"enforce_placement_rules":false},"format_version":"1.14.0"}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_ope_pay_success_coupon_rl_obtain" android:layout_width="wrap_content" android:layout_height="92.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/m4399_ope_pay_success_coupon_rl_money_container" android:background="@drawable/m4399_ope_pay_status_success_coupon_left_bg" android:layout_width="94.0dip" android:layout_height="92.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_account_coupon_dialog_yuan" android:fontFamily="sans-serif-medium" />
+                <View android:layout_width="2.0dip" android:layout_height="0.0dip" />
+                <TextView android:textSize="28.0sp" android:textColor="@android:color/white" android:id="@id/m4399_ope_pay_success_coupon_tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/m4399_font_12" android:textColor="@android:color/white" android:id="@id/m4399_ope_pay_success_coupon_tv_min_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/m4399_ope_pay_status_success_coupon_right_bg" android:paddingLeft="@dimen/m4399_spacing_12" android:paddingTop="17.0dip" android:paddingRight="@dimen/m4399_spacing_12" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_toRightOf="@id/m4399_ope_pay_success_coupon_rl_money_container">
+        <TextView android:textSize="13.0sp" android:textColor="@color/m4399_ope_color_ffa92d" android:gravity="center" android:layout_gravity="center" android:id="@id/m4399_ope_pay_success_coupon_tv_obtain" android:background="@drawable/m4399_ope_ripple_pay_success_coupon_use" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" />
+    </LinearLayout>
+    <View android:background="@drawable/m4399_ope_pay_status_success_coupon_gap_bg" android:layout_width="9.0dip" android:layout_height="4.5dip" android:layout_marginLeft="89.5dip" />
+    <View android:background="@drawable/m4399_ope_pay_status_success_coupon_gap_bg" android:layout_width="9.0dip" android:layout_height="4.5dip" android:layout_marginLeft="89.5dip" android:layout_alignParentBottom="true" android:rotation="180.0" />
+</RelativeLayout>

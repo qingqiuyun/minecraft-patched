@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"minecraft:barrel","count":1},"key":{"A":{"item":"minecraft:stick"},"B":{"item":"crimson_slab"}},"description":{"identifier":"minecraft:barrel_from_crimson_slab"},"pattern":["ABA","A A","ABA"],"tags":["deprecated"]},"format_version":"1.16"}

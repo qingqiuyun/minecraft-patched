@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.end_crystal_notification": {
+      "geometry": "geometry.notification",
+      "materials": [ { "*": "Material.entity_esp" } ],
+      "textures": [ "Texture.notification" ],
+      "is_hurt_color":{},
+      "on_fire_color":{}
+    }
+  }
+}

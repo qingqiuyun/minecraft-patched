@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/m4399_ope_dialog_bg" android:layout_width="@dimen/m4399_dialog_width_medium" android:layout_height="wrap_content" style="@style/m4399.Theme.Dialog.Base"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="end" android:id="@id/m4399_ope_id_ib_close" android:background="@drawable/m4399_ope_support_nav_icon_bg" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="@dimen/m4399_spacing_14" android:layout_marginRight="@dimen/m4399_spacing_14" android:src="@drawable/m4399_ope_ic_close" android:scaleType="centerInside" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/m4399_spacing_25" android:paddingRight="@dimen/m4399_spacing_25" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/m4399_ope_id_iv_ic_tips" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/m4399_pad_success" android:scaleType="centerInside" />
+        <TextView android:textSize="@dimen/m4399_font_16" android:textColor="@color/m4399_ope_color_333333" android:gravity="center_horizontal" android:id="@id/m4399_id_tv_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m4399_spacing_20" style="@style/m4399.Text.H3" />
+        <TextView android:textSize="@dimen/m4399_font_14" android:textColor="@color/m4399_ope_color_666666" android:gravity="center_horizontal" android:id="@id/m4399_component_stub_msg_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m4399_spacing_14" />
+    </LinearLayout>
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+</LinearLayout>

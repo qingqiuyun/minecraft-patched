@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"composter","count":1},"key":{"A":{"item":"mangrove_slab"}},"description":{"identifier":"minecraft:composter_from_mangrove_slab"},"pattern":["A A","A A","AAA"],"tags":["crafting_table"]},"format_version":"1.16"}

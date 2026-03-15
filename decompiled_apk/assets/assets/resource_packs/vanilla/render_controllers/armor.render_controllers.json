@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.armor":{"materials":[{"*":"variable.is_enchanted ? Material.enchanted : Material.default"}],"geometry":"Geometry.default","textures":["variable.has_trim ? variable.trim_path : Texture.default","Texture.enchanted"]}},"format_version":"1.8.0"}

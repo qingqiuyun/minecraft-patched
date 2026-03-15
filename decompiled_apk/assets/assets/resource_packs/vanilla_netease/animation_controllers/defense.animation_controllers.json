@@ -1,0 +1,530 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.defense.1st" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{
+							"1stbase" : "v.swords && v.is_first_person && !v.defense && v.attack_anim_style != -1"
+						},
+						{
+							"sword_further1" : "(v.bow || v.swords) && v.is_first_person && v.enable_sword_further == 1"
+						},
+						{
+							"sword_further2" : "(v.bow || v.swords) && v.is_first_person && v.enable_sword_further == 2"
+						},
+						{
+							"sword_further3" : "(v.bow || v.swords) && v.is_first_person && v.enable_sword_further == 3"
+						},
+						{ 
+							"xzhud_pos": "1"
+						},
+						{ 
+							"xzhud_ctrl": "1"
+						},
+						{
+							"rightarm_further" : "(!(v.tools || v.swords || v.items || v.others) || q.is_item_name_any('slot.weapon.mainhand', 0, '')) && v.enable_rightarm_further == 1"
+						},
+						{
+							"crossbow_oreload": "v.crossbow && q.get_animation_frame > 0 && v.use_item_startup_progress!=0"
+						},
+						{
+							"1stdefense" : "v.swords && v.is_first_person && v.defense && (v.defense_anim_style == 1 || v.defense_anim_style == 2 || v.defense_anim_style == -2)"
+						},
+						{
+							"1stdefense_blc4" : "v.swords && v.is_first_person && v.defense && v.defense_anim_style == 3"
+						},
+						{
+							"1stbase" : "(!v.crossbow && v.items) && v.is_first_person && v.attack_anim_style != -1"
+						},
+						{
+							"exoffhand" : "v.xz_offhand_mode == 1"
+						},
+						{
+							"1stbase_trident" : "v.trident && v.is_first_person"
+						},
+						{
+							"ctrl_trident" : "v.trident && v.is_first_person"
+						},
+						{
+							"ctrl_bow": "v.bow && v.is_first_person"
+						},
+						{ 
+							"ctrl_eat": "!v.bow && !v.crossbow && v.items"
+						},
+						{ 
+							"item_scale": "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.enable_eat_scale == 1"
+						},
+						{
+							"ctrl_crossbow": "v.crossbow && v.is_first_person"
+						}
+				    ]
+				}
+			}
+		},
+		
+		"controller.animation.defense.3rd" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"exoffhand" : "v.xz_offhand_mode == 1"
+						},
+						{
+							"3rdtool" : "v.swords && !v.is_first_person && !v.defense"
+						},
+						{
+							"3rdtool" : "v.tools && !v.is_first_person"
+						},
+						{
+							"3rdbow" : "v.bow && !v.is_first_person"
+						},
+						{
+							"3rdtrident" : "v.trident && !v.is_first_person && v.use_item_startup_progress==0"
+						},
+						{
+							"3rdpulling_trident" : "v.trident && !v.is_first_person && v.use_item_startup_progress!=0"
+						},
+						{
+							"3rdcrossbow" : "v.crossbow && !v.is_first_person"
+						},
+						{
+							"3rddefense" : "v.swords && !v.is_first_person && v.defense"
+						},
+						{
+							"3rdbase" : "(!v.crossbow && !v.bow && !v.tools && v.items) && !v.is_first_person"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.right_ctrl" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [
+						"v.pressed_right_key = 0;"
+					],
+					"transitions" : [
+						{
+							"run": "v.use_item_startup_progress!=0"
+						}
+					]
+				},
+				"run" : {
+					"on_entry" : [
+						"v.pressed_right_key = q.life_time + v.hold_right_time;"
+					],
+					"transitions" : [
+						{
+							"default": "(q.life_time - v.pressed_right_key)>=0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.xzhud_ctrl" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"once": "v.abx"
+						}
+					]
+				},
+				"once" : {
+					"on_entry" : [
+						"v.xzhud_changed = (v.xzhud_changed<7)?(v.xzhud_changed + 1):(0); v.hud_display_time = q.life_time+3;"
+					],
+					"transitions" : [
+						{
+							"default": "!(v.abx)"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.move_ctrl": {
+			"states": {
+				"default": {
+					"on_entry" : [
+						"v.jump_delay_end = 0;"
+					],
+					"variables": {
+						"ground_speed_remap": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.0": 0.0,
+								"1.0": 1.0
+							}
+						}
+					},
+					"transitions" : [
+						{
+							"jumping": "!(v.vertical_speed_remap>=6.1389 && v.vertical_speed_remap<=6.1390) && v.vertical_speed_remap>=0.8460"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"jumping": {
+					"on_entry" : [
+						"v.jump_delay_time = q.life_time - 0.6; v.jump_delay_end = ((q.life_time - v.jump_delay_time) > v.jump_using_time)?1;"
+					],
+					"variables": {
+						"ground_speed_remap": {
+							"input": "query.modified_move_speed",
+							"remap_curve": {
+								"0.0": 0.0,
+								"1.0": 2.857
+							}
+						}
+					},
+					"transitions" : [
+						{
+							"default": "(v.vertical_speed_remap>=6.1389 && v.vertical_speed_remap<=6.1390 && v.vertical_speed_remap>0.8460)"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.effect_ctrl" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hurted_effect_run": "!q.is_in_ui && v.hurt_time==1 && v.enable_hurted_effect==1"
+						},
+						{
+							"dead_effect_run": "!q.is_in_ui && !q.is_alive && v.enable_dead_effect==1"
+						}
+					]
+				},
+				"hurted_effect_run" : {
+					"animations" : [
+						{
+							"hurted_effect": "!q.is_in_ui && v.hurt_time==1"
+						}
+					],
+					"transitions" : [
+						{
+							"default": "!q.is_in_ui && q.any_animation_finished && v.hurt_time!=1"
+						}
+					]
+				},
+				"dead_effect_run" : {
+					"animations" : [
+						{
+							"dead_effect": "!q.is_in_ui && !q.is_alive"
+						}
+					],
+					"transitions" : [
+						{
+							"default": "!q.is_in_ui && q.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.1stwave_attack_ctrl" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"run": "v.attack_time != 0"
+						}
+					]
+				},
+				"run" : {
+					"animations" : [
+						{
+							"skip": "v.attack_time != 0"
+						},
+						{
+							"1stwave_attack_slow": "q.any_animation_finished"
+						}
+					],
+					"transitions" : [
+						{
+							"default": "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.1stwave_defense_ctrl" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"run": "v.attack_time != 0"
+						}
+					]
+				},
+				"run" : {
+					"animations" : [
+						{
+							"skip": "v.attack_time != 0"
+						},
+						{
+							"1stwave_defense_slow": "q.any_animation_finished"
+						}
+					],
+					"transitions" : [
+						{
+							"default": "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ctrl_bow": {
+			"initial_state": "step1",
+			"states": {
+				"step1": {
+					"transitions": [
+						{
+							"step2": "query.get_animation_frame >= 0 && v.xz_offhand_mode == 0"
+						},
+						{
+							"step3": "query.get_animation_frame >= 0 && v.xz_offhand_mode == 1"
+						}
+					]
+				},
+				"step2": {
+					"animations": [
+						{
+							"1stwave_bow1": "query.get_animation_frame >= 3"
+						},
+						{
+							"1stwave_bow2": "query.get_animation_frame >= 1"
+						}
+					],
+					"transitions": [
+						{
+							"step1": "query.get_animation_frame == 0"
+						}
+					]
+				},
+				"step3": {
+					"animations": [
+						{
+							"1stwave_bow1": "query.get_animation_frame >= 3"
+						},
+						{
+							"1stwave_bow4": "query.get_animation_frame >= 1"
+						}
+					],
+					"transitions": [
+						{
+							"step1": "query.get_animation_frame == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ctrl_trident": {
+			"initial_state": "step1",
+			"states": {
+				"step1": {
+					"transitions": [
+						{
+							"step2": "v.trident && v.is_first_person && v.use_item_startup_progress!=0"
+						}
+					]
+				},
+				"step2": {
+					"animations": [
+						{
+							"1stpulling_trident" : "v.trident && v.is_first_person && v.use_item_startup_progress!=0"
+						}
+					],
+					"transitions": [
+						{
+							"step1": "v.use_item_startup_progress == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.eatwave_vanilla": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"eatwave_vanilla_be": "v.eat_vanilla_anim_style == 1"
+						},
+						{
+							"eatwave_vanilla_je": "v.eat_vanilla_anim_style == 2"
+						}
+					],
+					"transitions": [
+						{
+							"always_swing": "v.eat_always_attack == 1"
+						}
+					]
+				},
+				"always_swing": {
+					"animations": [
+						"eatwave_attack"
+					]
+				}
+			}
+		},
+		"controller.animation.eatwave_attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"eatwave_attack_be": "v.eat_attack_anim_style == 1"
+						},
+						{
+							"eatwave_attack_je": "v.eat_attack_anim_style == 2"
+						},
+						{
+							"eatwave_attack_blc": "v.eat_attack_anim_style == 3"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.defense.eat": {
+			"initial_state": "default",
+			"states": {
+				"default" : {
+					"transitions" : [
+						{
+							"during_vanilla" : "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && !q.is_sneaking && v.eat_always_attack != 1"
+						},
+						{
+							"during_attack" : "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && q.is_sneaking"
+						}
+					]
+				},
+				"during_vanilla" : {
+					"animations": [//anims here
+						{
+							"eatwave_vanilla_be_during" : "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && !q.is_sneaking && v.eat_always_attack != 1 && v.eat_vanilla_anim_style != -1"
+						}
+					],
+					"transitions" : [
+						{ 
+							"eatwave_vanilla": "q.any_animation_finished"
+						},
+						{
+							"during_attack" : "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && q.is_sneaking"
+						}
+					]
+				},
+				"eatwave_vanilla" : {
+					"animations": [
+						{
+							"eatwave_vanilla": "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && !q.is_sneaking && v.eat_always_attack != 1"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "!v.items || v.use_item_startup_progress==0"
+						},
+						{
+							"eatwave_attack": "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && q.is_sneaking"
+						}
+					]
+				},
+				"during_attack" : {
+					"animations": [//anims here
+						{
+							"eatwave_attack_be_during" : "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && q.is_sneaking && v.eat_attack_anim_style != -1"
+						}
+					],
+					"transitions" : [
+						{ 
+							"eatwave_attack": "q.any_animation_finished"
+						},
+						{
+							"during_vanilla" : "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && !q.is_sneaking"
+						}
+					]
+				},
+				"eatwave_attack" : {
+					"animations": [
+						{
+							"eatwave_attack": "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && q.is_sneaking"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "!v.items || v.use_item_startup_progress==0"
+						},
+						{
+							"eatwave_vanilla": "(!v.bow && !v.crossbow && v.items) && v.use_item_startup_progress!=0 && v.is_first_person && !q.is_sneaking"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ctrl_crossbow": {
+			"initial_state": "default",
+			"states": {
+				"default" : {
+					"transitions" : [
+						{
+							"lbase" : "!query.is_sneaking"
+						},
+						{
+							"obase" : "query.is_sneaking"
+						}
+					]
+				},
+				"lbase" : {
+					"animations": [
+						{
+							"crossbow_lbase": "v.is_first_person"
+						}
+					],
+					"transitions" : [
+						{
+							"lduringo" : "v.crossbow && query.is_sneaking"
+						}
+					]
+				},
+				"lduringo" : {
+					"animations": [
+						{
+							"skip": "query.is_sneaking"
+						},
+						{
+							"crossbow_lduringo": "q.any_animation_finished"
+						}
+					],
+					"transitions" : [
+						{ 
+							"obase": "q.all_animations_finished"
+						}
+					]
+				},
+				"obase" : {
+					"animations": [
+						{
+							"crossbow_obase": "v.is_first_person"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "!query.is_sneaking"
+						}
+					]
+				}
+			}
+		}
+	}
+}

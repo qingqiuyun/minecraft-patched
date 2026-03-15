@@ -1,0 +1,57 @@
+{
+    "namespace": "Quasar_tab",
+    "base_tab": {
+        "type": "panel",
+        "$tab_view_binding_name|default": "tab",
+        "$toggle_focus_enabled": false,
+        "$toggle_name": "navigation_tab",
+        "$toggle_group_default_selected": "$construction_index",
+        "$allow_controller_back_button_mapping": "$is_ps4",
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "$icon_texture": "textures/Quasar/icon",
+        "$unchecked_toggle_icon_color|default": "$primarycontainer",
+        "$unchecked_hover_toggle_icon_color|default": "$primarycontainer",
+        "$checked_toggle_icon_color|default": "$primarycontainer",
+        "$checked_hover_toggle_icon_color|default": "$primarycontainer",
+        "$unchecked_toggle_bg_texture": "textures/Quasar/empty",
+        "$checked_toggle_bg_texture": "$16x",
+        "$unchecked_hover_toggle_bg_texture": "$16x",
+        "$checked_hover_toggle_bg_texture": "$16x",
+        "$unchecked_toggle_icon_size|default": [
+            "100%",
+            "100%"
+        ],
+        "$unchecked_hover_toggle_icon_size|default": [
+            "100%",
+            "100%"
+        ],
+        "$checked_toggle_icon_size|default": [
+            "100%",
+            "100%"
+        ],
+        "$checked_hover_toggle_icon_size|default": [
+            "100%",
+            "100%"
+        ],
+        "$is_checked_state|default": false,
+        "$is_hover_state|default": false,
+        "controls": [
+            {
+                "$tab_view_binding_name@Quasar_toggle.base_toggle": {
+                    "size": [
+                        "100%",
+                        "100%"
+                    ],
+                    "reset_on_focus_lost": true,
+                    "$unchecked_toggle_bg_texture": "textures/Quasar/empty",
+                    "$checked_toggle_bg_texture": "$16x",
+                    "$unchecked_hover_toggle_bg_texture": "$16x",
+                    "$checked_hover_toggle_bg_texture": "$16x"
+                }
+            }
+        ]
+    }
+}

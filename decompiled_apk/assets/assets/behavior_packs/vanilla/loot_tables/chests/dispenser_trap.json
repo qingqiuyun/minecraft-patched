@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"weight":30,"name":"minecraft:arrow","type":"item","functions":[{"function":"set_count","count":{"max":7,"min":2}}]}],"rolls":{"max":2,"min":2}}]}

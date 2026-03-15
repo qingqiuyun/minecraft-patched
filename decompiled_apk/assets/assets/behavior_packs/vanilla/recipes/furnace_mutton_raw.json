@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:muttonRaw"}],"input":"minecraft:muttonRaw","description":{"identifier":"minecraft:furnace_mutton_raw"},"output":"minecraft:muttonCooked","tags":["furnace","smoker","campfire","soul_campfire"]},"format_version":"1.20.10"}

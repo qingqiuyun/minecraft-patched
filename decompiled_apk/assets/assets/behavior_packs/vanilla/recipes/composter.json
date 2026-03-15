@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"tag":"minecraft:wooden_slabs"}],"priority":-1,"result":{"item":"minecraft:composter"},"key":{"#":{"tag":"minecraft:wooden_slabs"}},"description":{"identifier":"minecraft:composter"},"pattern":["# #","# #","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

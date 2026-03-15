@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:iron_shovel"}],"input":"minecraft:iron_shovel","description":{"identifier":"minecraft:furnace_iron_shovel"},"output":"minecraft:iron_nugget","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

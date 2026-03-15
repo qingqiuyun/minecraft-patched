@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:copper_ingot"}],"priority":1,"result":{"item":"minecraft:lightning_rod","count":1},"key":{"A":{"item":"minecraft:copper_ingot"}},"description":{"identifier":"minecraft:lightning_rod"},"pattern":["A","A","A"],"tags":["crafting_table"]},"format_version":"1.20.10"}

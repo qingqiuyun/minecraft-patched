@@ -1,0 +1,47 @@
+{
+  "namespace": "Quasar/Panel/ArmorHUD",
+  "paper": {
+    "type": "custom",
+    "renderer": "live_player_renderer",
+    "layer": 5,
+    "animation_reset_name": "screen_animation_reset",
+    "$offset": [
+      34.5,
+      1470
+    ],
+    "anims": [
+      "@Quasar/Panel/ArmorHUD.armorhud_size_entrance_anim",
+      "@Quasar/Panel/ArmorHUD.armorhud_size_exit_anim"
+    ],
+    "size": [
+      15,
+      15
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "armorhud_panel_toggle",
+        "target_property_name": "#visible",
+        "source_property_name": "#toggle_state"
+      }
+    ]
+  },
+  "armorhud_size_entrance_anim": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [ 34.5, 1670 ],
+    "to": "$offset",
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+  "armorhud_size_exit_anim": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [ 34.5, 1670 ],
+    "from": "$offset",
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:enchanted_golden_apple",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint",
+        "charged_creeper": "charged_creeper",
+        "legs": "chicken_legs"
+      },
+      "textures": {
+        "default": "textures/items/apple_golden",
+        "invisible": "textures/entity/cape_invisible",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.sword",
+        "enchanted": "geometry.sword_enchanted"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.is_enchanted = 1.0;",
+          "variable.xz = 1.0;",
+          "v.r_color = (Math.sin(query.life_time*500.0)+1.0)*0.15;",
+          "v.g_color = 0.0;",
+          "v.b_color = (Math.sin(query.life_time*500.0+240.0)+1.0)*0.5;",
+          "v.a_color = 1;"
+        ]
+      },
+      "render_controllers": [
+        {
+          "controller.render.item_enchanted": 1
+        }
+      ]
+    }
+  }
+}
+//item_in_hand_multicolor_tint

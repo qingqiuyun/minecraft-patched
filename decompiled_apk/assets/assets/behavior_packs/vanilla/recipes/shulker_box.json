@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:shulker_shell"}],"result":{"item":"minecraft:undyed_shulker_box"},"key":{"#":{"item":"minecraft:chest"},"-":{"item":"minecraft:shulker_shell"}},"description":{"identifier":"minecraft:shulker_box"},"pattern":["-","#","-"],"tags":["crafting_table"]},"format_version":"1.20.10"}

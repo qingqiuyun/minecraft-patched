@@ -1,0 +1,9 @@
+{
+    "杀en总开关": true,
+    "主页视频替换": true,
+    "黑名单文件夹": "你自己写吧布吉岛杀不干净可以写attachables和render_controllers,settings_sections",
+    "黑名单文件": "*sword*.json,yc,*jian*.json,yc,*model*.json,yc,*animations*.json,yc,*player*.json,yc,player.animation_controllers.json,player.ntity.json,player.entity.json,yc,chatExtensionMainScreenMsgNew.json,yc,netease_chat_screen_extension.json,yc,neteaseVoiceTrans.json,yc,speakSectionUI.json,yc,gameChatMainUI.json,yc,gameChatPlayerInfoTipsUI.json",
+    "白名单文件": "login_scene_config.json,manifest.json,pack_manifest.json,contents.json",
+
+    "布吉岛杀不干净的话可以用这个你自己改过去在后面加上": "diamond_axe.json,3d_items.json,weapon_anxinglian_axe.animation.json,weapon_battle_axe.animation.json,weapon_blood_sword.animation.json,weapon_double_end_sword.animation.json,weapon_crystal_sword.animation.json,weapon_deadwood_battle_axe.animation.json,weapon_bone_sword.animation.json,weapon_energy_sword.animation.json,weapon_gouzhuangti_axe.animation.json,weapon_holy_axe.animation.json,weapon_lengguangshengjian_sword.json,weapon_night_sword.animation.json,weapon_mace_axe.animation.json,weapon_lengguangzhanfu_axe.json,weapon_lengguangzhandao_sword.json,weapon_pink_heart.animation_axe.animation.json,weapon_non_attack_sword.animation.json,weapon_spear_sword.animation.json,weapon_shengjian_sword.json,weapon_xuanlingchi_sword.json,weapon_xiedi_sword.animation.json,weapon_wars_hammer_axe.geo.animation.json,weapon_storm_sword.animation.json,weapon_storm_hammer_axe.animation.json,weapon_spikes_mace_axe.animation.json,sword.json,caidai.particle.json,ec_hit.particle.json,ghost.particle.json,sweep.particle.json,sound_definitions.json"
+}

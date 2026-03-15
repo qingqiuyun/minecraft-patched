@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:glowstone_dust","input":"minecraft:potion_type:leaping","description":{"identifier":"minecraft:brew_leaping_glow_stone"},"output":"minecraft:potion_type:strong_leaping","tags":["brewing_stand"]},"format_version":"1.20.10"}

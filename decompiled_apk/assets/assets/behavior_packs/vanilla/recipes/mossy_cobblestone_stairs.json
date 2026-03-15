@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:mossy_cobblestone"}],"result":{"item":"minecraft:mossy_cobblestone_stairs","count":4},"key":{"#":{"item":"minecraft:mossy_cobblestone"}},"description":{"identifier":"minecraft:mossy_cobblestone_stairs"},"pattern":["#  ","## ","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

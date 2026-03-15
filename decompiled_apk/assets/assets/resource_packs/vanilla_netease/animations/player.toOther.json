@@ -1,0 +1,214 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.player.item_scale": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"scale": "query.is_sneaking ? 1 : 1.5",
+					"position": ["query.is_sneaking ? 0 : 2.5", "query.is_sneaking ? 0 : 3", "query.is_sneaking ? 0 : -8"]
+				}
+			}
+		},
+		"animation.player.exoffhand": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"scale": [-1, 1, 1]
+				},
+				"cape": {
+					"scale": [-1, 1, 1]
+				}
+			}
+		},
+		"animation.player.rightarm_further": {
+			"loop": true,
+			"bones": {
+				"rightarm": {
+					"position": [0, "1.55 + variable.short_arm_offset_right", -0.5],
+					"rotation": [0.5, 5, 0]
+				}
+			}
+		},
+		"animation.player.rightarm_attack": {
+			"loop": true,
+			"animation_length": 0.4,
+			"anim_time_update": "(v.attack_time * 0.40)",
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.04": [-52.5, 37.5, 22.5],
+						"0.1": [-37.5, 42.5, 22.5],
+						"0.14": [-37.5, 42.5, 22.5],
+						"0.18": [-37.5, 42.5, 22.5],
+						"0.22": [-44.62, 32.63, 19.13],
+						"0.26": [-34.12, 21.13, 14.63],
+						"0.32": [0, 0, 0],
+						"0.38": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.04": [-3, 7.5, -1],
+						"0.1": [-5.5, 1.5, 2],
+						"0.14": [-5.5, -2, 2],
+						"0.18": [-5.5, -6, 1],
+						"0.22": [-2.5, -5, 0],
+						"0.26": [-1.5, -5, 0],
+						"0.32": [0, 0, 0],
+						"0.38": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.sword_further1": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": [6, -12, 6]
+				}
+			}
+		},
+		"animation.player.sword_further2": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": [32, -64, 32]
+				}
+			}
+		},
+		"animation.player.sword_further3": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": [10.35607, -7.33438, 2.64683]
+				}
+			}
+		},
+		"animation.player.cape": {
+			"loop": true,
+			"bones": {
+				"cape": {
+					"position": [0, "query.get_root_locator_offset('armor_offset.default_neck', 1)", 0],
+					"rotation": [
+						"math.lerp(0.0, -73 - 10 * math.cos(q.anim_time * 360.0 + 345.0 * -3.0), (q.modified_move_speed==0.35)?(q.cape_flap_amount-0.2):q.cape_flap_amount) - 0.1",
+						0,
+						"0.0"
+					]
+				},
+				"cape16": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * (math.cos(query.modified_distance_moved * 20) * 13)", 0, 0]
+				},
+				"cape15": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(22 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape14": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(50 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape13": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(76 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape12": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(100 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape11": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(122 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape10": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(142 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape9": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(160 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape8": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(176 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape7": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(190 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape6": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(202 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape5": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(212 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape4": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(220 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape3": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(226 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape2": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(230 - query.modified_distance_moved * 20) * 13", 0, 0]
+				},
+				"cape1": {
+					"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(232 - query.modified_distance_moved * 20) * 13", 0, 0]
+				}
+			}
+		},
+		"animation.player.first_person.empty_hand": {
+			"loop": true,
+			"bones": {
+				"rightarm": {
+					"position": [13.5, -10, 12],
+					"rotation": ["95.0 + variable.is_using_vr * 7.5", "-45.0 + variable.is_using_vr * 7.5", "115.0 + variable.is_using_vr * -2.5"]
+				},
+				"rightitem": {
+					"position": [0, 0, -1]
+				}
+			}
+		},
+		"animation.player.attack.rotations": {
+			"loop": true,
+			"animation_length": 0.4,
+			"anim_time_update": "(v.attack_time * 0.32)",
+			"bones": {
+				"body": {
+					"rotation": [0, "variable.attack_body_rot_y", 0]
+				},
+				"leftArm": {
+					"rotation": ["-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) * 1.2 + math.sin(variable.attack_time * 180)) * 10.0", 0, 0]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.06": [-60, 45, -7.5],
+						"0.10": [-82.5, 45, -15],
+						"0.14": [-75, 20, -15],
+						"0.18": [-67.5, 0, -30],
+						"0.26": [-45, -30, -30],
+						"0.32": [0, 0, 0],
+						"0.38": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.hurted_effect": {
+			"animation_length": 0.45,/*
+			"particle_effects": {//粒子部分决定默认关闭
+				"0.0": {
+					"effect": "particle_hurt_effect"
+				}
+			},*/
+			"sound_effects": {
+				"0.0": {
+					"effect": "sound_hit"
+				}
+			}
+		},
+		"animation.player.dead_effect": {
+			"animation_length": 0.45,/*
+			"particle_effects": {//粒子部分决定默认关闭
+				"0.0": {
+					"effect": "paticle_thunder"
+				}
+			},*/
+			"sound_effects": {
+				"0.0": {
+					"effect": "sound_thunder"
+				}
+			}
+		},
+		"animation.player.skip": {}
+	}
+}

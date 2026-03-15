@@ -1,0 +1,1 @@
+{"piece_name":"makena_hair","piece_type":"persona_hair","piece_id":"bb29fbdf-5331-ca8e-01a4-b352cd46a324","texture_sources":[{"texture":"makena_hair_head.png","use_face_uv":true,"tint_map":"makena_hair_head_tintmap.tga"},{"tint_map":"makena_hair_body_tintmap.tga","texture":"makena_hair_body.png"}],"tint_base_color":{"r_color":"#862f0b"}}

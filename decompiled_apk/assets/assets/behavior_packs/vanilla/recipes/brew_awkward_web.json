@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:web","input":"minecraft:potion_type:awkward","description":{"identifier":"minecraft:brew_awkward_web"},"output":"minecraft:potion_type:weaving","tags":["brewing_stand"]},"format_version":"1.12"}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@drawable/m4399_ope_ripple_rectangle_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/m4399_ope_share_item_iv" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff333333" android:id="@id/m4399_ope_share_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m4399_ope_share_item_iv" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="7.0sp" android:textColor="@color/m4399_ope_color_ffffff" android:gravity="center" android:id="@id/m4399_ope_share_item_tv_label" android:background="@drawable/m4399_ope_share_label_bg" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="11.0dip" android:text="@string/m4399_ope_share_channel_label" android:layout_alignRight="@id/m4399_ope_share_item_iv" />
+</RelativeLayout>

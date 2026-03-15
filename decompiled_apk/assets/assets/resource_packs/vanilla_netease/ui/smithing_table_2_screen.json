@@ -1,0 +1,338 @@
+{
+    "namespace": "smithing_table_2",
+    "smithing_icon": {
+        "type": "image",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "texture": "textures/Quasar/container/smithing",
+        "size": [
+            30,
+            30
+        ],
+        "layer": 1,
+        "color": "$primary"
+    },
+    "arrow_icon": {
+        "type": "image",
+        "texture": "textures/Quasar/container/arrow",
+        "size": [
+            18,
+            18
+        ],
+        "color": "$primary"
+    },
+    "cross_out_icon_image": {
+        "type": "image",
+        "texture": "textures/Quasar/cross",
+        "color": "$error",
+        "size": [
+            14,
+            14
+        ]
+    },
+    "template_overlay_image": {
+        "type": "image",
+        "texture": "textures/Quasar/direction/right",
+        "alpha": 0.12,
+        "color": "$primary"
+    },
+    "input_overlay_image": {
+        "type": "image",
+        "texture": "$fk",
+        "alpha": 0.12,
+        "color": "$primary"
+    },
+    "material_overlay_image": {
+        "type": "image",
+        "texture": "textures/Quasar/direction/left",
+        "alpha": 0.12,
+        "color": "$primary"
+    },
+    "smithing_table_output_slot_button@common.container_slot_button_prototype": {
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_select",
+                "to_button_id": "button.smithing_table_take_all_place_all",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.menu_ok",
+                "to_button_id": "button.smithing_table_take_all_place_all",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.controller_back",
+                "to_button_id": "button.smithing_table_take_all_place_all",
+                "mapping_type": "pressed",
+                "ignored": "(not $is_ps4)"
+            },
+            {
+                "from_button_id": "button.menu_secondary_select",
+                "to_button_id": "button.smithing_table_take_half_place_one",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.controller_select",
+                "to_button_id": "button.smithing_table_take_half_place_one",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.menu_auto_place",
+                "to_button_id": "button.container_auto_place",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.controller_secondary_select",
+                "to_button_id": "button.container_auto_place",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.menu_inventory_drop",
+                "to_button_id": "button.drop_one",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.menu_inventory_drop_all",
+                "to_button_id": "button.drop_all",
+                "mapping_type": "pressed"
+            },
+            {
+                "from_button_id": "button.menu_select",
+                "to_button_id": "button.smithing_table_coalesce_stack",
+                "mapping_type": "double_pressed"
+            },
+            {
+                "from_button_id": "button.menu_ok",
+                "to_button_id": "button.smithing_table_coalesce_stack",
+                "mapping_type": "double_pressed"
+            },
+            {
+                "to_button_id": "button.container_slot_hovered",
+                "mapping_type": "pressed"
+            }
+        ],
+        "controls": [
+            {
+                "bg": {
+                    "type": "image",
+                    "texture": "$16x",
+                    "alpha": 0.12,
+                    "color": "$primary"
+                }
+            }
+        ]
+    },
+    "result_item_preview": {
+        "ignored": true
+    },
+    "toolbar_anchor": {
+        "ignored": true
+    },
+    "smithing_material_image_ingot@smithing_table_2.smithing_image": {
+        "texture": "textures/Quasar/container/ingot",
+        "color": "white"
+    },
+    "smithing_table_panel": {
+        "type": "panel",
+        "controls": [
+            {
+                "container_gamepad_helpers@common.container_gamepad_helpers": {}
+            },
+            {
+                "selected_item_details_factory@common.selected_item_details_factory": {}
+            },
+            {
+                "item_lock_notification_factory@common.item_lock_notification_factory": {}
+            },
+            {
+                "root_panel@common.root_panel": {
+                    "layer": 1,
+                    "$container_size": [ 176, 166 ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.container_entrance_size_pop",
+                  "@common.container_entrance_size_push",
+                  "@common.container_exit_size_pop",
+                  "@common.container_exit_size_push"
+                ],
+                    "controls": [
+                        {
+                            "common_panel@common.common_panel": {
+                                "$show_close_button": true
+                            }
+                        },
+                        {
+                            "smithing_table_screen_inventory": {
+                                "type": "panel",
+                                "clips_children": true,
+                                "layer": 2,
+                                "controls": [
+                                    {
+                                        "top_half_panel@smithing_table_2.top_half_panel": {}
+                                    },
+                                    {
+                                        "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {}
+                                    },
+                                    {
+                                        "hotbar_grid@common.hotbar_grid_template_modified": {}
+                                    },
+                                    {
+                                        "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {}
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "inventory_selected_icon_button@common.inventory_selected_icon_button": {}
+                        },
+                        {
+                            "toolbar_anchor@smithing_table_2.toolbar_anchor": {}
+                        },
+                        {
+                            "gamepad_cursor@common.gamepad_cursor_button": {}
+                        }
+                    ]
+                }
+            },
+            {
+                "flying_item_renderer@common.flying_item_renderer": {
+                    "layer": 15
+                }
+            },
+            {
+                "equipment_preview@smithing_table_2.result_item_preview_inner": {
+                    "size": [
+                        "20%",
+                        "100%"
+                    ],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [
+                        "10%",
+                        0
+                    ]
+                }
+            }
+        ]
+    },
+    "recipe_grid": {
+        "type": "grid",
+        "size": [
+            "100%",
+            "90%"
+        ],
+        "anchor_from": "left_middle",
+        "anchor_to": "left_middle",
+        "grid_dimensions": [
+            9,
+            1
+        ],
+        "controls": [
+            {
+                "template_item_slot@smithing_table_2.smithing_table_item_slot": {
+                    "grid_position": [
+                        0,
+                        0
+                    ],
+                    "$item_collection_name": "smithing_table_template_items",
+                    "$cell_overlay_ref": "smithing_table_2.template_overlay_image",
+                    "$focus_id_binding_type": "none",
+                    "$focus_id": "smithing_table_template",
+                    "$focus_override_right_binding_type": "none",
+                    "$focus_override_right": "smithing_table_input"
+                }
+            },
+            {
+                "input_item_slot@smithing_table_2.smithing_table_item_slot": {
+                    "grid_position": [
+                        1,
+                        0
+                    ],
+                    "$item_collection_name": "smithing_table_input_items",
+                    "$cell_overlay_ref": "smithing_table_2.input_overlay_image",
+                    "$focus_id_binding_type": "none",
+                    "$focus_id": "smithing_table_input",
+                    "$focus_override_right_binding_type": "none",
+                    "$focus_override_right": "smithing_table_material",
+                    "$focus_override_left_binding_type": "none",
+                    "$focus_override_left": "smithing_table_template"
+                }
+            },
+            {
+                "material_item_slot@smithing_table_2.smithing_table_item_slot": {
+                    "grid_position": [
+                        2,
+                        0
+                    ],
+                    "$item_collection_name": "smithing_table_material_items",
+                    "$cell_overlay_ref": "smithing_table_2.material_overlay_image",
+                    "$focus_id_binding_type": "none",
+                    "$focus_id": "smithing_table_material",
+                    "$focus_override_left_binding_type": "none",
+                    "$focus_override_left": "smithing_table_input",
+                    "$focus_override_right_binding_type": "none",
+                    "$focus_override_right": "smithing_table_result"
+                }
+            },
+            {
+                "yields": {
+                    "type": "panel",
+                    "grid_position": [
+                        3,
+                        0
+                    ],
+                    "size": [
+                        "22.2%",
+                        "100%"
+                    ],
+                    "controls": [
+                        {
+                            "arrow_icon@smithing_table_2.arrow_icon": {}
+                        },
+                        {
+                            "cross_out_icon@smithing_table_2.cross_out_icon_button": {
+                                "layer": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "result_item_slot_modified": {
+                    "type": "panel",
+                    "grid_position": [
+                        5,
+                        0
+                    ],
+                    "size": [
+                        "36px",
+                        "36px"
+                    ],
+                    "$cell_image_size": [ "100%", "100%" ],
+                    "$item_renderer_size": [ "100%", "100%" ],
+                    "$item_renderer_panel_size": [ "100%", "100%" ],
+                    //"offset": [ 0, -48 ],
+                    "$item_collection_name": "smithing_table_result_items",
+                    "$button_ref": "smithing_table_2.smithing_table_output_slot_button",
+                    "$focus_id_binding_type": "none",
+                    "$focus_id": "smithing_table_result",
+                    "$focus_override_left_binding_type": "none",
+                    "$focus_override_left": "smithing_table_material",
+                    "controls": [
+                        {
+                            "container_item@common.container_item": {
+                                "anchor_to": "center",
+                                "anchor_from": "center",
+                                "$hover_text_max_width": 500,
+                                "size": [
+                                    "100%",
+                                    "100%"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

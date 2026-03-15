@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:sand"}],"input":"minecraft:sand","description":{"identifier":"minecraft:furnace_sand"},"output":"minecraft:glass","tags":["furnace"]},"format_version":"1.20.10"}

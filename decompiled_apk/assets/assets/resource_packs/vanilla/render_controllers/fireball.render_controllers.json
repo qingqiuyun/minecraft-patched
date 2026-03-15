@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.fireball":{"materials":[{"*":"Material.default"}],"on_fire_color":{"a":0.0,"r":0.0,"g":0.0,"b":0.0},"geometry":"Geometry.default","textures":["Texture.default"],"filter_lighting":true}},"format_version":"1.10.0"}

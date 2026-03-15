@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"beehive","count":1},"key":{"A":{"item":"crimson_planks"},"B":{"item":"honeycomb"}},"description":{"identifier":"minecraft:beehive_from_crimson_planks"},"pattern":["AAA","BBB","AAA"],"tags":["crafting_table"]},"format_version":"1.16"}

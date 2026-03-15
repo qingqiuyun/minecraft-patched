@@ -1,0 +1,1 @@
+{"minecraft:spawn_rules":{"conditions":[{"minecraft:weight":{"default":10},"minecraft:herd":{"max_size":4,"min_size":2},"minecraft:height_filter":{"max":30,"min":-64},"minecraft:spawns_underground":{},"minecraft:spawns_underwater":{}}],"description":{"population_control":"animal","identifier":"minecraft:glow_squid"}},"format_version":"1.8.0"}

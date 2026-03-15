@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:netherstar"}],"result":{"item":"minecraft:beacon"},"key":{"O":{"item":"minecraft:obsidian"},"G":{"item":"minecraft:glass"},"S":{"item":"minecraft:netherstar"}},"description":{"identifier":"minecraft:beacon"},"pattern":["GGG","GSG","OOO"],"tags":["crafting_table"]},"format_version":"1.20.10"}

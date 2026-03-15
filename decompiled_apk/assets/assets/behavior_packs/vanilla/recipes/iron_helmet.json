@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:iron_ingot"}],"result":{"item":"minecraft:iron_helmet"},"key":{"X":{"item":"minecraft:iron_ingot"}},"description":{"identifier":"minecraft:iron_helmet"},"pattern":["XXX","X X"],"tags":["crafting_table"]},"format_version":"1.20.10"}

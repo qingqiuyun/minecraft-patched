@@ -1,0 +1,210 @@
+{
+  "namespace": "controls_section",
+  "binding_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "textures/Quasar/direction/right",
+    "$hover_button_texture": "textures/Quasar/direction/right",
+    "$pressed_button_texture": "textures/Quasar/direction/right",
+    "$locked_button_texture": "textures/Quasar/direction/right"
+  },
+  "reset_binding_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "textures/Quasar/direction/left",
+    "$hover_button_texture": "textures/Quasar/direction/left",
+    "$pressed_button_texture": "textures/Quasar/direction/left",
+    "$locked_button_texture": "textures/Quasar/direction/left"
+  },
+  "image_binding_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "textures/Quasar/direction/right",
+    "$hover_button_texture": "textures/Quasar/direction/right",
+    "$pressed_button_texture": "textures/Quasar/direction/right",
+    "$locked_button_texture": "textures/Quasar/direction/right"
+  },
+  "keymapping_item": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "layer": 1,
+    "size": [
+      "100%",
+      35
+    ],
+    "controls": [
+      {
+        "option_info_label_control": {
+          "type": "image",
+          "texture": "$16x",
+          "size": [
+            "fill",
+            "100% - 4px"
+          ],
+          "color": "$background",
+          "alpha": 0.4,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "controls": [
+            {
+              "keymapping_label_control": {
+                "type": "label",
+                "color": "$onprimarycontainer",
+                "size": [
+                  "100% - 4px",
+                  "default"
+                ],
+                "text_alignment": "center",
+                "font_type": "$global_font_type",
+                "layer": 1,
+                "text": "#keymapping_name",
+                "bindings": [
+                  {
+                    "binding_name": "#keymapping_name",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$keymapping_collection"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "keymapping_button_0@binding_button": {
+          "$button_tts_header": "#audible_keymapping_name",
+          "size": [
+            "40% + 1px",
+            "100% - 4px"
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "$keymapping_collection"
+            },
+            {
+              "binding_name": "#audible_keymapping_name",
+              "binding_type": "collection",
+              "binding_collection_name": "$keymapping_collection"
+            }
+          ]
+        }
+      },
+      {
+        "keymapping_button_1@controls_section.reset_binding_button": {
+          "size": [
+            "15% + 1px",
+            "100% - 4px"
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "$pressed_button_name": "button.reset_binding",
+          "$button_tts_header": "accessibility.settings.reset",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "$keymapping_collection"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "gamepad_mapping_item": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "layer": 1,
+    "size": [
+      "100%",
+      35
+    ],
+    "controls": [
+      {
+        "option_info_label_control": {
+          "type": "image",
+          "texture": "$16x",
+          "color": "$background",
+          "alpha": 1,
+          "alpha": 0.4,
+          "size": [
+            "fill",
+            "100% - 4px"
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "controls": [
+            {
+              "keymapping_label_control": {
+                "type": "label",
+                "color": "$onprimarycontainer",
+                "font_type": "$global_font_type",
+                "size": [
+                  "100% - 4px",
+                  "default"
+                ],
+                "text_alignment": "center",
+                "layer": 1,
+                "text": "#keymapping_name",
+                "bindings": [
+                  {
+                    "binding_name": "#keymapping_name",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$keymapping_collection"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "keymapping_button_0@controls_section.image_binding_button": {
+          "$button_tts_header": "#audible_keymapping_name",
+          "size": [
+            "20% + 1px",
+            "100% - 4px"
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "$keymapping_collection"
+            },
+            {
+              "binding_name": "#audible_keymapping_name",
+              "binding_type": "collection",
+              "binding_collection_name": "$keymapping_collection"
+            }
+          ]
+        }
+      },
+      {
+        "keymapping_button_1@controls_section.reset_binding_button": {
+          "size": [
+            "15% + 1px",
+            "100% - 4px"
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "$pressed_button_name": "button.reset_binding",
+          "$button_tts_header": "accessibility.settings.reset",
+          "bindings": [
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "$keymapping_collection"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

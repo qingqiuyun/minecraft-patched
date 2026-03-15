@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:lapis_ore"}],"input":"minecraft:lapis_ore","description":{"identifier":"minecraft:furnace_lapis_ore"},"output":"minecraft:dye:4","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:warped_fungus"}],"result":{"item":"minecraft:warped_fungus_on_a_stick"},"key":{"#":{"item":"minecraft:fishing_rod"},"X":{"item":"minecraft:warped_fungus"}},"description":{"identifier":"minecraft:warped_fungus_on_a_stick"},"pattern":["# "," X"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:netherite_ingot"}],"result":{"item":"minecraft:lodestone","count":1},"key":{"S":{"item":"minecraft:stonebrick:3"},"#":{"item":"minecraft:netherite_ingot"}},"description":{"identifier":"minecraft:lodestone"},"pattern":["SSS","S#S","SSS"],"tags":["crafting_table"]},"format_version":"1.20.10"}

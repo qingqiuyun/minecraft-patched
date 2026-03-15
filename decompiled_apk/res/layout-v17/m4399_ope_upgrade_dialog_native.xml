@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.support.component.FiniteLinearLayout android:orientation="vertical" android:layout_width="@dimen/m4399_dialog_width_medium" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/m4399_font_14" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/m4399.Dialog.Title" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m4399_ope_id_ll_box_upgrade" android:background="@drawable/m4399_ope_ripple_borderless_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" android:layout_marginTop="@dimen/m4399_dialog_spacing_v" android:layout_marginRight="@dimen/m4399_dialog_spacing_h">
+            <TextView android:textSize="12.0sp" android:textColor="@color/m4399_ope_color_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_upd_check_use_game_box" />
+            <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/m4399_ope_arrow_right_green" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/m4399_ope_upd_scroll_bar_bg" android:scrollbarStyle="outsideOverlay" android:id="@id/m4399_id_finite_dialog_content_container" android:paddingLeft="@dimen/m4399_dialog_spacing_h" android:paddingRight="@dimen/m4399_dialog_spacing_h" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/m4399_dialog_finite_content_mt" android:layout_weight="1.0" android:fadeScrollbars="true">
+        <TextView android:textSize="@dimen/m4399_font_14" android:textColor="@color/m4399_ope_color_666666" android:id="@id/m4399_ope_upd_tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_dialog_spacing_h" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/m4399_dialog_spacing_h">
+        <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_upd_ll_container_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/m4399_font_12" android:textColor="@color/m4399_ope_color_666666" android:id="@id/m4399_ope_upd_tv_state" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/m4399_ope_upd_fmt_apk_size" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/m4399_font_12" android:textColor="@color/m4399_ope_color_666666" android:id="@id/m4399_ope_upd_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_upd_ll_container_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/m4399_font_12" android:textColor="@color/m4399_color_primary" android:id="@id/m4399_ope_upd_tv_speed" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/m4399_font_12" android:textColor="@color/m4399_color_primary" android:id="@id/m4399_ope_upd_tv_completed_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/m4399_ope_upd_progress" android:background="@drawable/m4399_ope_upd_prg_outside_bg" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" android:max="100" android:progressDrawable="@drawable/m4399_ope_upd_prg_inside_bg" style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+</cn.m4399.operate.support.component.FiniteLinearLayout>

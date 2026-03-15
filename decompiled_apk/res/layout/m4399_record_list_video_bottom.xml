@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_record_video_rl_edit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_divider_h" />
+    <CheckBox android:textColor="@android:color/black" android:id="@id/m4399_record_video_all_select" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_spacing_16" android:button="@drawable/m4399_ope_pay_channel_radio" android:text="@string/m4399_record_video_all_select" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/m4399_ope_color_333333" android:id="@id/m4399_ope_record_video_delete" android:background="@drawable/m4399_ope_shape_r4_gray" android:paddingLeft="@dimen/m4399_spacing_16" android:paddingTop="7.0dip" android:paddingRight="@dimen/m4399_spacing_16" android:paddingBottom="7.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/m4399_record_video_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

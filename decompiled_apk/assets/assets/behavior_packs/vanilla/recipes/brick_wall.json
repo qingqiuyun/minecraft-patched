@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:brick_block"}],"result":{"item":"minecraft:cobblestone_wall","data":6,"count":6},"key":{"#":{"item":"minecraft:brick_block"}},"description":{"identifier":"minecraft:brick_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

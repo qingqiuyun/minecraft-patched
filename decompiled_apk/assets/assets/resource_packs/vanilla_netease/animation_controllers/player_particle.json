@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player_particle": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"v.esp = 0;"
+					],
+					"transitions": [
+						{
+							"setup": "q.distance_from_camera>1&&(v.hurt_time??0)"
+						}
+					]
+				},
+				"setup": {
+					"on_entry": [
+						"v.esp = q.life_time;"
+					],
+					"particle_effects": [
+						{
+							"effect": "vector_0",
+							"locator": "body"
+						}
+					],
+					"transitions": [
+						{
+							"default": "variable.hurt_time = 0; return q.life_time-v.esp>=2.00f;"
+						}
+					]
+				}
+			}
+		}
+	}
+}

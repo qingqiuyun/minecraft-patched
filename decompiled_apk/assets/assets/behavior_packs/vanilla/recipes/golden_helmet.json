@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gold_ingot"}],"result":{"item":"minecraft:golden_helmet"},"key":{"X":{"item":"minecraft:gold_ingot"}},"description":{"identifier":"minecraft:golden_helmet"},"pattern":["XXX","X X"],"tags":["crafting_table"]},"format_version":"1.20.10"}

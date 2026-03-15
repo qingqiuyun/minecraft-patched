@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="icon">Nacho/icon.png</item>
+    <item type="drawable" name="microsoft">Nacho/neko.png</item>
+    <item type="drawable" name="mojang">Nacho/neko.png</item>
+    <item type="drawable" name="netease_mpay__assistant_background">Nacho/neko.png</item>
+    <item type="drawable" name="pinpaiye">Nacho/neko.png</item>
+    <item type="drawable" name="staticview0">Nacho/neko.png</item>
+    <item type="drawable" name="staticview1">Nacho/neko.png</item>
+    <item type="drawable" name="to1splash">Nacho/to1splash.png</item>
+    <item type="drawable" name="splash_screen_logo">Nacho/neko.png</item>
+</resources>

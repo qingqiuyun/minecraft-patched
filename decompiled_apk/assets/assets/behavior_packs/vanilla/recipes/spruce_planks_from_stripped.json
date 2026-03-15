@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:stripped_spruce_log"}],"pattern":["#"],"result":{"item":"minecraft:planks","data":1,"count":4},"key":{"#":{"item":"minecraft:stripped_spruce_log"}},"description":{"identifier":"minecraft:spruce_planks_from_stripped"},"group":"planks","tags":["crafting_table"]},"format_version":"1.20.10"}

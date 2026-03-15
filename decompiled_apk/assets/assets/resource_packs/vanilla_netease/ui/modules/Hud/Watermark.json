@@ -1,0 +1,27 @@
+{
+    "namespace": "Quasar/Watermark",
+    "watermark": {
+        "type": "image",
+        "texture": "textures/Quasar/watermark/default",
+        "size": [
+            100,
+            56.25
+        ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "layer": 1,
+        "color": "$primary",
+        "ignored": "($fancy_coordinate)",
+        "controls": [
+            {
+                "glow": {
+                    "type": "image",
+                    "texture": "textures/Quasar/watermark/glow",
+                    "color": "$onprimarycontainer",
+                    "alpha": 1,
+                    "layer": -1
+                }
+            }
+        ]
+    }
+}

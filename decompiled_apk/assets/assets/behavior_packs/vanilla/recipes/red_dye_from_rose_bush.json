@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:rose_bush"}],"result":{"item":"minecraft:dye","data":1,"count":2},"ingredients":[{"item":"minecraft:rose_bush"}],"description":{"identifier":"minecraft:red_dye_from_rose_bush"},"group":"red_dye","tags":["crafting_table"]},"format_version":"1.20.10"}

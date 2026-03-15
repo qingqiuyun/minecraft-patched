@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:ancient_debris"}],"input":"minecraft:ancient_debris","description":{"identifier":"minecraft:furnace_ancient_debris"},"output":"minecraft:netherite_scrap","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

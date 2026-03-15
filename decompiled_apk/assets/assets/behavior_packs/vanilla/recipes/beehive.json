@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:honeycomb"}],"priority":-1,"result":[{"item":"minecraft:beehive"}],"key":{"#":{"tag":"minecraft:planks"},"o":{"item":"minecraft:honeycomb"}},"description":{"identifier":"minecraft:beehive"},"pattern":["###","ooo","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

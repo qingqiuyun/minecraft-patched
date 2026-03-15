@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"bookshelf","count":1},"key":{"A":{"item":"warped_planks"},"B":{"item":"book"}},"description":{"identifier":"minecraft:bookshelf_from_warped_planks"},"pattern":["AAA","BBB","AAA"],"tags":["crafting_table"]},"format_version":"1.16"}

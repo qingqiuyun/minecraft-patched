@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:turtle_helmet","input":"minecraft:potion_type:awkward","description":{"identifier":"minecraft:brew_awkward_turtle_helmet"},"output":"minecraft:potion_type:turtle_master","tags":["brewing_stand"]},"format_version":"1.20.10"}

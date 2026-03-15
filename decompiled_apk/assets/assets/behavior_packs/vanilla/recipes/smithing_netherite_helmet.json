@@ -1,0 +1,1 @@
+{"minecraft:recipe_smithing_transform":{"template":"minecraft:netherite_upgrade_smithing_template","base":"minecraft:diamond_helmet","result":"minecraft:netherite_helmet","description":{"identifier":"minecraft:smithing_netherite_helmet"},"addition":"minecraft:netherite_ingot","tags":["smithing_table"]},"format_version":"1.20.10"}

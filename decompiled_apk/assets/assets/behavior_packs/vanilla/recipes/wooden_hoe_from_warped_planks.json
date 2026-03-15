@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"wooden_hoe","count":1},"key":{"A":{"item":"warped_planks"},"B":{"item":"stick"}},"description":{"identifier":"minecraft:wooden_hoe_from_warped_planks"},"pattern":["AA "," B "," B "],"tags":["crafting_table"]},"format_version":"1.16"}

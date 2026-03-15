@@ -1,0 +1,2 @@
+{"sparkler.active":{"category":"sparkler","sounds":[{"name":"sounds/random/fuse","load_on_low_memory":true}]},"lt.reaction.fire":{"sounds":[{"volume":2.0,"name":"sounds/fire/fire"}]},"elemconstruct.active":{"sounds":["sounds/block/elemconstruct_active"]},"balloon.pop":{"category":"neutral","sounds":[{"volume":10.0,"name":"sounds/mob/balloon_pop"}]}}
+//CelsiusRP 11-20

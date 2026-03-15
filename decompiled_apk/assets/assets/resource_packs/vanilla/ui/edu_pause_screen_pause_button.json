@@ -1,0 +1,1 @@
+{"namespace":"edu_quit_button","quit_button@pause.quit_button":{"$button_text":"menu.quit.edu","size":["100%",18],"$focus_id":"quit_button","focus_change_right":"profile_button"}}

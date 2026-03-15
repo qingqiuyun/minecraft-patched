@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:honey_bottle",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/diamond_sword",
+        "diamond": "textures/items/diamond_sword",
+        "gold": "textures/items/gold_sword",
+        "iron": "textures/items/iron_sword",
+        "netherite": "textures/items/netherite_sword",
+        "stone": "textures/items/stone_sword",
+        "wood": "textures/items/wood_sword",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.sword"
+      },
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}

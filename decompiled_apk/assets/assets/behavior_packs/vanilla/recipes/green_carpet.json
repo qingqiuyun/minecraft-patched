@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:wool","data":13}],"pattern":["##"],"result":{"item":"minecraft:carpet","data":13,"count":3},"key":{"#":{"item":"minecraft:wool","data":13}},"description":{"identifier":"minecraft:green_carpet"},"group":"carpet","tags":["crafting_table"]},"format_version":"1.20.10"}

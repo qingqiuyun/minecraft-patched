@@ -1,0 +1,286 @@
+{
+  "namespace": "Quasar/Panel/Menu_trigger",
+  "menu_toggle@pause.playerlist_toggle": {
+    "$toggle_name": "Quasar/Panel/Menu_trigger.menu_toggle",
+    "$toggle_view_binding_name": "Quasar/Panel/Menu_trigger.menu_toggle",
+    "$button_icon": "textures/Quasar/icon",
+    "propagate_alpha": true,
+    "alpha": 0,
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "offset": [
+      10,
+      -10
+    ],
+    "$button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.panel_pressed",
+        "mapping_type": "pressed"
+      }
+    ]
+  },
+  "test_menu": {
+    "type": "label",
+    "text": "OMG THIS WORKS",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "Quasar/Panel/Menu_trigger.menu_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "fluent_splitview_base": {
+    //Windows Fluent UI 的splitview在紧凑状态下一共可以分为三部分
+    //分别是图标，左侧指示条以及背景
+    //背景是左侧小圆角，右侧直角且与面板衔接
+    //透明度目测0.1~0.3
+    //颜色为白色（深色模式下也是如此）
+    //左侧指示条为系统强调色（深色模式下也是如此）
+    //本来带有部分圆角
+    //但是由于mc自身贴图问题导致难以实现
+    //所以选择使用无圆角的$fk
+    //左侧紧贴背景（并未超出）
+    //图标颜色为白色
+    //大小目测为60~75%
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "$tab_background_alpha|default": 0.12,
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "texture": "textures/Quasar/Panel/panel_tab",
+          "alpha": "$tab_background_alpha",
+          "controls": [
+            {
+              "left_indicator": {
+                "type": "image",
+                "texture": "$fk",
+                "color": "$primary",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "size": "$left_indicator_size_anim"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "icon": {
+          "type": "image",
+          "texture": "$tab_icon",
+          "size": [
+            "60%",
+            "60%"
+          ]
+        }
+      }
+    ]
+  },
+  "left_indicator_size_check_anim": {
+    "anim_type": "size",
+    "easing": "out_cubic",
+    "duration": 0.2,
+    "from": [
+      1,
+      0
+    ],
+    "to": [
+      1,
+      "60%"
+    ]
+  },
+  "left_indicator_size_uncheck_anim": {
+    "anim_type": "size",
+    "easing": "out_cubic",
+    "duration": 0.2,
+    "to": [
+      1,
+      0
+    ],
+    "from": [
+      1,
+      "60%"
+    ]
+  },
+  "fluent_splitview_check@Quasar/Panel/Menu_trigger.fluent_splitview_base": {
+    "$left_indicator_size_anim": "@Quasar/Panel/Menu_trigger.left_indicator_size_check_anim"
+  },
+  "fluent_splitview_uncheck@Quasar/Panel/Menu_trigger.fluent_splitview_base": {
+    "$left_indicator_size_anim": "@Quasar/Panel/Menu_trigger.left_indicator_size_uncheck_anim",
+    "$tab_background_alpha": 0
+  },
+  "base_tab@Quasar_toggle.animated_toggle_new": {
+    "size": [
+      "100%",
+      "100%x"
+    ],
+    "$checked_controls": "Quasar/Panel/Menu_trigger.fluent_splitview_check",
+    "$unchecked_controls": "Quasar/Panel/Menu_trigger.fluent_splitview_uncheck",
+    "$radio_toggle_group": true,
+    "$toggle_name": "navigation_tab",
+    "$toggle_group_default_selected": 1,
+    "$tab_icon": "textures/Quasar/icon",
+    "$toggle_view_binding_name": "Quasar/Panel/Menu_trigger.base_tab"
+  },
+  "function_toggle_layout": {
+    "type": "image",
+    "texture": "$16x",
+    "size": [ "100%", 30 ],
+    "color": "$background",
+    "$title_color|default": "$primary",
+    "$switch_controls|default": "Quasar_toggle.switch_check",
+    // "$is_checked|default": true,
+    // "$radio_bg_anim|default": ["@Quasar/Panel/Menu_trigger.radio_group_bg_size_check_anim"],
+    // "$requires_radio_group|default": false,
+    "controls": [
+      {
+        "icon_bg": {
+          "type": "image",
+          "texture": "$16x",
+          "color": "$primary",
+          "alpha": 0.16,
+          "size": [
+            "100%y",
+            "83.33333%"
+          ],
+          "offset": [
+            2.5,
+            0
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "controls": [
+            {
+              "icon": {
+                "type": "image",
+                "texture": "$function_icon",
+                "color": "$primary"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label_title": {
+          "type": "label",
+          "text": "$title_text",
+          "color": "$title_color",
+          "font_scale_factor": 1.4,
+          "font_type": "$global_font_type",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            "default",
+            "default"
+          ],
+          "layer": 5,
+          "offset": [
+            30,
+            2.5
+          ]
+        }
+      },
+      {
+        "label_desc": {
+          "type": "label",
+          "text": "$describe_text",
+          "color": "$secondary",
+          "font_type": "$global_font_type",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "size": [
+            "default",
+            "default"
+          ],
+          "layer": 5,
+          "offset": [
+            30,
+            -2.5
+          ]
+        }
+      },
+      {
+        "switch@$switch_controls": {          
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [
+            -5,
+            0
+          ],
+          "size": [ 32, 16 ]
+        }
+      }
+      // {
+      //   "radio_group_bg": {
+      //     "type": "image",
+      //     "texture": "$16x",
+      //     "color": "$secondary",
+      //     "layer": -5,
+      //     "$size": [ "100%", "200%" ],
+      //     "anchor_from": "top_middle",
+      //     "anchor_to": "top_middle",
+      //     "anims": "$radio_bg_anim",
+      //     "ignored": "(not $requires_radio_group)"
+      //     // "anims": [
+      //     //   "@Quasar/Panel/Menu_trigger.radio_group_bg_size_check_anim",
+      //     //   "@Quasar/Panel/Menu_trigger.radio_group_bg_size_uncheck_anim"
+      //     // ]
+      //     // "ignored": "(not $is_checked)"
+      //   }
+      // }
+    ]
+  },
+  "radio_group_bg_size_check_anim": {
+    "anim_type": "size",
+    "easing": "out_cubic",
+    "duration": 0.2,
+    "from": [ "100%", "100%" ],
+    "to": "$size"
+  },
+  "radio_group_bg_size_uncheck_anim": {
+    "anim_type": "size",
+    "easing": "out_cubic",
+    "duration": 0.2,
+    "to": [ "100%", "100%" ],
+    "from": "$size"
+  },
+  "function_toggle_check@Quasar/Panel/Menu_trigger.function_toggle_layout": {},
+  "function_toggle_uncheck@Quasar/Panel/Menu_trigger.function_toggle_layout": {
+    "$title_color": "$onsecondarycontainer",
+    "$switch_controls": "Quasar_toggle.switch_uncheck"
+    // "$is_checked": false,
+    // "$radio_bg_anim": ["@Quasar/Panel/Menu_trigger.radio_group_bg_size_uncheck_anim"]
+  },
+  "function_toggle@Quasar_toggle.animated_toggle_new": {
+    "size": [
+      "100%",
+      30
+    ],
+    "$title_text": "Function_name",
+    "$describe_text": "Function Describe",
+    "$function_icon": "textures/Quasar/icon",
+    // "$requires_radio_group": true,
+    "$checked_controls": "Quasar/Panel/Menu_trigger.function_toggle_check",
+    "$unchecked_controls": "Quasar/Panel/Menu_trigger.function_toggle_uncheck",
+    "$tab_icon": "textures/Quasar/icon",
+    "$toggle_view_binding_name": "test_function_toggle",
+    "$toggle_name": "test_function_toggle"
+  },
+  "uncheck_size": {
+    "type": "panel",
+    "size": [ "100%", "30px" ],
+    "$uncheck": true
+  },
+  "check_size": {
+    "type": "panel",
+    "size": [ "100%", "60px" ],
+    "$check": true
+  }
+}

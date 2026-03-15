@@ -1,0 +1,9 @@
+{
+    "materials": {
+        "version": "1.0.0",
+        "selection_box": {
+            "depthFunc": "Always",
+            "fragmentShader": "shaders/selection_box.fragment"
+        }
+    }
+}

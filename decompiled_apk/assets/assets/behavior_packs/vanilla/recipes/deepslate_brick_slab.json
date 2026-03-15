@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:deepslate_bricks"}],"result":{"count":6,"item":"minecraft:deepslate_brick_slab"},"priority":1,"key":{"#":{"item":"minecraft:deepslate_bricks"}},"description":{"identifier":"minecraft:deepslate_brick_slab"},"pattern":["###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

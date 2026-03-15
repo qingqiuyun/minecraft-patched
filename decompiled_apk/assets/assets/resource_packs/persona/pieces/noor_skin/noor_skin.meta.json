@@ -1,0 +1,1 @@
+{"piece_name":"noor_skin","piece_type":"persona_skin","piece_id":"79100fd3-53a3-21e3-40d1-ff5447a8afd3","texture_sources":[{"texture":"noor_skin_head.png","use_face_uv":true,"tint_map":"noor_skin_head_tintmap.tga"},{"tint_map":"noor_skin_body_tintmap.tga","texture":"noor_skin_body.png"}],"tint_base_color":{"r_color":"#ff7f4a"}}

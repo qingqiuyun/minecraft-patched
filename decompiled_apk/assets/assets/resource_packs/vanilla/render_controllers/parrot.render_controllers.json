@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.parrot":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","arrays":{"textures":{"Array.skins":["Texture.red_blue","Texture.blue","Texture.green","Texture.yellow_blue","Texture.grey"]}},"textures":["Array.skins[query.variant]"]}},"format_version":"1.8.0"}

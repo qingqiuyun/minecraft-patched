@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/m4399_font_16" android:textColor="@color/m4399_ope_color_primary" android:gravity="center" android:id="@id/m4399_id_tv_positive" android:background="@drawable/m4399_ope_support_dialog_btn_positive_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/m4399_id_iv_cpb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,1 @@
+{"minecraft:ore_feature":{"replace_rules":[{"places_block":"minecraft:emerald_ore","may_replace":[{"name":"minecraft:stone"}]},{"places_block":"minecraft:deepslate_emerald_ore","may_replace":[{"name":"minecraft:deepslate"}]}],"description":{"identifier":"minecraft:emerald_ore_feature"},"count":3},"format_version":"1.13.0"}

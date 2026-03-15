@@ -1,0 +1,48 @@
+{
+	"format_version": "1.10",
+	"render_controllers": {
+		"controller.render.item_enchanted": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"texture.invisible"
+			]
+		},
+		"controller.render.item_offhand": {
+			"geometry": "geometry.item_offhand",
+			"materials": [
+				{
+					"*": "variable.is_enchanted ? material.enchanted : material.default"
+				}
+			],
+			"textures": [
+				"texture.default",
+				"texture.enchanted"
+			]
+		},
+		"controller.render.apple_golden_item_enchanted": {
+			"geometry": "geometry.sword_enchanted",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"texture.apple_golden"
+			],
+			"overlay_color": {
+				"r": "v.r_color",
+				"g": "v.g_color",
+				"b": "v.b_color",
+				"a": "v.a_color"
+			},
+			"is_hurt_color": {
+				"a": 0
+			}
+		}
+	}
+}

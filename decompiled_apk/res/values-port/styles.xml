@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="m4399.Operate.Anim.New.UserCenterDialog" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/m4399_ope_dialog_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/m4399_ope_dialog_slide_out_bottom</item>
+    </style>
+    <style name="m4399.Operate.Orientation.Adaptive" parent="@style/m4399">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="m4399.Operate.Pay.Status.Bottom" parent="@style/m4399">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/m4399_ope_pay_page_mx</item>
+        <item name="android:paddingRight">@dimen/m4399_ope_pay_page_mx</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="m4399.Operate.Pay.Status.Desc" parent="@style/m4399">
+        <item name="android:background">@drawable/m4399_ope_pay_shape_panel</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="m4399.Pay.Card.Commodity" parent="@style/m4399">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#a3000000</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="m4399.Pay.Channel.Container" parent="@style/m4399.Operate.Orientation.Adaptive" />
+</resources>

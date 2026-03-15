@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:compass"}],"result":{"item":"minecraft:emptymap","data":2},"description":{"identifier":"minecraft:cartography_table_locator_map"},"ingredients":[{"item":"minecraft:paper"},{"item":"minecraft:compass"}],"tags":["cartography_table"]},"format_version":"1.20.10"}

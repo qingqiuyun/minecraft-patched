@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:planks","data":5}],"pattern":["###","###"," | "],"result":{"item":"minecraft:darkoak_sign","count":3},"key":{"#":{"item":"minecraft:planks","data":5},"|":{"item":"minecraft:stick"}},"description":{"identifier":"minecraft:sign_darkoak"},"group":"sign","tags":["crafting_table"]},"format_version":"1.20.10"}

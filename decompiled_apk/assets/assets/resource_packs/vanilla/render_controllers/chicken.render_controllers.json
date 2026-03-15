@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.chicken":{"materials":[{"*":"Material.default"},{"leg*":"Material.legs"}],"geometry":"geometry.default","textures":["texture.default"]}},"format_version":"1.8.0"}

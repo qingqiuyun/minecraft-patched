@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"saturation_modifier":"poor","nutrition":2},"minecraft:use_duration":32},"description":{"identifier":"minecraft:cookie"}},"format_version":"1.10"}

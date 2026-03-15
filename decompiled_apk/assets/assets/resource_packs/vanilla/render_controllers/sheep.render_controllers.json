@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.sheep":{"materials":[{"*":"Material.default"}],"geometry":"Array.geos[query.is_sheared]","arrays":{"geometries":{"Array.geos":["Geometry.default","Geometry.sheared"]}},"textures":["Texture.default"]}},"format_version":"1.8.0"}

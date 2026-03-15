@@ -1,0 +1,477 @@
+{
+  "namespace": "enchanting",
+  "lapis_image": {
+    "texture": "textures/Quasar/container/lapis",
+    "controls": [
+      {
+        "lapis_background@enchanting.lapis_background": {
+          "layer": -2
+        }
+      }
+    ]
+  },
+  "dust": {
+    "type": "label",
+    "text": "$dust_text",
+    "color": "$dust_color",
+    "font_type": "$global_font_type",
+    "size": [
+      "default",
+      "default"
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "bindings": [
+      {
+        "binding_name": "$visibility_binding_name",
+        "binding_name_override": "#visible",
+        "binding_collection_name": "#enchant_buttons",
+        "binding_type": "collection"
+      }
+    ]
+  },
+  "dust_selectable@dust": {
+    "$dust_color": "green",
+    "$visibility_binding_name": "#selectable_dust_is_visible"
+  },
+  "dust_unselectable@dust": {
+    "$dust_color": "red",
+    "$visibility_binding_name": "#unselectable_dust_is_visible"
+  },
+  "dust_grid_item": {
+    "type": "panel",
+    "controls": [
+      {
+        "dust_selectable@dust_selectable": {}
+      },
+      {
+        "dust_unselectable@dust_unselectable": {}
+      }
+    ]
+  },
+  "dust_grid": {
+    "type": "grid",
+    "grid_dimensions": [
+      1,
+      3
+    ],
+    "layer": 5,
+    "collection_name": "#enchant_buttons",
+    "controls": [
+      {
+        "1@dust_grid_item": {
+          "grid_position": [
+            0,
+            0
+          ],
+          "$dust_text": "lapis cost: 1"
+        }
+      },
+      {
+        "2@dust_grid_item": {
+          "grid_position": [
+            0,
+            1
+          ],
+          "$dust_text": "lapis cost: 2"
+        }
+      },
+      {
+        "3@dust_grid_item": {
+          "grid_position": [
+            0,
+            2
+          ],
+          "$dust_text": "lapis cost: 3"
+        }
+      }
+    ]
+  },
+  "background_with_hover_text@enchanting.enchanting_image": {
+    "controls": [
+      {
+        "hover_text@common.hover_text_modified": {
+          "bindings": [
+            {
+              "binding_name": "#hover_text",
+              "binding_collection_name": "#enchant_buttons",
+              "binding_type": "collection"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "dark_background@enchanting.enchanting_image": {
+    "texture": "textures/Quasar/empty"
+  },
+  "dark_background_with_hover_text@enchanting.background_with_hover_text": {
+    "texture": "textures/Quasar/empty"
+  },
+  "active_background@enchanting.enchanting_image": {
+    "texture": "$bg",
+    "color": "$secondary",
+    "alpha": 0.6
+  },
+  "active_background_with_hover_text@enchanting.background_with_hover_text": {
+    "texture": "$bg",
+    "alpha": 0.8
+  },
+  "enchant_runes": {
+    "type": "label",
+    "color": "white",
+    "shadow": false,
+    "layer": 1,
+    "anchor_to": "left_middle",
+    "anchor_from": "left_middle",
+    "text": "#text",
+    "offset": [
+      60,
+      0
+    ],
+    "size": [
+      100,
+      16
+    ],
+    "font_type": "$global_font_type",
+    "font_scale_factor": 1.2,
+    "bindings": [
+      {
+        "binding_name": "#cost",
+        "binding_collection_name": "#enchant_buttons",
+        "binding_type": "collection"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "('Level :' + #cost)",
+        "target_property_name": "#text"
+      }
+    ]
+  },
+  "enchant_cost": {
+    "ignored": true
+  },
+  "enchanting_panel_top_half": {
+    "type": "panel",
+    "$container_size": [
+      "100%",
+      "50% - 12px"
+    ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@common.container_entrance_size_pop",
+      "@common.container_entrance_size_push",
+      "@common.container_exit_size_pop",
+      "@common.container_exit_size_push"
+    ],
+    "clips_children": true,
+    "offset": [
+      0,
+      7
+    ],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "enchanting_label@enchanting.enchanting_label": {
+          "offset": [
+            3,
+            5
+          ]
+        }
+      },
+      {
+        "enchanting_book_panel": {
+          "type": "panel",
+          "offset": [
+            13,
+            -12
+          ],
+          "size": [
+            40,
+            40
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "controls": [
+            {
+              "enchanting_book": {
+                "type": "custom",
+                "renderer": "enchanting_book_renderer",
+                "layer": 13,
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.screen_exit_size_animation_push",
+                  "@common.screen_exit_size_animation_pop",
+                  "@common.screen_entrance_size_animation_push",
+                  "@common.screen_entrance_size_animation_pop"
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#open",
+                    "binding_type": "global"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item_grid_bg": {
+          "type": "grid",
+          "grid_dimensions": [
+            1,
+            1
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [
+            13,
+            14
+          ],
+          "size": [
+            18,
+            18
+          ],
+          "collection_name": "enchanting_input_items",
+          "controls": [
+            {
+              "item_slot@enchanting.item_bg": {
+                "grid_position": [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "lapis_grid_bg": {
+          "type": "grid",
+          "grid_dimensions": [
+            1,
+            1
+          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [
+            33,
+            14
+          ],
+          "size": [
+            18,
+            18
+          ],
+          "collection_name": "enchanting_lapis_items",
+          "controls": [
+            {
+              "lapis_render@common.container_item": {
+                "$cell_overlay_ref": "enchanting.lapis_image",
+                "$item_collection_name": "enchanting_lapis_items",
+                "$focus_id_binding_type": "none",
+                "$focus_id": "enchanting_lapis",
+                "grid_position": [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "grid_panel@Quasar_Background.16x_primary_03": {
+          "type": "image",
+          "color": "$secondary",
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "offset": [
+            -8,
+            2
+          ],
+          "$container_size": [
+            "65%-8px",
+            "80%+4px"
+          ],
+          "animation_reset_name": "screen_animation_reset",
+          "anims": [
+            "@common.container_entrance_size_pop",
+            "@common.container_entrance_size_push",
+            "@common.container_exit_size_pop",
+            "@common.container_exit_size_push"
+          ],
+          "controls": [
+            {
+              "indent@common.cell_image": {
+                "size": [
+                  "100%+2px",
+                  "100%+2px"
+                ]
+              }
+            },
+            {
+              "dust_panel@enchanting.dust_grid": {
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "offset": [
+                  4,
+                  -1.5
+                ],
+                "layer": 10
+              }
+            },
+            {
+              "enchantments_grids": {
+                "type": "grid",
+                "collection_name": "#enchant_buttons",
+                "size": [
+                  "100%-4px",
+                  "100%-4px"
+                ],
+                "layer": 2,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "grid_dimensions": [
+                  1,
+                  3
+                ],
+                "controls": [
+                  {
+                    "1@enchanting.enchant_button_panel": {
+                      "grid_position": [
+                        0,
+                        0
+                      ],
+                      "$bg": "textures/Quasar/direction/down"
+                    }
+                  },
+                  {
+                    "2@enchanting.enchant_button_panel": {
+                      "$bg": "$fk",
+                      "grid_position": [
+                        0,
+                        1
+                      ]
+                    }
+                  },
+                  {
+                    "3@enchanting.enchant_button_panel": {
+                      "$bg": "textures/Quasar/direction/up",
+                      "grid_position": [
+                        0,
+                        2
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "item_slot_render@common.container_item": {
+    "$item_collection_name": "enchanting_input_items"
+  },
+  "lapis_background": {
+    "type": "image",
+    "texture": "$16x",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "alpha": 0.12,
+    "color": "$primary"
+  },
+  "item_bg@enchanting.lapis_background": {
+    "type": "image",
+    "controls": [
+      {
+        "item_slot_render@enchanting.item_slot_render": {}
+      }
+    ]
+  },
+  "enchanting_panel": {
+    "type": "panel",
+    "$use_compact_close_button": true,
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {}
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {}
+      },
+      {
+        "item_lock_notification_factory@common.item_lock_notification_factory": {}
+      },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "controls": [
+            {
+              "common_panel@common.common_panel": {
+                "$container_size": [
+                  176,
+                  166
+                ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.container_entrance_size_pop",
+                  "@common.container_entrance_size_push",
+                  "@common.container_exit_size_pop",
+                  "@common.container_exit_size_push"
+                ]
+              }
+            },
+            {
+              "enchanting_screen_inventory": {
+                "type": "panel",
+                "layer": 5,
+                "clips_children": true,
+                "$container_size": [
+                  176,
+                  166
+                ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.container_entrance_size_pop",
+                  "@common.container_entrance_size_push",
+                  "@common.container_exit_size_pop",
+                  "@common.container_exit_size_push"
+                ],
+                "controls": [
+                  {
+                    "enchanting_panel_top_half@enchanting.enchanting_panel_top_half": {}
+                  },
+                  {
+                    "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {}
+                  },
+                  {
+                    "hotbar_grid@common.hotbar_grid_template_modified": {}
+                  },
+                  {
+                    "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {}
+                  }
+                ]
+              }
+            },
+            {
+              "inventory_selected_icon_button@common.inventory_selected_icon_button": {}
+            },
+            {
+              "gamepad_cursor@common.gamepad_cursor_button": {}
+            }
+          ]
+        }
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 15
+        }
+      }
+    ]
+  }
+}

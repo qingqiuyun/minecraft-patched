@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="abc_ic_menu_copy_mtrl_am_alpha">Nacho/neko.png</item>
+    <item type="drawable" name="abc_ic_menu_cut_mtrl_alpha">Nacho/neko.png</item>
+    <item type="drawable" name="abc_spinner_mtrl_am_alpha">Nacho/neko.png</item>
+    <item type="drawable" name="ntunisdk_back">Nacho/neko.png</item>
+    <item type="drawable" name="ntunisdk_popup_image_arrow">Nacho/neko.png</item>
+</resources>

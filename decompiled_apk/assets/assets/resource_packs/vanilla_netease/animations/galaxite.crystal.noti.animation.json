@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.galaxite.crystal.noti": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": ["-query.camera_rotation(0)", "180 + query.body_y_rotation+query.camera_rotation(1)", 0],
+					"position": [0, "query.camera_distance_range_lerp(1, 4.1)*2.8+30", 0],
+					"scale": "query.camera_distance_range_lerp(1, 2.1)*0.7+query.camera_distance_range_lerp(8, 150)*10"
+				}
+			}
+		}
+	}
+}

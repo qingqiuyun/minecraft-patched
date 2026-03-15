@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.vex":{"materials":[{"*":"Material.default"}],"ignore_lighting":true,"arrays":{"textures":{"Array.textures":["Texture.default","Texture.charging"]}},"geometry":"Geometry.default","textures":["Array.textures[query.is_charging]"]}},"format_version":"1.8.0"}

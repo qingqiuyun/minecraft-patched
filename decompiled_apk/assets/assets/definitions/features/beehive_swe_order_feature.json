@@ -1,0 +1,1 @@
+{"minecraft:aggregate_feature":{"description":{"identifier":"minecraft:beehive_swe_order_feature"},"features":["minecraft:beehive_south_feature","minecraft:beehive_west_feature","minecraft:beehive_east_feature"],"early_out":"first_success"},"format_version":"1.14.0"}

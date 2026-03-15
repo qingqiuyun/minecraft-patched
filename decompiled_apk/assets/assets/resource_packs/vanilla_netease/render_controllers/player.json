@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","render_controllers":{"controller.render.player.third_person":{"geometry":"geometry.default","materials":[{"*":"material.default"}],"textures":["Texture.default"],"is_hurt_color":{"r":0.8,"g":"v.hurt_time = q.life_time; return 0.0;","b":0,"a":0.625}}}}

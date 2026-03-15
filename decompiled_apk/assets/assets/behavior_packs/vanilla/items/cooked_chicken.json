@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"saturation_modifier":"normal","nutrition":6},"minecraft:use_duration":32},"description":{"identifier":"minecraft:cooked_chicken"}},"format_version":"1.10"}

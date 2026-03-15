@@ -1,0 +1,34 @@
+{
+  "namespace": "Quasar/Panel/Paperdoll",
+  "paperdoll": {
+    "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "paperdoll_panel_toggle",
+        "target_property_name": "#visible",
+        "source_property_name": "#toggle_state"
+      }
+    ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": [100,100],
+    "offset": [ 40,5],
+    "controls": [
+      {
+        "hud_player": {
+          "type": "custom",
+          "renderer": "hud_player_renderer",
+          "layer": 1,
+          "animation_reset_name": "screen_animation_reset",
+          "anims": [
+            "@common.screen_exit_size_animation_push",
+            "@common.screen_exit_size_animation_pop",
+            "@common.screen_entrance_size_animation_push",
+            "@common.screen_entrance_size_animation_pop"
+          ]
+        }
+      }
+    ]
+  }
+}

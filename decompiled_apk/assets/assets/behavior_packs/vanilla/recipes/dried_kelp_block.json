@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:dried_kelp"}],"result":{"item":"minecraft:dried_kelp_block"},"key":{"#":{"item":"minecraft:dried_kelp"}},"description":{"identifier":"minecraft:dried_kelp_block"},"pattern":["###","###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

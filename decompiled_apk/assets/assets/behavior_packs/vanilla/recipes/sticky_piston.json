@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:slime_ball"}],"result":{"item":"minecraft:sticky_piston","data":1},"key":{"S":{"item":"minecraft:slime_ball"},"P":{"item":"minecraft:piston"}},"description":{"identifier":"minecraft:sticky_piston"},"pattern":["S","P"],"tags":["crafting_table"]},"format_version":"1.20.10"}

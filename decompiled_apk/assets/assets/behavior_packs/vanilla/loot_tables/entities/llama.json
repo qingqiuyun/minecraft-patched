@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"name":"minecraft:leather","type":"item","functions":[{"function":"set_count","count":{"max":2,"min":0}},{"function":"looting_enchant","count":{"max":1,"min":0}}]}],"rolls":1}]}

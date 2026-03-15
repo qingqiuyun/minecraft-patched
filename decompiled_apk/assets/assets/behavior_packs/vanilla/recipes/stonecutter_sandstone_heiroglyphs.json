@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:sandstone","data":0}],"priority":0,"result":{"item":"minecraft:sandstone","data":1,"count":1},"description":{"identifier":"minecraft:stonecutter_sandstone_heiroglyphs"},"ingredients":[{"item":"minecraft:sandstone","data":0}],"tags":["stonecutter"]},"format_version":"1.20.10"}

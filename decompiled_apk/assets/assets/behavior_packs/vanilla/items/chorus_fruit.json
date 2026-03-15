@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"on_use_range":[8,8,8],"saturation_modifier":"low","cooldown_time":20,"on_use_action":"chorus_teleport","can_always_eat":true,"cooldown_type":"chorusfruit","nutrition":4},"minecraft:use_duration":32},"description":{"identifier":"minecraft:chorus_fruit"}},"format_version":"1.10"}

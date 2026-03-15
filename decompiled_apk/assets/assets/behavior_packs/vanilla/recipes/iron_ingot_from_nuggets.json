@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:iron_nugget"}],"pattern":["###","###","###"],"result":{"item":"minecraft:iron_ingot"},"key":{"#":{"item":"minecraft:iron_nugget"}},"description":{"identifier":"minecraft:iron_ingot_from_nuggets"},"group":"iron_ingot","tags":["crafting_table"]},"format_version":"1.20.10"}

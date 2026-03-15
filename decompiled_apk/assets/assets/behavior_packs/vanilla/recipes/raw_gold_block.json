@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:raw_gold"}],"result":{"item":"minecraft:raw_gold_block"},"key":{"#":{"item":"minecraft:raw_gold"}},"description":{"identifier":"minecraft:raw_gold_block"},"pattern":["###","###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

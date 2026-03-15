@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:redstone","input":"minecraft:potion_type:weakness","description":{"identifier":"minecraft:brew_weakness_redstone"},"output":"minecraft:potion_type:long_weakness","tags":["brewing_stand"]},"format_version":"1.20.10"}

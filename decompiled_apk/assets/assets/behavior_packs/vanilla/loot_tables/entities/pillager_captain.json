@@ -1,0 +1,1 @@
+{"pools":[{"conditions":[{"condition":"killed_by_player"}],"entries":[{"functions":[{"function":"set_count","count":1},{"function":"set_ominous_bottle_amplifier","amplifier":{"max":4,"min":0}}],"name":"minecraft:ominous_bottle","type":"item","weight":1}],"rolls":1}]}

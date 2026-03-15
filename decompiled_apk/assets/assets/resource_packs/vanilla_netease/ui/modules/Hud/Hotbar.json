@@ -1,0 +1,381 @@
+{
+  "namespace": "Quasar/Hotbar",
+  "gui_hotbar_grid_item": {
+    "type": "panel",
+    "layer": 1,
+    "size": [
+      22,
+      22
+    ],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "$stack_count_required|default": true,
+    "$durability_bar_required|default": true,
+    "$storage_bar_required|default": true,
+    "controls": [
+      {
+        "hotbar_selected_indicator": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "hotbar_select_factory",
+            "control_name": "Quasar/Hotbar.hotbar_slot_selected_image",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_name": "#slot_selected",
+              "binding_type": "collection",
+              "binding_collection_name": "$hotbar_collection_name"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * #slot_selected)",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      },
+      {
+        "hotbar_deselected_indicator": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "hotbar_deselect_factory",
+            "control_name": "Quasar/Hotbar.hotbar_slot_not_selected_image",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_name": "#slot_selected",
+              "binding_type": "collection",
+              "binding_collection_name": "$hotbar_collection_name"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * (not #slot_selected))",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      },
+      {
+        "hotbar_renderer@Quasar/Hotbar.hotbar_renderer": {}
+      },
+      {
+        "hotbar_parent": {
+          "type": "panel",
+          "size": [
+            18,
+            18
+          ],
+          "controls": [
+            {
+              "item_icon@hud.hotbar_hud_item_icon": {
+                "layer": 15,
+                "size": [
+                  16,
+                  16
+                ]
+              }
+            },
+            {
+              "item_count@common.stack_count_label": {
+                "layer": 16,
+                "$item_collection_name": "$hotbar_collection_name",
+                "$stack_count_collection_name": "$hotbar_collection_name",
+                "bindings": [
+                  {
+                    "binding_name": "#inventory_stack_count",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$stack_count_collection_name"
+                  },
+                  {
+                    "binding_name": "#stack_count_visible",
+                    "binding_name_override": "#visible",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$stack_count_collection_name"
+                  }
+                ]
+              }
+            },
+            {
+              "hotbar_hint@edu_common.hotbar_hint": {}
+            },
+            {
+              "item_dura@hud.item_durability": {
+                "layer": 17
+              }
+            },
+            {
+              "item_store@hud.item_storage": {
+                "layer": 18
+              }
+            },
+            {
+              "container_item_lock_overlay@hud.container_item_lock_overlay": {
+                "layer": 19,
+                "size": [
+                  16,
+                  16
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "cooldown_renderer@hud.cooldown_renderer": {
+          "layer": 10
+        }
+      },
+      {
+        "hotbar_slot_button@hud.gui_hotbar_slot_button_prototype": {}
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#hotbar_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "hotbar_renderer": {
+    "type": "custom",
+    "$hotbar_renderer_size|default": [ 20, 22 ],
+    "renderer": "hotbar_renderer",
+    "size": "$hotbar_renderer_size",
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_collection_name": "$hotbar_collection_name",
+        "binding_type": "collection_details"
+      },
+      {
+        "binding_name": "#hotbar_visible",
+        "binding_name_override": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "hotbar_slot_image@Quasar/Hotbar.hotbar_slot_image": {
+          "$hotbar_slot_image_size": "$hotbar_renderer_size"
+        }
+      }
+    ]
+  },
+  "hotbar_slot_image": {
+    "$hotbar_slot_image_size|default": [ 20, 22 ],
+    "type": "image",
+    "offset": [ 0, 0 ],
+    "size": "$hotbar_slot_image_size",
+    "layer": 1,
+    "alpha": 0
+  },
+  "hotbar_slot_selected_image": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$onsecondary",
+    "alpha": 1,
+    "anims": [
+      "@Quasar/Hotbar.select_size"
+    ],
+    "layer": 8,
+    "bindings": [
+      {
+        "binding_name": "#slot_selected",
+        "binding_name_override": "#visible",
+        "binding_type": "collection",
+        "binding_collection_name": "$hotbar_collection_name"
+      }
+    ]
+  },
+  "select_size": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      16,
+      16
+    ],
+    "to": [
+      22,
+      22
+    ]
+  },
+  "hotbar_slot_not_selected_image": {
+    "type": "image",
+    "texture": "textures/Quasar/circle",
+    "color": "$onsecondary",
+    "alpha": 1,
+    "anims": [
+      "@Quasar/Hotbar.not_select_size"
+    ],
+    "layer": 8,
+    "bindings": [
+      {
+        "binding_name": "(not #slot_selected)",
+        "binding_name_override": "#visible",
+        "binding_type": "collection",
+        "binding_collection_name": "$hotbar_collection_name"
+      }
+    ]
+  },
+  "not_select_size": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      0,
+      0
+    ],
+    "from": [
+      22,
+      22
+    ]
+  },
+  "hotbar_grid_item": {
+    "type": "grid",
+    "$hotbar_collection_name|default": "hotbar_items",
+    "grid_item_template": "Quasar/Hotbar.gui_hotbar_grid_item",
+    "grid_dimension_binding": "#hotbar_grid_dimensions",
+    "collection_name": "$hotbar_collection_name",
+    "bindings": [
+      {
+        "binding_name": "#hotbar_grid_dimensions",
+        "binding_type": "global"
+      }
+    ]
+  },
+  "hotbar_grid_panel": {
+    "type": "panel",
+    "layer":1,
+    "size": [ 198, 22 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "gui_hotbar_grid_item@Quasar/Hotbar.hotbar_grid_item": {}
+      }
+    ]
+  },
+  "hotbar_grid": {
+    "type": "image",
+    "texture": "$16x",
+    "alpha": "$global_alpha",
+    "color": "$background",
+    // "offset": [ 0, 18 ],
+    "layer": -1,
+    "size": [ 198, 22 ],
+    "controls": [
+      {
+        "hotbar_grid_item@Quasar/Hotbar.hotbar_grid_panel": {}
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "size": [ "100%+20px", "100%+20px" ]
+        }
+      },
+      {
+        "progress_indicator": {
+          "type": "image",
+          "texture": "$4x",
+          "color": "$background",
+          "alpha": 0.2,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "size": [
+            "95%",
+            4
+          ],
+          "offset": [
+            0,
+            -5
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "exp_panel_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "filled": {
+                "type": "image",
+                "texture": "$4x",
+                "alpha": 1,
+                "color": "$onsecondary",
+                "size": [ "100%", "100%" ],
+                "clip_direction": "left",
+                "clip_pixelperfect": false,
+                "bindings": [
+                  {
+                    "binding_name": "#exp_progress",
+                    "binding_name_override": "#clip_ratio",
+                    "binding_type": "global"
+                  }
+                ]
+              }
+            },
+            {
+              "progress_text_label": {
+                "type": "label",
+                "shadow": false,
+                "layer": 2048,
+                "text": "#text",
+                "color": "$onprimarycontainer",
+                "font_type": "$global_font_type",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "bindings": [
+                  {
+                    "binding_name": "#level_number",
+                    "binding_type": "global",
+                    "binding_name_override": "#text"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hotbar_elipses_button@common.button": {
+    "$pressed_button_name": "button.hotbar_inventory_button",
+    "$hotbar_elipses_button_size|default": [ 22, "100%" ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": "$hotbar_elipses_button_size",
+    "layer": 3,
+    "focus_enabled": false,
+    "default_focus_precedence": 10,
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#inventory_touch_button",
+        "binding_name_override": "#visible",
+        "binding_type": "global"
+      }
+    ],
+    "controls": [
+      {
+        "elipses": {
+          "type": "image",
+          "texture": "textures/Quasar/container/inventory",
+          "color": "$primary"
+        }
+      }
+    ]
+  }
+}

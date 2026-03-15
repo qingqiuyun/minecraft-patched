@@ -1,0 +1,411 @@
+{
+  "namespace": "Quasar/Center_element",
+  "hotbar_grid_panel": {
+    "type": "panel",
+    "layer": 1,
+    "size": [
+      198,
+      22
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "gui_hotbar_grid_item@Quasar/Hotbar.hotbar_grid_item": {}
+      }
+    ]
+  },
+  "hotbar_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      22
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [
+            22,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#hotbar_elipses_right_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "hotbar_elipses_panel_left@Quasar/Hotbar.hotbar_elipses_button": {
+          "bindings": [
+            {
+              "binding_name": "#hotbar_elipses_left_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "hotbar_grid@Quasar/Center_element.hotbar_grid_panel": {}
+      },
+      {
+        "hotbar_elipses_panel_right@Quasar/Hotbar.hotbar_elipses_button": {
+          "bindings": [
+            {
+              "binding_name": "#hotbar_elipses_right_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [
+            22,
+            0
+          ],
+          "bindings": [
+            {
+              "binding_name": "#hotbar_elipses_left_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "progress_indicator": {
+    "type": "panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": [
+      "95%",
+      4
+    ],
+    "offset": [
+      0,
+      -23
+    ],
+    "controls": [
+      {
+        "filled": {
+          "type": "image",
+          "texture": "$4x",
+          "alpha": 0.4,
+          "clip_direction": "left",
+          "clip_pixelperfect": false,
+          "bindings": [
+            {
+              "binding_name": "#exp_progress",
+              "binding_name_override": "#clip_ratio",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "progress_text_label": {
+          "type": "label",
+          "shadow": false,
+          "layer": 2048,
+          "text": "#level_number",
+          "color": [
+            0.251,
+            0.627,
+            0.439
+          ],
+          "font_type": "$global_font_type",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "bindings": [
+            {
+              "binding_name": "#level_number",
+              "binding_type": "global"
+            },
+            {
+              "binding_name": "#level_number_visible",
+              "binding_type": "global",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "main": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$secondary",
+    "alpha": "$global_alpha",
+    "variables": [
+      {
+        "requires": "($inventory_hud)",
+        "$size": [
+          198,
+          94
+        ]
+      }
+    ],
+    "size": "$size",
+    "$size|default": [
+      198,
+      28
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "progress_indicator@Quasar/Center_element.progress_indicator": {}
+      },
+      {
+        "hotbar@Quasar/Center_element.hotbar_panel": {}
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "color": "$shadow",
+          "layer": -1024,
+          "alpha": "$global_bloom_alpha",
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      },
+      {
+        "Inventory@Quasar/Inventory.inventory_display_base": {
+          "alpha": 0,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "ignored": "(not $inventory_hud)"
+        }
+      }
+    ]
+  },
+  "renders": {
+    "type": "panel",
+    "size": [
+      198,
+      3
+    ],
+    "controls": [
+      {
+        "heart_renderer": {
+          "type": "custom",
+          "size": [
+            1,
+            1
+          ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "renderer": "heart_renderer",
+          "layer": 1,
+          "bindings": [
+            {
+              "binding_name": "#show_survival_ui",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "horse_heart_renderer_survival": {
+          "type": "custom",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "size": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            -15
+          ],
+          "renderer": "horse_heart_renderer",
+          "layer": 1,
+          "bindings": [
+            {
+              "binding_name": "#creative_horse_hearts",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "horse_heart_renderer_creative": {
+          "type": "custom",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "size": [
+            1,
+            1
+          ],
+          "offset": [
+            0,
+            -9
+          ],
+          "renderer": "horse_heart_renderer",
+          "layer": 1,
+          "bindings": [
+            {
+              "binding_name": "#survival_horse_hearts",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "hunger_renderer": {
+          "type": "custom",
+          "size": [
+            1,
+            1
+          ],
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "renderer": "hunger_renderer",
+          "layer": 1,
+          "bindings": [
+            {
+              "binding_name": "#show_survival_ui",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "armor_renderer": {
+          "type": "custom",
+          "size": [
+            1,
+            1
+          ],
+          "renderer": "armor_renderer",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "layer": 1,
+          "bindings": [
+            {
+              "binding_name": "#is_armor_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "bubbles_renderer": {
+          "type": "custom",
+          "size": [
+            1,
+            1
+          ],
+          "offset": [
+            80,
+            -18
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "renderer": "bubbles_renderer",
+          "layer": 1
+        }
+      }
+    ]
+  },
+  "stack": {
+    "type": "stack_panel",
+    "size": [
+      198,
+      "100%c"
+    ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@Quasar/Center_element.hotbar_offset_anim_pop",
+      "@Quasar/Center_element.hotbar_offset_anim_push"
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "orientation": "vertical",
+    "controls": [
+      {
+        "renders@Quasar/Center_element.renders": {}
+      },
+      {
+        "padding": {
+          "type": "panel",
+          "size": [
+            198,
+            13
+          ],
+          "controls": [
+            {
+              "horse_jump_rend": {
+                "anchor_from": "bottom_middle",
+                "type": "custom",
+                "renderer": "horse_jump_renderer",
+                "anchor_to": "bottom_middle",
+                "size": [
+                  "100%",
+                  5
+                ],
+                "layer": 7,
+                "controls": [
+                  {
+                    "dash_rend": {
+                      "anchor_from": "center",
+                      "type": "custom",
+                      "renderer": "dash_renderer",
+                      "anchor_to": "center",
+                      "size": [
+                        "100%",
+                        5
+                      ],
+                      "layer": 7
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "main@Quasar/Center_element.main": {}
+      }
+    ]
+  },
+  "hotbar_offset_anim_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      0,
+      500
+    ],
+    "to": [ 0, 0 ],
+		"play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+  "hotbar_offset_anim_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      0,
+      500
+    ],
+    "from": [ 0, 0 ],
+		"play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+}

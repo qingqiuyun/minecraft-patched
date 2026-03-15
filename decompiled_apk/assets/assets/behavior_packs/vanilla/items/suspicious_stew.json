@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:use_duration":32,"minecraft:food":{"using_converts_to":"bowl","saturation_modifier":"normal","can_always_eat":true,"on_use_action":"suspicious_stew_effect","nutrition":6},"minecraft:max_stack_size":1},"description":{"identifier":"minecraft:suspicious_stew"}},"format_version":"1.10"}

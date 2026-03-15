@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:redstone"}],"result":{"item":"minecraft:redstone_block"},"key":{"#":{"item":"minecraft:redstone"}},"description":{"identifier":"minecraft:redstone_block"},"pattern":["###","###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

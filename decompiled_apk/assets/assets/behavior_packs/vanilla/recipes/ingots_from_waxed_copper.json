@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:waxed_copper"}],"priority":1,"result":{"item":"minecraft:copper_ingot","count":9},"key":{"A":{"item":"minecraft:waxed_copper"}},"description":{"identifier":"minecraft:ingots_from_waxed_copper"},"pattern":["A"],"tags":["crafting_table"]},"format_version":"1.20.10"}

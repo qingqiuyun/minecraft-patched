@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:string"},{"item":"minecraft:honeycomb"}],"priority":1,"pattern":["S","H"],"result":{"item":"minecraft:candle","count":1},"key":{"S":{"item":"minecraft:string"},"H":{"item":"minecraft:honeycomb"}},"description":{"identifier":"minecraft:candle"},"group":"candle","tags":["crafting_table"]},"format_version":"1.20.10"}

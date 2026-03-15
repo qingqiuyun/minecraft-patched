@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"result":{"item":"minecraft:torch","count":4},"key":{"#":{"item":"minecraft:stick"},"X":{"item":"minecraft:coal"}},"description":{"identifier":"minecraft:Torch_recipeId"},"pattern":["X","#"],"tags":["crafting_table"]},"format_version":"1.12"}

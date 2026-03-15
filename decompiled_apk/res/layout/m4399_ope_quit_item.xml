@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/m4399_ope_quit_dialog_rl_bg" android:background="@drawable/m4399_ope_shape_quit_dialog_item_strategy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/m4399_spacing_25" android:layout_marginTop="@dimen/m4399_spacing_8" android:layout_marginRight="@dimen/m4399_spacing_25">
+        <ImageView android:id="@id/m4399_ope_quit_item_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_spacing_12" android:src="@drawable/m4399_ope_quit_dialog_item_strategy" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/m4399_ope_id_tv_quit_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_spacing_12" android:layout_marginTop="6.0dip" android:text="@string/m4399_ope_game_box_game_forum" android:layout_toRightOf="@id/m4399_ope_quit_item_iv" />
+        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/m4399_ope_id_tv_quit_content" android:paddingRight="42.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_spacing_12" android:layout_marginBottom="6.0dip" android:text="找一起玩的好朋友找一起玩的好朋友有找一起玩的好朋友找一起玩的好朋友有" android:lines="1" android:layout_toRightOf="@id/m4399_ope_quit_item_iv" android:layout_below="@id/m4399_ope_id_tv_quit_ic" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/m4399_ope_quit_dialog_item_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@drawable/m4399_ope_ripple_quit_item_bg" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    </RelativeLayout>
+</LinearLayout>

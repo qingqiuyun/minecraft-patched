@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:bamboo_planks"}],"result":{"item":"minecraft:bamboo_fence","count":3},"key":{"#":{"item":"minecraft:stick"},"W":{"item":"minecraft:bamboo_planks"}},"description":{"identifier":"minecraft:bamboo_fence"},"pattern":["W#W","W#W"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:gravel"}],"result":{"item":"minecraft:dirt","data":1,"count":4},"key":{"G":{"item":"minecraft:gravel"},"D":{"item":"minecraft:dirt","data":0}},"description":{"identifier":"minecraft:coarse_dirt"},"pattern":["DG","GD"],"tags":["crafting_table"]},"format_version":"1.20.10"}

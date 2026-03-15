@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"bowl","count":4},"key":{"A":{"item":"warped_planks"}},"description":{"identifier":"minecraft:bowl_from_warped_planks"},"pattern":["A A"," A "],"tags":["crafting_table"]},"format_version":"1.16"}

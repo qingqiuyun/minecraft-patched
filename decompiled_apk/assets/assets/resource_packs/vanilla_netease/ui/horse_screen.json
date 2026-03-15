@@ -1,0 +1,246 @@
+{
+  "namespace": "horse",
+  "renderer_bg": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$primary",
+    "alpha": 0.12,
+    "$container_size": [ 54, 54 ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@common.container_entrance_size_pop",
+      "@common.container_entrance_size_push",
+      "@common.container_exit_size_pop",
+      "@common.container_exit_size_push"
+    ]
+  },
+  "inv_bg_panel": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "$container_size": [
+      90,
+      54
+    ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@common.container_entrance_size_pop",
+      "@common.container_entrance_size_push",
+      "@common.container_exit_size_pop",
+      "@common.container_exit_size_push"
+    ],
+    "layer": 2,
+    "controls": [
+      {
+        "cell_image@common.cell_image": {
+          "color": "$primary",
+          "texture": "$16x",
+          "alpha": 0.12
+        }
+      }
+    ]
+  },
+  "equip_panel": {
+    "type": "panel",
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "equip_grid@horse.equip_grid": {}
+      },
+      {
+        "equip_bg": {
+          "type": "image",
+          "texture": "$16x",
+          "size": [
+            16,
+            32
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$primary",
+          "offset": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "equip_bg_only": {
+          "type": "image",
+          "texture": "$16x",
+          "size": [
+            16,
+            16
+          ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "color": "$primary",
+          "offset": [
+            1,
+            1
+          ],
+          "bindings": [
+            {
+              "binding_name": "#has_only_armor_slot",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "saddle@horse.saddle_image": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            1,
+            1
+          ],
+          "layer": 4,
+          "bindings": [
+            {
+              "binding_name": "#has_saddle_slot",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "armor_0@horse.armor_image": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            1,
+            1
+          ],
+          "layer": 4,
+          "bindings": [
+            {
+              "binding_name": "#has_only_armor_slot",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "carpet_0@horse.carpet_image": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            1,
+            1
+          ],
+          "layer": 4,
+          "bindings": [
+            {
+              "binding_name": "#has_only_carpet_slot",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "armor_1@horse.armor_image": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            1,
+            19
+          ],
+          "layer": 4,
+          "bindings": [
+            {
+              "binding_name": "#has_armor_and_saddle_slot",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "carpet_1@horse.carpet_image": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [
+            16,
+            16
+          ],
+          "offset": [
+            1,
+            19
+          ],
+          "layer": 4,
+          "bindings": [
+            {
+              "binding_name": "#has_carpet_and_saddle_slot",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "horse_panel": {
+    "type": "panel",
+    "controls": [
+      { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+      { "selected_item_details_factory@common.selected_item_details_factory": {} },
+      { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "animation_reset_name": "screen_animation_reset",
+          "anims": [
+            "@common.container_entrance_size_pop",
+            "@common.container_entrance_size_push",
+            "@common.container_exit_size_pop",
+            "@common.container_exit_size_push"
+          ],
+          "$container_size": [ 176, 166 ],
+          "controls": [
+            {
+              "common_panel@common.common_panel": {
+                "$use_compact_close_button": true
+              }
+            },
+
+            { "horse_section_label@horse.horse_label": {} },
+            { "inv_panel@horse.inv_panel": {} },
+
+            {
+              "equipment@horse.equip_panel": {
+                "offset": [ 7, 18 ]
+              }
+            },
+            {
+              "renderer@horse.horse_renderer": {
+                "offset": [ 25, 18 ]
+              }
+            },
+
+            { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {} },
+            { "hotbar_grid_template@common.hotbar_grid_template_modified": {} },
+            { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+            { "gamepad_cursor@common.gamepad_cursor_button": {} }
+          ]
+        }
+      },
+      { "flying_item_renderer@common.flying_item_renderer": { "layer": 10 } }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:waxed_copper"}],"result":{"item":"minecraft:waxed_copper_door","count":3},"key":{"#":{"item":"minecraft:waxed_copper"}},"description":{"identifier":"minecraft:crafting_table_waxed_copper_door"},"pattern":["##","##","##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

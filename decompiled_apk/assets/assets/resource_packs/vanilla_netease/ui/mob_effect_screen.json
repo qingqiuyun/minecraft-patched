@@ -1,0 +1,280 @@
+{
+  "namespace": "mob_effect",
+  "mob_effect_screen@common.base_screen": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_continue",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.mobeffects",
+        "to_button_id": "button.menu_continue",
+        "mapping_type": "global"
+      }
+    ],
+    "close_on_player_hurt": false,
+    "$screen_content": "mob_effect.mob_effect_content"
+  },
+  "mob_effect_content": {
+    "type": "panel",
+    "controls": [
+      { "bg@mob_effect.main_background": { } },
+      { "close@mob_effect.close_button": { } }
+    ]
+  },
+  "main_background@Quasar_Background.16x_primary_03_bloom": {
+    "size": [
+      "20%",
+      "95%"
+    ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [
+      0,
+      4
+    ],
+    "anims": [
+			"@mob_effect.bg_offset_anim_pop",
+			"@mob_effect.bg_offset_anim_push"
+		],
+    //"offset": "@mob_effect.bg_offset_anim_pop",
+    "animation_reset_name": "screen_animation_reset",
+    "alpha": 0.7,
+    "color": "$background",
+    "controls":[
+      {
+        "mob_effect_list_content_panel@mob_effect.mob_effect_list_content_panel": {}
+      },
+      {
+                "bloom": {
+                    "type": "image",
+                    "texture": "$bloom",
+                    "alpha": "$global_bloom_alpha",
+                    "color": "$shadow",
+                    "layer": -1024,
+                    "size": [ "100%+20px", "100%+20px" ]
+                }
+            }
+    ]
+  },
+  "effect_name": {
+    "type": "label",
+    "color": "$primary",
+    "shadow": false,
+    "font_type":"$global_font_type",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [
+      0,
+      0
+    ],
+    "text_alignment": "left",
+    "text": "#mob_effect_name",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_name": "#mob_effect_name",
+        "binding_collection_name": "mob_effects_collection",
+        "binding_condition": "visible"
+      }
+    ]
+  },
+  "effect_timer": {
+    "type": "label",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "offset": [
+      0,
+      0
+    ],
+    "text": "#mob_effect_timer",
+    "font_type":"$global_font_type",
+    "color": "$onprimarycontainer",
+    "text_alignment": "left",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_name": "#mob_effect_timer",
+        "binding_collection_name": "mob_effects_collection",
+        "binding_condition": "always_when_visible"
+      }
+    ]
+  },
+  "effect_icon": {
+    "type": "image",
+    "size": [
+      "100%y",
+      "90%"
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "texture": "#texture",
+    "anchor_from":"left_middle",
+    "anchor_to": "left_middle",
+    //"color": "$light_tab_icon",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_name": "#texture",
+        "binding_collection_name": "mob_effects_collection",
+        "binding_condition": "visible"
+      }
+    ]
+  },
+  "panel": {
+  	"type": "panel"
+  },
+  "close_button@common.button": {
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [
+      "80%",
+      "100%"
+    ],
+    "controls": [
+      { "default@panel": {} },
+      { "hover@panel": {} },
+      { "pressed@panel": {} }
+    ],
+    "$pressed_button_name": "button.menu_continue"
+  },
+  "mob_effect_grid_panel": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%c"
+    ],
+    "controls": [
+      {
+        "mob_effect_grid@mob_effect.mob_effect_grid": {}
+      }
+    ]
+  },
+  "mob_effect_grid": {
+    "type": "grid",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [
+      "90%",
+      "default"
+    ],
+    "offset":[0,0],
+    "grid_item_template": "mob_effect.mob_effect_grid_item",
+    "grid_dimension_binding": "#mob_effect_grid_size",
+    "collection_name": "mob_effects_collection",
+    "bindings": [
+      {
+        "binding_name": "#mob_effect_grid_size"
+      }
+    ]
+  },
+  "mob_effect_grid_item": {
+    "type": "panel",
+    "size": [
+      "100%",
+      16
+    ],
+    "anims": [
+      "@mob_effect.grid_offset_anim_pop"
+    ],
+    "controls": [
+      {
+        "bg@Quasar_Background.16x_primary_03": {
+          "size":["100%","95%"],
+          "color": "$primarycontainer"
+        }
+      },
+      {
+        "stack": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "offset": [15.2,4],
+          "anchor_from":"left_middle",
+          "anchor_to":"left_middle",
+          "size":["default","default"],
+          "controls": [
+            {
+              "name@mob_effect.effect_name": {
+                "layer": 1,
+                "size":["default","default"]
+              }
+            },
+            {
+              "padding_label": {
+                "type":"label",
+                "font_type": "$global_font_type",
+                "text":" | ",
+                "size":["default","default"]
+              }
+            },
+            {
+              "timer@mob_effect.effect_timer": {
+                "layer": 1,
+                "size":["default","default"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "icon@mob_effect.effect_icon": {
+          "layer": 1
+        }
+      }
+    ]
+  },
+  "mob_effect_list_content_panel": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [ "100%", "95%" ],
+    "clips_children": false,
+    //offset": "@mob_effect.bg_offset_anim_pop",
+    "offset": [0,6],
+    //"animation_reset_name":"screen_animation_reset",
+    "controls": [
+      {
+        "scrolling_panel@common.scrolling_panel": {
+          "size": [ "100%", "100%-2px" ],
+          "offset": [0,0],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "$scrolling_content": "mob_effect.mob_effect_grid_panel",
+          "$show_background": false,
+          "$scroll_size": [ "8px", "100%" ],
+          "$scrolling_pane_size": [ "100%", "100%-2px" ],
+          "$scroll_box_mouse_image_control": "common-classic.button_state_default",
+          "$always_handle_scrolling": true
+        }
+      }
+    ]
+  },
+  "bg_offset_anim_pop": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 0.4,
+    "from": [500,"2.5%"],
+    "to": [0,"2.5%"],
+    "end_event": "screen.entrance_end",
+		"play_event": "screen.entrance_push"
+  },
+  "bg_offset_anim_push": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 0.4,
+    "to": [500,"2.5%"],
+    "from": [0,"2.5%"],
+    "end_event": "screen.exit_end",
+		"play_event": "screen.exit_pop"
+  },
+  "grid_offset_anim_pop": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 0.4,
+    "from": [500,0],
+    "to": [0,0]
+  }
+}

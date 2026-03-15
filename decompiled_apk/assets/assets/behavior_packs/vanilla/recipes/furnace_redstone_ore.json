@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:redstone_ore"}],"input":"minecraft:redstone_ore","description":{"identifier":"minecraft:furnace_redstone_ore"},"output":"minecraft:redstone","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

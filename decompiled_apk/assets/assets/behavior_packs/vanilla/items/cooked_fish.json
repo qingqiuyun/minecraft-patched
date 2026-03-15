@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:stacked_by_data":true,"minecraft:use_duration":32,"minecraft:max_damage":0,"minecraft:food":{"saturation_modifier":"normal","nutrition":5}},"description":{"identifier":"minecraft:cooked_fish"}},"format_version":"1.10"}

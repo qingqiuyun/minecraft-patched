@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"saturation_modifier":"poor","nutrition":1},"minecraft:use_duration":16},"description":{"identifier":"minecraft:dried_kelp"}},"format_version":"1.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:stone","data":5}],"priority":4,"result":{"item":"minecraft:double_stone_slab3","data":2,"count":2},"description":{"identifier":"minecraft:stonecutter_polished_andesite_slab"},"ingredients":[{"item":"minecraft:stone","data":5}],"tags":["stonecutter"]},"format_version":"1.20.10"}

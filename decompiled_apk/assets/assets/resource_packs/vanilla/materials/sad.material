@@ -1,0 +1,1 @@
+{"materials":{"version":"1.0.0","clouds":{"vertexShader":"shaders/cloud.vertex","msaaSupport":"Both","vertexFields":[{"field":"Position"},{"field":"Color"},{"field":"UV0"}],"fragmentShader":"shaders/color.fragment","+states":["DisableAlphaWrite"],"vrGeometryShader":"shaders/cloud.geometry"}}}

@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:use_duration":32,"minecraft:seed":{"crop_result":"cave_vines","plant_at_face":"DOWN","plant_at_any_solid_surface":true,"plant_at":["cave_vines","cave_vines_head_with_berries"]},"minecraft:food":{"nutrition":2,"saturation_modifier":"low","is_meat":false}},"description":{"identifier":"minecraft:glow_berries"}},"format_version":"1.16.0"}

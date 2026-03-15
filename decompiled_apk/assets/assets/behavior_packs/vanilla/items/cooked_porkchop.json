@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"saturation_modifier":"good","nutrition":8},"minecraft:use_duration":32},"description":{"identifier":"minecraft:cooked_porkchop"}},"format_version":"1.10"}

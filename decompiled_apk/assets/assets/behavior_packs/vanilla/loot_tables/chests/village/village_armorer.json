@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"set_count","count":{"max":3,"min":1}}],"name":"minecraft:iron_ingot","weight":2,"type":"item"},{"functions":[{"function":"set_count","count":{"max":4,"min":1}}],"name":"minecraft:bread","weight":4,"type":"item"},{"type":"item","name":"minecraft:iron_helmet"},{"type":"item","name":"minecraft:emerald"}],"rolls":{"max":5,"min":1}}]}

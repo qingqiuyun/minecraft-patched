@@ -1,0 +1,1 @@
+{"minecraft:item":{"components":{"minecraft:food":{"saturation_modifier":"low","nutrition":2},"minecraft:use_duration":32},"description":{"identifier":"minecraft:muttonRaw"}},"format_version":"1.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"tag":"minecraft:stone_tool_materials"}],"priority":-1,"result":{"item":"minecraft:stone_axe"},"key":{"#":{"item":"minecraft:stick"},"X":{"tag":"minecraft:stone_tool_materials"}},"description":{"identifier":"minecraft:stone_axe"},"pattern":["XX","X#"," #"],"tags":["crafting_table"]},"format_version":"1.20.10"}

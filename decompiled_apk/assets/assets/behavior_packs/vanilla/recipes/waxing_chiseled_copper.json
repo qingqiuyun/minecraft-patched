@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:chiseled_copper"}],"result":{"item":"minecraft:waxed_chiseled_copper","count":1},"priority":1,"description":{"identifier":"minecraft:waxing_chiseled_copper"},"ingredients":[{"item":"minecraft:chiseled_copper"},{"item":"minecraft:honeycomb"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:iron_ingot"}],"priority":-1,"result":{"item":"minecraft:shield"},"key":{"#":{"tag":"minecraft:planks"},"I":{"item":"minecraft:iron_ingot"}},"description":{"identifier":"minecraft:shield"},"pattern":["#I#","###"," # "],"tags":["crafting_table"]},"format_version":"1.20.10"}

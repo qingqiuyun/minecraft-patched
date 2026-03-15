@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:polished_deepslate"}],"result":{"count":6,"item":"minecraft:polished_deepslate_slab"},"priority":1,"key":{"#":{"item":"minecraft:polished_deepslate"}},"description":{"identifier":"minecraft:polished_deepslate_slab"},"pattern":["###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

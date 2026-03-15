@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:stone","data":5}],"result":{"item":"minecraft:cobblestone_wall","data":4,"count":6},"key":{"#":{"item":"minecraft:stone","data":5}},"description":{"identifier":"minecraft:andesite_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

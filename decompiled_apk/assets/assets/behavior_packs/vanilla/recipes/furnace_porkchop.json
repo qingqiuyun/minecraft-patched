@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:porkchop"}],"input":"minecraft:porkchop","description":{"identifier":"minecraft:furnace_porkchop"},"output":"minecraft:cooked_porkchop","tags":["furnace","smoker","campfire","soul_campfire"]},"format_version":"1.20.10"}

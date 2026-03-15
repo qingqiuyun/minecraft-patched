@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:netherite_ingot"}],"result":{"item":"minecraft:netherite_block"},"key":{"#":{"item":"minecraft:netherite_ingot"}},"description":{"identifier":"minecraft:netherite_block"},"pattern":["###","###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

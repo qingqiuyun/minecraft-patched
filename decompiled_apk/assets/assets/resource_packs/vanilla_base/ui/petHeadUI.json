@@ -1,0 +1,1 @@
+{"main":{"controls":[{"bubble_panel@petHeadUI.parterner_head_ui_panel":{}}],"type":"screen"},"parterner_head_ui_panel":{"size":[64,64],"controls":[{"bubble_image":{"type":"image","clip_direction":"left","size":["50.0%+0.0px","50.0%+0.0px"],"texture":"textures/ui/pet/parterner/emote_bubble/icon02_3x","clip_ratio":0.0,"layer":1}}],"type":"panel","layer":1},"namespace":"petHeadUI"}

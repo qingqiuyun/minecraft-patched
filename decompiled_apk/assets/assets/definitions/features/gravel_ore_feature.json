@@ -1,0 +1,1 @@
+{"minecraft:ore_feature":{"replace_rules":[{"places_block":"minecraft:gravel","may_replace":[{"name":"minecraft:stone"}]}],"description":{"identifier":"minecraft:gravel_ore_feature"},"count":33},"format_version":"1.14.0"}

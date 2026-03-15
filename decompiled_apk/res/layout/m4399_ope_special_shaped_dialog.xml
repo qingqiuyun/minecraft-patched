@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/m4399_ope_special_shaped_ll_parent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.m4399.operate.support.component.webview.AlWebView android:id="@id/m4399_webview_parent" android:visibility="gone" android:layout_width="288.0dip" android:layout_height="288.0dip" />
+    <ImageView android:id="@id/m4399_ope_special_shaped_iv_pic" android:visibility="gone" android:layout_width="288.0dip" android:layout_height="288.0dip" />
+    <ImageView android:id="@id/m4399_ope_special_shaped_iv_close" android:background="@drawable/m4399_ope_support_nav_icon_bg" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/m4399_ope_coupon_tip_ic_close" />
+</LinearLayout>

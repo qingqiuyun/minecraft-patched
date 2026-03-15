@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"loom","count":1},"key":{"A":{"item":"string"},"B":{"item":"crimson_planks"}},"description":{"identifier":"minecraft:loom_from_crimson_planks"},"pattern":["AA","BB"],"tags":["crafting_table"]},"format_version":"1.16"}

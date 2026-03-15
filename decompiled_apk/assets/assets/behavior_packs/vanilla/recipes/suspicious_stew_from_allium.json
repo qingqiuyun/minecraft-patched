@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":{"context":"None"},"result":{"item":"minecraft:suspicious_stew","data":7},"description":{"identifier":"minecraft:suspicious_stew_from_allium"},"ingredients":[{"item":"minecraft:brown_mushroom"},{"item":"minecraft:red_mushroom"},{"item":"minecraft:bowl"},{"item":"minecraft:allium"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:bamboo_planks"}],"pattern":["###"],"result":{"item":"minecraft:bamboo_slab","count":6},"key":{"#":{"item":"minecraft:bamboo_planks"}},"description":{"identifier":"minecraft:bamboo_slab"},"group":"wooden_slab","tags":["crafting_table"]},"format_version":"1.20.10"}

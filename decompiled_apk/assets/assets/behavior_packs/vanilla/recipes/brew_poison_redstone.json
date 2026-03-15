@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:redstone","input":"minecraft:potion_type:poison","description":{"identifier":"minecraft:brew_poison_redstone"},"output":"minecraft:potion_type:long_poison","tags":["brewing_stand"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:potato"}],"input":"minecraft:potato","description":{"identifier":"minecraft:furnace_potato"},"output":"minecraft:baked_potato","tags":["furnace","smoker","campfire","soul_campfire"]},"format_version":"1.20.10"}

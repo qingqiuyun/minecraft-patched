@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:crying_obsidian"}],"result":{"item":"minecraft:respawn_anchor","count":1},"key":{"O":{"item":"minecraft:crying_obsidian"},"G":{"item":"minecraft:glowstone"}},"description":{"identifier":"minecraft:respawn_anchor"},"pattern":["OOO","GGG","OOO"],"tags":["crafting_table"]},"format_version":"1.20.10"}

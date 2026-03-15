@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:nether_brick"}],"input":"minecraft:nether_brick","description":{"identifier":"minecraft:furnace_cracked_nether_bricks"},"output":"minecraft:cracked_nether_bricks","tags":["furnace"]},"format_version":"1.20.10"}

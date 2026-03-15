@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:copper_ingot"}],"priority":1,"result":{"item":"minecraft:copper_block","count":1},"key":{"A":{"item":"minecraft:copper_ingot"}},"description":{"identifier":"minecraft:copper_block_from_ingots"},"pattern":["AAA","AAA","AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

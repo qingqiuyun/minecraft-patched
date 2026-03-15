@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"set_count","count":{"max":5,"min":2}}],"name":"minecraft:string","type":"item","weight":1}],"rolls":1}]}

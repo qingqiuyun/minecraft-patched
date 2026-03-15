@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"set_count","count":{"max":2,"min":0}},{"function":"looting_enchant","count":{"max":1,"min":0}}],"name":"minecraft:seagrass","type":"item","weight":3}],"rolls":1}]}

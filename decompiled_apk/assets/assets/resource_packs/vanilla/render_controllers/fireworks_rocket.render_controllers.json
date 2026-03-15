@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.fireworks_rocket":{"materials":[{"*":"Material.default"}],"part_visibility":[{"body":"!query.is_attached_to_entity"}],"filter_lighting":true,"textures":["texture.default"],"geometry":"geometry.default"}},"format_version":"1.10.0"}

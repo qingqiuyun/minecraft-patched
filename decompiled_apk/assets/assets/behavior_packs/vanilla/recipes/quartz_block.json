@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:quartz"}],"result":{"item":"minecraft:quartz_block","data":0},"key":{"#":{"item":"minecraft:quartz"}},"description":{"identifier":"minecraft:quartz_block"},"pattern":["##","##"],"tags":["crafting_table"]},"format_version":"1.20.10"}

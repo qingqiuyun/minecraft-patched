@@ -1,0 +1,1 @@
+{"minecraft:client_entity":{"description":{"materials":{"default":"leash_knot"},"identifier":"minecraft:leash_knot","geometry":{"default":"geometry.leash_knot"},"textures":{"default":"textures/entity/lead_knot"},"render_controllers":["controller.render.leash_knot"]}},"format_version":"1.10.0"}

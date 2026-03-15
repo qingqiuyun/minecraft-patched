@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/m4399_ope_support_scroll_thumb_v" android:scrollbarStyle="outsideOverlay" android:textSize="@dimen/m4399_font_14" android:textColor="@color/m4399_ope_color_de000000" android:id="@id/m4399_component_tv_message" android:background="@android:color/transparent" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/m4399_dialog_max_content_height" android:lineSpacingExtra="4.0dip" android:fadeScrollbars="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

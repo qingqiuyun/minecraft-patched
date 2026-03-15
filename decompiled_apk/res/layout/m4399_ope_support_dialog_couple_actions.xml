@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/m4399_id_dialog_actions_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m4399_dialog_finite_actions_mt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_divider_h" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/m4399_id_ll_container" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_dialog_action_btn_height">
+        <ViewStub android:id="@id/m4399_id_stub_negative_container" android:layout="@layout/m4399_ope_support_dialog_btn_negative" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ViewStub android:id="@id/m4399_id_stub_vertical_divider" android:layout="@layout/m4399_ope_support_divider_v" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/m4399_id_stub_positive_container" android:layout="@layout/m4399_ope_support_dialog_btn_positive" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

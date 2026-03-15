@@ -1,0 +1,395 @@
+{
+  "namespace": "Quasar/Coordinate",
+  "main": {
+    "type": "image",
+    "texture": "$bloom",
+    "color": "$shadow",
+    "alpha": "$global_bloom_alpha",
+    "$size": [
+      "100%cm+20px",
+      "100%cm+20px"
+    ],
+    "$offset": [
+      0,
+      0
+    ],
+    "layer": 1,
+    "anims": [
+      "@Quasar/Coordinate.hud_position_offset_anim_pop",
+      "@Quasar/Coordinate.hud_position_offset_anim_push",
+      "@Quasar/Coordinate.hud_position_size_anim"
+    ],
+    "clips_children": false,
+    "animation_reset_name": "screen_animation_reset",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "bloom@Quasar/Coordinate.bg": {}
+      }
+    ]
+  },
+  "bg": {
+    "type": "image",
+    "texture": "$16x",
+    "size": [
+      "100%cm",
+      16
+    ],
+    "layer": 3,
+    "color": "$background",
+    "alpha": "$global_alpha",
+    "controls": [
+      {
+        "stack@Quasar/Coordinate.stack": {}
+      },
+      {
+        "border": {
+          "type": "image",
+          "texture": "$border",
+          "size": [
+            "100%sm+3px",
+            17
+          ],
+          "ignored": false,
+          "layer": 7,
+          "color": "$onsecondary"
+        }
+      }
+    ]
+  },
+  
+  "stack_client": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      10
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [
+            3,
+            0
+          ]
+        }
+      },
+      {
+        "icon_0": {
+          "type": "panel",
+          "size": [
+            10,
+            10
+          ],
+          "layer": 5,
+          "controls": [
+            {
+              "icon": {
+                "type": "image",
+                "texture": "textures/Quasar/icon",
+                "color": "$tertiary",
+                "size": [ 16, 16 ],
+                "layer": 8
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [
+            4,
+            4
+          ]
+        }
+      },
+      {
+        "label_0": {
+          "type": "label",
+          "text": "$client_id",
+          "size": [
+            "default",
+            "default"
+          ],
+          "ignored": false,
+          "font_type": "$global_font_type",
+          "layer": 7,
+          "color": "$tertiary"
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [
+            3,
+            4
+          ]
+        }
+      }
+    ]
+  },
+  "client_bg": {
+    "type": "image",
+    "texture": "$16x",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "color": "$onsecondary",
+    "size": [ "100%c", 16 ],
+    "layer": 3,
+    "controls": [
+      {
+        "client_stack@Quasar/Coordinate.stack_client": {}
+      }
+    ]
+  },
+  "stack": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [
+      "100%c",
+      10
+    ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "controls": [
+      {
+        "client_panel": {
+          "type": "panel",
+          "size": [ "100%c", 10 ],
+          "controls": [
+            {
+              "client_bg@Quasar/Coordinate.client_bg": {}
+            }
+          ]
+        }
+      },
+      {
+        "icon_1": {
+          "type": "image",
+          "texture": "textures/Quasar/hud/position",
+          "size": [
+            10,
+            10
+          ],
+          "ignored": false,
+          "layer": 7,
+          "color": "$onprimarycontainer",
+          "bindings": [
+            {
+              "binding_name": "#player_position_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "player_position_text": {
+          "type": "label",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "layer": 7,
+          "offset": [
+            1.5,
+            -0.5
+          ],
+          "size": [
+            "default",
+            "default"
+          ],
+          "text_alignment": "left",
+          "font_type": "$global_font_type",
+          "enable_profanity_filter": false,
+          "color": "$onprimarycontainer",
+          "text": "#text",
+          "shadow": false,
+          "bindings": [
+            {
+              "binding_name": "#player_position_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always",
+              "binding_type": "global"
+            },
+            {
+              "binding_name": "#player_position_text",
+              "binding_name_override": "#text",
+              "binding_condition": "always",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "label_2": {
+          "type": "label",
+          "text": " | ",
+          "size": [
+            "default",
+            "default"
+          ],
+          "font_type": "$global_font_type",
+          "layer": 7,
+          "color": "$onprimarycontainer",
+          "bindings": [
+            {
+              "binding_name": "#number_of_days_played_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "icon_2": {
+          "type": "image",
+          "texture": "textures/Quasar/hud/day",
+          "size": [
+            10,
+            10
+          ],
+          "layer": 7,
+          "color": "$onprimarycontainer",
+          "bindings": [
+            {
+              "binding_name": "#number_of_days_played_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "number_of_days_played_text": {
+          "type": "label",
+          "layer": 7,
+          "enable_profanity_filter": false,
+          "color": "$onprimarycontainer",
+          "text": "#text",
+          "shadow": false,
+          "font_type": "$global_font_type",
+          "bindings": [
+            {
+              "binding_name": "#number_of_days_played_text",
+              "binding_name_override": "#text",
+              "binding_condition": "always_when_visible",
+              "binding_type": "global"
+            },
+            {
+              "binding_name": "#number_of_days_played_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hud_position_offset_anim_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      -500,
+      10
+    ],
+    "to": "$offset",
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+  "hud_position_offset_anim_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      -500,
+      10
+    ],
+    "from": "$offset",
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+  "old_position": {
+    "type": "label",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "layer": 1,
+    "enable_profanity_filter": false,
+    "color": "$onprimarycontainer",
+    "font_type": "$global_font_type",
+    "text": "#text",
+    "shadow": false,
+    "bindings": [
+      {
+        "binding_name": "#player_position_text",
+        "binding_name_override": "#text",
+        "binding_condition": "always_when_visible",
+        "binding_type": "global"
+      },
+      {
+        "binding_name": "#player_position_visible",
+        "binding_name_override": "#visible",
+        "binding_condition": "always",
+        "binding_type": "global"
+      }
+    ]
+  },
+  "old_daycount": {
+    "type": "label",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "layer": 1,
+    "enable_profanity_filter": false,
+    "color": "$onprimarycontainer",
+    "font_type": "$global_font_type",
+    "text": "#text",
+    "shadow": false,
+    "bindings": [
+      {
+        "binding_name": "#number_of_days_played_text",
+        "binding_name_override": "#text",
+        "binding_condition": "always_when_visible",
+        "binding_type": "global"
+      },
+      {
+        "binding_name": "#number_of_days_played_visible",
+        "binding_name_override": "#visible",
+        "binding_condition": "always",
+        "binding_type": "global"
+      }
+    ]
+  },
+  "old_stack": {
+    "type": "stack_panel",
+    "size": [
+      "default",
+      "default"
+    ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "orientation": "vertical",
+    "controls": [
+      {
+        "old_daycount@Quasar/Coordinate.old_daycount": {}
+      },
+      {
+        "old_position@Quasar/Coordinate.old_position": {}
+      }
+    ]
+  },
+  "hud_position_size_anim": {//你问我这个动画的意义？我也不知道
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": "$size",
+    "to": "$size"
+  }
+}

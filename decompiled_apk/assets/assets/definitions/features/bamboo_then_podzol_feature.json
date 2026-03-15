@@ -1,0 +1,1 @@
+{"minecraft:aggregate_feature":{"description":{"identifier":"minecraft:bamboo_then_podzol_feature"},"features":["minecraft:bamboo_feature","minecraft:optional_podzol_feature"],"early_out":"first_failure"},"format_version":"1.14.0"}

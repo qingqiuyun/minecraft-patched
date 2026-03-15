@@ -1,0 +1,349 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sword",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "default"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.sword_offhand",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "leftitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "default"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.sword_enchanted",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 2],
+					"cubes": [
+						{
+							"origin": [10, 13, 2],
+							"size": [-16, 0, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 0],
+									"uv_size": [-16, 16]
+								}
+							}
+						},
+						{
+							"origin": [10, 14, 2],
+							"size": [-16, 0, 16],
+							"uv": {
+								"north": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"east": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"south": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"west": {
+									"uv": [0, 0],
+									"uv_size": [16, 1]
+								},
+								"up": {
+									"uv": [16, 16],
+									"uv_size": [-16, -16]
+								},
+								"down": {
+									"uv": [16, 0],
+									"uv_size": [-16, 16]
+								}
+							}
+						}
+					],
+					"texture_meshes": [
+						{
+							"texture": "apple_golden",
+							"position": [-6, 16, 2]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.bow_standby",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "default"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.bow_pulling_0",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "bow_pulling_0"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.bow_pulling_1",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "bow_pulling_1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.bow_pulling_2",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "bow_pulling_2"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.crossbow_standby",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "default"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.crossbow_pulling_0",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "crossbow_pulling_0"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.crossbow_pulling_1",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "crossbow_pulling_1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.crossbow_pulling_2",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "crossbow_pulling_2"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.crossbow_arrow",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "crossbow_arrow"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.player.crossbow_rocket",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"texture_meshes": [
+						{
+							"local_pivot": [0, 0, 0],
+							"position": [0, 0, 0],
+							"rotation": [0, 0, 0],
+							"texture": "crossbow_rocket"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+{"minecraft:ore_feature":{"replace_rules":[{"places_block":"minecraft:gold_ore","may_replace":[{"name":"minecraft:stone"}]}],"description":{"identifier":"minecraft:gold_ore_feature"},"count":9},"format_version":"1.14.0"}

@@ -1,0 +1,1 @@
+{"render_controllers":{"controller.render.rabbit":{"materials":[{"*":"Material.default"}],"geometry":"Geometry.default","arrays":{"textures":{"Array.skins":["Texture.brown","Texture.white","Texture.black","Texture.white_splotched","Texture.gold","Texture.salt"]}},"textures":["query.get_name == 'Toast' ? Texture.toast : Array.skins[query.variant]"]}},"format_version":"1.8.0"}

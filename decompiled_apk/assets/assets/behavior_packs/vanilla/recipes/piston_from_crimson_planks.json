@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"piston","data":1,"count":1},"key":{"A":{"item":"crimson_planks"},"D":{"item":"redstone"},"C":{"item":"iron_ingot"},"B":{"item":"cobblestone"}},"description":{"identifier":"minecraft:piston_from_crimson_planks"},"pattern":["AAA","BCB","BDB"],"tags":["crafting_table"]},"format_version":"1.16"}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.support.component.FiniteLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_thumb" android:scrollbarTrackVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_track" android:scrollbarStyle="insideInset" android:orientation="vertical" android:paddingTop="28.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0" android:fadeScrollbars="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <cn.m4399.operate.support.component.MaxHeightScrollView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_thumb" android:scrollbarTrackVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_track" android:scrollbarStyle="insideInset" android:orientation="vertical" android:id="@id/m4399_ope_id_msv_read" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:fadeScrollbars="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_read" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </cn.m4399.operate.support.component.MaxHeightScrollView>
+    <TextView android:id="@id/m4399_ope_id_agreement_placeholder" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+</cn.m4399.operate.support.component.FiniteLinearLayout>

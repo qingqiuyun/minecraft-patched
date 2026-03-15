@@ -1,0 +1,218 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+	#ifndef BYPASS_PIXEL_SHADER
+		#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+			_centroid in highp vec2 uv0;
+			_centroid in highp vec2 uv1;
+		#else
+			_centroid in vec2 uv0;
+			_centroid in vec2 uv1;
+		#endif
+	#endif
+#else
+	#ifndef BYPASS_PIXEL_SHADER
+		varying vec2 uv0;
+		varying vec2 uv1;
+	#endif
+#endif
+
+varying vec4 color;
+varying highp vec3 p;
+varying highp vec3 wp;
+
+#ifdef FOG
+varying vec4 fogColor;
+#endif
+
+#include "uniformShaderConstants.h"
+#include "uniformPerFrameConstants.h"
+#include "util.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1;
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_2;
+#define saturate(x) clamp(x, 0.0, 1.0)
+vec3 ACESFilm( vec3 dif ) {
+	float a = 2.84;
+	float b = 0.4;
+	float c = 2.956;
+	float d = 0.1435;
+	float e = 0.456;
+	return((dif*(a*dif+b))/(dif*(c*dif+d)+e));
+}
+highp float hash( highp float n ){
+return fract(sin(n)*43758.5453);}
+highp float noise( in highp vec2 x ){
+highp vec2 p = floor(x);
+highp vec2 f = fract(x);
+f = f*f*(3.-2.*f);
+highp float n = p.x + p.y*57.;
+highp float res = mix(mix( hash(n+  0.), hash(n+  1.),f.x), mix( hash(n+ 57.), hash(n+ 58.),f.x),f.y);
+return res;
+}
+highp float getWave(vec2 uv){
+ float speed = 2.9;
+ float scale = 0.7;
+ //highp float TIME = ViewPositionAndTime.w;
+	highp float waveShape =
+	noise((vec2(uv.x+uv.y-uv.x+TIME*speed, 
+				uv.y+uv.x+TIME*speed)*0.7)) 
+	*
+	noise((vec2(uv.x+uv.y+uv.y-TIME*speed, 
+				uv.y+uv.y-TIME*speed)*0.6));
+	return waveShape;
+	}
+//HSBE Wanze
+bool end(vec3 Fc){
+if(all(bvec3(Fc.r > Fc.g, Fc.b > Fc.g, all(bvec3(Fc.r < .05, Fc.b < .05, Fc.g < .05))))){
+  return true; } else { return false;}
+}
+vec3 ini_sky_kolor_coyy(vec3 pos, float hujand, float malamd, float sorepagid_looks){
+  float lp = saturate(length(pos));
+  vec3 atas = vec3(37, 143, 253)/255.;
+  vec3 tengah = vec3(152, 233, 252)/255.;
+  vec3 bawah = vec3(150, 209, 253)/255.;
+  vec3 atas_malam = vec3(0);
+  vec3 tengah_malam = vec3(82, 161, 254)/255.;
+  vec3 tengah_sore_pagi1 = vec3(102, 158, 185)/255.;
+  vec3 tengah_sore_pagi2 = vec3(251, 252, 200)/255.;
+  vec3 tengah_sore_pagi3 = vec3(180, 110, 146)/255.;
+  vec3 tengah_sore_pagi4 = vec3(212, 209, 226)/255.;
+  vec3 atas_sore_pagi = vec3(10, 49, 106)/255.;
+  vec3 tengah_hujan = vec3(104,108,119)/255.;
+  vec3 atas_hujan = vec3(166,166,166)/255.;
+  vec3 suns = mix(atas_sore_pagi, tengah_sore_pagi1, saturate(smoothstep(0.0, 0.9, lp*3.0)));
+  vec3 warna = mix(mix(atas_malam, mix(atas, atas_hujan, hujand), 1.0-malamd), mix(mix(tengah, tengah_malam, malamd), tengah_hujan, hujand), lp*2.3);
+  vec3 warna_out = vec3(0);
+warna_out = warna;
+warna_out = mix(warna_out, mix(bawah, tengah_hujan, hujand),
+	saturate(smoothstep(0.0, 0.7, lp)));
+warna_out = mix(warna_out, suns, sorepagid_looks);
+warna_out = mix(warna_out, tengah_sore_pagi2,
+	saturate(smoothstep(0.0, 0.63, lp))*sorepagid_looks);
+warna_out = mix(warna_out, tengah_sore_pagi3,
+	saturate(smoothstep(0.0, 0.93, lp))*sorepagid_looks);
+warna_out = mix(warna_out, tengah_sore_pagi4,
+	saturate(smoothstep(0.0, 1.3, lp))*sorepagid_looks);
+ return warna_out;
+}
+float shape(highp vec2 x, float kepadatan)
+{
+	return step(fract(sin(dot(floor(x),vec2(5.,36.)))
+		*degrees(20.)),kepadatan);
+}
+highp vec4 s( highp vec3 pos, float kepadatan, vec4 shadow, vec3 kolor){
+	vec4 a = vec4(0.), ins = vec4(1);
+	float layer = 3.0;
+	for(float i = 0.0; i < layer; i++){
+			pos /= 1.029;
+			vec4 b = vec4(kolor, 1);
+			highp float c = shape(pos.xz, kepadatan),
+			c1 = shape(vec2(pos.x-0.05, pos.z), kepadatan);
+			vec4 hitam = vec4(shadow);
+			if(i > layer-2.) b *= hitam;
+			a = mix(a, b, c);
+		}
+		return clamp(a, 0.0,1.0);
+	}
+void main()
+{
+#ifdef BYPASS_PIXEL_SHADER
+	gl_FragColor = vec4(0, 0, 0, 0);
+	return;
+#else 
+
+#if USE_TEXEL_AA
+	vec4 diffuse = texture2D_AA(TEXTURE_0, uv0);
+#else
+	vec4 diffuse = texture2D(TEXTURE_0, uv0);
+#endif
+	vec4 org = texture2D(TEXTURE_0, uv0);
+#ifdef SEASONS_FAR
+	diffuse.a = 1.0;
+#endif
+
+#if USE_ALPHA_TEST
+	#ifdef ALPHA_TO_COVERAGE
+	#define ALPHA_THRESHOLD 0.05
+	#else
+	#define ALPHA_THRESHOLD 0.5
+	#endif
+	if(diffuse.a < ALPHA_THRESHOLD)
+		discard;
+#endif
+	
+vec4 inColor = color;
+
+#if defined(BLEND)
+	diffuse.a *= inColor.a;
+#endif
+#if !defined(ALWAYS_LIT)
+	diffuse *= texture2D( TEXTURE_1, uv1 );
+#endif
+
+#ifndef SEASONS
+	#if !USE_ALPHA_TEST && !defined(BLEND)
+		diffuse.a = inColor.a;
+	#endif
+  if(color.g > color.b){
+  diffuse.xyz *= mix(normalize(inColor.xyz), inColor.xyz, 0.5);}else{diffuse.xyz *= sqrt(inColor.xyz);}
+#else
+	vec2 uv = inColor.xy;
+	diffuse.rgb *= mix(vec3(1.0,1.0,1.0), texture2D( TEXTURE_2, uv).rgb*2.0, inColor.b);
+	diffuse.rgb *= inColor.aaa;
+	diffuse.a = 1.0;
+#endif
+  vec4 fclr = FOG_COLOR;
+  vec2 fcnt = FOG_CONTROL;
+  highp float malamd = clamp(max(1.-fclr.b*1.-fclr.g,0.0),0.0,1.0);
+  highp float sorepagid_looks = clamp(fclr.r-fclr.g,0.,.5)*2.;
+  highp float hujand = smoothstep(0.66, 0.3, fcnt.x);
+  vec3 Np = normalize(cross(dFdx(p), dFdy(p)));
+  float rim = smoothstep(1., .0, dot(normalize(-wp), Np));
+  float dl = clamp(max(max(-Np.x, Np.x), -Np.y), 0.0, 1.0);
+  vec3 warnaAwan = mix(vec3(1), vec3(0.25), hujand);
+  diffuse.xyz = ACESFilm(diffuse.xyz);
+  float cvalue = mix(mix(mix(mix(mix(0.0, 0.14, hujand), 0.1, malamd), 0.19, sorepagid_looks), 0.0, smoothstep(0.897,0.836, uv1.y)), 0.0, uv1.x);
+  diffuse.xyz = diffuse.rgb - cvalue;
+  vec3 shadows = mix(mix(vec3(0.45,0.52,0.6)*0.57, vec3(0.85), hujand), vec3(1), uv1.x);
+  bool the_end = end(fclr.rgb);
+  if(the_end == false){
+  diffuse.stp *= mix(mix(vec3(1), shadows, dl), shadows, smoothstep(0.87,0.86, uv1.y));}else{diffuse.xyz *= mix(diffuse.rgb-0.3, vec3(1), uv1.x);}
+  diffuse.xyz = mix(mix(diffuse.rgb, mix(diffuse.rgb, diffuse.rgb-0.04, smoothstep(0.68,0.73,noise(p.xz*0.8))*hujand), saturate(Np.y)), diffuse.rgb, smoothstep(0.87,0.86, uv1.y));
+  diffuse.xyz *= mix(mix(vec3(1), vec3(0.6), hujand), vec3(1.2,1.0,0.6), uv1.x);
+#ifdef BLEND
+ if(color.b > color.r){
+  	float density = mix(0.2, 0.8, hujand);
+  vec3 color = saturate(ini_sky_kolor_coyy((wp/wp.y)*0.05, hujand, malamd, sorepagid_looks));
+  vec4 sc = mix(vec4(0), mix(vec4(1), vec4(vec3(0.6),1), malamd), s(((vec3(wp.x, wp.y, -wp.z)/wp.y)*2.8)-getWave(((p.xz)*27./p.y)), density, mix(vec4(0.5), vec4(vec3(1, 36, 124)/255.,1), malamd), warnaAwan));
+  vec4 waterUwU = vec4(0);
+  waterUwU.rgb = mix(mix(color, vec3(1), sc.rgb*max(1.0-length(wp.xz/wp.y)*0.12, 0.0)), mix(vec3(0.051),color*0.65, uv1.x), smoothstep(0.897,0.836, uv1.y));
+  waterUwU.w = mix(0.75, 0.0, clamp(exp(1.0-pow(length(wp)*0.07,1.0))*0.36, 0.0, 1.0));
+  float water_A = float(0);
+  water_A = mix(1.0, 0.0, clamp(exp(1.0-pow(length(wp.xz/wp.y)*0.21,1.0))*0.36, 0.0, 1.0));
+  waterUwU.rgb += mix(vec3(0), mix(vec3(1), vec3(1.3,1.18,0.9), uv1.x), getWave(((p.xz)*27./p.y)))*0.1*(1.0-water_A);
+  diffuse = waterUwU;
+}
+#endif
+  vec3 warnaFog = mix(vec3(141, 191, 254)/255., vec3(220, 209, 223)/255., sorepagid_looks);
+  float posfog = mix(0.05, 1.0, saturate(-wp.y));
+  vec3 fog_apalah = saturate(ini_sky_kolor_coyy((wp/wp.y)*posfog, hujand, malamd, sorepagid_looks));
+  if(fcnt.x == 0.0 && fclr.b > fclr.r){
+  	warnaFog.rgb = fclr.rgb;
+  	fog_apalah = fclr.rgb;
+  	diffuse.xyz *= mix(diffuse.rgb-0.1, vec3(0.8,1.0,0.85), getWave(p.xz)*uv1.y);
+  }
+  diffuse.xyz = mix(diffuse.rgb, warnaFog, clamp(length(wp)/RENDER_DISTANCE*0.36, 0.0,1.));
+#ifdef FOG
+	diffuse.rgb = mix( diffuse.rgb, fog_apalah, fogColor.a );
+#endif
+
+	gl_FragColor = diffuse;
+	
+#endif // BYPASS_PIXEL_SHADER
+}

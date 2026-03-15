@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/m4399_navigation_bar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/m4399_nav_return" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/m4399_ope_support_webview_backward" />
+    <ImageView android:id="@id/m4399_nav_close" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/m4399_ope_support_webview_close" />
+</LinearLayout>

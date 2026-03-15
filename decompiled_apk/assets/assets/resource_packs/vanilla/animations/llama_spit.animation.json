@@ -1,0 +1,2 @@
+{"animations":{"animation.llama_spit.setup":{"loop":true,"bones":{"body":{"rotation":[0.0,"query.target_y_rotation - 90.0 - this","query.target_x_rotation - this"],"position":[0.0,-15.0,0.0]}}}},"format_version":"1.8.0"}
+//CelsiusRP 11-20

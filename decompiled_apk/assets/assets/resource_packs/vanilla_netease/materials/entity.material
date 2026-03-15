@@ -1,0 +1,32 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "entity_esp:entity_alphatest": {
+      "+states": [
+        "DisableDepthTest",
+        "DisableDepthWrite"
+      ],
+      "depthFunc": "Always",
+      "depthBias": -0.1,
+      "msaaSupport": "Both"
+    },
+    "entity_outline:entity_static": {
+      "+states": [
+        "DisableDepthTest",
+        "DisableDepthWrite"
+      ],
+      "depthFunc": "Always",
+      "depthBias": 0.0,
+      "msaaSupport": "Both"
+      },
+      "entity_esp_blend:entity_alphablend": {
+      "+states": [
+        "DisableDepthTest",
+        "DisableDepthWrite"
+      ],
+      "depthFunc": "Always",
+      "depthBias": -0.1,
+      "msaaSupport": "Both"
+    }
+  }
+}

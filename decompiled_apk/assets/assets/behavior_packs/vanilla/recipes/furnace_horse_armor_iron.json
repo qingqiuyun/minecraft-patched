@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:horsearmoriron"}],"input":"minecraft:horsearmoriron","description":{"identifier":"minecraft:furnace_horse_armor_iron"},"output":"minecraft:iron_nugget","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

@@ -1,0 +1,741 @@
+{
+  "namespace": "pause",
+  "content": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "content_bindings@pause.content_bindings": {}
+      },
+      {
+        "content_toggle@pause.content_toggle": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 10, -10 ]
+        }
+      },
+      {
+        "debug_button_panel@pause.debug_button_panel": {
+          "ignored": "(not $debug)"
+        }
+      }
+    ]
+  },
+  "content_bindings": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "pause.content_toggle",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "main@pause.bottom_panel": {}
+      },
+      {
+        "player_list@pause.player_list_bg": {}
+      },
+      // {
+      //   "button_stack@pause.button_stack": {}
+      // }
+      {
+        "placeholder@pause.return_button": {
+          "size": [ 10, 10 ],
+          "alpha": 0,
+          "propagate_alpha": true,
+          "$pressed_button_name": "button.placeholder",
+          "$button_icon": "textures/Quasar/pause/play",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "placeholder_2@pause.return_button": {
+          "size": [ 10, 10 ],
+          "alpha": 0,
+          "propagate_alpha": true,
+          "$pressed_button_name": "button.placeholder",
+          "$button_icon": "textures/Quasar/pause/play"
+          // "anchor_from": "left_middle",
+          // "anchor_to": "left_middle"
+        }
+      }
+    ]
+  },
+  "debug_button_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [
+      60,
+      20
+    ],
+    "controls": [
+      {
+        "return@pause.return_to_game_button": {
+          "size": [
+            20,
+            20
+          ]
+        }
+      },
+      {
+        "settings@pause.settings_button": {
+          "size": [
+            20,
+            20
+          ]
+        }
+      },
+      {
+        "exit@pause.quit_button": {
+          "size": [
+            20,
+            20
+          ]
+        }
+      }
+    ]
+  },
+  "bottom_panel": {
+    "type": "image",
+    "texture": "$fk",
+    "color": "$background",
+    "$size": [ 180, 30 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "$offset": [ 0,-40 ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@pause.bottom_panel_entrance_pop",
+      "@pause.bottom_panel_entrance_push",
+      "@pause.bottom_panel_exit_pop",
+      "@pause.bottom_panel_exit_push",
+      "@pause.bottom_panel_size_entrance_pop",
+      "@pause.bottom_panel_size_entrance_push",
+      "@pause.bottom_panel_size_exit_pop",
+      "@pause.bottom_panel_size_exit_push"
+    ],
+    "controls": [
+      {
+        "circle_1": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "color": "$background",
+          "size": [ "100%y", "100%" ],
+          "offset": [ -15, 0 ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "circle_2": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "color": "$background",
+          "size": [ "100%y", "100%" ],
+          "offset": [ 15, 0 ],
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle"
+        }
+      },
+      {
+        "clips_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "clips_children": true,
+          "controls": [
+            {
+              "button_stack@pause.button_stack": {}
+            }
+          ]
+        }
+      },
+      {
+        "doll": {
+          "type": "image",
+          "size": [ "80%", "100%x" ],
+          "texture": "textures/Quasar/container/doll/ElainaOfficial",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [ 0, -30 ]
+        }
+      }
+      // {
+      //   "button_stack@pause.button_stack": {}
+      // }
+    ]
+  },
+  "pause_screen": {
+    "force_render_below": true,
+    "cache_screen": true,
+    "$screen_animations": [
+      "@common.screen_exit_animation_push_fade",
+      "@common.screen_exit_animation_pop_fade"
+    ],
+    "variables": [
+      {
+        "requires": "$ignore_edu_pause",
+        "$screen_content": "pause.content",
+        "$screen_bg_content": "common.empty_panel"
+      },
+      {
+        "requires": "(not $ignore_edu_pause)",
+        "$screen_content": "edu_pause.pause_screen_content"
+      }
+    ]
+  },
+  "icon_controls": {
+    "type": "image",
+    "texture": "$button_icon",
+    "color": "$onprimarycontainer"
+  },
+  "return_button@pause.new_button_outline": {
+    "$pressed_button_name": "button.menu_continue",
+    "$button_icon": "textures/Quasar/pause/play"
+  },
+  "settings_button_modified@pause.new_button_outline": {
+    "$pressed_button_name": "button.menu_settings",
+    "$button_icon": "textures/Quasar/pause/settings"
+  },
+  "dressing_button@pause.new_button_outline": {
+    "$pressed_button_name": "button.to_profile_or_skins_screen",
+    "$button_icon": "textures/Quasar/pause/dressing"
+  },
+  "quit_button_modified@pause.new_button_outline": {
+    "$pressed_button_name": "button.menu_quit",
+    "$button_icon": "textures/Quasar/pause/exit"
+  },
+  "button_stack": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", "100%cm" ],
+    "controls": [
+      {
+        "return_panel": {
+          "type": "panel",
+          "size": [ "100%c", "100%sm" ],
+          "$duration": 1.0,
+          "controls": [
+            {
+              "return_button@pause.return_button": {
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@pause.button_entrance_pop",
+                  "@pause.button_entrance_push",
+                  "@pause.button_exit_pop",
+                  "@pause.button_exit_push"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dressing_panel": {
+          "type": "panel",
+          "size": [ "100%c", "100%sm" ],
+          "$duration": 0.8,
+          "controls": [
+            {
+              "dressing_button@pause.dressing_button": {
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@pause.button_entrance_pop",
+                  "@pause.button_entrance_push",
+                  "@pause.button_exit_pop",
+                  "@pause.button_exit_push"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "toggle": {
+          "type": "panel",
+          "size": [ "100%c", "100%sm" ],
+          "$duration": 0.6,
+          "controls": [
+            {
+              "toggle@pause.playerlist_toggle": {
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@pause.button_entrance_pop",
+                  "@pause.button_entrance_push",
+                  "@pause.button_exit_pop",
+                  "@pause.button_exit_push"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "settings_panel": {
+          "type": "panel",
+          "size": [ "100%c", "100%sm" ],
+          "$duration": 0.8,
+          "controls": [
+            {
+              "settings_button_modified@pause.settings_button_modified": {
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@pause.button_entrance_pop",
+                  "@pause.button_entrance_push",
+                  "@pause.button_exit_pop",
+                  "@pause.button_exit_push"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "quit_panel": {
+          "type": "panel",
+          "size": [ "100%c", "100%sm" ],
+          "$duration": 1.0,
+          "controls": [
+            {
+              "quit_button_modified@pause.quit_button_modified": {
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@pause.button_entrance_pop",
+                  "@pause.button_entrance_push",
+                  "@pause.button_exit_pop",
+                  "@pause.button_exit_push"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "player_list_bg": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "100%"
+    ],
+    "controls": [
+      {
+        "player_list_bg_check": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "player_list_bg_check",
+            "control_name": "pause.player_list_bg_check",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "pause.playerlist_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#length"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * #length)",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      },
+      {
+        "player_list_bg_uncheck": {
+          "type": "collection_panel",
+          "factory": {
+            "name": "player_list_bg_uncheck",
+            "control_name": "pause.player_list_bg_uncheck",
+            "max_children_size": 1
+          },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "pause.playerlist_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#length"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(1 * (not #length))",
+              "target_property_name": "#collection_length"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "player_list_bg_check": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$background",
+    "size": [
+      120,
+      "80%"
+    ],
+    "disable_anim_fast_forward": true,
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "offset": "@pause.check_offset",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "pause.playerlist_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "player_list_scrolling_panel@common.scrolling_panel": {
+          "size": [
+            "100%-5px",
+            "100%-5px"
+          ],
+          "$show_background": false,
+          "$scroll_track_size": [
+            5,
+            "100% - 4px"
+          ],
+          "$scroll_track_offset|default": [
+            -4,
+            2
+          ],
+          "$scrolling_content": "pause.player_lists"
+        }
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "layer": -400,
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      }
+    ]
+  },
+  "player_list_bg_uncheck": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$background",
+    "size": [
+      120,
+      "80%"
+    ],
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "offset": "@pause.uncheck_offset",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "pause.playerlist_toggle",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "player_list_scrolling_panel@common.scrolling_panel": {
+          "size": [
+            "100%-5px",
+            "100%-5px"
+          ],
+          "$show_background": false,
+          "$scroll_track_size": [
+            5,
+            "100% - 4px"
+          ],
+          "$scroll_track_offset|default": [
+            -4,
+            2
+          ],
+          "$scrolling_content": "common.empty_panel"
+        }
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "layer": -400,
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      }
+    ]
+  },
+  "playerlist_toggle@Quasar_toggle.animated_toggle_new": {
+    "size": [
+      30,
+      30
+    ],
+    "$button_icon": "textures/Quasar/pause/list",
+    "$toggle_name": "pause.playerlist_toggle",
+    "$toggle_view_binding_name": "pause.playerlist_toggle",
+    "$toggle_check_anim": "@pause.toggle_check",
+    "$toggle_uncheck_anim": "@pause.toggle_uncheck",
+    "$custom_controls": "pause.icon_controls",
+    "$unchecked_controls": "Quasar_toggle.normal_toggle_uncheck",
+    "$checked_controls": "Quasar_toggle.normal_toggle_check"
+  },
+  "content_toggle@pause.playerlist_toggle": {
+    "$toggle_name": "pause.content_toggle",
+    "$toggle_view_binding_name": "pause.content_toggle",
+    "$button_icon": "textures/Quasar/icon"
+  },
+  "toggle_check": {
+    "anim_type": "color",
+    "duration": 0.2,
+    "easing": "out_cubic",
+    "from": "$primary",
+    "to": "$onsecondary"
+  },
+  "toggle_uncheck": {
+    "anim_type": "color",
+    "duration": 0.2,
+    "easing": "out_cubic",
+    "to": "$primary",
+    "from": "$onsecondary"
+  },
+  "check_offset": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      200,
+      0
+    ],
+    "to": [
+      -10,
+      0
+    ],
+    "destroy_at_end": "player_list_bg"
+  },
+  "uncheck_offset": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      200,
+      0
+    ],
+    "from": [
+      -10,
+      0
+    ],
+    "destroy_at_end": "player_list_bg"
+  },
+  "bottom_panel_entrance_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [ 0, 0 ],
+    "to": "$offset",
+    "end_event": "screen.entrance_end",
+    "play_event": "screen.entrance_pop"
+  },
+  "bottom_panel_entrance_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [ 0, 0 ],
+    "to": "$offset",
+    "end_event": "screen.entrance_end",
+    "play_event": "screen.entrance_push"
+  },
+  "bottom_panel_exit_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [ 0, 0 ],
+    "from": "$offset",
+    "end_event": "screen.exit_end",
+    "play_event": "screen.exit_pop"
+  },
+  "bottom_panel_exit_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [ 0, 0 ],
+    "from": "$offset",
+    "end_event": "screen.exit_end",
+    "play_event": "screen.exit_push"
+  },
+  ////////
+  "bottom_panel_size_entrance_pop": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [ 176, 22 ],
+    "to": "$size",
+    "end_event": "screen.entrance_end",
+    "play_event": "screen.entrance_pop"
+  },
+  "bottom_panel_size_entrance_push": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [ 176, 22 ],
+    "to": "$size",
+    "end_event": "screen.entrance_end",
+    "play_event": "screen.entrance_push"
+  },
+  "bottom_panel_size_exit_pop": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [ 176, 22 ],
+    "from": "$size",
+    "end_event": "screen.exit_end",
+    "play_event": "screen.exit_pop"
+  },
+  "bottom_panel_size_exit_push": {
+    "anim_type": "size",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [ 176, 22 ],
+    "from": "$size",
+    "end_event": "screen.exit_end",
+    "play_event": "screen.exit_push"
+  },
+  "new_button_outline@common.button": {
+    "type": "button",
+    "size": [ "100%c", "100%c" ],
+    "$pressed_button_name|default": "button.hover_test",
+    "button_mappings": [
+      {
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "focused"
+      }
+    ],
+    "controls": [
+      {
+        "default": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "color": "$primary",
+          "size": "@pause.pause_default_size",
+          "alpha": "@pause.pause_default_alpha",
+          "animation_reset_name": "$pressed_button_name"
+        }
+      },
+      {
+        "hover": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "color": "$primary",
+          "size": "@pause.pause_pressed_size",
+          "alpha": "@pause.pause_pressed_alpha",
+          "animation_reset_name": "$pressed_button_name"
+        }
+      },
+      {
+        "pressed": {
+          "type": "image",
+          "texture": "textures/Quasar/circle",
+          "color": "$primary",
+          "size": "@pause.pause_default_size",
+          "alpha": "@pause.pause_default_alpha",
+          "animation_reset_name": "$pressed_button_name"
+        }
+      },
+      {
+        "icon": {
+          "type": "image",
+          "texture": "$button_icon",
+          "color": "$onprimarycontainer",
+          "size": [ "50%sm", "50%sm" ]
+        }
+      }
+    ]
+  },
+  "pause_default_size": {
+    "anim_type": "size",
+    "duration": 0.2,
+    "to": [ 16, 16 ],
+    "from": [ 30, 30 ]
+  },
+  "pause_default_alpha": {
+    "anim_type": "alpha",
+    "duration": 0.2,
+    "to": 0,
+    "from": 1
+  },
+  "pause_pressed_size": {
+    "anim_type": "size",
+    "duration": 0.2,
+    "from": [ 16, 16 ],
+    "to": [ 30, 30 ]
+  },
+  "pause_pressed_alpha": {
+    "anim_type": "alpha",
+    "duration": 0.2,
+    "from": 0,
+    "to": 1
+  },
+  "button_entrance_pop": {
+    "anim_type": "offset",
+    "duration": "$duration",
+    "easing": "out_cubic",
+    "from": [ 0, 40 ],
+    "to": [ 0, 0 ],
+    "end_event": "screen.entrance_end",
+    "play_event": "screen.entrance_pop"
+  },
+  "button_entrance_push": {
+    "anim_type": "offset",
+    "duration": "$duration",
+    "easing": "out_cubic",
+    "from": [ 0, 40 ],
+    "to": [ 0, 0 ],
+    "end_event": "screen.entrance_end",
+    "play_event": "screen.entrance_push"
+  },
+  "button_exit_pop": {
+    "anim_type": "offset",
+    "duration": "$duration",
+    "easing": "out_cubic",
+    "to": [ 0, 40 ],
+    "from": [ 0, 0 ],
+    "end_event": "screen.exit_end",
+    "play_event": "screen.exit_pop"
+  },
+  "button_exit_push": {
+    "anim_type": "offset",
+    "duration": "$duration",
+    "easing": "out_cubic",
+    "to": [ 0, 40 ],
+    "from": [ 0, 0 ],
+    "end_event": "screen.exit_end",
+    "play_event": "screen.exit_push"
+  }
+}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"lectern","count":1},"key":{"A":{"item":"mangrove_slab"},"B":{"item":"bookshelf"}},"description":{"identifier":"minecraft:lectern_from_mangrove_slab"},"pattern":["AAA"," B "," A "],"tags":["crafting_table"]},"format_version":"1.16"}

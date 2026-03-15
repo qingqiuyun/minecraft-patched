@@ -1,0 +1,85 @@
+{
+    "namespace": "grindstone",
+    "arrow_icon": {
+        "texture": "textures/Quasar/container/arrow",
+        "size": [ 22, 22 ],
+        "color": "$primary"
+    },
+
+    "cross_out_icon": {
+        "type": "image",
+        "texture": "textures/Quasar/cross",
+        "color": "$error",
+        "size": [ 15, 15 ],
+        "bindings": [
+            {
+                "binding_name": "#cross_out_icon",
+                "binding_name_override": "#visible"
+            }
+        ]
+    },
+    "grindstone_item_slot": {
+        "type": "image",
+        "texture": "$16x",
+        "alpha": 0.12,
+        "color": "$primary",
+        "size": [ "100%c", "100%c" ],
+        "controls": [
+            {
+                "container_item@common.container_item": {
+                    "anchor_to": "center",
+                    "anchor_from": "center"
+                }
+            }
+        ]
+    },
+    "grindstone_panel": {
+    "type": "panel",
+    "controls": [
+      { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+      { "selected_item_details_factory@common.selected_item_details_factory": {} },
+      { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "controls": [
+            { "common_panel@common.common_panel": {
+              "animation_reset_name": "screen_animation_reset",
+              "anims": [
+                "@common.container_entrance_size_pop",
+                "@common.container_entrance_size_push",
+                "@common.container_exit_size_pop",
+                "@common.container_exit_size_push"
+              ],
+              "$container_size": [ 176, 166 ]
+            } },
+            {
+              "grindstone_screen_inventory": {
+                "type": "panel",
+                "layer": 2,
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.container_entrance_size_pop",
+                  "@common.container_entrance_size_push",
+                  "@common.container_exit_size_pop",
+                  "@common.container_exit_size_push"
+                ],
+                "$container_size": [ 176, 166 ],
+                "clips_children": true,
+                "controls": [
+                  { "top_half_panel@grindstone.top_half_panel": {} },
+                  { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {} },
+                  { "hotbar_grid@common.hotbar_grid_template_modified": {} },
+                  { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} }
+                ]
+              }
+            },
+            { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+            { "gamepad_cursor@common.gamepad_cursor_button": {} }
+          ]
+        }
+      },
+      { "flying_item_renderer@common.flying_item_renderer": { "layer": 15 } }
+    ]
+  }
+}

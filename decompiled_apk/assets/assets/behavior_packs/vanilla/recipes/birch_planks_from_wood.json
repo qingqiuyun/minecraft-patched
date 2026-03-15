@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:birch_wood"}],"pattern":["#"],"result":{"item":"minecraft:birch_planks","count":4},"key":{"#":{"item":"minecraft:birch_wood"}},"description":{"identifier":"minecraft:birch_planks_from_wood"},"group":"planks","tags":["crafting_table"]},"format_version":"1.20.10"}

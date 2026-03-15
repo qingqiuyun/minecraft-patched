@@ -1,0 +1,51 @@
+version: 2.10.0
+apkFileName: 我的世界_衍生_3.7.35..apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 30
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 840281741
+  versionName: 3.7.35.
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  ReadMe_UniSDK.txt: 8
+  androidsupportmultidexversion.txt: 8
+  Nacho/PleaseReadme.md: 8
+  Nacho/icon.png: 0
+  Nacho/neko.png: 0
+  Nacho/to1splash.png: 0
+  google/protobuf/any.proto: 8
+  google/protobuf/api.proto: 8
+  google/protobuf/descriptor.proto: 8
+  google/protobuf/duration.proto: 8
+  google/protobuf/empty.proto: 8
+  google/protobuf/field_mask.proto: 8
+  google/protobuf/source_context.proto: 8
+  google/protobuf/struct.proto: 8
+  google/protobuf/timestamp.proto: 8
+  google/protobuf/type.proto: 8
+  google/protobuf/wrappers.proto: 8
+  google/protobuf/compiler/plugin.proto: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
+  org/apache/http/entity/mime/version.properties: 8
+  org/xbill/DNS/windows/DNSServer.properties: 8
+  org/xbill/DNS/windows/DNSServer_de.properties: 8
+  org/xbill/DNS/windows/DNSServer_fr.properties: 8
+  org/xbill/DNS/windows/DNSServer_ja.properties: 8
+  org/xbill/DNS/windows/DNSServer_pl.properties: 8
+doNotCompress:
+- resources.arsc
+- png
+- ogg
+- assets/assets/resource_packs/vanilla_netease/texts/es_ES.lang
+- assets/assets/resource_packs/vanilla_netease/texts/id_ID.lang

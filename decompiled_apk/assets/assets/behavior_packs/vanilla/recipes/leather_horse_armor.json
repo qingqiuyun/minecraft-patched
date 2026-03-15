@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:leather"}],"result":{"item":"minecraft:horsearmorleather"},"key":{"#":{"item":"minecraft:leather"}},"description":{"identifier":"minecraft:leather_horse_armor"},"pattern":["# #","###","# #"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,49 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.helmet.golden.turn_red": {
+        "geometry": "Geometry.helmet",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Texture.gold_1" ],
+        "is_hurt_color": {
+          "r": "1.0",
+          "g": "0.0",
+          "b": "0.0",
+          "a": "0.6"
+        }
+      },
+      "controller.render.chestplate.golden.turn_red": {
+        "geometry": "Geometry.chestplate",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Texture.gold_1" ],
+        "is_hurt_color": {
+          "r": "1.0",
+          "g": "0.0",
+          "b": "0.0",
+          "a": "0.6"
+        }
+      },
+      "controller.render.leggings.golden.turn_red": {
+        "geometry": "Geometry.leggings",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Texture.gold_2" ],
+        "is_hurt_color": {
+          "r": "1.0",
+          "g": "0.0",
+          "b": "0.0",
+          "a": "0.6"
+        }
+      },
+      "controller.render.boots.golden.turn_red": {
+        "geometry": "Geometry.boots",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Texture.gold_1" ],
+        "is_hurt_color": {
+          "r": "1.0",
+          "g": "0.0",
+          "b": "0.0",
+          "a": "0.6"
+        }
+      }
+    }
+  }

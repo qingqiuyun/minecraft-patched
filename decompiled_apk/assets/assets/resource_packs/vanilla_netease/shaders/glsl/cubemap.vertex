@@ -1,0 +1,51 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+// copyright © Newb Shader
+
+#if __VERSION__ >= 300
+    #define attribute in
+    #define varying out
+#endif
+
+#include "uniformWorldConstants.h"
+
+uniform vec4 FOG_COLOR;
+uniform vec2 FOG_CONTROL;
+uniform float RENDER_DISTANCE;
+
+#include "utilities/detectors.glsl"
+#include "utilities/sky.glsl"
+
+attribute POS4 POSITION;
+//attribute vec2 TEXCOORD_0;
+
+varying vec4 color;
+
+//varying vec3 pos;
+
+void main()
+{
+    // displaces the skybox
+    vec4 newPos = POSITION;
+
+    // we don't need to render the top half
+    newPos.y += 0.6*float(POSITION.y<0.5);
+
+    gl_Position = WORLDVIEWPROJ * newPos;
+
+    //pos = newPos.xyz;
+
+    // will be clamped in fragment shader
+    color.a = (newPos.y-0.1)*20.0;
+
+    // detections
+    bool underWater = detectUnderwater();
+    float rainFactor = detectRain(underWater);
+
+    // color - horizonEdgeCol
+    color.rgb = getFogColor(underWater, rainFactor);
+    color.rgb = applyTint(color.rgb,rainFactor,underWater);
+
+    // color correction (doing this here causes some weird issues on some devices)
+    //color.rgb = colorCorrection(color.rgb);
+}

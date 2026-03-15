@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.player.potion": {
+      "arrays": {
+        "textures": {
+          "array.potion": [
+            "texture.potion0",
+            "texture.potion1",
+            "texture.potion2",
+            "texture.potion3",
+            "texture.potion4",
+            "texture.potion5",
+            "texture.potion6",
+            "texture.potion7",
+            "texture.potion8",
+            "texture.potion9",
+            "texture.potion10",
+            "texture.potion11",
+            "texture.potion12",
+            "texture.potion13",
+            "texture.potion14",
+            "texture.potion15",
+            "texture.potion16",
+            "texture.potion17",
+            "texture.potion18",
+            "texture.potion19",
+            "texture.potion20",
+            "texture.potion21",
+            "texture.potion22",
+            "texture.potion23",
+            "texture.potion24",
+            "texture.potion25"
+          ]
+        }
+      },
+      "geometry": "Geometry.sword",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "array.potion[(query.life_time * 4)]"
+      ],
+      "is_hurt_color": {
+        "r": "0.0",
+        "g": "0.0",
+        "b": "0.0",
+        "a": "0.0"
+      },
+      "on_fire_color": {
+        "r": "0.0",
+        "g": "0.0",
+        "b": "0.0",
+        "a": "0.0"
+      }
+    }
+  }
+}

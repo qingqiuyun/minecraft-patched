@@ -1,0 +1,144 @@
+{
+    "$is_netease": false,
+    "$debug": false,
+    "$fancy_coordinate": true,
+    "$inventory_hud": true,
+    "$sidebar_score": false,
+    "$global_alpha": 0.85,
+    "$global_bloom_alpha": 0.4,
+    "$global_font_type": "OldSmoothFont",
+    "$40x": "textures/Quasar/basic/40",
+    "$16x": "textures/Quasar/basic/cube",
+    "$8x": "textures/Quasar/basic/circle",
+    "$4x": "textures/Quasar/basic/white",
+    "$fk": "textures/Quasar/basic/square",
+    "$bloom": "textures/Quasar/basic/bloom",
+    "$border": "textures/Quasar/smooth_border/border",
+    "$l2r": "textures/Quasar/gradient/l2r",
+    "$r2l": "textures/Quasar/gradient/r2l",
+    "$u2d": "textures/Quasar/gradient/u2d",
+    "$d2u": "textures/Quasar/gradient/d2u",
+    "$primary": [
+        0.502,
+        0.871,
+        0.867
+    ],
+    "$onprimary": [
+        0.118,
+        0.275,
+        0.278
+    ],
+    "$primarycontainer": [
+        0.227,
+        0.416,
+        0.416
+    ],
+    "$onprimarycontainer": [
+        0.851,
+        1.0,
+        0.996
+    ],
+    "$secondary": [
+        0.753,
+        0.898,
+        0.894
+    ],
+    "$onsecondary": [
+        0.165,
+        0.227,
+        0.227
+    ],
+    "$secondarycontainer": [
+        0.278,
+        0.349,
+        0.349
+    ],
+    "$onsecondarycontainer": [
+        0.886,
+        0.996,
+        0.996
+    ],
+    "$tertiary": [
+        0.725,
+        0.91,
+        0.906
+    ],
+    "$ontertiary": [
+        0.149,
+        0.275,
+        0.275
+    ],
+    "$tertiarycontainer": [
+        0.235,
+        0.373,
+        0.373
+    ],
+    "$onteriarycontainer": [
+        0.847,
+        1.0,
+        0.996
+    ],
+    "$error": [
+        1.0,
+        0.706,
+        0.671
+    ],
+    "$surfacecontainerlowest": [
+        0.055,
+        0.075,
+        0.075
+    ],
+    "$surfacecontainerlow": [
+        0.106,
+        0.129,
+        0.129
+    ],
+    "$surfacecontainer": [
+        0.122,
+        0.145,
+        0.145
+    ],
+    "$surfacecontainerhigh": [
+        0.165,
+        0.184,
+        0.184
+    ],
+    "$surfacecontainerhighest": [
+        0.208,
+        0.227,
+        0.227
+    ],
+    "$background": [
+        0.075,
+        0.094,
+        0.094
+    ],
+    "$onbackground": [
+        0.882,
+        0.914,
+        0.914
+    ],
+    "$surface": [
+        0.075,
+        0.094,
+        0.094
+    ],
+    "$onsurface": [
+        0.882,
+        0.914,
+        0.914
+    ],
+    "$outline": [
+        0.561,
+        0.604,
+        0.604
+    ],
+    "$shadow": "black",
+    "$title_text_color": [
+        0.851,
+        1.0,
+        0.996
+    ],
+    "$place_holder_text": "Lucida Client",
+    "$client_id": "Lucida Client"
+}

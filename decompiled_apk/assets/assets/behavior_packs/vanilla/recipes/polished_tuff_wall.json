@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:polished_tuff"}],"result":{"item":"minecraft:polished_tuff_wall","count":6},"key":{"#":{"item":"minecraft:polished_tuff"}},"description":{"identifier":"minecraft:polished_tuff_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

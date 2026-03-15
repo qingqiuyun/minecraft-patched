@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:prismarine_shard"}],"result":{"item":"minecraft:prismarine","data":1},"priority":1,"key":{"S":{"item":"minecraft:prismarine_shard"},"I":{"item":"minecraft:dye","data":0}},"description":{"identifier":"minecraft:dark_prismarine_from_ink_sac"},"pattern":["SSS","SIS","SSS"],"tags":["crafting_table"]},"format_version":"1.20.10"}

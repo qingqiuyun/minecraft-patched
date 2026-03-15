@@ -1,0 +1,168 @@
+{
+  "namespace": "stonecutter",
+    "arrow_icon": {
+    "type": "image",
+    "texture": "textures/Quasar/container/arrow",
+    "size": [ 18, 18 ],
+        "color": "$primary"
+  },
+
+  "cell_image_normal": {
+    "type": "image",
+    "texture": "$fk",
+    "alpha": 0.12,
+    "color": "$primary",
+    "$cell_image_size|default": [ "default", "default" ],
+    "size": "$cell_image_size"
+  },
+
+  "cell_image_selected": {
+    "type": "image",
+    "texture": "$fk",
+    "alpha": 1,
+    "color": "$primary",
+    "$cell_image_size|default": [ "default", "default" ],
+    "size": "$cell_image_size",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$background_image_control_name",
+        "resolve_sibling_scope": true,
+        "source_property_name": "(#stone_cell_background_texture = 'textures/ui/cell_image_invert')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "stone_cell_image": {
+    "type": "panel",
+    "layer": 1,
+    "controls": [
+      { "cell_normal@stonecutter.cell_image_normal": {} },
+      { "cell_selected@stonecutter.cell_image_selected": {} }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#stone_cell_background_texture",
+        "binding_type": "collection",
+        "binding_collection_name": "$collection_name",
+        "binding_condition": "always_when_visible"
+      }
+    ]
+  },
+  "container_cell_image": {
+    "alpha": 0
+  },
+    "top_half_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", "100%cm" ],
+    "controls": [
+      {
+        "input_slots_holder": {
+          "type": "image",
+          "texture": "$16x",
+          "color": "$primary",
+          "alpha": 0.12,
+          "size": [ "100%y", "100%c" ],
+          "inherit_max_sibling_height": true,
+          "controls": [
+            { "input_slots_stack_panel@stonecutter.input_slots_stack_panel": {} }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 14, 0 ]
+        }
+      },
+      {
+        "arrow_holder": {
+          "type": "panel",
+          "size": [ 18, 12 ],
+          "inherit_max_sibling_height": true,
+          "controls": [
+            {
+              "arrow_icon@stonecutter.arrow_icon": {}
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 14, 0 ]
+        }
+      },
+      {
+        "result_item_slot_holder": {
+          "type": "image",
+          "texture": "$16x",
+          "color": "$primary",
+          "alpha": 0.12,
+          "size": [ "100%c", "100%c" ],
+          "inherit_max_sibling_height": true,
+          "controls": [
+            { "result_item_slot@stonecutter.result_item_slot": {} }
+          ]
+        }
+      }
+    ]
+  },
+
+  "scroll_panel": {
+    "$scroll_background_image_control": "common.empty_panel",
+    "clips_children": true
+  },
+  "stone_book_panel": {
+    "$container_size": [ 176, 166 ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@common.container_entrance_size_pop",
+      "@common.container_entrance_size_push",
+      "@common.container_exit_size_pop",
+      "@common.container_exit_size_push"
+    ]
+  },
+  "right_panel@common.root_panel": {
+    "layer": 1,
+    "$container_size": [ 176, 166 ],
+    "animation_reset_name": "screen_animation_reset",
+    "anims": [
+      "@common.container_entrance_size_pop",
+      "@common.container_entrance_size_push",
+      "@common.container_exit_size_pop",
+      "@common.container_exit_size_push"
+    ],
+    "controls": [
+      {
+        "common_panel@common.common_panel": {
+          "$show_close_button": true
+        }
+      },
+      {
+        "stonecutter_screen_inventory": {
+          "type": "panel",
+          "clips_children": true,
+          "layer": 2,
+          "controls": [
+            {
+              "stonecutter_label@stonecutter.stonecutter_label": {
+                "offset": [ 0, 5 ]
+              }
+            },
+            { "top_half_panel@stonecutter.top_half_panel": {} },
+            { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {} },
+            { "hotbar_grid@common.hotbar_grid_template_modified": {} }
+          ]
+        }
+      }
+    ]
+  },
+  "toolbar_panel": {
+    "ignored": true
+  },
+  "center_fold/center_bg": {
+    "ignored": true
+  }
+}

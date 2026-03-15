@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.support.component.progress.SmoothProgressBar android:id="@id/m4399_smooth_progress_bar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/m4399_ope_support_progress_bar_h_drawable" android:interpolator="@android:interpolator/accelerate_cubic" style="?android:progressBarStyleHorizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:book"}],"result":{"item":"chiseled_bookshelf","count":1},"key":{"A":{"tag":"minecraft:planks"},"B":{"tag":"minecraft:wooden_slabs"}},"description":{"identifier":"minecraft:chiseled_bookshelf"},"pattern":["AAA","BBB","AAA"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"result":{"item":"minecraft:smoker"},"key":{"#":{"item":"minecraft:stripped_spruce_log"},"F":{"item":"minecraft:furnace"}},"description":{"identifier":"minecraft:smoker_from_stripped_spruce"},"pattern":[" # ","#F#"," # "],"tags":["crafting_table"]},"format_version":"1.12"}

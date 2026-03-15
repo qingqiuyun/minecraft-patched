@@ -1,0 +1,36 @@
+{
+    "namespace": "Quasar/Welcome",
+    "base_bg": {
+        "type": "image",
+        "texture": "$8x",
+        "color": "$primary",
+        "layer": 5,
+        "size": [ 80, 20 ],
+        "clips_children": false,
+        "controls": [
+            {
+                "left_icon_bg": {
+                    "type": "image",
+                    "texture": "$8x",
+                    "color": "white",
+                    "size": [ "24px", "100%" ],
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle",
+                    "offset": [ -20, 0 ],
+                    "layer": -5,
+                    "controls": [
+                        {
+                            "icon": {
+                                "type": "image",
+                                "texture": "textures/Quasar/icon",
+                                "color": [0.459, 0.859, 0.894],
+                                "size": [ 18, 18 ],
+                                "offset": [ 0, 0 ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

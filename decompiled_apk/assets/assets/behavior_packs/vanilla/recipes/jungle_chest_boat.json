@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:boat","data":3}],"result":{"item":"minecraft:chest_boat","data":3},"description":{"identifier":"minecraft:jungle_chest_boat"},"ingredients":[{"item":"minecraft:chest"},{"item":"minecraft:boat","data":3}],"tags":["crafting_table"]},"format_version":"1.20.10"}

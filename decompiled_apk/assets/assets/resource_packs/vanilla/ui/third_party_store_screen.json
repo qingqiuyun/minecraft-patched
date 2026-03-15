@@ -1,0 +1,1 @@
+{"third_party_store_screen@common.base_screen":{"$default_text_color":[0.3,0.3,0.3],"button_mappings":[{"from_button_id":"button.menu_cancel","to_button_id":"button.menu_exit","mapping_type":"global"}],"$screen_content":"store.store_screen_content"},"namespace":"third_party_store"}

@@ -1,0 +1,29 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+precision highp float;
+
+#include "fragmentVersionCentroidUV.h"
+#include "uniformPerFrameConstants.h"
+#include "uniformWorldConstants.h"
+#include "uniformRenderChunkConstants.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+
+uniform vec4 EXTRA_VECTOR1; // vec4(width, height, prev_pitch, prev_yaw)
+uniform vec4 EXTRA_VECTOR2; // vec4(pitch, yaw, motionBlurVerticalIntensity , motionBlurHorizontalIntensity)
+
+void main() {
+    vec2 motionDirection = vec2(-(EXTRA_VECTOR2.y - EXTRA_VECTOR1.w),EXTRA_VECTOR2.x - EXTRA_VECTOR1.z)*0.005;
+    motionDirection.x *= EXTRA_VECTOR2.w;
+    motionDirection.y *= EXTRA_VECTOR2.z;
+    motionDirection = clamp(motionDirection, vec2(-0.02), vec2(0.02));
+
+    vec4 color = vec4(0.0);
+    float samples = 20.0;
+    vec2 ss = vec2(EXTRA_VECTOR1.x,EXTRA_VECTOR1.y);
+    for (float i = 0.0; i < samples; i++) {
+        vec2 offset = motionDirection * (i / samples - 0.5);
+        color += texture2D(TEXTURE_0, gl_FragCoord.xy / ss.xy + offset);
+    }
+    gl_FragColor = color / samples;
+}

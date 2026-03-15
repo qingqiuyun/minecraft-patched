@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wiki.first_person_attachable_guide.1st": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": [2, 21, 3]
+				}
+			}
+		},
+		"animation.wiki.first_person_attachable_guide.base": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"position": [-6, 15, 1]
+				}
+			}
+		},
+		"animation.wiki.first_person_attachable_guide.cross": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [-327.5, -27.5, 75],
+					"position": [18, 3, 10]
+				}
+			}
+		},
+		"animation.player.trident_offset": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [0, 0, 0],
+					"position": [7.17207, 9.04054, -21.04353]
+				}
+			}
+		}
+	}
+}

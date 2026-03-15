@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:stick"}],"result":{"item":"minecraft:ladder","count":3},"key":{"#":{"item":"minecraft:stick"}},"description":{"identifier":"minecraft:ladder"},"pattern":["# #","###","# #"],"tags":["crafting_table"]},"format_version":"1.20.10"}

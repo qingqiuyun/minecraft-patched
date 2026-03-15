@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"function":"set_banner_details","type":1}],"name":"minecraft:banner","type":"item","weight":1}],"rolls":1},{"entries":[{"functions":[{"function":"looting_enchant","count":{"max":1,"min":0}},{"function":"enchant_random_gear","chance":0.25}],"name":"minecraft:iron_axe","type":"item","weight":1}],"rolls":1}]}

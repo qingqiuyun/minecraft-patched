@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:diamond_sword",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/diamond_sword",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.sword"
+      },
+      "animations": {
+        "3rdtool": "animation.player.3rdtool"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "3rdtool": "!c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [ "controller.render.item_default" ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"animations":{"animation.evocation_fang.bite":{"loop":true,"bones":{"upper_jaw":{"rotation":[0.0,0.0,"180.0 - variable.bite_amount"]},"base":{"position":[0.0,"-12.0 + variable.y_offset",0.0]},"lower_jaw":{"rotation":[0.0,0.0,"180.0 + variable.bite_amount"]}}}},"format_version":"1.8.0"}

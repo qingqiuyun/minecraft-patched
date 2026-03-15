@@ -1,0 +1,1 @@
+{"minecraft:recipe_smithing_transform":{"template":"minecraft:netherite_upgrade_smithing_template","base":"minecraft:diamond_sword","result":"minecraft:netherite_sword","description":{"identifier":"minecraft:smithing_netherite_sword"},"addition":"minecraft:netherite_ingot","tags":["smithing_table"]},"format_version":"1.20.10"}

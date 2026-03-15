@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:stonebrick","data":0}],"input":"minecraft:stonebrick:0","description":{"identifier":"minecraft:furnace_stone_brick"},"output":"minecraft:stonebrick:2","tags":["furnace"]},"format_version":"1.20.10"}

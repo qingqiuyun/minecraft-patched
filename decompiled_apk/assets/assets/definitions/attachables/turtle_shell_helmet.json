@@ -1,0 +1,1 @@
+{"minecraft:attachable":{"description":{"materials":{"enchanted":"armor_enchanted","default":"armor"},"render_controllers":["controller.render.armor"],"geometry":{"default":"geometry.humanoid.armor.helmet"},"textures":{"enchanted":"textures/misc/enchanted_actor_glint","default":"textures/models/armor/turtle_1"},"identifier":"minecraft:turtle_helmet"}},"format_version":"1.8.0"}

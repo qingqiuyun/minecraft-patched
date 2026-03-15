@@ -1,0 +1,2 @@
+{"render_controllers":{"controller.render.ender_crystal":{"part_visibility":[{"base":"query.show_bottom"}],"geometry":"Geometry.default","textures":["Texture.default"],"materials":[{"*":"Material.default"}]}},"format_version":"1.10.0"}
+//CelsiusRP 11-20

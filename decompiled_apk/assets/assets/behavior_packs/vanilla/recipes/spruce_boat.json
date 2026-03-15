@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":{"context":"PlayerInWater"},"result":{"item":"minecraft:boat","data":1},"key":{"#":{"item":"minecraft:planks","data":1}},"description":{"identifier":"minecraft:spruce_boat"},"pattern":["# #","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

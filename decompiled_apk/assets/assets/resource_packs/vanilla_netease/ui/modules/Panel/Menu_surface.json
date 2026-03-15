@@ -1,0 +1,439 @@
+{
+  "namespace": "Quasar/Panel/Surface",
+  "basic_background": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$background",
+    "layer": 1,
+    "$content": "Quasar/Panel/Surface.panel_content",
+    "controls": [
+      {
+        "right_bg": {
+          "type": "image",
+          "texture": "$16x",
+          "color": "$primary",
+          "alpha": 0.3,
+          "size": ["90%", "100%-10px"],
+          "offset": [ -5, 0 ],
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle"
+        }
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "size": [ "100%+20px", "100%+20px" ],
+          "color": "$shadow",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "Quasar/Panel/Menu_trigger.menu_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "background_check_size_anim": {
+    "anim_type": "size",
+    "easing": "out_cubic",
+    "duration": 0.6,
+    "from": [ 0,0 ],
+    "to": ["70%","60%x"]
+  },
+  "background_uncheck_size_anim": {
+    "anim_type": "size",
+    "easing": "out_cubic",
+    "duration": 0.6,
+    "to": [ 0,0 ],
+    "from": ["70%","60%x"]
+  },
+  "background_check_alpha_anim":{
+    "anim_type": "alpha",
+    "duration": 0.55,
+    "easing": "out_cubic",
+    "from": 0,
+    "to": 1
+  },
+  "background_uncheck_alpha_anim":{
+    "anim_type": "alpha",
+    "duration": 0.55,
+    "easing": "out_cubic",
+    "to": 0,
+    "from": 1
+  },
+  "background_check@Quasar/Panel/Surface.basic_background": {
+    "anims": [
+      "@Quasar/Panel/Surface.background_check_alpha_anim",
+      "@Quasar/Panel/Surface.background_check_size_anim"
+    ]
+  },
+  "background_uncheck@Quasar/Panel/Surface.basic_background": {
+    "anims": [
+      "@Quasar/Panel/Surface.background_uncheck_alpha_anim",
+      "@Quasar/Panel/Surface.background_uncheck_size_anim"
+    ]
+  },
+  "empty": {
+    "type": "panel"
+  },
+  "background@Quasar_toggle.panel": {
+    "$target_controls_check": "Quasar/Panel/Surface.background_check",
+    "$target_controls_uncheck": "Quasar/Panel/Surface.background_uncheck",
+    "variables": [
+      {
+        "requires": "$is_netease",
+        "$target_controls_uncheck": "Quasar/Panel/Surface.empty"
+      }
+    ],
+    "$toggle_name": "Quasar/Panel/Menu_trigger.menu_toggle"
+  },
+
+  
+  "tab_stack": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": ["100%", "100%c"],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 0, 9 ]
+        }
+      },
+      {
+        "$toggle_view_binding_name@Quasar/Panel/Menu_trigger.base_tab": {
+          "$toggle_group_forced_index": 1,
+          "$toggle_view_binding_name": "panel_function",
+          "$tab_icon": "textures/Quasar/Panel/hud"
+        }
+      },
+      {
+        "$toggle_view_binding_name@Quasar/Panel/Menu_trigger.base_tab": {
+          "$toggle_view_binding_name": "panel_info",
+          "$tab_icon": "textures/Quasar/Panel/info",
+          "$toggle_group_forced_index": 2
+        }
+      }
+    ]
+  },
+  "function_toggle_stack": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [
+      "100%-10px",
+      "100%c"
+    ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "panel_function",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "scoreboard_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "Scoreboard",
+          "$describe_text": "Vanilla Scoreboard",
+          "$function_icon": "textures/Quasar/Panel/scoreboard",
+          "$toggle_view_binding_name": "scoreboard_panel_toggle",
+          "$toggle_name": "scoreboard_panel_toggle",
+          "$toggle_default_state": true
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "exp_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "Experience bar",
+          "$describe_text": "Vanilla Experience bar ",
+          "$function_icon": "textures/Quasar/Panel/exp",
+          "$toggle_view_binding_name": "exp_panel_toggle",
+          "$toggle_name": "exp_panel_toggle",
+          "$toggle_default_state": true
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "inv_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "InventoryHUD",
+          "$describe_text": "What's in your inventory",
+          "$function_icon": "textures/Quasar/container/inventory",
+          "$toggle_view_binding_name": "inv_panel_toggle",
+          "$toggle_name": "inv_panel_toggle"
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "durability_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "DurabilityHUD",
+          "$describe_text": "How many Durability your tool left",
+          "$function_icon": "textures/Quasar/Panel/durability",
+          "$toggle_view_binding_name": "durability_panel_toggle",
+          "$toggle_name": "durability_panel_toggle"
+        }
+      },
+      {
+        "padding_4": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "paperdoll_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "Paperdoll",
+          "$describe_text": "How you look like",
+          "$function_icon": "textures/Quasar/Panel/paperdoll",
+          "$toggle_view_binding_name": "paperdoll_panel_toggle",
+          "$toggle_name": "paperdoll_panel_toggle"
+        }
+      },
+      {
+        "padding_5": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "armorhud@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "ArmorHUD",
+          "$describe_text": "What you are wearing",
+          "$function_icon": "textures/Quasar/Panel/armorhud",
+          "$toggle_view_binding_name": "armorhud_panel_toggle",
+          "$toggle_name": "armorhud_panel_toggle"
+        }
+      },
+      {
+        "padding_6": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "keystroke@Quasar/Panel/Menu_trigger.function_toggle": {
+          "$title_text": "Keystroke",
+          "$describe_text": "Where you want to go",
+          "$function_icon": "textures/Quasar/Panel/keystroke",
+          "$toggle_view_binding_name": "keystroke_panel_toggle",
+          "$toggle_name": "keystroke_panel_toggle"
+        }
+      }
+    ]
+  },
+  "panel_content": {
+    "type": "panel",
+    
+    "animation_reset_name": "button.panel_pressed",
+    "anims": [
+      "@Quasar/Panel/Surface.background_check_size_anim"
+    ],
+    "controls": [
+      {
+        "right_panel": {
+          "type": "panel",
+          "size": ["90%", "100%-10px"],
+          "offset": [ -5, 0 ],
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "Quasar/Panel/Menu_trigger.menu_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "function@Quasar/Panel/Surface.function_toggle_stack": {}
+            },
+            {
+              "special@Quasar/Panel/Surface.special_thanks_scroll": {}
+            }
+          ]
+        }
+      },
+      {
+        "left_panel": {
+          "type": "panel",
+          "size": [ "10%-10px", "100%-10px" ],
+          "offset": [ 4.9, 0 ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "controls": [
+            {
+              "tab_stack@Quasar/Panel/Surface.tab_stack": {}
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "Quasar/Panel/Menu_trigger.menu_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "creator_information": {
+    "type": "image",
+    "texture": "$border",
+    "size": [ "100%", 70 ],
+    "layer": 1,
+    "color": "$onprimarycontainer",
+
+
+    "$avatar_texture|default": "textures/Quasar/Panel/avatar/影",
+    "$name_text|default": "影",
+    "$describe_text|default": "QQ号: 3075000561\nQuasar UI 作者",
+
+
+    "controls": [
+      {
+        "bg": {
+          "type": "image",
+          "texture": "$16x",
+          "color": "$primarycontainer",
+          "layer": -1
+        }
+      },
+      {
+        "avatar": {
+          "type": "image",
+          "size": [ 20,20 ],
+          "texture": "$avatar_texture",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 5, 5 ]
+        }
+      },
+      {
+        "name": {
+          "type": "label",
+          "size": [ "100%-35px",  "20px" ],
+          "font_type": "$global_font_type",
+          "text": "$name_text",
+          "color": "$primary",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 30, 5 ],
+          "font_scale_factor": 2
+        }
+      },
+      {
+        "describe": {
+          "type": "label",
+          "text": "$describe_text",
+          "color": "$onsecondarycontainer",
+          "font_type": "$global_font_type",
+          "size": [ "100%-10px", "100%-30px" ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [ 0, -5 ]
+        }
+      }
+    ]
+  },
+  "special_thanks_stack": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "影@Quasar/Panel/Surface.creator_information": {}
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "岁@Quasar/Panel/Surface.creator_information": {
+          "$avatar_texture": "textures/Quasar/Panel/avatar/岁",
+          "$name_text": "岁",
+          "$describe_text": "QQ号: 1485808098\nYukino UI 作者\n提供大量技术支持"
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "zhiend@Quasar/Panel/Surface.creator_information": {
+          "$avatar_texture": "textures/Quasar/Panel/avatar/zhiend",
+          "$name_text": "ZhiendChou",
+          "$describe_text": "QQ号: 飘忽不定\nLostX UI 作者\n提供大量技术支持"
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "源落@Quasar/Panel/Surface.creator_information": {
+          "$avatar_texture": "textures/Quasar/Panel/avatar/源落",
+          "$name_text": "源落",
+          "$describe_text": "QQ号: 3121460486\n资源作者\n提供实体资源"
+        }
+      }
+    ]
+  },
+  "special_thanks_scroll@common.scrolling_panel": {
+    "type": "panel",
+    "size": [ "95%", "100%" ],
+    "$show_background": false,
+    "$scrolling_content": "Quasar/Panel/Surface.special_thanks_stack",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "panel_info",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}

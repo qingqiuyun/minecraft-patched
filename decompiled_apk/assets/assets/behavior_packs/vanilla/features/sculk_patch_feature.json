@@ -1,0 +1,1 @@
+{"minecraft:sculk_patch_feature":{"central_block_placement_chance":0.5,"can_place_sculk_patch_on":[],"charge_amount":32,"description":{"identifier":"minecraft:sculk_patch_feature"},"spread_attempts":64,"cursor_count":10,"spread_rounds":1,"growth_rounds":0,"central_block":"minecraft:sculk_catalyst"},"format_version":"1.16.0"}

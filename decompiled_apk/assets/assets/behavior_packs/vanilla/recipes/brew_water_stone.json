@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_mix":{"reagent":"minecraft:stone","input":"minecraft:potion_type:water","description":{"identifier":"minecraft:brew_water_stone"},"output":"minecraft:potion_type:mundane","tags":["brewing_stand"]},"format_version":"1.12"}

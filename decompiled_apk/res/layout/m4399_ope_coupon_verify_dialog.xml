@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.support.component.FiniteLinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/m4399_ope_id_iv_close" android:background="@drawable/m4399_ope_support_nav_icon_bg" android:padding="9.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/m4399_ope_ic_close" />
+    <ScrollView android:scrollbarSize="4.0dip" android:scrollbarThumbVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_thumb" android:scrollbarTrackVertical="@drawable/m4399_ope_notice_layer_scrollbar_vertical_track" android:scrollbarStyle="outsideInset" android:orientation="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:fadeScrollbars="false" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_coupon_verify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <cn.m4399.operate.component.AlignTextView android:id="@id/m4399_ope_id_atv_coupon_verify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" />
+            <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/m4399_ope_id_btn_coupon_verify_confirm" android:background="@drawable/m4399_ope_ripple_r45_green" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="25.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</cn.m4399.operate.support.component.FiniteLinearLayout>

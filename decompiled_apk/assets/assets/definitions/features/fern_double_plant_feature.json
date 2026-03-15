@@ -1,0 +1,1 @@
+{"minecraft:aggregate_feature":{"description":{"identifier":"minecraft:fern_double_plant_feature"},"features":["minecraft:fern_double_plant_lower_feature","minecraft:fixup_fern_double_plant_upper_position_feature"],"early_out":"first_failure"},"format_version":"1.14.0"}

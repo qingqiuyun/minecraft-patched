@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:wool","data":10}],"pattern":["###","###"," | "],"result":{"item":"minecraft:banner","data":5},"key":{"#":{"item":"minecraft:wool","data":10},"|":{"item":"minecraft:stick"}},"description":{"identifier":"minecraft:purple_banner"},"group":"banner","tags":["crafting_table"]},"format_version":"1.20.10"}

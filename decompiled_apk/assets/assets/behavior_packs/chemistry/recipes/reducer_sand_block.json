@@ -1,0 +1,1 @@
+{"minecraft:recipe_material_reduction":{"tags":"material_reducer","description":{"identifier":"minecraft:sand"},"output":[{"count":33,"item":"minecraft:element_14"},{"count":64,"item":"minecraft:element_8"},{"count":3,"item":"minecraft:element_8"}],"input":"minecraft:sand"},"format_version":"1.14"}

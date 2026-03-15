@@ -1,0 +1,1 @@
+{"minecraft:scatter_feature":{"y":0,"x":0,"places_feature":"minecraft:fallen_birch_tree_feature","z":0,"project_input_to_floor":false,"description":{"identifier":"minecraft:optional_fallen_birch_tree_feature"},"iterations":1,"scatter_chance":{"numerator":1,"denominator":80}},"format_version":"1.14.0"}

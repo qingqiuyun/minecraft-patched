@@ -1,0 +1,175 @@
+{
+  "namespace": "Quasar/Inventory",
+  "inventory_display_panel": {
+    "type": "panel",
+  	"ignored": "(not $inventory_hud)",
+    "size": [
+      164,
+      54
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "variables": [
+      {
+        "requires": "($fancy_coordinate)",
+        "$inv_anims": [
+          "@Quasar/Inventory.fancy_inv_hud_offset_anim_pop",
+          "@Quasar/Inventory.fancy_inv_hud_offset_anim_push"
+        ]
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "inv_panel_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "$inv_anims": [
+      "@Quasar/Inventory.inv_hud_offset_anim_pop",
+      "@Quasar/Inventory.inv_hud_offset_anim_push"
+    ],
+    "anims": "$inv_anims",
+    "animation_reset_name": "screen_animation_reset",
+    "controls": [
+      {
+        "base@Quasar/Inventory.inventory_display_base": {}
+      },
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "color": "$shadow",
+          "alpha": "$global_bloom_alpha",
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ],
+          "layer": -50
+        }
+      }
+    ]
+  },
+  "inventory_display_base": {
+    "type": "image",
+    "texture": "$16x",
+    "alpha": "$global_alpha",
+    "color": "$background",
+    "size": [
+      162,
+      54
+    ],
+    "clips_children": true,
+    "controls": [
+      {
+        "inventory_grid": {
+          "type": "grid",
+          "collection_name": "hotbar_items",
+          "grid_dimensions": [
+            9,
+            4
+          ],
+          "grid_item_template": "Quasar/Inventory.inventory_overlay",
+          "size": [
+            162,
+            72
+          ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle"
+        }
+      }
+    ]
+  },
+  "inventory_overlay": {
+    "type": "panel",
+    "size": [
+      18,
+      18
+    ],
+    "$durability_bar_required": true,
+    "$item_collection_name": "hotbar_items",
+    "$stack_count_required": true,
+    "controls": [
+      {
+        "stack_count_label@common.stack_count_label": {
+          "layer": 10
+        }
+      },
+      {
+        "item_renderer@common.item_renderer": {
+          "layer": 5,
+          "size": [
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "durability_bar@common.durability_bar": {
+          "layer": 15
+        }
+      }
+    ]
+  },
+  "inv_hud_offset_anim_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      -200,
+      50
+    ],
+    "to": [
+      5,
+      50
+    ],
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+  "inv_hud_offset_anim_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      -200,
+      50
+    ],
+    "from": [
+      5,
+      50
+    ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+  "fancy_inv_hud_offset_anim_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "from": [
+      -200,
+      30
+    ],
+    "to": [
+      10,
+      30
+    ],
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+  "fancy_inv_hud_offset_anim_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      -200,
+      30
+    ],
+    "from": [
+      10,
+      30
+    ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  }
+}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"result":[{"item":"minecraft:dripstone_block"}],"key":{"X":{"item":"minecraft:pointed_dripstone"}},"description":{"identifier":"minecraft:dripstone_block_from_pointed_dripstone"},"pattern":["XX","XX"],"tags":["crafting_table"]},"format_version":"1.12"}

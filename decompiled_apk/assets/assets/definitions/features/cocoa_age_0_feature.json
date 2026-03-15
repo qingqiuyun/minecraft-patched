@@ -1,0 +1,1 @@
+{"minecraft:single_block_feature":{"places_block":{"states":{"age":0},"name":"minecraft:cocoa"},"enforce_survivability_rules":false,"description":{"identifier":"minecraft:cocoa_age_0_feature"},"may_attach_to":{"sides":{"states":{"old_log_type":"jungle"},"name":"minecraft:log"},"min_sides_must_attach":1},"enforce_placement_rules":false},"format_version":"1.14.0"}

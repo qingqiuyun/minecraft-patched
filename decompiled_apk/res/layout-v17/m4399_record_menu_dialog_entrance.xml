@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/m4399_record_id_ll_entrance" android:paddingLeft="25.0dip" android:paddingBottom="@dimen/m4399_record_menu_entrance_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/m4399_record_id_entrance_edit" layout="@layout/m4399_record_menu_dialog_entrance_item" />
+    <include android:id="@id/m4399_record_id_entrance_recording" layout="@layout/m4399_record_menu_dialog_entrance_item" />
+</LinearLayout>

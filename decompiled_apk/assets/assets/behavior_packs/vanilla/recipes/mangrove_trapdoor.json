@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:mangrove_planks"}],"pattern":["###","###"],"result":{"item":"minecraft:mangrove_trapdoor","count":2},"key":{"#":{"item":"minecraft:mangrove_planks"}},"description":{"identifier":"minecraft:mangrove_trapdoor"},"group":"wooden_trap_door","tags":["crafting_table"]},"format_version":"1.20.10"}

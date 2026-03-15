@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:golden_pickaxe"}],"input":"minecraft:golden_pickaxe","description":{"identifier":"minecraft:furnace_golden_pickaxe"},"output":"minecraft:gold_nugget","tags":["furnace","blast_furnace"]},"format_version":"1.20.10"}

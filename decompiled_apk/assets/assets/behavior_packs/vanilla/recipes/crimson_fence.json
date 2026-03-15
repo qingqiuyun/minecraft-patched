@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:crimson_planks"}],"result":{"item":"minecraft:crimson_fence","count":3},"key":{"#":{"item":"minecraft:stick"},"W":{"item":"minecraft:crimson_planks"}},"description":{"identifier":"minecraft:crimson_fence"},"pattern":["W#W","W#W"],"tags":["crafting_table"]},"format_version":"1.20.10"}

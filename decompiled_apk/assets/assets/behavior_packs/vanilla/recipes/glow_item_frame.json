@@ -1,0 +1,1 @@
+{"minecraft:recipe_shapeless":{"unlock":[{"item":"minecraft:frame"},{"item":"minecraft:glow_ink_sac"}],"result":{"item":"minecraft:glow_frame"},"description":{"identifier":"minecraft:glow_frame"},"ingredients":[{"item":"minecraft:frame"},{"item":"minecraft:glow_ink_sac"}],"tags":["crafting_table"]},"format_version":"1.20.10"}

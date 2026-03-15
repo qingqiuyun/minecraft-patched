@@ -1,0 +1,70 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+// copyright © Newb Shader
+
+#if __VERSION__ >= 300
+    #define attribute in
+    #define varying out
+#endif
+
+#include "uniformWorldConstants.h"
+
+uniform vec4 CURRENT_COLOR;
+uniform vec4 FOG_COLOR;
+uniform vec2 FOG_CONTROL;
+uniform float RENDER_DISTANCE;
+
+#include "utilities/detectors.glsl"
+#include "utilities/sky.glsl"
+
+attribute mediump vec4 POSITION;
+attribute vec4 COLOR;
+
+varying vec3 zenith_color;
+varying vec3 horizon_color;
+varying vec3 horizon_edge_color;
+varying vec3 wPos;
+
+void main()
+{
+vec4 pos = POSITION;
+pos.y -= COLOR.r*COLOR.r*0.18;	// Displaces the sky edge
+
+   gl_Position = WORLDVIEWPROJ * pos;
+
+//wPos = (WORLD * pos).xyz;
+wPos = pos.xyz;
+wPos.y += 0.128;
+
+// detections
+bool underWater = detectUnderwater();
+float rainFactor = detectRain(underWater);
+
+// horizon transition color
+horizon_color = getFogColor(underWater, rainFactor);
+
+zenith_color = CURRENT_COLOR.rgb*CURRENT_COLOR.rgb;
+zenith_color *= vec3(1.12,1.6,1.6)*CURRENT_COLOR.b;
+zenith_color += vec3(0.0,0.005,0.01);
+//zenith_color = getSkyColor(rainFactor);
+
+
+// rain sky
+if(rainFactor > 0.0){
+    float brightness = 0.1+dot(FOG_COLOR.rgb,vec3(0.5));
+    zenith_color = mix(zenith_color,vec3(brightness),rainFactor);
+}
+
+// underwater sky
+if(underWater){
+    zenith_color = horizon_color;
+}
+
+// horizon color
+horizon_edge_color = applyTint(horizon_color,rainFactor,underWater);
+
+//horizon_edge_color = colorCorrection(horizon_edge_color);
+//zenith_color = colorCorrection(zenith_color);
+//horizon_color = colorCorrection(horizon_color);
+
+}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:iron_nugget"},{"item":"minecraft:iron_ingot"}],"result":{"item":"minecraft:lantern","count":1},"key":{"#":{"item":"minecraft:iron_nugget"},"x":{"item":"minecraft:torch"}},"description":{"identifier":"minecraft:lantern"},"pattern":["###","#x#","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"soul_campfire","count":1},"key":{"A":{"item":"stick"},"C":{"item":"stripped_dark_oak_log"},"B":{"item":"soul_soil"}},"description":{"identifier":"minecraft:soul_campfire_from_soul_soil_and_stripped_dark_oak_log"},"pattern":[" A ","ABA","CCC"],"tags":["crafting_table"]},"format_version":"1.16"}

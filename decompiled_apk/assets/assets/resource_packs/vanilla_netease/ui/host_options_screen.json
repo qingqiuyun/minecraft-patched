@@ -1,0 +1,84 @@
+{
+  "namespace": "host_options",
+  "host_main_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "main_dark_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "main_light_button": {
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+  },
+  "scrolling_panel/background": {
+    "type": "image",
+    "texture": "$16x",
+    "color": "$background",
+    "alpha": 0.7,
+    "offset": "$main_offset_background",
+    "size": [
+      "100% + 4px",
+      "100%"
+    ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "visible": "$main_background_visible",
+    "controls": [
+      {
+        "bloom": {
+          "type": "image",
+          "texture": "$bloom",
+          "alpha": "$global_bloom_alpha",
+          "color": "$shadow",
+          "layer": -1024,
+          "size": [
+            "100%+20px",
+            "100%+20px"
+          ]
+        }
+      }
+    ]
+  },
+  "host_teleport_grid_item": {//button & toggle
+    "$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x",
+    "$default_texture": "$16x",
+    "$hover_texture": "$16x",
+    "$pressed_texture": "$16x",
+    "$pressed_no_hover_texture": "$16x",
+    "$locked_texture": "$16x",
+    "$default_chevron": "textures/Quasar/dropdown",
+    "$default_chevron_nohover": "textures/Quasar/dropdown",
+    "$default_chevron_hover": "textures/Quasar/dropdown",
+    "$default_texture_color": "$primary",
+    "$default_checked_texture_color": "$onsecondary",
+    "$hover_texture_color": "$onsecondary",
+    "$hover_checked_texture_color": "$onsecondary"
+  }
+}

@@ -1,0 +1,1 @@
+{"minecraft:recipe_brewing_container":{"reagent":"minecraft:gunpowder","input":"minecraft:potion","description":{"identifier":"minecraft:brew_potion_sulphur"},"output":"minecraft:splash_potion","tags":["brewing_stand"]},"format_version":"1.20.10"}

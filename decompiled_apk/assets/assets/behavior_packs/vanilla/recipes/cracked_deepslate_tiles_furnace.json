@@ -1,0 +1,1 @@
+{"minecraft:recipe_furnace":{"unlock":[{"item":"minecraft:deepslate_tiles"}],"input":"minecraft:deepslate_tiles","description":{"identifier":"minecraft:cracked_deepslate_tiles_furnace"},"output":"minecraft:cracked_deepslate_tiles","tags":["furnace"]},"format_version":"1.20.10"}

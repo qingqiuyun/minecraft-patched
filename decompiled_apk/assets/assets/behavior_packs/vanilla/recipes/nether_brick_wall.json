@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:nether_brick"}],"result":{"item":"minecraft:cobblestone_wall","data":9,"count":6},"key":{"#":{"item":"minecraft:nether_brick"}},"description":{"identifier":"minecraft:nether_brick_wall"},"pattern":["###","###"],"tags":["crafting_table"]},"format_version":"1.20.10"}

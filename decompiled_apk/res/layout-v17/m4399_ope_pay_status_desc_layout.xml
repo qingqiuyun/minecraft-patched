@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/m4399.Operate.Pay.Status.Desc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/m4399_ope_pay_status_ic" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m4399_ope_pay_success_status_left" android:layout_marginStart="@dimen/m4399_ope_pay_success_status_left">
+        <TextView android:textSize="18.0sp" android:id="@id/m4399_ope_pay_status_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="#66000000" android:id="@id/m4399_ope_pay_status_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:includeFontPadding="false" android:lineSpacingMultiplier="1.0" />
+    </LinearLayout>
+</LinearLayout>

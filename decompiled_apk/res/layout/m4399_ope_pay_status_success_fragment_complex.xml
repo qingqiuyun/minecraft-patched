@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:baselineAligned="false" style="@style/m4399.Pay.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/m4399_navigation_bar" layout="@layout/m4399_ope_support_divider_h" />
+    <ScrollView android:background="@android:color/white" android:paddingLeft="@dimen/m4399_ope_pay_page_mx" android:paddingRight="@dimen/m4399_ope_pay_page_mx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/m4399_id_divider" style="@style/m4399.ScrollBar">
+        <LinearLayout android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <include layout="@layout/m4399_ope_pay_status_desc_layout" />
+            <include layout="@layout/m4399_ope_pay_vip_card" />
+            <include layout="@layout/m4399_ope_pay_recommend_activities" />
+            <include layout="@layout/m4399_ope_pay_status_success_coupon" />
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/m4399_ope_pay_btn_h" android:layout_marginTop="28.0dip" android:layout_marginBottom="30.0dip" android:text="@string/m4399_ope_pay_return_game" layout="@layout/m4399_ope_pay_btn_confirm_2" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

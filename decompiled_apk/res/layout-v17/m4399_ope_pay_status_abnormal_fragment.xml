@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:baselineAligned="false" style="@style/m4399.Pay.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/m4399_navigation_bar" layout="@layout/m4399_ope_support_divider_h" />
+    <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/m4399_ope_pay_status_fragment_bottom" android:layout_below="@id/m4399_id_divider">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/m4399_ope_pay_page_mx" android:paddingRight="@dimen/m4399_ope_pay_page_mx" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/m4399_ope_pay_status_desc_layout" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" layout="@layout/m4399_ope_support_divider_h" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_pay_status_abnormal_commodity_label" />
+                <TextView android:textSize="14.0sp" android:textColor="#8a000000" android:id="@id/m4399_ope_pay_order_commodity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginStart="16.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/m4399_ope_pay_pid_container" android:layout_width="fill_parent" android:layout_height="32.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_pay_status_abnormal_pid_label" />
+                <TextView android:textSize="14.0sp" android:textColor="#8a000000" android:id="@id/m4399_ope_pay_status_order_pid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginStart="16.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/m4399_ope_pay_status_tips_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="@string/m4399_ope_pay_status_tips_prefix" />
+                <TextView android:textSize="14.0sp" android:textColor="#8a000000" android:id="@id/m4399_ope_pay_status_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:lineSpacingExtra="2.0dip" android:layout_marginStart="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_pay_status_fragment_bottom" android:background="@drawable/m4399_ope_pay_status_fragment_bottom_bg" android:paddingLeft="@dimen/m4399_ope_pay_page_mx" android:paddingTop="14.0dip" android:paddingRight="@dimen/m4399_ope_pay_page_mx" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m4399_ope_pay_status_qq_prefix" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/m4399_color_primary" android:id="@id/m4399_ope_pay_status_contact_qq" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/m4399_ope_pay_status_hotline_prefix" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/m4399_color_primary" android:id="@id/m4399_ope_pay_status_contact_tel" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:text="@string/m4399_ope_pay_return_game" layout="@layout/m4399_ope_pay_btn_confirm_2" />
+    </LinearLayout>
+</RelativeLayout>

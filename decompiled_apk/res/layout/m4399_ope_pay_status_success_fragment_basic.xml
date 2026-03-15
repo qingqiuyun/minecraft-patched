@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/m4399.Pay.Page"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/m4399_navigation_bar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/m4399_ope_pay_page_mx" android:paddingRight="@dimen/m4399_ope_pay_page_mx" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/m4399_ope_pay_status_ic" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/m4399_ope_pay_status_success" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/m4399_color_primary" android:id="@id/m4399_ope_pay_status_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/m4399_ope_pay_status_success_subject" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0sp" android:textColor="#66000000" android:id="@id/m4399_ope_pay_status_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:includeFontPadding="false" />
+        </LinearLayout>
+        <FrameLayout style="@style/m4399.Operate.Pay.Status.Bottom">
+            <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/m4399_ope_pay_btn_h" android:layout_marginBottom="16.0dip" layout="@layout/m4399_ope_pay_btn_confirm_2" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"priority":2,"result":{"item":"composter","count":1},"key":{"A":{"item":"crimson_slab"}},"description":{"identifier":"minecraft:composter_from_crimson_slab"},"pattern":["A A","A A","AAA"],"tags":["crafting_table"]},"format_version":"1.16"}

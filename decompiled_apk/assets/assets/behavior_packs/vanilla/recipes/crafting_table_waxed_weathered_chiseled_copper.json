@@ -1,0 +1,1 @@
+{"minecraft:recipe_shaped":{"unlock":[{"item":"minecraft:waxed_weathered_cut_copper_slab"}],"result":{"count":1,"item":"minecraft:waxed_weathered_chiseled_copper"},"key":{"#":{"item":"minecraft:waxed_weathered_cut_copper_slab"}},"description":{"identifier":"minecraft:waxed_weathered_chiseled_copper"},"pattern":["#","#"],"tags":["crafting_table"]},"format_version":"1.20.10"}

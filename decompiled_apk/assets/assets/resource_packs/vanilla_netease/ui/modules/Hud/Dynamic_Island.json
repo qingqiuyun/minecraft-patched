@@ -1,0 +1,113 @@
+{
+    "namespace": "Quasar/Dynamic_Island",
+    "image": {
+        "type": "image",
+        "texture": "$16x",
+        "color": "$secondary",
+        "alpha": "$global_alpha",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "animation_reset_name": "screen_animation_reset",
+        "anims": [
+            "@Quasar/Dynamic_Island.anims_offset_1",
+            "@Quasar/Dynamic_Island.anims_size_1"
+        ],
+        "clips_children": true,
+        "$island_controls": "Quasar/Dynamic_Island.controls",
+        "controls": [
+            {
+                "control@$island_controls": {
+                    "anchor_from": "left_middle",
+                    "anchor_to": "left_middle"
+                }
+            }
+        ]
+    },
+    "anims_offset_1": {
+        "anim_type": "offset",
+        "duration": 0,
+        "from": [ 0, -100 ],
+        "to": [ 0, -100 ],
+        "next": "@Quasar/Dynamic_Island.anims_offset_wait_1"
+    },
+    "anims_offset_wait_1": {
+        "anim_type": "wait",
+        "duration": 0.5,
+        "next": "@Quasar/Dynamic_Island.anims_offset_2"
+    },
+    "anims_offset_2": {
+        "anim_type": "offset",
+        "duration": 0.4,
+        "easing": "out_cubic",
+        "from": [ 0, -100 ],
+        "to": [ 0, 20 ],
+        "next": "@Quasar/Dynamic_Island.anims_offset_wait"
+    },
+    "anims_offset_wait": {
+        "anim_type": "wait",
+        "duration": 4.2,
+        "next": "@Quasar/Dynamic_Island.anims_offset_3"
+    },
+    "anims_offset_3": {
+        "anim_type": "offset",
+        "duration": 0.4,
+        "easing": "out_cubic",
+        "to": [ 0, -100 ],
+        "from": [ 0, 20 ]
+    },
+    "anims_size_1": {
+        "anim_type": "size",
+        "duration": 0,
+        "from": [ 16, 16 ],
+        "to": [ 16, 16 ],
+        "next": "@Quasar/Dynamic_Island.anims_size_wait_1"
+    },
+    "anims_size_wait_1": {
+        "anim_type": "wait",
+        "duration": 1.1,
+        "next": "@Quasar/Dynamic_Island.anims_size_2"
+    },
+    "anims_size_2": {
+        "anim_type": "size",
+        "duration": 0.4,
+        "easing": "out_cubic",
+        "from": [ 16, 16 ],
+        "to": [ 200, 16 ],
+        "next": "@Quasar/Dynamic_Island.anims_size_wait_2"
+    },
+    "anims_size_wait_2": {
+        "anim_type": "wait",
+        "duration": 3.0,
+        "next": "@Quasar/Dynamic_Island.anims_size_3"
+    },
+    "anims_size_3": {
+        "anim_type": "size",
+        "duration": 0.4,
+        "easing": "out_cubic",
+        "to": [ 16, 16 ],
+        "from": [ 200, 16 ]
+    },
+    "controls": {
+        "type": "stack_panel",
+        "size": [ "100%", "100%" ],
+        "orientation": "horizontal",
+        "controls": [
+            {
+                "icon": {
+                    "type": "image",
+                    "texture": "textures/Quasar/icon",
+                    "size": [ "100%y", "100%" ]
+                }
+            },
+            {
+                "label": {
+                    "type": "label",
+                    "text": "Quasar UI",
+                    "font_type": "$global_font_type",
+                    "font_scale_factor": 1.6,
+                    "size": [ "100%", "100%" ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/m4399_ope_id_parent" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.m4399.operate.extension.index.UCWebView android:id="@id/m4399_webview_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_id_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center" android:id="@id/m4399_ope_id_iv_close" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/m4399_ope_uc_ic_close_port" />
+        <cn.m4399.operate.extension.index.CornerLinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/m4399_webview_stub_error_view" android:layout="@layout/m4399_ope_support_webview_layout_abnormal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </cn.m4399.operate.extension.index.CornerLinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/m4399_ope_id_placeholder_parent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/m4399_ope_id_placeholder_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center" android:id="@id/m4399_ope_id_iv_placeholder_close" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/m4399_ope_uc_ic_close_port" />
+            <cn.m4399.operate.extension.index.CornerLinearLayout android:orientation="vertical" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/m4399_ope_uc_placeholder_top" android:scaleType="centerCrop" />
+                <View android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/m4399_ope_uc_placeholder_tab" android:scaleType="centerCrop" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/m4399_ope_uc_placeholder_content" android:scaleType="centerCrop" />
+                <View android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </cn.m4399.operate.extension.index.CornerLinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
