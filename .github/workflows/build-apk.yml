@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ main, master ]
-    paths:
-      - 'decompiled_apk/**'
 
 jobs:
   build:
@@ -13,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
 
     - name: Set up Java
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
         java-version: '17'
@@ -26,39 +24,22 @@ jobs:
         wget https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -O apktool.jar
         chmod +x apktool.jar
 
-    - name: Check directory structure
+    - name: List files
       run: |
+        echo "Current directory:"
+        pwd
         ls -la
         echo "=== Checking decompiled_apk ==="
         ls -la decompiled_apk || echo "decompiled_apk not found"
         echo "=== Checking AndroidManifest.xml ==="
         ls -la decompiled_apk/AndroidManifest.xml || echo "AndroidManifest.xml not found"
-        echo "=== Checking smali directory ==="
-        ls -la decompiled_apk/smali || echo "smali not found"
-        echo "=== Checking apktool.yml ==="
-        cat decompiled_apk/apktool.yml || echo "apktool.yml not found"
 
     - name: Build APK
       run: |
-        set -e
         echo "Starting APK build..."
-        echo "Current directory:"
-        pwd
-        echo "Files in current directory:"
-        ls -la
-        echo "=== Starting apktool build ==="
-        java -jar apktool.jar b decompiled_apk -o patched.apk -v 2>&1 | tee build.log
-        echo "=== Build completed ==="
-        echo "Checking output..."
-        if [ -f patched.apk ]; then
-          echo "APK file created successfully:"
-          ls -lh patched.apk
-        else
-          echo "ERROR: APK file not found!"
-          echo "Build log:"
-          cat build.log
-          exit 1
-        fi
+        java -jar apktool.jar b decompiled_apk -o patched.apk
+        echo "Build completed"
+        ls -la patched.apk || echo "APK file not found"
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
