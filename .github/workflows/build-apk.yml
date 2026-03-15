@@ -40,10 +40,25 @@ jobs:
 
     - name: Build APK
       run: |
+        set -e
         echo "Starting APK build..."
+        echo "Current directory:"
+        pwd
+        echo "Files in current directory:"
+        ls -la
+        echo "=== Starting apktool build ==="
         java -jar apktool.jar b decompiled_apk -o patched.apk -v 2>&1 | tee build.log
-        echo "Build completed. Checking output..."
-        ls -la patched.apk || echo "APK build failed"
+        echo "=== Build completed ==="
+        echo "Checking output..."
+        if [ -f patched.apk ]; then
+          echo "APK file created successfully:"
+          ls -lh patched.apk
+        else
+          echo "ERROR: APK file not found!"
+          echo "Build log:"
+          cat build.log
+          exit 1
+        fi
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
