@@ -46,8 +46,7 @@ jobs:
         ls -la patched.apk || echo "APK build failed"
 
     - name: Upload APK
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: patched-apk
         path: patched.apk
-        retention-days: 30
