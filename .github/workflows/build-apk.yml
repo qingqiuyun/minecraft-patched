@@ -26,9 +26,24 @@ jobs:
         wget https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -O apktool.jar
         chmod +x apktool.jar
 
+    - name: Check directory structure
+      run: |
+        ls -la
+        echo "=== Checking decompiled_apk ==="
+        ls -la decompiled_apk || echo "decompiled_apk not found"
+        echo "=== Checking AndroidManifest.xml ==="
+        ls -la decompiled_apk/AndroidManifest.xml || echo "AndroidManifest.xml not found"
+        echo "=== Checking smali directory ==="
+        ls -la decompiled_apk/smali || echo "smali not found"
+        echo "=== Checking apktool.yml ==="
+        cat decompiled_apk/apktool.yml || echo "apktool.yml not found"
+
     - name: Build APK
       run: |
-        java -jar apktool.jar b decompiled_apk -o patched.apk
+        echo "Starting APK build..."
+        java -jar apktool.jar b decompiled_apk -o patched.apk -v 2>&1 | tee build.log
+        echo "Build completed. Checking output..."
+        ls -la patched.apk || echo "APK build failed"
 
     - name: Zipalign APK
       run: |
