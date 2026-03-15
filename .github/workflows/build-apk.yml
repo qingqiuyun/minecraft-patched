@@ -45,20 +45,9 @@ jobs:
         echo "Build completed. Checking output..."
         ls -la patched.apk || echo "APK build failed"
 
-    - name: Zipalign APK
-      run: |
-        wget https://dl.google.com/android/repository/build-tools_r34.0.0-linux.zip
-        unzip -q build-tools_r34.0.0-linux.zip
-        build-tools/34.0.0/zipalign -f -v 4 patched.apk patched-aligned.apk
-
-    - name: Sign APK (debug keystore)
-      run: |
-        keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
-        jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore debug.keystore -storepass android -keypass android patched-aligned.apk androiddebugkey
-
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: patched-apk
-        path: patched-aligned.apk
+        path: patched.apk
         retention-days: 30
